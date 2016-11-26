@@ -1,0 +1,174 @@
+Mining Big Data: Current Status, and Forecast to the
+Future titlerp Big Data is a new term used to identify the datasets that
+due to their large size and complexity, we can not manage
+them with our current methodologies or data mining software
+tools. Big Data mining is the capability of extracting
+useful information from these large datasets or streams of
+data, that due to its volume, variability, and velocity, it
+was not possible before to do it. The Big Data challenge
+is becoming one of the most exciting opportunities for the
+next years. We present in this issue, a broad overview of
+the topic, its current status, controversy, and forecast to
+the future. We introduce four articles, written by inuential
+scientists in the eld, covering the most interesting and
+state-of-the-art topics on Big Data mining.abstractrp keywordsrp Recent years have witnessed a dramatic increase in our ability
+to collect data from various sensors, devices, in dierent
+formats, from independent or connected applications. This
+data ood has outpaced our capability to process, analyze,
+store and understand these datasets. Consider the Internet
+data. The web pages indexed by Google were around one
+million in 1998, but quickly reached 1 billion in 2000 and
+have already exceeded 1 trillion in 2008. This rapid expansion
+is accelerated by the dramatic increase in acceptance of
+social networking applications, such as Facebook, Twitter,
+Weibo, etc., that allow users to create contents freely and
+amplify the already huge Web volume. Furthermore, with
+mobile phones becoming the sensory gateway to get realtime
+data on people from dierent aspects, the vast amount
+of data that mobile carrier can potentially process to improve
+our daily life has signicantly outpaced our past CDR
+(call data record)-based processing for billing purposes only.
+It can be foreseen that Internet of things (IoT) applications
+will raise the scale of data to an unprecedented level. People
+and devices (from home coee machines to cars, to buses,
+railway stations and airports) are all loosely connected. Trillions
+of such connected components will generate a huge
+data ocean, and valuable information must be discovered
+from the data to help improve quality of life and make our
+world a better place. For example, after we get up every
+morning, in order to optimize our commute time to work
+and complete the optimization before we arrive at oce, the
+system needs to process information from trac, weather,
+construction, police activities to our calendar schedules, and
+perform deep optimization under the tight time constraints.
+In all these applications, we are facing signicant challenges
+in leveraging the vast amount of data, including challenges
+in (1) system capabilities (2) algorithmic design (3) business
+models.
+As an example of the interest that Big Data is having in
+the data mining community, the grand theme of this year's
+KDD conference was 'Mining the Big Data'. Also there was
+a specic workshop BigMine'12 in that topic: 1st Interna-
+tional Workshop on Big Data, Streams and Heterogeneous
+Source Mining: Algorithms, Systems, Programming Mod-
+els and Applications1. Both events successfully brought together
+people from both academia and industry to present
+their most recent work related to these Big Data issues, and
+exchange ideas and thoughts. These events are important
+in order to advance this Big Data challenge, which is being
+considered as one of the most exciting opportunities in the
+years to come.
+We introduce Big Data mining and its applications in Section
+2. We summarize the papers presented in this issue in
+Section 3, and discuss about Big Data controversy in Section
+4. We point the importance of open-source software
+tools in Section 5 and give some challenges and forecast to
+the future in Section 6. Finally, we give some conclusions in
+Section 7.introductionrpBig Data is going to continue growing during the next years,
+and each data scientist will have to manage much more
+amount of data every year. This data is going to be more
+diverse, larger, and faster. We discussed in this paper some
+insights about the topic, and what we consider are the main
+concerns, and the main challenges for the future. Big Data is
+becoming the new Final Frontier for scientic data research
+and for business applications. We are at the beginning of
+a new era where Big Data mining will help us to discover
+knowledge that no one has discovered before. Everybody is
+warmly invited to participate in this intrepid journey.conclusionrp[1] SAMOA, http://samoa-project.net, 2013.
+[2] C. C. Aggarwal, editor. Managing and Mining Sensor
+Data. Advances in Database Systems. Springer, 2013.
+[3] Apache Hadoop, http://hadoop.apache.org.
+[4] Apache Mahout, http://mahout.apache.org.
+[5] A. Bifet, G. Holmes, R. Kirkby, and B. Pfahringer.
+MOA: Massive Online Analysis http://moa.
+cms.waikato.ac.nz/. Journal of Machine Learning
+Research (JMLR), 2010.
+[6] C. Bockermann and H. Blom. The streams Framework.
+Technical Report 5, TU Dortmund University, 12 2012.
+[7] d. boyd and K. Crawford. Critical Questions for
+Big Data. Information, Communication and Society,
+15(5):662{679, 2012.
+[8] F. Diebold. "Big Data" Dynamic Factor Models for
+Macroeconomic Measurement and Forecasting. Discus-
+sion Read to the Eighth World Congress of the Econo-
+metric Society, 2000.
+[9] F. Diebold. On the Origin(s) and Development of the
+Term "Big Data". Pier working paper archive, Penn
+Institute for Economic Research, Department of Economics,
+University of Pennsylvania, 2012.[10] B. Efron. Large-Scale Inference: Empirical Bayes Meth-
+ods for Estimation, Testing, and Prediction. Institute of
+Mathematical Statistics Monographs. Cambridge University
+Press, 2010.
+[11] U. Fayyad. Big Data Analytics: Applications and Opportunities
+in On-line Predictive Modeling. http://
+big-data-mining.org/keynotes/#fayyad, 2012.
+[12] D. Feldman, M. Schmidt, and C. Sohler. Turning big
+data into tiny data: Constant-size coresets for k-means,
+pca and projective clustering. In SODA, 2013.
+[13] J. Gama. Knowledge Discovery from Data Streams.
+Chapman & Hall/Crc Data Mining and Knowledge Discovery.
+Taylor & Francis Group, 2010.
+[14] J. Gantz and D. Reinsel. IDC: The Digital Universe in
+2020: Big Data, Bigger Digital Shadows, and Biggest
+Growth in the Far East. December 2012.
+[15] Gartner, http://www.gartner.com/it-glossary/bigdata.
+[16] V. Gopalkrishnan, D. Steier, H. Lewis, and J. Guszcza.
+Big data, big business: bridging the gap. In Proceed-
+ings of the 1st International Workshop on Big Data,
+Streams and Heterogeneous Source Mining: Algorithms,
+Systems, Programming Models and Applications, Big-
+Mine '12, pages 7{11, New York, NY, USA, 2012. ACM.
+[17] Intel. Big Thinkers on Big Data,
+http://www.intel.com/content/www/us/en/bigdata/
+big-thinkers-on-big-data.html, 2012.
+[18] U. Kang, D. H. Chau, and C. Faloutsos. PEGASUS:
+Mining Billion-Scale Graphs in the Cloud. 2012.
+[19] D. Laney. 3-D Data Management: Controlling Data
+Volume, Velocity and Variety. META Group Research
+Note, February 6, 2001.
+[20] J. Langford. Vowpal Wabbit, http://hunch.net/~vw/,
+2011.
+[21] D. J. Leinweber. Stupid Data Miner Tricks: Overtting
+the S&P 500. The Journal of Investing, 16:15{22, 2007.
+[22] E. Letouze. Big Data for Development: Opportunities
+& Challenges. May 2011.
+[23] J. Lin. MapReduce is Good Enough? If All You Have
+is a Hammer, Throw Away Everything That's Not a
+Nail! CoRR, abs/1209.2191, 2012.
+[24] Y. Low, J. Gonzalez, A. Kyrola, D. Bickson,
+C. Guestrin, and J. M. Hellerstein. Graphlab: A new
+parallel framework for machine learning. In Confer-
+ence on Uncertainty in Articial Intelligence (UAI),
+Catalina Island, California, July 2010.
+[25] N. Marz and J. Warren. Big Data: Principles and best
+practices of scalable realtime data systems. Manning
+Publications, 2013.
+[26] L. Neumeyer, B. Robbins, A. Nair, and A. Kesari.
+S4: Distributed Stream Computing Platform. In ICDM
+Workshops, pages 170{177, 2010.
+[27] C. Parker. Unexpected challenges in large scale machine
+learning. In Proceedings of the 1st International Work-
+shop on Big Data, Streams and Heterogeneous Source
+Mining: Algorithms, Systems, Programming Models
+and Applications, BigMine '12, pages 1{6, New York,
+NY, USA, 2012. ACM.
+[28] A. Petland. Reinventing society in
+the wake of big data. Edge.org,
+http://www.edge.org/conversation/reinventing-society-
+in-the-wake-of-big-data, 2012.
+[29] R Core Team. R: A Language and Environment for Sta-
+tistical Computing. R Foundation for Statistical Computing,
+Vienna, Austria, 2012. ISBN 3-900051-07-0.
+[30] R. Smolan and J. Erwitt. The Human Face of Big Data.
+Sterling Publishing Company Incorporated, 2012.
+[31] Storm, http://storm-project.net.
+[32] N. Taleb. Antifragile: How to Live in a World We Don't
+Understand. Penguin Books, Limited, 2012.
+[33] UN Global Pulse, http://www.unglobalpulse.org.
+[34] S. M. Weiss and N. Indurkhya. Predictive data mining:
+a practical guide. Morgan Kaufmann Publishers Inc.,
+San Francisco, CA, USA, 1998.
+[35] P. Zikopoulos, C. Eaton, D. deRoos, T. Deutsch,
+and G. Lapis. IBM Understanding Big Data: Analyt-
+ics for Enterprise Class Hadoop and Streaming Data.
+McGraw-Hill Companies,Incorporated, 2011.referencesrp

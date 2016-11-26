@@ -1,0 +1,294 @@
+Towards Secure Integration of Cryptographic SoftwaretitlerpWhile cryptography is now readily available to everyone
+and can, provably, protect private information from attackers,
+we still frequently hear about major data leakages, many
+of which are due to improper use of cryptographic mechanisms.
+The problem is that many application developers are
+not cryptographic experts. Even though high-quality cryptographic
+APIs are widely available, programmers often select
+the wrong algorithms or misuse APIs due to a lack of understanding.
+Such issues arise with both simple operations
+such as encryption as well as with complex secure communication
+protocols such as SSL. In this paper, we provide
+a long-term solution that helps application developers integrate
+cryptographic components correctly and securely by
+bridging the gap between cryptographers and application developers.
+Our solution consists of a software product line (with an
+underlying feature model) that automatically identifies the
+correct cryptographic algorithms to use, based on the developer’s
+answers to high-level questions in non-expert terminology.
+Each feature (i.e., cryptographic algorithm) maps
+into corresponding Java code and a usage protocol describing
+API restrictions. By composing the user’s selected features,
+we automatically synthesize a secure code blueprint
+and a usage protocol that corresponds to the selected usage
+scenario. Since the developer may change the application
+code over time, we use the usage protocols to statically
+analyze the program and ensure that the correct use of the
+API is not violated over time.abstractrpSoftware product lines, typestate analysis, API
+protocols, cryptographykeywordsrpThe Java Cryptography Architecure (JCA)1, containing the
+Java Cryptography Extension (JCE), is designed to allow
+Java application developers to easily use cryptography. JCE
+separates the Application Programming Interfaces (APIs)
+developers use from the underlying implementations that
+can be provided by any provider (e.g., Java’s default implementation,
+BouncyCastle2 or FlexiProvider3). Despite such
+design efforts, the JCE APIs themselves offer a broad variety
+of different algorithms that in turn support a multitude
+of modes and configuration options. Additionally, each
+provider may support additional algorithms or worse, provide
+different default values for the same JCE API call. As a
+result, many Java software developers are challenged by the
+task to use and compose these API components correctly.
+Previous research has already identified severe security
+vulnerabilities due to misuses of cryptographic APIs [25,
+27]. The problem is that application developers typically
+lack cryptographic expertise while cryptographic libraries
+embody highly specialized knowledge that they fail to expose
+to clients at the appropriate level of abstraction. Suggested
+solutions to this problem include better API documentation
+[24, 27] and the use of program-analysis tools
+that check for certain misuse-related vulnerabilities [24, 25].
+While both these solutions decrease the number of security
+vulnerabilities, proper documentation is hard to enforce and API developers are often bad at documenting their code [40].
+On the other hand, even running a combination of multiple
+analysis tools will likely catch only some of the possible vulnerabilities.
+In this paper, we propose a more comprehensive, longterm
+solution that combines the advantages of documentation
+and program analysis with ease of use and evolvability.
+Our solution separates API users from the domain knowledge
+required to understand these APIs through an expert
+system, the Open CROSSING Crypto Expert (OpenCCE).4
+OPENCCE (1) guides developers through selecting the relevant
+cryptographic components to use, (2) automatically
+generates the required code with the correct API calls for
+them, and (3) analyzes the final program to ensure that no
+threats have been introduced, neither during initial development,
+nor during program evolution. Note that the main goal
+of OPENCCE is not to detect intentional, malicious code, but
+to avoid unintentional mistakes by non-expert developers.
+Our solution relies on the observation that most cryptographic
+libraries provide at least some degree of compiletime
+variability which, at least on a conceptual level, can
+be considered a software product line (SPL). Software product
+lines provide a systematic way of generating similar,
+yet different, products [20]. Cryptographic algorithms typically
+come with a large number of configuration options
+that select a number of different algorithmic variations,
+each of which may come with its own pre-conditions, postconditions,
+security parameters, guarantees, and other APIrelated
+usage requirements. Most cryptographic solutions
+(e.g., securing a password, proving the authenticity of a message,
+encrypting a file using a password, etc.) are essentially
+parameterized combinations of common cryptographic algorithms.
+Thus, creating a cryptographic solution can be
+thought of as generating one product from a family of possible
+products.
+We build OPENCCE as a tool for managing an SPL,
+where cryptographic components are abstracted through a
+feature model [32]. In OPENCCE, the feature model encapsulates
+domain knowledge such as what the different cryptographic
+algorithms are, which class of problems they can be
+applied to, and their limitations or dependencies. For example,
+several encryption algorithms have trade-offs between
+security, speed, and memory usage. Some algorithms depend
+on other algorithms; a digitial signatue for instance requires
+not only the signature algorithm itself, but also a hash
+function. However, not all combinations of signature algorithms
+and digests yield a secure digital signature. Furthermore,
+since correctly using an API to accomplish a task often
+requires calls to several methods in a specific order [41],
+we also express the usage protocol of such components in
+a separate specification that is linked to the feature model.
+For example, a usage protocol may specify that the applica-tion must first check the issuer of a certificate before passing
+this certificate on to the authentication primitive. Such usage
+protocols can then be translated into static analyses that automatically
+ensure correct integration. As developers extend
+and modify their applications over time, those static analyses
+are not only executed once, but continuously throughout
+the development and maintenance process.
+The novelty of OPENCCE is that it provides a longterm
+solution to many security problems by integrating,
+for the first time, various well-established research areas
+in software-engineering and program-analysis with cryptographic
+domain knowledge. OPENCCE focuses on the cryptography
+domain because of the grave consequences that can
+result from cryptographic misuse, but the general idea can
+also be applied to other domains that require such expert
+knowledge. OPENCCE bridges the gap in both knowledge
+and vocabulary between domain experts and software developers.introductionrpAs cryptography becomes increasingly important to protect
+the vast amount of user data available in modern time, one
+needs to ensure that application developers are able to use it
+correctly. To address this need, we combine techniques and
+concepts from both software engineering and program analysis.
+Specifically, we argue that configuring and composing
+cryptographic components can be seen as creating a product
+from a software product line. To facilitate composition
+and check for correct integration, we encapsulate cryptography
+domain knowledge in a feature model supported by a
+program analysis component. This approach, which is at the
+core of the OPENCCE Eclipse plugin, is a practical solution
+to the misuse of cryptographic APIs. Non-expert developers
+should be able to secure sensitive data in their applications
+without intricate knowledge of cryptography.
+We use our feature model to capture related domain
+knowledge and use it to guide the developer through highlevel
+questions that are similar to how she thinks about the
+problem. Secure code corresponding to the user’s requirements
+is then generated automatically. Since the developer
+may change the generated code and how it is integrated with
+her application, we also apply static-analysis techniques to
+ensure the code complies with the usage specifications of
+each component. By alleviating the responsibility of secure
+integration of cryptographic software off application developers,
+misuse of APIs would be reduced leading to a more
+secure world for all end users.conclusionrp[1] Choco solver. http://choco-solver.org.
+[2] OMG: Meta Object Facility (MOF) Core Specification. Available
+at http://www.omg.org/spec/MOF/index.html.
+[3] W3C. OWL web ontology language. Document available at
+http://www.w3.org/TR/owl-features/.
+[4] R. J. Anderson. Security engineering - a guide to building
+dependable distributed systems (2. ed.). Wiley, 2008.
+[5] M. Antkiewicz, K. Ba?k, A. Murashkin, R. Olaechea, J. H. J.
+Liang, and K. Czarnecki. Clafer tools for product line engineering.
+In Proceedings of the 17th International Software
+Product Line Conference Co-located Workshops, SPLC ’13
+Workshops. 2013.
+[6] S. Apel, D. Batory, C. Kästner, and G. Saake. Software
+Product Lines. Springer Berlin Heidelberg, 2013.
+[7] S. Apel and C. Kästner. An overview of feature-oriented software
+development. Journal of Object Technology, 8(5):49–84,
+2009.
+[8] S. Apel, C. Kastner, and C. Lengauer. Featurehouse:
+Language-independent, automated software composition. In
+Proceedings of the 31st International Conference on Software
+Engineering, ICSE ’09. 2009.
+[9] N. Ayewah, D. Hovemeyer, J. Morgenthaler, J. Penix, and
+W. Pugh. Using static analysis to find bugs. Software, IEEE,
+25(5):22–29, Sept 2008.
+[10] T. Ball, E. Bounimova, B. Cook, V. Levin, J. Lichtenberg,
+C. McGarvey, B. Ondrusek, S. K. Rajamani, and A. Ustuner.
+Thorough static analysis of device drivers. In Y. Berbers
+andW. Zwaenepoel, editors, Proceedings of the 2006 EuroSys
+Conference, Leuven, Belgium, April 18-21, 2006. 2006.
+[11] D. Batory. A tutorial on feature oriented programming and
+the ahead tool suite. In R. Lämmel, J. Saraiva, and J. Visser,
+editors, Generative and Transformational Techniques in Software
+Engineering, volume 4143 of Lecture Notes in Computer
+Science, pp 3–35. Springer Berlin Heidelberg, 2006.
+[12] K. Bhargavan, C. Fournet, R. Corin, and E. Zalinescu. Cryptographically
+verified implementations for TLS. In Proc. of
+the Conference on Computer and Communications Security
+(CCS). 2008.
+[13] K. Bierhoff and J. Aldrich. Modular typestate checking of
+aliased objects, volume 42. ACM, 2007.
+[14] K. Ba?k, K. Czarnecki, and A. Wa?sowski. Feature and metamodels
+in clafer: Mixed, specialized, and coupled. In Proc.
+of the International Conference on Software Language Engineering
+(SLE), 2010.
+[15] E. Bodden. Efficient hybrid typestate analysis by determining
+continuation-equivalent states. In ICSE ’10: International
+Conference on Software Engineering. May 2010.
+[16] E. Bodden. Ts4j: a fluent interface for defining and computing
+typestate analyses. In Proceedings of the 3rd ACM SIGPLAN
+International Workshop on the State of the Art in Java Program
+Analysis. ACM, 2014.
+[17] E. Bodden, L. Hendren, and O. Lhoták. A staged static program
+analysis to improve the performance of runtime monitoring.
+In Proceedings of the 21st European conference on
+Object-Oriented Programming. Springer-Verlag, 2007.
+[18] K. Cairns and G. Steel. Developer-resistant cryptography. In
+A W3C/IAB workshop on Strengthening the Internet Against
+Pervasive Monitoring (STRINT), 2014.
+[19] S. Clark, T. Goodspeed, P. Metzger, Z.Wasserman, K. Xu, and
+M. Blaze. Why (special agent) johnny (still) can’t encrypt:
+A security analysis of the APCO project 25 two-way radio
+system. In Proc. of the USENIX Security Symposium, 2011.
+[20] P. Clements and L. Northrop. Software product lines: practices
+and patterns, volume 59. Addison-Wesley Reading,
+2002.
+[21] K. Czarnecki, C. Hwan, P. Kim, and K. Kalleberg. Feature
+models are views on ontologies. In International Software
+Product Line Conference, SPLC ’06, 2006.
+[22] J. Daemen and V. Rijmen. The design of Rijndael: AES-the
+advanced encryption standard. Springer, 2002.
+[23] A. Datta, A. Derek, J. C. Mitchell, and A. Roy. Protocol
+composition logic (PCL). Electr. Notes Theor. Comput. Sci.,
+172:311–358, 2007.
+[24] M. Egele, D. Brumley, Y. Fratantonio, and C. Kruegel. An empirical
+study of cryptographic misuse in Android applications.
+In Proc. of the Conference on Computer and Communications
+Security (CCS), 2013.
+[25] S. Fahl, M. Harbach, T. Muders, M. Smith, L. Baumgärtner,
+and B. Freisleben. Why Eve and Mallory love Android: An
+analysis of android SSL (in)security. In Proc. of the Conference
+on Computer and Communications Security (CCS),
+2012.
+[26] C. Flanagan, K. R. M. Leino, M. Lillibridge, G. Nelson, J. B.
+Saxe, and R. Stata. Extended static checking for java. In
+PLDI. 2002.
+[27] M. Georgiev, S. Iyengar, S. Jana, R. Anubhai, D. Boneh,
+and V. Shmatikov. The most dangerous code in the world:
+Validating SSL certificates in non-browser software. In Proc.
+of the Conference on Computer and Communications Security
+(CCS), 2012.
+[28] T. R. Gruber. Toward principles for the design of ontologies
+used for knowledge sharing? International journal of humancomputer
+studies, 43(5):907–928, 1995.
+[29] Heise. Neuer Personalausweis: AusweisApp mit Lücken.
+Heise Website. http://www.heise.de/newsticker/
+meldung/Neuer-Personalausweis-AusweisApp-mit-
+Luecken-2-Update-1133376.html.
+[30] S. Henneberg. Next-generation feature models with pseudoboolean
+sat solvers, 2011.
+[31] D. Jackson. Software Abstractions: logic, language, and analysis.
+MIT press, 2012.
+[32] K. Kang, S. Cohen, J. Hess, W. Novak, and A. Peterson.
+Feature-oriented domain analysis (FODA) feasibility study.
+Tech. rep., CMU/SEI-90-TR-21, Software Engineering Institute,
+Carnegie Mellon University, 1990.
+[33] D. Lazar, H. Chen, X. Wang, and N. Zeldovich. Why does
+cryptographic software fail? A case study and open problems.
+In Proc. of the ACM Asia-Pacific Workshop on Systems (APSys),
+2014.
+[34] B. Livshits, M. Sridharan, Y. Smaragdakis, O. Lhoták, J. N.
+Amaral, B.-Y. E. Chang, S. Z. Guyer, U. P. Khedker,
+A. Møller, and D. Vardoulakis. In defense of soundiness: a
+manifesto. Communications of the ACM, 58(2):44–46, 2015.
+[35] L. Machado, J. Pereira, L. Garcia, and E. Figueiredo. Splconfig:
+Product configuration in software product line. In Brazilian
+Congress on Software (CBSoft), Tools Session, 2014.
+[36] J. C. Mitchell, M. Mitchell, and U. Stern. Automated analysis
+of cryptographic protocols using mur-phi. In Proc. of the
+IEEE Symposium on Security and Privacy, 1997.
+[37] P. Oechslin. Making a faster cryptanalytic time-memory
+trade-off. In Advances in Cryptology-CRYPTO 2003, pp 617–
+630. Springer, 2003.
+[38] R. Olaechea, S. Stewart, K. Czarnecki, and D. Rayside. Modelling
+and multi-objective optimization of quality attributes
+in variability-rich software. In Proceedings of the Fourth
+International Workshop on Nonfunctional System Properties
+in Domain Specific Modeling Languages, NFPinDSML ’12.
+2012.
+[39] M. Pradel, C. Jaspan, J. Aldrich, and T. R. Gross. Statically
+checking api protocol conformance with mined multi-object
+specifications. In Proceedings of the 34th International Conference
+on Software Engineering, ICSE ’12. 2012.
+[40] M. Robillard. What makes APIs hard to learn? Answers from
+developers. IEEE Software, 26(6):27–34, Nov 2009.
+[41] M. Robillard, E. Bodden, D. Kawrykow, M. Mezini, and
+T. Ratchford. Automated API property inference techniques.
+IEEE Transactions on Software Engineering (TSE),
+39(5):613–637, 2013.
+[42] R. E. Strom and S. Yemini. Typestate: A programming language
+concept for enhancing software reliability. IEEE Transactions
+on Software Engineering (TSE), 12(1):157–171, 1986.
+[43] T. Thüm, C. Kästner, F. Benduhn, J. Meinicke, G. Saake, and
+T. Leich. Featureide: An extensible framework for featureoriented
+software development. Science of Computer Programming,
+79:70–85, 2014.
+[44] M. Voelter and E. Visser. Product line engineering using
+domain-specific languages. In Software Product Line Conference
+(SPLC), 2011 15th International, Aug 2011.
+[45] A. Whitten and J. D. Tygar. Why Johnny can’t encrypt: A
+usability evaluation of PGP 5.0. In Proc. of the USENIX
+Security Symposium, 1999.referencesrp

@@ -1,0 +1,148 @@
+Alternative Graphical Authentication for Online
+Banking EnvironmentstitlerpMany financial institutes tend to implement a secure authentication mechanism through the
+utilization of the One-Time-Password (OTP) technique. The use of a hardware security token
+to generate the required OTP has been widespread. Despite the fact that this method provides a
+fairly high level of security, many systems have not taken into consideration the need for a
+secure alternative login method whenever the hardware token is unavailable. This paper
+discusses the authentication issues associated with current e-banking login implementations
+when the hardware security token is unavailable. The study was supported by a user survey to
+realize the constraints confronting the user while logging in to their online banking system.
+The result showed that many online banking users had multiple accounts and found carrying
+around several security tokens is inconvenient. Moreover, high proportion of the users had
+confidently accepted the concept of one-time graphical password as an alternative means of
+authentication. Therefore, a potential solution has been introduced along with a conceptual
+discussion. The proposal aims to consolidate several authentication mechanisms to unite their
+various advantages into one robust authentication system with consideration of usability. The
+composite mechanism comprises of a One-Time-Password combined with graphic-based
+authentication techniques.abstractrpAlternative authentication, User authentication security, Online banking
+authentication, Graphical password, One-Time-PasswordkeywordsrpOnline banking, also known as Internet banking, is a means of delivering banking
+services electronically to customers. Online banking services include accessing
+account information, the transfer of funds between different accounts and making
+electronic payments and settlements (Dube & Gulati, 2005; FFIEC, 2003). The
+popularity of online banking is growing, but it is now faced with major challenges,
+one of which is the high risk of data compromise. Thus, in order to minimize the
+threats to online banking and at the same time increase customer security, confidence
+and acceptance of this electronic service channel, the online accounts of customers
+must be securely protected via enhancing user authentication without adversely
+impacting upon the users’ experience (Williamson & Money–America’s, 2006).As reported by Verizon (2013), 37% of breaches in 2013 affected financial
+organizations, which increased by about 10% compared with the previous year’s
+report. Crime against the finance industry involved various type of common attacks
+such as tampering (physical), brute force (hacking), and spyware (malware). The
+target of such breaches was mostly payment cards, credentials, and bank account
+info. Basically, gaining unauthorized access in an easy and less-detectable way is
+possible through leveraging other’s authorization access. Moreover, an earlier report
+(2012) showed that about four of every five breaches involving hacking was factored
+by authentication-based attacks (guessing, cracking, or reusing valid credentials).
+Authentication credentials theft presented a high value of loss as a result of
+espionage-related breaches. About 80% of these attacks can be forced to adapt or die
+whenever the idea of a suitable authentication replacement is collectively accepted.
+The critical importance of securing the wide range of banking services being
+deployed over the Internet is a major concern for both service providers and
+customers. Thus, extreme caution is always paid to safeguarding the e-banking
+system as well as customer information. The first line of defence is protecting the
+authentication system from fraud and identity theft. Currently, the traditional textbased
+password is the foremost knowledge-based authentication and the primary
+form of user authentication (De Angeli et al., 2005; Fu et al., 2001) and while there
+are many techniques to secure passwords (Pinkas & Sander, 2002), most are
+insufficient in the face of attackers’ tools (Chakrabarti & Singbal, 2007;
+AuthenticationWorld.com, 2012). The deficiencies of the textual password is wellknown
+and affects both aspects of usability and security (Dhamija & Perrig, 2000;
+Suo, Zhu & Owen, 2005). Therefore, the need for alternative methods has emerged
+where various alternative knowledge-based techniques have been proposed, such as
+graphic-based passwords (recognising graphical elements – e.g. images,
+iconography, grids) (Gyorffy, Tappenden & Miller, 2011; Kuber & Yu, 2010) or
+associative/cognitive questions (Zhao, Dong & Wang, 2006; Alexander, 2008). Each
+approach has different aspects of strengths and weaknesses.
+In crucial systems such as in financial organizations, robust security is constantly
+demanded. One of the solutions to meet that goal is the One-Time-Password
+approach. The idea of OTPs is to encode the password for a single use only;
+producing a unique password for each login session or transaction. In other words,
+the user will end up using different dynamic password for each login. Illegitimately
+obtaining an OTP should be useless and helpless for attackers to generate any further
+encoded passwords. Thus, managing to record or steal a used OTP would be totally
+unusable for further login attempts since an OTP loses its validity (expire and
+discard) after first use. This means that OTP systems are protected against replay
+attacks (Yampolskiy, 2007; McDonald, Atkinson & Metz, 1995).
+This paper aims to point out limitations in some authentication cases within the
+online banking system and propose a potential solution to securely fill-in this gap
+using the same web browser without the need for any additional devices. The
+remainder of the paper proceeds with a brief review of some authentication features
+provided by leading financial institutes. Section 3 then discusses the authentication problems in online banking. Section 4 presents the preliminary survey results that
+investigate the authentication issues in online banking and gauge perceptions towards
+alternative authentication methods. Section 5 gives a general introduction to our
+proposed prototype of OTGP and conclusions and future work are addressed in
+Section 6.introductionrpAn overview of various authentication features provided by some of the leading
+banks has been presented and discussed. It was found that the adoption of multifactor
+authentication using hardware token OTPs has increased. However, the study
+has shown that there are some failures in fulfilling the login requirement using the
+OTP method, even though the user experience with such a technique has been found
+to be satisfactory. Furthermore, carrying around multiple security tokens to manage
+several online accounts has been described as inconvenient and unnecessary. In this
+paper, the issue of the absence of an alternative authentication method when the main
+hardware OTP token is not present has been discussed. To overcome this issue, a
+general conceptual structure of the proposed solution has been introduced involving
+several authentication mechanisms such as graphic-based and One-Time-Password
+that aim to meet the main objective of having a usable secure authentication
+mechanism that is available anytime and anywhere without the need for additional
+devices. The initial features and advantages of the OTGP scheme were briefly
+presented. The next phase will look at system implementation with initial user trials and lab experiments. Statistical data such as time, security level, and password
+memorability over time intervals will be some of the outputs of the experiment.
+Upon the assumption of positive results from the initial trials, the final phase of the
+OTGP project will then expand the study through a field experiment to obtain a
+wider range of participants for more accurate results.conclusionrpAlexander, C. (2008) 'Two Factor Authentication That Doesn’t Use Chips'. Card Technology
+Today, 20 (5). pp 9.
+Anderson, R. J. (2001) 'Access Control'. Security Engineering: A guide to building
+dependable distributed systems. 1st edn.: Wiley, pp 51-71.
+AuthenticationWorld.com (2012) Password Authentication. Available at:
+http://authenticationworld.com/Password-Authentication/index.html (Accessed: 02/04/2014).
+Chakrabarti, S. & Singbal, M. (2007) 'Password-Based Authentication: Preventing Dictionary
+Attacks'. Computer, 40 (6). pp 68-74.
+De Angeli, A., Coventry, L., Johnson, G. & Renaud, K. (2005) 'Is a Picture Really Worth a
+Thousand Words? Exploring the Feasibility of Graphical Authentication Systems'.
+International Journal of Human-Computer Studies, 63 (1–2). pp 128-152.
+Dhamija, R. & Perrig, A. (2000) 'Déjà vu: A User Study Using Images for Authentication', the
+9th USENIX Security Symposium. pp. 45-58.
+Dube, D. & Gulati, V. P. (2005) 'Information System Audit and Assurance'. (Appendix B). pp
+594.
+FFIEC (2003) 'FFIEC E-Banking Booklet'. [Online]. Federal Financial Institutions
+Examination Council. Available at: http://www.isaca.org/Groups/Professional-English/itaudit-
+tools-and-techniques/GroupDocuments/e_banking.pdf (Accessed: 02/04/2014).
+Fu, K., Sit, E., Smith, K. & Feamster, N. (2001) 'Dos and Don'ts of Client Authentication on
+The Web', Proceedings of the 10th conference on USENIX Security Symposium. Washington,
+D.C. USENIX Association, pp. 19-19.
+Furnell, S. (2005) 'Authenticating Ourselves: Will We Ever Escape the Password?'. Network
+Security, 2005 (3). pp 8-13.
+Furnell, S. & Zekri, L. (2006) 'Replacing Passwords: In Search of the Secret Remedy'.
+Network Security, 2006 (1). pp 4-8.
+Gyorffy, J. C., Tappenden, A. F. & Miller, J. (2011) 'Token-based Graphical Password
+Authentication'. International Journal of Information Security, pp 1-16.
+Kuber, R. & Yu, W. (2010) 'Feasibility Study of Tactile-based Authentication'. International
+Journal of Human-Computer Studies, 68 (3). pp 158-181.
+McDonald, D. L., Atkinson, R. J. & Metz, C. (1995) 'One Time Passwords in Everything
+(OPIE): Experiences with Building and Using Stronger Authentication', the Proceedings of
+the 5th USENIX Security Symposium. Salt Lake City, Utah.Pinkas, B. & Sander, T. (2002) 'Securing Passwords Against Dictionary Attacks', Proceedings
+of the 9th ACM conference on Computer and communications security. ACM, pp. 161-170.
+Ray, P. P. (2012) 'Ray's Scheme: Graphical Password Based Hybrid Authentication System
+for Smart Hand Held Devices'. Journal of Information Engineering and Applications, 2 (2). pp
+1-11.
+relbanks.com (2012) Banks Around the World. Available at: http://www.relbanks.com
+(Accessed: 02/4/2014).
+RBS (2014) Will I be charged for any mobile phone text alert messages I may get? - Ask a
+Question. The Royal Bank of Scotland ©. Available at: http://supportcentrerbs.
+custhelp.com/app/answers/detail/a_id/745/kw/network%20operator (Accessed:
+12/4/2014).
+Suo, X., Zhu, Y. & Owen, G. S. (2005) 'Graphical Passwords: A Survey', Computer Security
+Applications Conference, 21st Annual. 5-9 Dec. 2005. pp. 10 pp.-472.
+Verizon (2013) 2013 Data Breach Investigations Report. Verizon Enterprise Security
+Solutions. Available at: http://www.verizonenterprise.com/resources/reports/rp_data-breachinvestigations-
+report-2013_en_xg.pdf (Accessed: 02/04/2014).
+Weir, C. S., Douglas, G., Richardson, T. & Jack, M. (2010) 'Usable Security: User Preferences
+for Authentication Methods in eBanking and the Effects of Experience'. Interacting with
+Computers, 22 (3). pp 153-164.
+Williamson, G. D. & Money–America’s, G. (2006) 'Enhanced Authentication in online
+Banking'. Journal of Economic Crime Management, 4 (2).
+Yampolskiy, R. V. (2007) 'User Authentication via Behavior Based Passwords', Systems,
+Applications and Technology Conference, 2007. LISAT 2007. IEEE Long Island. 4-4 May
+2007. pp. 1-8.
+Zhao, Z., Dong, Z. & Wang, Y. (2006) 'Security Analysis of a Password-based Authentication
+Protocol Proposed to IEEE 1363'. Theoretical Computer Science, 352 (1–3). pp 280-287.referencesrp

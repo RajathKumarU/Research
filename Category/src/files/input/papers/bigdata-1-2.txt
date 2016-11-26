@@ -1,0 +1,229 @@
+Security Issues in Data Warehouse titlerpData Warehouse (DWH) provides storage for huge amounts of historical data from heterogeneous
+operational sources in the form of multidimensional views, thus supplying sensitive and useful information which
+help decision-makers to improve the organization’s business processes. A data warehouse environment must ensure
+that data collected and stored in one big repository are not vulnerable. A review of security approaches specifically for
+data warehouse environment and issues concerning each type of security approach have been provided in this paper.abstractrpdata warehouse, security issues, data integrity, privacy, confidentialitykeywordsrpIn today’s competitive business environment,
+organizations need to collaborate with each other and
+track their performance for market trend analysis. With
+the help of advances in computer and network
+technology, organizations stores, collect, and analyze
+vast amounts of data efficiently and quickly. Data are
+analyzed by the organization not only for market trend
+identification, but also to examine the effectiveness of
+their activities and to make decisions that affect their
+bottom line. Therefore, data management has become
+crucial because organizations not only need to store and
+retrieve data, but also need to derive meaningful
+information from it. As a consequence, organizations
+have come to depend more on knowledge management
+technologies such as interoperable knowledge
+management, knowledge repositories, and data
+warehouses (DWH).
+A data warehouse may contain massive amounts of
+organizational data such as financial information, credit
+card numbers, organization trade secrets, and personal
+data, thus they are vulnerable to cyber attack [1]. A
+DWH must ensure that sensitive data does not fall into
+the wrong hands when data are consolidated into one
+big repository and become an easy target for malicious
+outside or inside attackers. Many published security
+statistics show that the number of attacks on data is
+increasing continuously [2]. Data security focusses
+mainly on three issues: confidentiality, integrity, and
+availability, these concepts are also know by the
+acronym CIA.
+Confidentiality emphasizes protection of
+information from unauthorized disclosure, either by
+indirect logical inference or by direct retrieval [3].
+Integrity involves data protection from accidental or
+malicious changes such as false data insertion,
+contamination, or destruction. Availability ensures that
+data are accessible to all authorized users at any time.
+In the past, many data security solutions for databases
+have been proposed.
+Although available solutions have been proven to be
+scientifically effective, they are infeasible or at least
+inefficient for a DWH environment because this
+environment requires specific performance. Most of
+today’s DWH security solutions lack effective security
+procedures to protect the data accessed through them.
+Existing security methods can be best for restricting
+security breaches, but cannot completely eliminate the
+risk.
+In this paper, we present a survey of the security
+approaches available for DWHs and the issues
+concerning each type of security approach. The
+remainder of the paper is organized into two sections.
+In Section 2, various existing data security solutions for
+DWHs are presented, and specific issues in the DWH
+environment are discussed. Finally, Section 3 concludes
+the paper and highlights future research directions.introductionrpThis study has provided a literature review of existing
+DWH security solutions, discussing their issues and
+their impact on DWH scalability and performance
+requirements. It has become apparent that the proposed
+solutions are infeasible or inefficient for use in DWH
+environments. A DWH requires specific functionality
+with tight scalability and performance requirements. A
+complete solution is therefore needed that makes it
+possible to address these directives. DWH security is an
+active research relevance to any industrial project.
+Further research in DWH security is needed to address
+the issues discussed above because many more aspects
+remain to be considered, and there many open
+questions to be answered.conclusionrp[1] H. Inmon, Building the Data Warehouse, 3rd ed.,
+John Wiley, USA, 2002.
+[2] N. Yuhanna, Your Enterprise Database Security
+Strategy, Forrester Research, 2010.
+[3] C. Farkas, and S. Jajodia, The Inference Problem:
+a Survey, ACM SIGKDD Explorations Newsletter,
+Vol. 4, Issue 2, pp. 6-11, December 2002.
+[4] P. Devbandu, and S. Stubblebine, Software
+Engineering for Security: a Road Map,
+Proceedings of Conference on the Future of
+Software Engineering, pp. 227-239. ACM Press,
+NY, 2000.
+[5] N. Kaite, M. Stolba and A.Y. Tjoa, A Prototype
+Model for Data Warehouse Security Based on
+Metadata, International Conference of Database
+and Expert Systems, Vienna, pp. 300-308, IEEE
+Press, August, 1998.
+[6] E.R. Weippl, Security in Data Warehouses, Data
+Warehousing Design and Advanced Engineering
+Applications: Methods for Complex Construction,
+L. Bellatreche (Ed.), Chapter 15, pp. 272-27,
+Information Science Reference, 2010.
+[7] N. M. Adam and J. C. Wortmann, Security-
+Control Methods for Statistical Databases: a
+Comparative Study, ACM Computing Surveys,
+Vol. 21, Issue 4, pp. 515–556, December, 1989.
+[8] D.E. Denning and J. Schlorer, Inference Controls
+for Statistical Databases, IEEE Computer, Vol. 16,
+Issue 7, pp. 69–82, IEEE Computer Society 1983.
+[9] L. Willenborg, and T. DeWalal, Statistical
+Disclosure Control in Practice, Springer Verlag,
+New York, 1996.
+[10] D. Dobkin, A.K. Jones and R.J. Lipton, Secure
+Databases: Protection Against User Influence,
+ACM Transactions on Database Systems, Vol. 4,
+Issue 1, pp. 97–106, 1979.
+[11] F. H. Chin and G. Ozsoyoglu, Auditing and
+Inference Control in Statistical Databases, IEEE
+Transactions on Software Engineering, Vol. 8,
+Issue 6, pp. 574–582, 1982.
+[12] F. H. Chin and G. Ozsoyoglu, Statistical Database
+Design, ACM Transactions on Database Systems,
+Vol. 6, Issue 1, pp. 113–139, 1981.
+[13] C.T. Yu. and F.Y. Chin, A Study on the Protection
+of Statistical Data- bases, Proceedings of ACM
+SIGMOD International Conference on
+Management of Data, pp. 169–181, 1977.
+[14] J.M. Mateo-Sanz, J.M. and J. Domingo-Ferrer, A
+Method for Data-oriented Multivariate Micro
+Aggregation, Proceeding of Conference on
+Statistical Data Protection, pp. 89–99, 1998.
+[15] L. Wang and S. Jajodia, Security in Data
+Warehouses and OLAP Systems, in Handbook of
+Database Security, Springer Verlag, pp. 191-212,
+2008.
+[16]L.Wang, S. Jajodia and D. Wijesekera,
+Lattice-based Inference Control in Data
+Cubes, in book Preserving Privacy in On-Line
+Analytical Processing (OLAP), Springer, pp.
+119-145, 2007.
+[17] S. Triki, H. Ben-Abdallah, N. Harbi, and O.
+Boussaid, Securing the Data Warehouse: a Semi-
+Automatic Approach for Inference Prevention at
+the Design Level, Model and Data Engineering
+Lecture Notes in Computer Science, Vol. 6918, pp.
+71-84, Springer-Verlag, 2011.
+[18] Oracle Corporation, Oracle Advanced Security
+Transparent Data Encryption Best Practices,
+Oracle White Paper, July 2010.
+[19] Oracle Corporation, Security and the Data
+Warehouse, Oracle White Paper, April 2005.
+[20] Oracle Corporation, Data Masking Best Practices,
+Oracle White Paper, July 2010.
+[21] R. J. Santos, J. Bernardino and M. Vieira , A Data
+Masking Technique for Data Warehouses,
+Proceedings of the 15th Symposium on
+International Database Engineering &
+Applications, pp. 61-69, ACM Digital Library,
+2011.
+[22] IBM Corporation, Understanding RAID Level 5,
+IBM Systems Software Information Center, 2007.
+[23] IBM Corporation, Understanding RAID Level 6,
+IBM Systems Software Information Center, 2007.
+[24] Oracle, Oracle Real Application Clusters (RAC),
+www.oracle.com/us/products/database/options/real
+-applicationclusters/index.htm, September 2010.
+[25] AsterData Systems, Aster Data nCluster: Always
+on, for 24x7 Big Data Analytics,
+http://www.asterdata.com/product/alwayson.php,
+2010.
+[26] V. Prabhakaran, L.N. Bairavasundaram, N.
+Agrawal, H.S. Gunawi,, A.C. Arpaci-Dusseau and
+R.H. Arpaci-Dusseau, IRON file systems,
+International Symposis on Operating System
+Principles (SOSP), pp. 206-220, Brighton, UK,
+October, 2005.
+[27] K. Vijayasankar, G. Sivathanu, S. Swaminathan
+and E. Zadok, Exploiting Type-Awareness in a
+Self-Recovery Disk, Proceedings of Workshop on
+Storage Security and Surveillance, VA, USA, pp.
+25-30, October, 2007.[28] M.A. Marsh and F.B. Schneider, CODEX: a
+Robust and Secure Secret Distribution System,
+IEEE Transactions on Dependable and Secure
+Computing, Vol. 1, Issue 1 , pp. 34-47, 2004.
+[29] P. Bohannon, R. Rastogi, S. Seshadri, A.
+Silberschatz and S. Sudarshan, Detection and
+Recovery Techniques for Database Corruption,
+IEEE Transaction on Knowledge and Data
+Engineering, Vol. 15, Issue 5, pp. 1120-1136,
+2003.
+[30] A. Chakraborty, A.K. Majumdar and S. Sural, A
+Column Dependency-based Approach for Static
+and Dynamic Recovery of Databases from
+Malicious Transactions, International Journal of
+Information Security, Vol. 9 , Issue 1, pp. 51-67,
+2010.
+[31] T. Chiueh, and D. Pilania, Design,
+Implementation, and Evaluation on a Repairable
+Database Management System, Proceedings of
+20th Annual Computer Security Applications
+Conference, pp. 179-188, IEEE Computer Society,
+2004.
+[32] P. Liu and J. Jing, Architectures for Self-healing
+Databases under Cyber-Attacks, International.
+Journal of Computer Science and Network
+Security, Vol. 6, Issue 1B, pp. 204-215, 2006.
+[33] P. Luenam, and P. Liu, ODAM: An on-the-Fly
+Damage Assessment and Repair System for
+Commercial Database Applications, Proceedings
+of International Conference on DataBase Security
+(DBSec), pages 10, 2001.
+[34] M. Darwish, A. Ouda and L.F. Capretz, Cloud-
+Based DDoS Attacks and Defenses, IEEE
+International Conference on Information Society
+(i-Society 2013), Toronto, Canada, pp. 67-71,
+IEEE Press, June 2013.
+[35] L.F. Capretz and P.A. Lee, Reusability and
+Life Cycle Issues within an Object-Oriented
+Design Methodology (refereed). Ege R., Singh
+M. and Meyer B. (editors), in book:
+Technology of Object-Oriented Languages
+and Systems, Prentice Hall, Englewood Cliffs,
+USA, pp. 139-150, 1992.
+[36] A.B Nassif, L.F. Capretz and D. Ho,
+Estimating Software Effort Based on Use Case
+Point Model Using Sugeno Fuzzy Inference
+System, 23rd IEEE International Conference
+on Tools with Artificial Intelligence (ICTAI),
+Boca Raton, Florida, USA, pp. 393-398, DOI:
+10.1109/ICTAI.2011.64, IEEE Press,
+November 2011.
+[37]F. Ahmed, L.F. Capretz and J. Samarabandu,
+Fuzzy Inference System for Software Product
+Family Process Evaluation, Information
+Sciences, Volume 178, Issue 13, pp. 2780-
+2793, DOI: 10.1016/j.ins.2008.03.002,
+Elsevier, July 2008.referencesrp

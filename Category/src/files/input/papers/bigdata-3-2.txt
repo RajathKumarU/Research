@@ -1,0 +1,33 @@
+A Survey Paper on Data Mining With Big Data titlerpBig Data is a new term used to identify the datasets that due to their large size and complexity. Big Data
+are now rapidly expanding in all science and engineering domains, including physical, biological and biomedical
+sciences. Big Data mining is the capability of extracting useful information from these large datasets or streams of
+data, that due to its volume, variability, and velocity, it was not possible before to do it. The Big Data challenge is
+becoming one of the most exciting opportunities for the next years. This study paper includes the information about
+what is big data, Data mining, Data mining with big data, Challenging issues and its related work.abstractrpBig Data, Data mining, Challenging issues, Datasets, Data Mining AlgorithmskeywordsrpToday is the era of Google. The thing which is unknown for us, we Google it. And in fractions of seconds we get the
+number of links as a result. This would be the better example for the processing of Big Data. This Big Data is not any
+different thing than out regular term data. Just big is a keyword used with the data to identify the collected datasets due to
+their large size and complexity? We cannot manage them with our current methodologies or data mining software tools.
+Another example, the first strike of Anna Hajare triggered number of tweets within 2 hours. Among all these tweets, the
+special comments that generated the most discussions actually revealed the public interests. Such online discussions
+provide a new means to sense the public interests and generate feedback in real-time, and are mostly appealing compared
+to generic media, such as radio or TV broadcasting.
+This example demonstrates the rise of Big Data applications. The data collection has grown tremendously and is beyond
+the ability of commonly used software tools to capture, manage, and process within a tolerable time.introductionrpBig Data is going to continue growing during the next years, and each data scientist will have to manage much more
+amount of data every year. This data is going to be more diverse, larger, and faster. We discussed some insights about the
+topic, and what we consider are the main concerns and the main challenges for the future. Big Data is becoming the new
+Final Frontier for scientific data research and for business applications. We are at the beginning of a new era where Big
+Data mining will help us to discover knowledge that no one has discovered before. Everybody is warmly invited to
+participate in this intrepid journey.conclusionrp[1] C. Wang, S.S.M. Chow, Q. Wang, K. Ren, and W. Lou, “Privacy- Preserving Public Auditing for Secure Cloud
+Storage” IEEE Trans. Computers, vol. 62, no. 2, pp. 362-375, Feb. 2013.
+[2] X. Wu and S. Zhang, “Synthesizing High-Frequency Rules from Different Data Sources,” IEEE Trans.
+Knowledge and Data Eng., vol. 15, no. 2, pp. 353-367, Mar./Apr. 2003.
+[3] X. Wu, C. Zhang, and S. Zhang, “Database Classification for Multi-Database Mining,” Information Systems,
+vol. 30, no. 1, pp. 71- 88, 2005
+[4] K. Su, H. Huang, X. Wu, and S. Zhang, “A Logical Framework for Identifying Quality Knowledge from
+Different Data Sources,” Decision Support Systems, vol. 42, no. 3, pp. 1673-1683, 2006.
+[5] E.Y. Chang, H. Bai, and K. Zhu, “Parallel Algorithms for Mining Large-Scale Rich-Media Data,” Proc. 17th
+ACM Int’l Conf. Multimedia, (MM ’09,) pp. 917-918, 2009.
+[6] D. Howe et al., “Big Data: The Future of Biocuration,” Nature, vol. 455, pp. 47-50, Sept. 2008.
+[7] A. Labrinidis and H. Jagadish, “Challenges and Opportunities with Big Data,” Proc. VLDB Endowment, vol. 5,
+no. 12, 2032-2033, 2012.
+[8] Y. Lindell and B. Pinkas, “Privacy Preserving Data Mining,” J. Cryptology, vol. 15, no. 3, pp. 177-206, 2002.referencesrp

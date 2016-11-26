@@ -1,0 +1,161 @@
+Cloud Computing and Big Data Analytics: What Is New
+from Databases PerspectivetitlerpMany industries, such as telecom, health care, retail, pharmaceutical,
+financial services, etc., generate large amounts of data. Gaining critical business
+insights by querying and analyzing such massive amounts of data is becoming
+the need of the hour. The warehouses and solutions built around them are unable
+to provide reasonable response times in handling expanding data volumes.
+One can either perform analytics on big volume once in days or one can perform
+transactions on small amounts of data in seconds. With the new requirements,
+one needs to ensure the real-time or near real-time response for huge
+amount of data. In this paper we outline challenges in analyzing big data
+for both data at rest as well as data in motion. For big data at rest we describe
+two kinds of systems: (1) NoSQL systems for interactive data serving environments;
+and (2) systems for large scale analytics based on MapReduce paradigm,
+such as Hadoop, The NoSQL systems are designed to have a simpler key-value
+based data model having in-built sharding, hence, these work seamlessly
+in a distributed cloud based environment. In contrast, one can use Hadoop
+based systems to run long running decision support and analytical queries
+consuming and possible producing bulk data. For processing data in motion,
+we present use-cases and illustrative algorithms of data stream management
+system (DSMS). We also illustrate applications which can use these two kinds
+of systems to quickly process massive amount of data.abstractrp keywordsrpRecent financial crisis has changed the way businesses think about their finances.
+Organizations are actively seeking simpler, lower cost and faster to market alternatives
+about everything. Clouds are cheap and allow businesses to off-load computing
+tasks while saving IT costs and resources. In cloud computing applications, data, platform,
+and other resources are provided to users as services delivered over the network.
+The cloud computing enables self-service with no or little vendor intervention.
+It provides a utility model of resources where businesses only pay for their usage. As
+these resources are shared across a large number of users, cost of computing is much
+lower compared to dedicated resource provisioning.
+Many industries, such as telecom, health care, retail, pharmaceutical, financial services,
+etc., generate large amounts of data. For instance, in 2010, Facebook had 21
+Peta Bytes of internal warehouse data with 12 TB new data added every day and 800 TB compressed data scanned daily [12]. These data have: large volume, an Indian
+Telecom company generates more than 1 Terabyte of call detail records (CDRs) daily;
+high velocity, twitter needs to handle 4.5 Terabytes of video uploads in real-time
+per day; wide variety, structured data (e.g., call detail records in a telecom company),
+semi-structured data (e.g., graph data), unstructured data (e.g., product reviews on
+twitter ), which needs to be integrated together; and data to be integrated have different
+veracity, data needs to cleaned before it can be integrated. Gaining critical business
+insights by querying and analyzing such massive amounts of data is becoming
+the need of the hour.
+Traditionally, data warehouses have been used to manage the large amount of data.
+The warehouses and solutions built around them are unable to provide reasonable
+response times in handling expanding data volumes. One can either perform analytics
+on big volume once in days or one can perform transactions on small amounts of data
+in seconds. With the new requirements, one needs to ensure the real-time or near realtime
+response for huge amount of data. The 4V’s of big data – volume, velocity, variety
+and veracity—makes the data management and analytics challenging for the
+traditional data warehouses. Big data can be defined as data that exceeds the
+processing capacity of conventional database systems. It implies that the data count is
+too large, and/or data values change too fast, and/or it does not follow the rules of
+conventional database management systems (e.g., consistency). One requires new
+expertise in the areas of data management and systems management who understands
+how to model the data and prepare them for analysis, and understand the problem
+deeply enough to perform the analytics. As data is massive and/or fast changing we
+need comparatively many more CPU and memory resources, which are provided by
+distributed processors and storage in cloud settings. The aim of this paper is to outline
+the concepts and issues involved in new age data management, with suggestions for
+further readings to augment the contents of this paper. Here is the outline of this paper:
+in the next section, we describe the factors which are important for enterprises to
+have cloud based data analytics solutions. As shown in Figure 1, big data processing
+involves interactive processing and decision support processing of data-at-rest and
+real-time processing of data-in-motion, which are covered in Section 3, 4, and 5, respectively.
+For each data processing application, one may need to write custom code
+to carry out the required processing. To avoid writing custom code for data
+processing applications, various SQL like query languages have been developed. We
+discuss these languages in Section 6. Section 7 summarizes some enterprise applications
+which illustrate the issues one needs to consider for designing big data applications.
+Specifically, we consider applications in telecom, financial services, and sensor
+domains. We conclude by outlining various research challenges in data management
+over cloud in Section 8.introductionrpWe presented the need for processing large amount of data having high variety and
+veracity at high speed; different technologies for distributed processing such as
+NoSQL, Hadoop, Streaming data processing; Pig, Jaql, Hive, CQL, SPL for querying
+such data; and customer use cases. There are various advantages in moving to cloud
+resources from dedicated resources for data management. But some of the enterprises
+and governments are still skeptical about moving to cloud. More work is required for
+cloud security, privacy and isolation areas to alleviate these fears. As noted earlier
+various applications involve huge amount of data and may require real time
+processing, one needs tools for bulk processing of huge amount of data, real time
+processing of streaming data and method of interaction between these two modules.
+For given cloud resources one needs to associate required resources for both the modules
+(bulk and stream data processing) so that the whole system can provide the required
+response time with sufficient accuracy. More research is required for facilitating
+such systems.conclusionrp1. Avizienis, A.: Basic concepts and taxonomy of dependable and secure computing. IEEE
+Transactions on Dependable and Secure Computing (2004)
+2. Srivastava, A., Kundu, A., Sural, S., Majumdar, A.: Credit Card Fraud Detection using
+Hidden Markov Model. IEEE Transactions on Dependable and Secure Computing (2008)
+3. Stewart, R.J., Trinder, P.W., Loidl, H.-W.: Comparing High Level MapReduce Query
+Languages. In: Temam, O., Yew, P.-C., Zang, B. (eds.) APPT 2011. LNCS, vol. 6965, pp.
+58–72. Springer, Heidelberg (2011)
+4. Apache Foundation. Hadoop, http://hadoop.apache.org/core/
+5. Awadallah, A.: Hadoop: An Industry Perspective. In: International Workshop on Massive
+Data Analytics Over Cloud (2010) (keynote talk)
+6. Dean, J., Ghemawat, S.: MapReduce: Simplified Data Processing on Large Clusters.
+Communications of ACM 51(1), 107–113 (2008)
+7. Hive- Hadoop wiki, http://wiki.apache.org/hadoop/Hive
+8. JSON, http://www.json.org
+9. Gupta, R., Gupta, H., Nambiar, U., Mohania, M.: Enabling Active Archival Over Cloud.
+In: Proceedings of Service Computing Conference, SCC (2012)
+10. Stonebraker, M., et al.: C-STORE: A Column-oriented DBMS. In: Proceedings of Very
+Large Databases, VLDB (2005)
+11. Vardi, M.: The Universal-Relation Data Model for Logical Independence. IEEE Software
+5(2) (1988)
+12. Borthakur, D., Jan, N., Sharma, J., Murthy, R., Liu, H.: Data Warehousing and Analytics
+Infrastructure at Facebook. In: Proceedings of ACM International Conference on Management
+of Data, SIGMOD (2010)
+13. Jaql Project hosting, http://code.google.com/p/jaql/14. Beyer, K.S., Ercegovac, V., Gemulla, R., Balmin, A., Eltabakh, M., Kanne, C.-C., Ozcan,
+F., Shekita, E.J.: Jaql: A Scripting Language for Large Scale Semi-structured Data Analysis.
+In: Proceedings of Very Large Databases, VLDB (2011)
+15. Liveland: Hive vs. Pig,
+http://www.larsgeorge.com/2009/10/hive-vs-pig.html
+16. Pig, http://hadoop.apache.org/pig/
+17. Olston, C., Reed, B., Srivastava, U., Kumar, R., Tomkins, A.: Pig-Latin: A Not-So-
+Foreign Language for Data Processing. In: Proceedings of ACM International Conference
+on Management of Data, SIGMOD (2008)
+18. HBase, http://hbase.apache.org/
+19. Curino, C., Jones, E.P.C., Popa, R.A., Malviya, N., Wu, E., Madden, S., Balakrishnan, H.,
+Zeldovich, N.: Realtional Cloud: A Database-as-a-Service for the Cloud. In: Proceedings
+of Conference on Innovative Data Systems Research, CIDR (2011)
+20. Thusoo, A., Sarma, J.S., Jain, N., Shao, Z., Chakka, P., Zhang, N., Anthony, S., Liu, H.,
+Murthy, R.: Hive – A Petabyte Scake Data Warehouse Using Hadoop. In: Proceedings of
+International Conference on Data Engineering, ICDE (2010)
+21. Arasu, A., Babu, S., Widom, J.: The CQL Continuous Query Language: Semantic Foundations
+and Query Execution. VLDB Journal (2005)
+22. Zikopoulos, P., Eaton, C., Deroos, D., Deutsch, T., Lapis, G.: Understanding Big Data:
+Analytics for Enterprise Class Hadoop and Streaming Data. McGrawHill (2012)
+23. Gedik, B., Andrade, H., Wu, K.-L., Yu, P.S., Doo, M.: SPADE: The System S Declaratve
+Stream Processing Engine. In: Proceedings of ACM International Conference on Management
+of Data, SIGMOD (2008)
+24. Bouillet, E., Kothari, R., Kumar, V., Mignet, L., et al.: Processing 6 billion CDRs/day:
+from research to production (experience report). In: Proceedings of International Conference
+on Distributed Event-Based Systems, DEBS (2012)
+25. Kai, http://sourceforge.net/apps/mediawiki/kai
+26. Fox, A., Gribble, S.D., Chawathe, Y., Brewer, E.A., Gauthier, P.: Cluster-Based Scalable
+Network Services. In: Proceedings of the Sixteenth ACM Symposium on Operating Systems
+Principles, SOSP (1997)
+27. Wada, H., Fekede, A., Zhao, L., Lee, K., Liu, A.: Data Consistency Properties and the
+Trade-offs in Commercial Cloud Storages: the Consumers’ Perspective. In: Proceedings of
+Conference on Innovative Data Systems Research, CIDR (2011)
+28. Gray, J., Helland, P., O’Neil, P.E., Shasha, D.: The Dangers of Replication and a Solution.
+In: Proceedings of ACM International Conference on Management of Data (1996)
+29. DeCandia, G., Hastorun, D., Jampani, M., Kakulapati, G., Lakshman, A., Pilch, A., Sivasubramanian,
+S., Vosshall, P., Vogels, W.: Dynamo: Amazon’s Highly Available Keyvalue
+Store. In: Proceedings of Twenty-First ACM SIGOPS Symposium on Operating
+Systems Principles, SOSP (2007)
+30. Habeeb, M.: A Developer’s Guide to Amazon SimpleDB. Pearson Education
+31. Lehnardt, J., Anderson, J.C., Slater, N.: CouchDB: The Definitive Guide. O’Reilly (2010)
+32. Chodorow, K., Dirolf, M.: MongoDB: The Definitive Guide. O’Reilly Media, USA (2010)
+33. Chang, F., Dean, J., Ghemawat, S., Hsieh, W.C., Wallach, D.A., Burrows, M., Chandra,
+T., Fikes, A., Gruber, R.E.: BigTable: A Distributed Storage System for Structured Data.
+In: Proceedings of the 7th USENIX Symposium on Operating Systems Design annd
+Implementation, OSDI (2006)34. Storm: The Hadoop of Stream processing, http://fierydata.com/
+2012/03/29/storm-the-hadoop-of-stream-processing/
+35. Neumeyer, L., Robbins, B., Nair, A., Kesari, A.: S4: Distributed Stream Computing Platform.
+In: IEEE International Conference on Data Mining Workshops, ICDMW (2010)
+36. Biem, A., Bouillet, E., Feng, H., et al.: IBM infosphere streams for scalable, real-time, intelligent
+transportation services. In: SIGMOD 2010 (2010)
+37. Alon, N., Matias, Y., Szegedy, M.: The space complexity of approximating the frequency
+moments. In: Proceedings of the Annual Symposium on Theory of Computing, STOC
+(1996)
+38. Babcock, B., Babu, S., Datar, M., Motvani, R., Widom, J.: Model and Issues in Data
+Streams Systems. ACM PODS (2002)referencesrp

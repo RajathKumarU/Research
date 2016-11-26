@@ -1,0 +1,70 @@
+SECURITY ISSUES ASSOCIATED WITH BIG DATA IN
+CLOUD COMPUTINGtitlerpIn this paper, we discuss security issues for cloud computing, Big data, Map Reduce and Hadoop
+environment. The main focus is on security issues in cloud computing that are associated with big
+data. Big data applications are a great benefit to organizations, business, companies and many
+large scale and small scale industries.We also discuss various possible solutions for the issues
+in cloud computing security and Hadoop. Cloud computing security is developing at a rapid pace
+which includes computer security, network security, information security, and data privacy.
+Cloud computing plays a very vital role in protecting data, applications and the related
+infrastructure with the help of policies, technologies, controls, and big data tools. Moreover,
+cloud computing, big data and its applications, advantages are likely to represent the most
+promising new frontiers in science.abstractrpCloud Computing, Big Data, Hadoop,Map Reduce, HDFS (Hadoop Distributed File System)keywordsrpIn order to analyze complex data and to identify patterns it is very important to securely store,
+manage and share large amounts of complex data.Cloud comes with an explicit security
+challenge, i.e. the data owner might not have any control of where the data is placed. The reason
+behind this control issue is that if one wants to get the benefits of cloud computing, he/she must
+also utilize the allocation of resources and also the scheduling given by the controls. Hence it is
+required to protect the data in the midst of untrustworthy processes. Since cloud involves
+extensive complexity, we believe that rather than providing a holistic solution to securing the
+cloud, it would be ideal to make noteworthy enhancements in securing the cloud that will
+ultimately provide us with a secure cloud.
+Google has introduced MapReduce [1] framework for processing large amounts of data on
+commodity hardware. Apache’s Hadoop distributed file system (HDFS) is evolving as a superior
+software component for cloud computing combined along with integrated parts such as
+MapReduce. Hadoop, which is an open-source implementation of Google MapReduce, including
+a distributed file system, provides to the application programmer the abstraction of the map and
+the reduce. With Hadoop it is easier for organizations to get a grip on the large volumes of data
+being generated each day, but at the same time can also create problems related to security, data
+access, monitoring, high availability and business continuity.In this paper, we come up with some approaches in providing security. We ought a system that
+can scale to handle a large number of sites and also be able to process large and massive amounts
+of data. However, state of the art systems utilizing HDFS and MapReduce are not quite
+enough/sufficient because of the fact that they do not provide required security measures to
+protect sensitive data. Moreover, Hadoop framework is used to solve problems and manage data
+conveniently by using different techniques such as combining the k-means with data mining
+technology [3].introductionrpCloud environment is widely used in industry and research aspects; therefore security is an
+important aspect for organizations running on these cloud environments. Using proposed
+approaches, cloud environments can be secured for complex business operations.conclusionrp[1] Ren, Yulong, and Wen Tang. "A SERVICE INTEGRITY ASSURANCE FRAMEWORK FOR CLOUD
+COMPUTING BASED ON MAPREDUCE."Proceedings of IEEE CCIS2012. Hangzhou: 2012, pp 240 –
+244, Oct. 30 2012-Nov. 1 2012
+[2] N, Gonzalez, Miers C, Redigolo F, Carvalho T, Simplicio M, de Sousa G.T, and Pourzandi M. "A
+Quantitative Analysis of Current Security Concerns and Solutions for Cloud Computing.". Athens:
+2011., pp 231 – 238, Nov. 29 2011- Dec. 1 2011
+[3] Hao, Chen, and Ying Qiao. "Research of Cloud Computing based on the Hadoop platform.".
+Chengdu, China: 2011, pp. 181 – 184, 21-23 Oct 2011.
+[4] Y, Amanatullah, Ipung H.P., Juliandri A, and Lim C. "Toward cloud computing reference
+architecture: Cloud service management perspective.". Jakarta: 2013, pp. 1-4, 13-14 Jun. 2013.
+[5] A, Katal, Wazid M, and Goudar R.H. "Big data: Issues, challenges, tools and Good practices.". Noida:
+2013, pp. 404 – 409, 8-10 Aug. 2013.
+[6] Lu, Huang, Ting-tin Hu, and Hai-shan Chen. "Research on Hadoop Cloud Computing Model and its
+Applications.". Hangzhou, China: 2012, pp. 59 – 63, 21-24 Oct. 2012.
+[7] Wie, Jiang , Ravi V.T, and Agrawal G. "A Map-Reduce System with an Alternate API for Multi-core
+Environments.". Melbourne, VIC: 2010, pp. 84-93, 17-20 May. 2010.[8] K, Chitharanjan, and Kala Karun A. "A review on hadoop — HDFS infrastructure extensions.". JeJu
+Island: 2013, pp. 132-137, 11-12 Apr. 2013.
+[9] F.C.P, Muhtaroglu, Demir S, Obali M, and Girgin C. "Business model canvas perspective on big data
+applications." Big Data, 2013 IEEE International Conference, Silicon Valley, CA, Oct 6-9, 2013, pp.
+32 - 37.
+[10] Zhao, Yaxiong , and Jie Wu. "Dache: A data aware caching for big-data applications using the
+MapReduce framework." INFOCOM, 2013 Proceedings IEEE, Turin, Apr 14-19, 2013, pp. 35 - 39.
+[11] Xu-bin, LI , JIANG Wen-rui, JIANG Yi, ZOU Quan "Hadoop Applications in Bioinformatics." Open
+Cirrus Summit (OCS), 2012 Seventh, Beijing, Jun 19-20, 2012, pp. 48 - 52.
+[12] Bertino, Elisa, Silvana Castano, Elena Ferrari, and Marco Mesiti. "Specifying and enforcing access
+control policies for XML document sources." pp 139-151.
+[13] E, Bertino, Carminati B, Ferrari E, Gupta A , and Thuraisingham B. "Selective and Authentic Third-
+Party Distribution of XML Documents."2004, pp. 1263 - 1278.
+[14] Kilzer, Ann, Emmett Witchel, Indrajit Roy, Vitaly Shmatikov, and Srinath T.V. Setty. "Airavat:
+Security and Privacy for MapReduce."
+[15] "Securing Big Data: Security Recommendations for Hadoop and NoSQL Environments."Securosis
+blog, version 1.0 (2012)
+[16] P.R , Anisha, Kishor Kumar Reddy C, Srinivasulu Reddy K, and Surender Reddy S. "Third Party
+Data Protection Applied To Cloud and Xacml Implementation in the Hadoop Environment With
+Sparql."2012. 39-46, Jul – Aug. 2012.
+[17] "Security-Enhanced Linux."Security-Enhanced Linux. N.p. Web. 13 Dec 2013.referencesrp

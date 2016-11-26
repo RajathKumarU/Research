@@ -1,0 +1,56 @@
+Data Mining Challenges With Big DatatitlerpData analysis is a clear bottleneck in many applications, both due to lack of scalability of the underlying algorithms and
+due to the complexity of the data that needs to be analyzed. The value of data explodes when it can be linked with other data, thus
+data integration is a major creator of value. Since most data is directly generated in digital format today, we have the opportunity
+and the challenge both to influence the creation to facilitate later linkage and to automatically link previously created data. Data
+analysis, organization, retrieval, and modeling are other foundational challenges. Big Data concern large-volume, complex,
+growing data sets with multiple, autonomous sources. With the fast development of networking, data storage, and the data
+collection capacity, Big Data are now rapidly expanding in all science and engineering domains, including physical, biological
+and biomedical sciences. This paper presents about the data mining and its challenges with big data.abstractrp
+Big Data, data mining, Big data semantics, Big Data mining algorithmsKeywordsrpWe are awash in a flood of data today. In a broad range of application areas, data is being collected at unprecedented scale. Decisions
+that previously were based on guesswork, or on painstakingly constructed models of reality, can now be made based on the data itself.
+Such Big Data analysis now drives nearly every aspect of our modern society, including mobile services, retail, manufacturing,
+financial services, life sciences, and physical sciences.Big data is a broad term for data sets so large or complex data
+processing applications are inadequate. Challenges include analysis, capture, curation, search, sharing, storage, transfer, visualization,
+and information privacy. The term often refers simply to the use of predictive analytics or other certain advanced methods to extract
+value from data, and seldom to a particular size of data.
+The rise of Big Data applications where data collection has grown tremendously and is beyond the ability of commonly used
+software tools is to capture, manage, and process within an acceptable elapsed time. The most fundamental challenge for Big Data
+applications is to explore the large volumes of data and extract useful information or knowledge for future actions means we need to
+mine user interested data. In many situations, the Data Mining process has to be very efficient and close to real time because storing
+all observed data is nearly infeasible.A. Characteristics Of Big Data
+Big data can be described by the following characteristics:
+1) Volume – The quantity of data that is generated is very important in this context. It is the size of the data which determines the
+value and potential of the data under consideration and whether it can actually be considered Big Data or not.
+2) Variety - This means that the category to which Big Data belongs to is also a very essential fact that needs to be known by the
+data analysts. This helps the people, who are closely analyzing the data and are associated with it.
+3) Velocity - The term ‘velocity’ in the context refers to the speed of generation of data or how fast the data is generated and
+processed to meet the demands and the challenges which lie ahead in the path of growth and development.
+4) Variability - This is a factor which can be a problem for those who analyze the data. This refers to the inconsistency which can be
+shown by the data at times.
+5) Veracity - The quality of the data being captured can vary greatly. Accuracy of analysis depends on the veracity of the source
+data.
+6) Complexity - Data management can become a very complex process, especially when large volumes of data come from multiple
+sources.introductionrpDriven by real-world applications and key industrial stakeholders and initialized by national funding agencies, managing and mining
+Big Data have shown to be a challenging yet very compelling task. While the term Big Data literally concerns about data volumes,
+and the key characteristics of the Big Data are 1) huge with heterogeneous and diverse data sources, 2) autonomous with distributed
+and decentralized control, and 3) complex and evolving in data and knowledge associations. Such combined characteristics suggest
+that Big Data require a “big mind” to consolidate data for maximum values. To explore Big Data, we have analyzed several
+challenges at the data, model, and system levels. To support Big Data mining, high-performance computing platforms are required,
+which impose systematic designs to unleash the full power of the Big Data. At the data level, the autonomous information sources and
+the variety of the data collection environments, often result in data with complicated conditions, such as missing/uncertain values.
+Finally d Big Data as an emerging trend and the need for Big Data mining is arising in all science and engineering domains. With Big
+Data technologies, we will hopefully be able to provide most relevant and most accurate social sensing feedback to better understand
+our society at realtime. We can further stimulate the participation of the public audiences in the data production circle for societal and
+economical events. The era of Big Data has arrived.conclusionrp[1] R. Ahmed and G. Karypis, “Algorithms for Mining the Evolution of Conserved Relational States in Dynamic Networks,” Knowledge and Information Systems,
+vol. 33, no. 3, pp. 603-630, Dec. 2012.
+[2] M.H. Alam, J.W. Ha, and S.K. Lee, “Novel Approaches to Crawling Important Pages Early,” Knowledge and Information Systems, vol. 33, no. 3, pp 707-734,
+Dec. 2012.
+[3] S. Aral and D. Walker, “Identifying Influential and Susceptible Members of Social Networks,” Science, vol. 337, pp. 337-341, 2012.
+[4] A. Machanavajjhala and J.P. Reiter, “Big Privacy: Protecting Confidentiality in Big Data,” ACM Crossroads, vol. 19, no. 1, pp. 20-23, 2012.
+[5] S. Banerjee and N. Agarwal, “Analyzing Collective Behavior from Blogs Using Swarm Intelligence,” Knowledge and Information Systems, vol. 33, no. 3, pp.
+523-547, Dec. 2012.
+[6] Xindong Wu, Xingquan Zhu, Gong-Qing Wu, and Wei Ding, “Data Mining with Big Data” IEEE transactions on knowledge and data engineering, vol. 26, no. 1,
+january 2014, pp-97-107.
+[7] E. Birney, “The Making of ENCODE: Lessons for Big-Data Projects,” Nature, vol. 489, pp. 49-51, 2012. M. Young, The Technical Writer’s Handbook. Mill
+Valley, CA: University Science, 1989.
+[8] G. Cormode and D. Srivastava, “Anonymized Data: Generation, Models, Usage,” Proc. ACM SIGMOD Int’l Conf. Management Data, pp. 1015-1018,2009.referencesrp

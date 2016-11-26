@@ -1,0 +1,66 @@
+Identifying Customer Interest in Real Estate Using
+Data Mining TechniquestitlerpReal estate industry has become a highly
+competitive business with an enormous amount of
+unstructured documents and resources. The process of data
+mining in such a business provides an advantage to the
+developers by processing those data, predicting future trends
+and helping them to make favorable knowledge-driven
+decisions. In this paper, we focus on data mining techniques
+and its applications to develop a model which not only
+predicts the most suitable area for a customer based on his
+interest, but also identifies the most preferred and ideal
+location of real estate in any given area by ranking them.abstractrpdata mining, infogainattributeeval, linear
+regression, ranking, rapidminer, weka.keywordsrpEach and every company in today’s real estate business is
+working productively to gain a competitive edge over other
+competitors. To achieve this, a reliable and a fast growing
+technology such as data mining is extensively used. With
+an enormous amount of data available in huge databases
+and data warehouses, it is important to develop a powerful
+model for analysis and extraction of such data and mining
+them for interesting knowledge [1].
+Various data mining tools available in today’s market helps
+organizations to make important and useful knowledge
+driven decisions. Hence, in this paper, we use data mining
+techniques in two different phases, where the first one deals
+with ranking of areas in each of the 5 zones of Delhi and
+identify an ideal location for real estate customers using the
+InfoGainAttributeEval function of WEKA tool [2]. The
+second phase is about predicting the most suitable area for
+any given customer based on his/her interest. We predict
+using a classical technique called linear regression and try
+to give an analysis of the results obtained.introductionrpIn today’s highly competitive real estate business, it has
+become difficult to store such huge data and extract them
+for one’s own requirement. Also, the extracted should be
+useful which is another complicated step, otherwise, there
+would be no use of using such data. Implementing the
+concepts of data mining applications in such a field has
+definitely proven to be useful, time saving and
+advantageous to both, the customers and the real estate
+dealers. Divided in two phases, we have applied data
+mining techniques such as linear regression for predicting a
+suitable area to the customer and identifying the most
+preferred residential area in Delhi. The same methods can
+be applied in finding the ideal location in rest of the zones
+of Delhi or in any given city.conclusionrp[1] Lu Ansheng, “Application Analysis of Clementine-based Data
+Mining Algorithm”, 2011 International Conference on Intelligence
+Science and Information Engineering
+[2] Swati Singh and Gaurav Dubey, “Finding Interest of People In
+Purchasing Real Estate By Using Data Mining Techniques”,
+International Journal of Recent Technology and Engineering
+(IJRTE), Volume-X, Issue-X
+[3] GIS Map of Delhi-NCR, http://alpha.mapmyindia.com/mcdApp/
+[4] InfoGainAttributeEval – WEKA,
+“http://weka.sourceforge.net/doc.dev/weka/attributeSelection/InfoGa
+inAttributeEval.html”
+[5] Aman Gupta and Gaurav Dubey, “Identifying Buying Preferences of
+Customers in Real Esstate Industry Using Data Mining Techniques”,
+CPMR-IJT Vol. 2, No. 1, June 2012
+[6] Zhou Xiaoming and Guan Wenjing, “Logistic Regression Analysis
+of Various Factors Affecting Customer Credit Risk”, Financial
+Computer of Huanan 2003
+[7] Delhi Development Authority Schemes,
+http://www.dda.org.in/housing/salient_features_conversion.htm
+[8] www.magicbricks.com
+[9] www.sulekha.com
+[10] Fareed Akthar and Caroline Hahn, “RapidMiner 5: Operator
+Reference”, Rapid-I GmbH 2012referencesrp

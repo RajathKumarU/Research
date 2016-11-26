@@ -1,0 +1,65 @@
+In_IN this_DT paper_NN we_PRP discuss_VBP semantic_JJ and_CC machine_NN learning_NN approaches_VBZ to_TO classify_VB user_NN reviews_NNS of_IN 
+trending_VBG products_NNS into_IN spam_NN and_CC non-spam_NN ,_, it_PRP is_VBZ then_RB followed_VBN by_IN rating_NN all_PDT the_DT reviews_NNS ._. A_DT trending_VBG 
+product_NN is_VBZ defined_VBN as_IN frequently_RB mentioned_VBN product_NN on_IN the_DT web_NN ._. In_IN this_DT paper_NN we_PRP use_VBP two_CD cases_NNS ._. 
+First_NNP case_NN is_VBZ classifying_VBG the_DT reviews_NNS as_IN spam_NN and_CC non-spam_NN ._. Second_JJ case_NN is_VBZ rating_VBG the_DT user_NN reviews_NNS 
+on_IN a_DT scale_NN from_IN 1-5_CD ._. We_PRP have_VBP used_VBN semantic_JJ and_CC machine_NN learning_NN algorithms_NNS for_IN both_CC the_DT cases_NNS on_IN 
+five_CD different_JJ products_NNS '_POS dataset_NN ._. We_PRP have_VBP collected_VBN datasets_NNS comprising_VBG of_IN both_DT spam_NN and_CC non-spam_JJ 
+reviews_NNS for_IN training_NN and_CC testing_NN purposes_NNS ._. We_PRP have_VBP obtained_VBN an_DT average_JJ accuracy_NN of_IN 82.2_CD %_NN for_IN the_DT 
+first_RB case_NN and_CC 84.4_CD %_NN for_IN the_DT second_JJ case_NN considering_VBG all_PDT the_DT five_CD products_NNS using_VBG Semantic_JJ approach_NN ._. 
+Similarly_RB ,_, we_PRP have_VBP obtained_VBN an_DT accuracy_NN of_IN 82.2_CD %_NN using_VBG MLP_NNP -LRB-_-LRB- Neural_JJ network_NN -RRB-_-RRB- for_IN the_DT first_JJ case_NN 
+._. For_IN the_DT second_JJ case_NN ,_, we_PRP have_VBP obtained_VBN accuracy_NN of_IN 89.4_CD %_NN using_VBG SMO_NNP ._. Our_PRP$ method_NN of_IN assessing_VBG 
+user_NN reviews_VBZ differs_VBZ from_IN other_JJ works_NNS in_IN literature_NN such_JJ that_IN ,_, we_PRP have_VBP devised_VBN hybrid_JJ approach_NN 
+for_IN classifying_VBG as_RB well_RB as_IN rating_NN the_DT reviews_NNS ._. Our_PRP$ approach_NN obtains_VBZ an_DT average_JJ accuracy_NN of_IN 83.3_CD %_NN 
+and_CC 85.8_CD %_NN for_IN semantic_JJ and_CC machine_NN learning_NN approach_NN respectively_RB that_WDT works_VBZ for_IN reviews_NNS across_IN 
+domains_NNS ._. 
+E-commerce_NN websites_NNS have_VBP become_VBN very_RB popular_JJ across_IN different_JJ sections_NNS of_IN society_NN ._. People_NNS have_VBP 
+started_VBN buying_VBG different_JJ kinds_NNS of_IN products_NNS like_IN electronic_JJ items_NNS ,_, clothing_NN ,_, furniture_NN etc._NN ,_, through_IN 
+E-commerce_NN websites_NNS ,_, because_IN of_IN its_PRP$ ease_NN and_CC simplicity_NN ._. Product_NN reviews_NNS have_VBP an_DT important_JJ role_NN 
+in_IN any_DT E-commerce_NN organization_NN ._. The_DT Web_NN has_VBZ greatly_RB enhanced_VBN the_DT way_NN people_NNS perform_VBP certain_JJ 
+activities_NNS -LRB-_-LRB- e.g._FW shopping_NN -RRB-_-RRB- ,_, find_VB information_NN ,_, and_CC interact_VBP with_IN others_NNS ._. Today_NN many_JJ people_NNS read/write_VBP 
+reviews_NNS on_IN merchant_NN sites_NNS ,_, blogs_NNS ,_, forums_NNS ,_, and_CC social_JJ media_NNS before/after_NN they_PRP purchase_VBP products_NNS or_CC 
+services_NNS ._. These_DT reviews_NNS are_VBP responsible_JJ for_IN the_DT development_NN of_IN an_DT organization_NN ._. 
+online_JJ reviews_NNS can_MD play_VB a_DT significant_JJ role_NN in_IN the_DT success_NN of_IN retail_JJ products_NNS ,_, hotels_NNS ,_, restaurants_NNS ,_, etc._FW ._. 
+However_RB ,_, review_NN systems_NNS are_VBP often_RB targeted_VBN by_IN opinion_NN spammers_NNS who_WP seek_VBP to_TO distort_VB the_DT perceived_VBN 
+quality_NN of_IN a_DT product_NN by_IN creating_VBG fraudulent_JJ reviews_NNS -LSB-_-LRB- 2_CD -RSB-_-RRB- ._. Users_NNS will_MD look_VB into_IN the_DT reviews_NNS of_IN the_DT 
+product_NN before_IN buying_VBG it_PRP ._. Since_IN anybody_NN can_MD write_VB reviews_NNS ,_, it_PRP is_VBZ very_RB important_JJ to_TO identify_VB reliable_JJ 
+reviews_NNS ._. 
+Review_NN has_VBZ two_CD main_JJ parts_NNS ,_, Review_NNP Content_NNP and_CC Product_NNP Rating_NNP ._. Product_NNP Rating_NNP is_VBZ the_DT product_NN 
+score_NN given_VBN by_IN the_DT customers_NNS in_IN the_DT form_NN of_IN stars_NNS ranging_VBG from_IN 1_CD to_TO 5_CD ._. Rating_NNP and_CC Content_NNP of_IN the_DT reviews_NNS can_MD be_VB analyzed_VBN together_RB for_IN identifying_VBG genuine_JJ user_NN reviews_NNS ._. Review_NN spam_NN is_VBZ designed_VBN 
+to_TO give_VB unfair_JJ view_NN of_IN some_DT products_NNS so_RB as_IN to_TO in_IN 
+uence_NN the_DT consumers_NNS perception_NN of_IN the_DT products_NNS 
+by_IN directly_RB or_CC indirectly_RB in_IN 
+ating_NN or_CC damaging_VBG the_DT products_NNS reputation_NN -LSB-_-LRB- 14_CD -RSB-_-RRB- ._. Two_CD rating_NN behavior_NN 
+which_WDT indicates_VBZ spam_NN is_VBZ :_: 1_CD ._. opinion_NN is_VBZ highly_RB positive_JJ and_CC rating_NN is_VBZ quite_RB low_JJ 2_CD ._. opinion_NN is_VBZ negative_JJ 
+and_CC rating_NN is_VBZ high_JJ -LSB-_-LRB- 1_CD -RSB-_-RRB- ._. Spam_NNP reviews_VBZ contain_VBP invalid_JJ content_NN which_WDT may_MD misguide_VB the_DT customers_NNS 
+resulting_VBG in_IN a_DT negative_JJ impact_NN on_IN an_DT organization_NN ._. 
+There_EX are_VBP generally_RB two_CD types_NNS of_IN spam_NN reviews_NNS ._. The_DT first_JJ type_NN consists_VBZ of_IN those_DT that_WDT deliberately_RB 
+mislead_NN readers_NNS or_CC automated_VBN opinion_NN mining_NN systems_NNS by_IN giving_VBG undeserving_JJ positive_JJ opinions_NNS to_TO 
+some_DT target_NN products_NNS in_IN order_NN to_TO promote_VB them_PRP and/or_CC by_IN giving_VBG unjust_JJ or_CC malicious_JJ negative_JJ 
+reviews_NNS to_TO some_DT other_JJ products_NNS in_IN order_NN to_TO damage_VB their_PRP$ reputation_NN ._. The_DT second_JJ type_NN consists_VBZ of_IN 
+nonreviews_NNS -LRB-_-LRB- e.g._FW ,_, ads_NNS -RRB-_-RRB- which_WDT contain_VBP no_DT opinions_NNS on_IN the_DT product_NN -LSB-_-LRB- 3_CD -RSB-_-RRB- ._. In_IN this_DT paper_NN ,_, we_PRP identify_VBP spam_NN 
+reviews_NNS as_IN the_DT preliminary_JJ step_NN ._. In_IN the_DT subsequent_JJ steps_NNS ,_, we_PRP rate_VBP the_DT reviews_NNS on_IN a_DT scale_NN from_IN 1_CD to_TO 
+5_CD ,_, 5_CD for_IN the_DT most_RBS reliable_JJ review_NN and_CC 1_CD for_IN the_DT unreliable_JJ review_NN ._. People_NNS are_VBP used_VBN to_TO 5-star_JJ rating_NN 
+system_NN since_IN it_PRP 's_VBZ the_DT most_RBS conventional_JJ of_IN all_PDT the_DT rating_NN systems_NNS we_PRP see_VBP on_IN the_DT web_NN ,_, used_VBN on_IN Net_NN 
+ix_NN ,_, 
+Yelp_NNP ,_, Amazon_NNP ,_, etc._FW ._. This_DT review_NN rating_NN method_NN helps_VBZ the_DT customers_NNS to_TO provide_VB better_JJR reviews_NNS about_IN 
+the_DT product_NN and_CC enable_VB them_PRP to_TO shop_VB wisely_RB ._. 
+Reviews_NNS can_MD be_VB collected_VBN in_IN two_CD different_JJ formats_NNS i._VBP e._NN ,_, structured_VBN and_CC unstructured_JJ ._. The_DT structured_VBN 
+review_NN is_VBZ questionnaires_NNS about_IN the_DT products_NNS or_CC items_NNS with_IN specified_VBN options_NNS against_IN each_DT feature_NN ._. 
+Thus_RB structured_VBN review_NN is_VBZ bounded_VBN and_CC static_JJ ._. The_DT analysis_NN of_IN structured_JJ review_NN is_VBZ simple_JJ ,_, easy_JJ to_TO 
+process_NN and_CC analyze_VB ._. But_CC unstructured_JJ review_NN is_VBZ collected_VBN in_IN the_DT form_NN of_IN free_JJ text_NN -LSB-_-LRB- 4_CD -RSB-_-RRB- ._. In_IN this_DT paper_NN 
+we_PRP consider_VBP only_RB unstructured_JJ reviews_NNS ._. 
+The_DT main_JJ focus_NN of_IN this_DT paper_NN is_VBZ on_IN classifying_VBG the_DT product_NN reviews_VBZ from_IN various_JJ web_NN sources_NNS into_IN 
+spam_NN or_CC non-spam_JJ as_RB well_RB as_IN rating_NN the_DT reviews_NNS based_VBN on_IN its_PRP$ content_NN ._. However_RB this_DT concept_NN can_MD be_VB 
+extended_VBN to_TO other_JJ aspects_NNS like_IN movie_NN reviews_NNS ,_, company_NN reviews_VBZ available_JJ in_IN glassdoor.com_NNP ,_, reviews_VBZ 
+on_IN tourist_NN places_NNS etc._FW ._. 
+We_PRP have_VBP used_VBN an_DT empirical_JJ approach_NN to_TO classify_VB the_DT reviews_NNS as_IN spam_NN or_CC non-spam_JJ and_CC to_TO rate_VB the_DT reviews_NNS based_VBN 
+on_IN the_DT content_NN of_IN the_DT review_NN ._. For_IN evaluating_VBG the_DT validity_NN of_IN the_DT reviews_NNS of_IN a_DT product_NN ,_, MLP_NNP is_VBZ the_DT better_JJR machine_NN 
+learning_VBG algorithm_NN to_TO use_VB since_IN it_PRP has_VBZ high_JJ average_JJ accuracy_NN ._. MLP_NNP works_VBZ better_RBR when_WRB compared_VBN to_TO other_JJ algorithms_NNS 
+since_IN it_PRP uses_VBZ back_RB propagation_NN ._. MLP_NNP can_MD approximate_JJ any_DT complex_JJ decision_NN boundary_NN to_TO divide_VB the_DT input_NN space_NN with_IN 
+arbitrary_JJ accuracy_NN ._. For_IN rating_NN the_DT reviews_NNS of_IN a_DT product_NN ,_, SMO_NN is_VBZ the_DT better_JJR machine_NN learning_VBG algorithm_NN to_TO use_VB and_CC 
+has_VBZ high_JJ average_JJ accuracy_NN ._. SMO_NNP algorithm_NN is_VBZ highly_RB scalable_JJ and_CC works_VBZ well_RB on_IN sparse_JJ data_NNS ._. 
+The_DT proposed_VBN method_NN can_MD be_VB applied_VBN to_TO assess_VB reviews_NNS across_IN various_JJ domains_NNS unlike_IN other_JJ works_NNS in_IN literature_NN which_WDT 
+confine_VB to_TO a_DT particular_JJ domain_NN ._. Based_VBN on_IN the_DT availability_NN of_IN product_NN rating_NN and_CC review_NN content_NN ,_, either_CC semantic_JJ or_CC 
+machine_NN learning_NN approach_NN can_MD be_VB used_VBN to_TO analyze_VB the_DT review_NN ._. This_DT study_NN helps_VBZ to_TO identify_VB reliable_JJ reviews_NNS for_IN any_DT 
+given_VBN product_NN for_IN the_DT benefit_NN of_IN common_JJ people_NNS and_CC organizations_NNS ._. 

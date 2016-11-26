@@ -1,0 +1,86 @@
+A_DT Practical_NNP Approach_NNP for_IN Secure_NNP Internet_NNP Banking_NNP based_VBN 
+on_IN Cryptography_NN 
+titlerp_NN 
+There_EX are_VBP a_DT continuously_RB growing_VBG number_NN of_IN customers_NNS who_WP use_VBP Internet_NN banking_NN because_IN of_IN its_PRP$ convenience_NN ._. But_CC the_DT 
+security_NN and_CC privacy_NN of_IN Information_NN may_MD be_VB one_CD of_IN the_DT biggest_JJS concerns_NNS to_TO the_DT Online_NNP Banking_NNP users_NNS ._. The_DT problem_NN with_IN Online_NN 
+banking_NN applications_NNS is_VBZ that_IN they_PRP send_VBP data_NNS directly_RB to_TO customer_NN in_IN plain_JJ text_NN form_NN compromising_VBG with_IN security_NN ._. The_DT solutions_NNS to_TO the_DT 
+security_NN issues_NNS require_VBP the_DT use_NN of_IN software-based_JJ solutions_NNS that_WDT involve_VBP the_DT use_NN of_IN encryption_NN algorithms_NNS ._. For_IN this_DT we_PRP propose_VBP a_DT 
+challenge/response_NN -_: based_VBN short-time_JJ password_NN authentication_NN methods_NNS using_VBG Symmetric_JJ cryptography_NN in_IN combination_NN with_IN Software_NNP 
+Security_NNP model_NN ._. In_IN this_DT approach_NN bank_NN hides_VBZ customer_NN transaction_NN data_NNS is_VBZ secure_JJ SMS_NNS using_VBG IDEA_NN symmetric_JJ cryptographic_JJ algorithm_NN 
+and_CC send_VB it_PRP to_TO customer_NN application_NN supported_VBD handset_NN ._. Customer_NN application_NN decrypts_VBZ data_NNS in_IN secure_JJ manner_NN the_DT encryption_NN and_CC 
+decryption_NN are_VBP characterized_VBN by_IN a_DT secret_JJ key_NN that_IN the_DT legal_JJ parties_NNS have_VBP to_TO posses_VB ._. So_RB ,_, in_IN face_NN of_IN the_DT current_JJ security_NN issues_NNS and_CC the_DT 
+growing_VBG number_NN of_IN attacks_NNS and_CC consequent_JJ frauds_NNS ,_, new_JJ internet_NN banking_NN systems_NNS should_MD be_VB designed_VBN as_IN to_TO provide_VB better_JJR 
+authentication_NN and_CC identification_NN methods_NNS ._. And_CC these_DT methods_NNS can_MD be_VB implemented_VBN to_TO the_DT Mobile_NNP banking_NN to_TO address_VB the_DT Security_NN 
+concern_NN ._. 
+abstractrp_NN 
+Internet_NNP Banking_NNP ,_, security_NN standards_NNS ,_, short-time_JJ passwords_NNS 
+keywordsrp_NN 
+he_PRP security_NN models_NNS for_IN online_JJ banking_NN systems_NNS currently_RB in_IN use_NN are_VBP strongly_RB based_VBN on_IN Internet_NN banking_NN user_NN identification_NN and_CC 
+authentication_NN methods_NNS -LSB-_-LRB- 2_CD -RSB-_-RRB- ,_, which_WDT are_VBP also_RB the_DT components_NNS where_WRB most_RBS Internet_NNP banking_NN systems_NNS '_POS vulnerabilities_NNS are_VBP found_VBN ._. 
+existing_VBG SMS_NN system_NN does_VBZ not_RB have_VB any_DT built-in_JJ procedure_NN to_TO authenticate_VB -LSB-_-LRB- 1_CD -RSB-_-RRB- the_DT text_NN and_CC offer_NN security_NN for_IN the_DT text_NN transmitted_VBD as_IN 
+data_NNS ,_, because_IN most_JJS of_IN the_DT applications_NNS for_IN mobile_JJ devices_NNS are_VBP designed_VBN and_CC developed_VBN without_IN taking_VBG security_NN into_IN consideration_NN ._. 
+1_CD -LRB-_-LRB- a_DT -RRB-_-RRB- Security_NN 
+Security_NN of_IN the_DT transactions_NNS is_VBZ the_DT primary_JJ concern_NN of_IN the_DT Internet-based_JJ industries_NNS ._. The_DT lack_NN of_IN 
+Security_NN may_MD result_VB in_IN serious_JJ damages_NNS the_DT security_NN issue_NN -LSB-_-LRB- 3_CD -RSB-_-RRB- will_MD be_VB further_JJ discussed_VBN in_IN the_DT next_JJ section_NN along_IN with_IN the_DT possible_JJ 
+attacks_NNS due_JJ to_TO the_DT insufficient_JJ protections_NNS ._. The_DT examples_NNS of_IN potential_JJ hazards_NNS of_IN the_DT electronic_JJ banking_NN system_NN are_VBP tra_NN nsferring_NN funds_NNS ,_, 
+and_CC minting_VBG electric_JJ currency_NN ,_, etc._FW ._. 
+1_CD -LRB-_-LRB- b_NN -RRB-_-RRB- Authentication_NN 
+Encryption_NN may_MD help_VB make_VB the_DT transactions_NNS more_RBR secure_JJ ._. The_DT Internet_NN of_IN today_NN has_VBZ become_VBN an_DT integral_JJ part_NN of_IN our_PRP$ 
+Everyday_JJ life_NN and_CC the_DT proportion_NN of_IN users_NNS expecting_VBG to_TO be_VB able_JJ to_TO manage_VB their_PRP$ bank_NN accounts_VBZ anywhere_RB anytime_RB is_VBZ constantly_RB growing_VBG 
+-LSB-_-LRB- 4_LS -RSB-_-RRB- ._. As_IN such_JJ ,_, Internet_NNP banking_NN has_VBZ come_VBN to_TO age_NN as_IN a_DT crucial_JJ component_NN of_IN any_DT financial_JJ institution_NN 's_POS multi-channel_JJ strategy_NN ._. Based_VBN on_IN 
+the_DT assumption_NN that_IN only_RB an_DT authentic_JJ user_NN is_VBZ able_JJ to_TO do_VB so_RB ,_, successful_JJ authentication_NN eventually_RB enables_VBZ an_DT authorized_JJ user_NN to_TO access_NN 
+his_PRP$ private_JJ information_NN ._. -LSB-_-LRB- 5_CD -RSB-_-RRB- 
+1_CD -LRB-_-LRB- c_NN -RRB-_-RRB- Short-Time_NNP Password_NNP Solution_NN 
+Considering_VBG today_NN 's_POS pervasiveness_NN of_IN malicious_JJ software_NN and_CC phishing_NN attacks_NNS ,_, any_DT Internet_NN banking_NN solution_NN must_MD be_VB resistant_JJ 
+against_IN stealing_VBG attacks_NNS ._. For_IN this_DT we_PRP propose_VBP a_DT challenge/response-based_JJ short-time_JJ password_NN authentication_NN method_NN using_VBG symmetric_JJ 
+cryptography_NN in_IN combination_NN with_IN a_DT Software_NNP Security_NNP Model_NNP -LSB-_-LRB- 6_CD ,_, 7_CD -RSB-_-RRB- ._. The_DT short-time_JJ password_NN solution_NN is_VBZ in_IN use_NN at_IN in_IN software-based_JJ 
+security_NN systems_NNS ,_, the_DT coding_NN and_CC decoding_NN of_IN information_NN is_VBZ done_VBN using_VBG specialized_JJ security_NN software_NN ._. 
+introductionrp_NN 
+Internet_NN banking_NN is_VBZ offering_VBG its_PRP$ customers_NNS with_IN a_DT wide_JJ range_NN of_IN services_NNS :_: Customers_NNS are_VBP able_JJ to_TO interact_VB with_IN their_PRP$ banking_NN accounts_NNS 
+as_RB well_RB as_IN make_VB financial_JJ transactions_NNS from_IN virtually_RB anywhere_RB without_IN time_NN restrictions_NNS ._. In_IN order_NN for_IN electronic_JJ banking_NN to_TO continue_VB to_TO 
+grow_VB ,_, the_DT security_NN and_CC the_DT privacy_NN aspects_NNS need_VBP to_TO be_VB improved_VBN ._. With_IN the_DT security_NN and_CC privacy_NN issues_NNS resolved_VBN ,_, the_DT future_NN of_IN electronic_JJ 
+banking_NN can_MD be_VB very_RB prosperous_JJ ._. The_DT future_NN of_IN electronic_JJ banking_NN will_MD be_VB a_DT system_NN where_WRB users_NNS are_VBP able_JJ to_TO interact_VB with_IN their_PRP$ banks_NNS 
+?_. worry-free_JJ ?_. and_CC banks_NNS are_VBP operated_VBN under_IN one_CD common_JJ standard_NN ._. The_DT security_NN models_NNS for_IN online_JJ banking_NN systems_NNS currently_RB in_IN use_NN are_VBP 
+strongly_RB based_VBN on_IN Internet_NN banking_NN user_NN identification_NN and_CC authentication_NN methods_NNS ,_, which_WDT are_VBP also_RB the_DT components_NNS where_WRB most_RBS Internet_NNP 
+banking_NN systems_NNS '_POS vulnerabilities_NNS are_VBP found_VBN ._. 
+This_DT paper_NN describes_VBZ current_JJ online_JJ banking_NN problems_NNS and_CC discusses_VBZ the_DT need_NN for_IN security_NN testing_NN for_IN online_JJ banking_NN ._. The_DT system_NN 
+allows_VBZ user_NN to_TO carry_VB out_RP all_DT banking_VBG transaction_NN securely_RB from_IN anywhere_RB ,_, anytime_RB ._. We_PRP have_VBP implemented_VBN system_NN using_VBG symmetric_JJ key_NN 
+IDEA_NN algorithm_NN ._. 
+In_IN future_JJ better_JJR power_NN consumption_NN algorithm_NN like_IN blowfish_NN can_MD be_VB tried_VBN out_RP ._. Steganogrpahy_NNP can_MD also_RB be_VB applied_VBN for_IN secure_JJ Internet_NN 
+banking_NN and_CC mobile_JJ banking_NN transactions_NNS ._. We_PRP can_MD use_VB concept_NN of_IN STK_NNP ,_, SIM_NNP application_NN toolkit_NN where_WRB bank_NN can_MD stored_VBD the_DT applic_JJ ation_NN 
+and_CC encryption_NN keys_NNS on_IN SIM_NNP ._. 
+conclusionrp_NN 
+-LSB-_-LRB- 1_CD -RSB-_-RRB- Sandeep_NNP Singh_NNP Ghotra_NNP ,_, Baldev_NNP Kumar_NNP Mandhan_NNP ,_, Sam_NNP Shang_NNP Chun_NNP Wei_NNP ,_, Yi_NNP Song_NN ,_, Chris_NNP Steketee_NNP ,_, ?_. Secure_VB Display_VB and_CC Secure_VB Transactions_NNS Using_VBG a_DT Handset_NNP ?_. 
+Sixth_NNP International_NNP Conference_NNP on_IN the_DT Management_NN of_IN Mobile_NNP Business_NNP ._. 
+-LSB-_-LRB- 2_CD -RSB-_-RRB- Dilla_NNP Salama_NNP Abdul_NNP Minaam_NNP ._. Hatem_NNP M._NNP Abdul_NNP Kadir_NNP ,_, Mohily_NNP Mohamed_NNP Hadhoud_NNP ,_, ''_'' Evaluating_VBG the_DT effects_NNS of_IN Symmetric_JJ Cryptographic_JJ algorithms_NNS on_IN Power_NN 
+Consumption_NN for_IN different_JJ data_NNS types_NNS ?_. ,_, International_NNP Journal_NNP of_IN Network_NNP Security_NNP ,_, Volume_NN 11_CD ,_, September_NNP 2010_CD ._. 
+-LSB-_-LRB- 3_CD -RSB-_-RRB- Managing_VBG the_DT Risk_NN of_IN Mobile_NNP Banking_NNP Technologies_NNPS ,_, Bankable_NNP Frontier_NNP Associates_NNPS ._. 
+-LSB-_-LRB- 4_LS -RSB-_-RRB- Richard_NNP E._NNP Smith_NNP ._. Authentication_NN :_: From_IN Passwords_NNPS to_TO Public_NNP Keys_NNP ._. Addison_NNP Wesley_NNP ,_, 2001_CD ._. 
+-LSB-_-LRB- 5_CD -RSB-_-RRB- Encryption_NNP Issues_NNS ._. 
+-LSB-_-LRB- 6_CD -RSB-_-RRB- Internet_NNP Security_NNP ._. 
+-LSB-_-LRB- 7_CD -RSB-_-RRB- MICROSOFT_NNP ,_, An_DT in-depth_JJ perspective_NN on_IN software_NN vulnerabilities_NNS and_CC exploits_NNS ,_, malicious_JJ code_NN threats_NNS ,_, and_CC potentially_RB unwanted_JJ software_NN ,_, focusing_VBG on_IN the_DT first_JJ half_NN 
+of_IN 2008_CD -LSB-_-LRB- Report_NNP -RSB-_-RRB- ._. Security_NNP Intelligence_NNP Report_NNP ,_, January_NNP through_IN June_NNP 2008_CD ._. 
+-LSB-_-LRB- 8_CD -RSB-_-RRB- M._NNP JOHNSON_NNP ,_, A_DT new_JJ approach_NN to_TO Internet_NNP banking_NN ._. University_NNP Cambridge_NNP ._. -LRB-_-LRB- PhD_NN -RRB-_-RRB- 2008_CD ,_, p._NN 113_CD ._. 
+-LSB-_-LRB- 9_CD -RSB-_-RRB- Carneiro_NNP ,_, B._NNP and_CC Sousa_NNP ,_, R._NNP T._NNP ,_, Identifying_NNP Bank_NNP Frauds_NNP Using_VBG Crisp-DM_NN and_CC Decision_NN Trees_NNP ,_, 
+International_NNP Journal_NNP of_IN Computer_NNP Science_NNP &_CC Information_NNP Technology_NNP ._. October_NNP ,_, vol_NN ._. 2_CD ,_, 2010_CD ,_, pp._NN 162_CD -_: 169_CD ._. 
+-LSB-_-LRB- 10_CD -RSB-_-RRB- Development_NNP ,_, Why_WRB is_VBZ J2ME_NN MIDP_NN superior_JJ to_TO WAP_NNP ,_, http://www.developnet.co.uk/wap.htm_NN ._. 
+-LSB-_-LRB- 11_CD -RSB-_-RRB- Laitinen_NNP ,_, H._NNP ,_, 2001_CD ,_, Sun_NNP 's_POS 2001_CD Worldwide_NNP Java_NNP Developer_NNP Conference_NNP ,_, Development_NNP Tools_NNP for_IN the_DT J2ME_NN ,_, 
+http://www.forum.nokia.com/main/1,35452,1_0_75,00.html_NN ._. 
+-LSB-_-LRB- 12_CD -RSB-_-RRB- Java_NNP 2_CD Platform_NNP ,_, Micro_NNP Edition_NNP --_: J2ME_NN ,_, Official_NNP Site_NN ,_, http://java.sun.com/javame/index.jsp_NN ._. 
+-LSB-_-LRB- 13_CD -RSB-_-RRB- CEM_NN ,_, ?_. Common_JJ Criteria_NNS for_IN Information_NNP Technology_NNP Security_NNP Evaluation_NN ?_. ,_, version3_NN .1_NN ,_, 2006_CD ._. -LSB-_-LRB- Online_NN -RSB-_-RRB- ._. 
+Available_JJ :_: http://www.commoncriteriaportal.org/files/ccfiles/CEMV3.1R2.pdf_NN 
+-LSB-_-LRB- 14_CD -RSB-_-RRB- A._NN Hiltgen._NNP ;_: T._NNP Kramp_NNP ;_: T._NNP Weigold_NNP ;_: ``_`` Secure_VB Internet-banking_JJ Authentication_NN ,_, ''_'' IEEE_NNP Security_NNP and_CC Privacy_NNP ,_, vol_NN ._. 4_CD ,_, no._NN 2_CD ,_, 2006_CD ,_, p.21-29_NN ._. 
+-LSB-_-LRB- 15_CD -RSB-_-RRB- F._NNP Puente_NNP ;_: J.D._NNP Sandoval_NNP ;_: P._NNP Hernandez_NNP ;_: C.J._NNP Molina_NNP ;_: ?_. Improving_NN online_JJ banking_NN security_NN with_IN hardware_NN devices_NNS ?_. ,_, 39th_JJ Annual_JJ 2005_CD International_NNP Carnahan_NNP 
+Conference_NN on_IN Security_NNP Technology_NNP -LRB-_-LRB- CCST_NNP `_`` 05_CD -RRB-_-RRB- ,_, 2005_CD ._. 11-14_CD Oct._NNP 2005_CD pp._NN 174_CD --_: 177_CD ._. 
+-LSB-_-LRB- 16_CD -RSB-_-RRB- Testing_VBG Verification_NNP and_CC Validation_NNP Workshop_NNP ,_, 2008_CD ._. ICSTW_NN apos_NNS ;_: 08_CD ._. IEEE_NNP International_NNP Conference_NNP ,_, 9-11_CD April_NNP 2008_CD pp._NN 294_CD --_: 302_CD ._. 
+-LSB-_-LRB- 17_CD -RSB-_-RRB- K.Chikomo_NNP ,_, M._NNP K._NNP Chong_NNP ,_, A._NNP Arnab_NNP ,_, A._NNP Hutchison_NNP -LRB-_-LRB- 2006_CD -RRB-_-RRB- ,_, ?_. Security_NN of_IN mobile_JJ banking_NN ?_. ,_, University_NNP of_IN Cape_NNP Town_NNP ,_, South_NNP Africa_NNP ,_, Tech_NNP ._. Rep._NNP -LSB-_-LRB- Online_NNP -RSB-_-RRB- ._. Available_JJ :_: 
+http://pubs_NNS ._. cs.uct.ac.za_NN /_: archive_NN /_: 00000341/01/Security_NN of_IN Mobile_NNP Banking_NNP paper.pdf_NN ._. 
+-LSB-_-LRB- 18_CD -RSB-_-RRB- A._NN Shamir_NNP ,_, ?_. Identity-based_JJ cryptosystems_NNS and_CC signature_NN schemes_NNS ?_. ,_, in_IN CRYPTO_NNP :_: Proceedings_NNP of_IN Crypto_NNP ,_, 1994_CD ._. 
+-LSB-_-LRB- 19_CD -RSB-_-RRB- N._NNP Croft_NNP ,_, M._NNP Olivier_NNP ,_, ?_. Using_VBG an_DT approximated_VBN One-Time_JJ Pad_NN to_TO Secure_VB Short_JJ Messaging_NNP Service_NNP -LRB-_-LRB- SMS_NNP -RRB-_-RRB- ?_. ,_, in_IN Proceedings_NNP of_IN the_DT Southern_JJ African_NNP 
+Telecommunication_NN Networks_NNP and_CC 
+Applications_NNS Conference_NN -LRB-_-LRB- SATNAC_NN -RRB-_-RRB- ,_, 2005_CD ,_, pp._VBP 71_CD --_: 76_CD ._. 
+-LSB-_-LRB- 20_CD -RSB-_-RRB- Sun_NNP Microsystems_NNPS Wireless_NNP Toolkit_NNP http://java.sun.com/products/j2mewtoolkit_NN 
+-LSB-_-LRB- 21_CD -RSB-_-RRB- Bouncy_NNP Castle_NNP http://www.bouncycastle.org/_NN 
+-LSB-_-LRB- 22_CD -RSB-_-RRB- ProGuard_NNP http://proguard.sourceforge.net/_NN 
+-LSB-_-LRB- 23_CD -RSB-_-RRB- Computer_NNP security_NN http://searchsecurity.techtarget.com/_NN 
+referencesrp_NN 

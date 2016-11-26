@@ -1,0 +1,122 @@
+A FORMAL CLASSIFICATION OF INTERNET
+BANKING ATTACKS AND VULNERABILITIEStitlerpA formal classification of attacks and vulnerabilities that affect current internet banking systems is
+presented along with two attacks which demonstrate the insecurity of such systems. Based ona thorough
+analysis of current security models, we propose a guidelines for designing secure internet banking
+systems which are not affected by the presented attacks and vulnerabilities.abstractrpInternet banking, e-bank, online bank, identification, authentication, authorization.keywordsrpCurrently there is a clear need for efficient security models by banks which offer online access
+to their banking systems [20]. In face of the growing number of transactions processed through
+online banking systems, several new security technologies and models which aim at providing
+authenticated secure communications through known insecure channels have been introduced
+in current literature [16].
+The number of malware and exploits focused on online banking systems vulnerabilities has
+been steadily growing during past years [19]. Recent reports [22] indicate that banking trojans
+were among the 50 main security threats in 2009, while Brazil fiures as the source and
+destination of most of those attacks performed in Latin America[30].
+In order to propose security models and solutions in general it is first necessary to understand
+and properly classify the existing attack techniques and the vulnerabilities on which they are
+based. Such characterization must be conducted taking into consideration the external factors
+that affect security and the intrinsic trust relation between users and providers of online banking
+services. Furthermore, it must be considered the responsibility for maintaining security is
+always transferred to the weakest link in the security chain, which means, in most cases, the
+final user. In this paper we present a formal analysis and classification of the several
+vulnerabilities and attacks that affect online banking systems.
+The rest of this paper is organized as follows: the current security models for online banking are
+discussed in sections 2 and 3. In section 4, we present a comparative analysis of the solutions
+currently adopted by banking institutions and their inherent vulnerabilities. In section 5, attack
+modelling is introduced and we describe efficient attacks against currently adopted solutions. In
+section 6, the countermeasures necessary to thwart the presented attacks are introduced. Finally,
+in section 7, we conclude with suggestions for future works.introductionrpThe security models for online banking systems currently in use are strongly based on Internet
+banking user identification and authentication methods, which are also the components where
+most Internet banking systems' vulnerabilities are found. The aforementioned methods depend
+on the user's knowledge of secret authentication information and the user's ability for
+maintaining both this information and the device used to access internet banking services
+secure. If the user's platform (i.e. computing devices, operating systems and applications) is
+compromised, the banking system is compromised as a whole, allowing the execution of
+fraudulent transactions. As result of these issues, most of the online banking systems currently
+in operation may be compromised and subverted. Two attacks which efficiently render current
+security models ineffective are presented, demonstrating how vulnerable internet banking
+systems are.
+Most of the attacks directed at online banking systems target the user (the weakest link in the
+chain), focusing on obtaining authentication and identification information through the use of
+social engineering and compromising the user's Internet banking access device in order to
+install malware which automatically performs banking transactions, apart from obtaining
+authentication data. This fact indicates that secure internet banking systems should provide
+security mechanisms as user independent as possible, mitigating the risk of user related
+informations leaks and security issues affecting the system and leading to fraud.
+In face of the current security issues and the growing number of attacks and consequent frauds,
+new internet banking systems should be designed as to provide better authentication and
+identification methods which are less dependent on the user. The basic characteristics of such
+methods are introduced based on the analysis the methods currently employed. A internet
+banking systems with those characteristics will render the presented attacks (and other attacks)
+ineffective, significantly decreasing the number of observed frauds.As a future work, a new internet banking system could be developed along with a new security
+model which provide the security requisites introduced in this paper. Furthermore, efficient
+techniques for real-time fraud and attacks detections could be proposed based on efficient data
+mining and pattern recognition methods.conclusionrp[1] ISO/IEC 27002 Code of practice for information security management. 2. ed. Rio de Janeiro: ABNT,
+2007.
+[2] ISO/IEC. 27001 Information security management systems Requirement. Rio de Janeiro: ABNT,
+2007.
+[3] CAVUSOGLU, Hasan e Cavusoglu, Huseyin. Emerging Issues in Responsible Vulnerability
+Disclosure. Workshop on Information Technology and Systems (WITS 2004). Barcelona, Spain, 2004.
+[4] GOGUEN, Alice; Feringa, Alexis; Stoneburner, Gary. Risk Management Guide for Information
+Technology Systems [Report]. Computer Security Division Information Technology Laboratory ;
+National Institute of Standards and Technology Gaithersburg. Nist Special Publication 800, Julho 2002.
+[5] KOSSEW, David. State of the Art Security in Internet Banking [Peridico]. 1997.
+[6] MARSH, Stephen P. Formalising Trus as a Computational Concept. Tese (Doutorado). University of
+Stirling. - Scotland, UK, 1994. - p. 198.
+[7] MICROSOFT, An in-depth perspective on software vulnerabilities and exploits, malicious code
+threats, and potentially unwanted software, focusing on the first half of 2008 [Report]. Security
+Intelligence Report, January through June 2008.
+[8] PEOTTA, Laerte; Amaral, Dino. Estudo de taxonomia de ataques e atacantes em um honeypot de
+alta interao. Proceedings of the First International Conference on Forensic Computer Science
+Investigation, Braslia, pp. 38-42, ISSN 1980-1114, 2007.
+[9] WEEKS, Stephen. Understanding Trust Management Systems. IEEE Symposium on Security and
+Privacy. 2001.
+[10] O. Dandash, P. Dung Le, and B. Srinivasan, Internet banking payment protocol with fraud
+prevention, 2007 22nd International International Symposium on Computer and Information Sciences,
+Nov. 2007, pp. 1-6.
+[11] YAHALOM, R.; Klein, B. ; Beth, T. Trust Relationships in Secure Systems-A Distributed
+Authentication Perspective. IEEE Symposium on Security and Privacy. Washington, DC : IEEE
+Computer Society, May 24-26, 1993.
+[12] V. Bertol, R.T. Jr, and L.P. Melo, "Um Modelo Para As Normas Sobre Certificacao Digital No
+Brasil," Procedings of the Four International Conference on Forensic Computer Science Investigation
+(ICoFCS'2009), 2009.
+[13] L. Granville, L. Tarouco, and R.R. Barcelos, "Taxonomia de Malwares : Uma Avaliacao dos
+Malwares Automaticamente Propagados na Rede," Sbseg 2009, Campinas - So Paulo: 2009, pp. 43-56.
+[14] CORREIA, M. A. S. et al. Segurana em Internet Banking. XIII Simposio Brasileiro em Seguranca
+da Informacao e Sistemas Computacionais (SBseg), Gramado - RS, 2008. 291-299.
+[15] G. Dalton, R. Mills, J. Colombi, and R. Raines, "Analyzing Attack Trees using Generalized
+Stochastic Petri Nets," 2006 IEEE Information Assurance Workshop, 2006, pp. 116-123.
+[16] DANDASH, O.; DUNG, P. ; SRINIVASAN, B. Security Analysis for Internet Banking Models.
+Eighth ACIS International Conference on Software Engineering, Artificial Intelligence, Networking, and
+Parallel/Distributed Computing. [S.l.]: [s.n.]. 2007. p. 1141 - 1146.
+[17] FINJAN MALICIOUS CODE RESEARCH CENTER. Cybercrime Intelligence: Cybercriminals
+use Trojans & Money Mules to rob online banking accounts. [S.l.]. 2009.
+[18] HALLER, N. A One-Time Password System (RFC 2289). Internet Engineering Task Force. [S.l.].
+1998.
+[19] MICROSOFT. An in-depth perspective on software vulnerabilities and exploits, malicious code
+threats, and potentially unwanted software, focusing on the first half of 2008. [S.l.]. 2008. January
+through June.[20] NAMI, M. R. E-Banking: Issues and Challenges. 10th ACIS International Conference on Software
+Engineering, Artificial Intelligences, Networking and Parallel/Distributed Computing, 2009. 263-267.
+[21] NILSSON, M. A. A.; HERD, S. Building Security and Trust in Online Banking. Conference for
+human-computer interaction. Portland - Oregon - USA: [s.n.]. 2005.
+[22] SYMANTEC. Relatorio Sobre Ameacas de Seguranca na Internet. Symantec - America Latina.
+[S.l.]. 2010.
+[23] T. T. et al. Modeling Internet Attacks. Wordshop on Information Assurance and Security. NY:
+IEEE. 2001.
+[24] A.S. Martino and X. Perramon, A Model for Securing E-Banking Authentication Process:
+Antiphishing Approach, 2008 IEEE Congress on Services - Part I, Jul. 2008, pp. 251-254.
+[25] A.S. Martino and X. Perramon, Defending E-Banking Services: Antiphishing Approach, 2008
+Second International Conference on Emerging Security Information, Systems and Technologies, Aug.
+2008, pp. 93-98.
+[26] WANG, H.; HUANG, X.; DODDA, R. G. Ticket-based mobile commerce system and its
+implementation. Q2SWinet '06: Proceedings of the 2nd ACM international workshop on Quality of
+service & security for wireless and mobile networks. Terromolinos, Spain: ACM. 2006. p. 119--122.
+[27] WEIMING, G. et al. Falcon: on-line monitoring and steering of large-scale parallel programs.
+FRONTIERS '95: Proceedings of the Fifth Symposium on the Frontiers of Massively Parallel
+Computation (Frontiers'95). Washington, DC, USA: IEEE Computer Society. 1995. p. 422.
+[28] YAN, J.; EL, A.; SALAH,. Usability of CAPTCHAs or usability issues in CAPTCHA design.
+SOUPS '08: Proceedings of the 4th symposium on Usable privacy and security. New York, NY, USA:
+ACM. 2008. p. 44--52.
+[29] M. JOHNSON, A new approach to Internet banking. University Cambridge. (PhD) 2008, p. 113.
+[30] Carneiro, B. and Sousa, R. T., Identifying Bank Frauds Using Crisp-DM And Decision Trees,
+International Journal of Computer Science & Information Technology . October, vol. 2, 2010, pp. 162-
+169referencesrp

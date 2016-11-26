@@ -1,0 +1,227 @@
+“Jumping Through Hoops”: Why do Java Developers
+Struggle With Cryptography APIs?titlerpTo protect sensitive data processed by current applications,
+developers, whether security experts or not, have to rely on
+cryptography. While cryptography algorithms have become
+increasingly advanced, many data breaches occur because
+developers do not correctly use the corresponding APIs. To
+guide future research into practical solutions to this problem,
+we perform an empirical investigation into the obstacles
+developers face while using the Java cryptography APIs, the
+tasks they use the APIs for, and the kind of (tool) support
+they desire. We triangulate data from four separate studies
+that include the analysis of 100 StackOverow posts, 100
+GitHub repositories, and survey input from 48 developers.
+We nd that while developers nd it dicult to use certain
+cryptographic algorithms correctly, they feel surprisingly
+condent in selecting the right cryptography concepts
+(e.g., encryption vs. signatures). We also nd that the APIs
+are generally perceived to be too low-level and that developers
+prefer more task-based solutions.abstractrpCryptography, API misuse, empirical software engineeringkeywordsrpAs software applications collect more and more sensitive
+data, it is becoming increasingly essential for developers to
+rely on cryptography to protect this data. However, this is
+easier said than done. Application developers are not necessarily
+cryptography experts and the oered cryptography
+Application Programming Interfaces (APIs) are often rather
+complex and not easy to use.
+For instance, consider the Java Cryptography Architecture
+(JCA) [4], the ocial framework for working with cryptography
+in Java. The JCA is designed to allow Java appli-the APIs developers use from the underlying implementations
+that can be supplied by any provider (e.g., Java's default
+implementation or BouncyCastle [2]). However, JCA
+APIs oer a broad variety of dierent algorithms that in
+turn support many modes and conguration options. While
+any JCA provider must support a certain list of cryptography
+algorithms, it may also support additional algorithms,
+or even provide dierent default values for the same JCA
+API call. As a result, the task to use and compose these
+API components may be challenging.
+In fact, the misuse of cryptography APIs has already been
+established as a common cause of many security vulnerabilities
+[14{16]. Solutions that eectively support application
+developers in correctly and easily incorporating cryptography
+into their applications are thus urgently needed. To
+provide such solutions, it is essential to understand the root
+causes behind the phenomenon and the kind of support developers
+would perceive as useful. Eliciting these causes and
+requirements in the specic context of Java-based software
+development is the goal of this paper. Specically, this paper
+addresses the following research questions.
+RQ1 What obstacles, if any, do developers face during the
+use of Java cryptography APIs? While existing studies
+established, after the fact, that APIs are misused [14{
+16], they give no insights into the underlying reasons.
+If developers do face obstacles while using the APIs,
+understanding the nature of these obstacles is essential
+for deriving guidance towards useful solutions.
+RQ2 What are the common cryptography tasks developers
+perform? Robillard [25] concluded that a main obstacle
+to learning an API is the lack of information on
+how to use this API to accomplish a specic task. To
+the best of our knowledge, there is no data that identi
+es common cryptography tasks developers perform,
+which would help in providing better support for them.
+RQ3 What tools/methods would help developers use cryptog-
+raphy more eectively? To aid in developing solutions,
+we elicit developers' expectations and requirements.
+To answer these research questions, we conduct an empirical
+investigation consisting of four separate studies. Study 1
+(S1) analyzes the top 100 Java cryptography questions asked
+on the popular question/answer site StackOverow. Study 2
+(S2) is a pilot survey that gathers data from 11 developers
+who asked Java cryptography-related questions on Stack-
+Overow. In Study 3 (S3), we analyze 100 randomly selected
+public GitHub repositories that use Java's cryptography APIs to identify the tasks developers usually need to
+accomplish. Finally, Study 4 (S4) surveys 37 developers who
+use Java's cryptography APIs to conrm some of our ndings
+from the previous three studies. The material used in
+all four studies is available on our online artifacts page [1].
+We answer RQ1-3 by triangulating data from S1-S4. We
+nd that developers do indeed have diculties in using the
+Java cryptography APIs and that their main obstacle is the
+API complexity and lack of a proper level of abstraction.
+Our survey participants suggest several solutions and we
+recommend a list of tool features for guiding future tool
+builders in addressing the obstacles faced by developers.introductionrpMany security vulnerabilities are caused by developers' incorrect
+use of cryptography APIs. However, it is not clear
+what obstacles such developers face when using cryptography
+in their applications. We reported on an empirical study
+to investigate such obstacles, in the context of Java, through
+examining questions on StackOverow, GitHub repositories,
+and two surveys of a total of 48 developers. Our ndings
+showed that developers do indeed face diculties in using
+the Java cryptography APIs. We found that developers commonly
+need to authenticate users and store login data, to
+establish secure connections, and to encrypt dierent forms
+of data. In our surveys, developers indicated that the existing
+APIs are too low-level and asked for task-based solutions,
+whether in the API design, documentation, or through assistance
+tools. Based on these observations, we recommended
+a list of features that such solutions should include. This
+list can guide future tool and solution designs.conclusionrp[1] Accompanying online artifact page.
+http://www.st.informatik.tu-darmstadt.de/artifacts/
+crypto-api-misuse.
+[2] Bouncy Castle. www.bouncycastle.org.
+[3] GitHub search APIs.
+https://developer.github.com/v3/search/.
+[4] Java Cryptography Architecture (JCA).
+http://docs.oracle.com/javase/6/docs/technotes/
+guides/security/crypto/CryptoSpec.html.
+[5] JCE unlimited strength setup.
+http://www.oracle.com/technetwork/java/javase/
+downloads/jce8-download-2133166.html.
+[6] Keyczar. https://github.com/google/keyczar.
+[7] NaCI: Networking and crytptography library.
+http://nacl.cr.yp.to/.
+[8] Python wrapper for GitHub APIs.
+https://github.com/sigmavirus24/github3.py.
+[9] Stackexchange data explorer.
+http://data.stackexchange.com/stackoverow/queries.
+[10] R. J. Anderson. Security engineering. Wiley, 2008.
+[11] S. Arzt, S. Nadi, K. Ali, E. Bodden, S. Erdweg, and
+M. Mezini. Towards secure integration of
+cryptographic software. In Proc. of the SIGPLAN
+Symposium on New Ideas in Programming and
+Reections on Software at SPLASH (Onward!), 2015.
+Accepted to appear. https://www.informatik.
+tu-darmstadt.de/leadmin/user upload/Group
+EC-Spride/Publikationen/Onward2015.pdf.
+[12] J. W. Creswell. Qualitative inquiry and research
+design: Choosing among ve approaches. Sage, 2012.
+[13] C. De Roover, R. Lammel, and E. Pek.
+Multi-dimensional exploration of API usage. In Proc.
+of the International Conference on Program
+Comprehension (ICPC), pages 152{161, 2013.
+[14] M. Egele, D. Brumley, Y. Fratantonio, and
+C. Kruegel. An empirical study of cryptographic
+misuse in Android applications. In Proc. of the
+Conference on Computer and Communications
+Security (CCS), pages 73{84, 2013.
+[15] S. Fahl, M. Harbach, T. Muders, M. Smith,
+L. Baumgartner, and B. Freisleben. Why Eve and
+Mallory love Android: An analysis of android SSL
+(in)security. In Proc. of the Conference on Computer
+and Communications Security (CCS), pages 50{61,
+2012.
+[16] M. Georgiev, S. Iyengar, S. Jana, R. Anubhai,
+D. Boneh, and V. Shmatikov. The most dangerous
+code in the world: Validating SSL certicates in
+non-browser software. In Proc. of the Conference on
+Computer and Communications Security (CCS), pages
+38{49, 2012.
+[17] L. A. Goodman. Snowball sampling. The annals of
+mathematical statistics, pages 148{170, 1961.
+[18] D. Hou and L. Li. Obstacles in using frameworks and
+APIs: An exploratory study of programmers'
+newsgroup discussions. In Proc. of the International
+Conference on Program Comprehension (ICPC), pages
+91{100, 2011.
+[19] M. Kasunic. Designing an eective survey. Technical
+Report CMUSEI-2005-HB-004, Software Engineering
+Institute, Carnegie Mellon University, 2005.
+[20] D. Lazar, H. Chen, X. Wang, and N. Zeldovich. Why
+does cryptographic software fail? A case study and
+open problems. In Proc. of the ACM Asia-Pacic
+Workshop on Systems (APSys), pages 7:1{7:7, 2014.
+[21] W. Maalej and M. Robillard. Patterns of knowledge in
+API reference documentation. IEEE Transactions on
+Software Engineering (TSE), 39(9):1264{1282, 2013.
+[22] L. Moreno, G. Bavota, M. D. Penta, R. Oliveto, and
+A. Marcus. How can I use this method? In Proc. of
+the International Conference Software Engineering
+(ICSE), 2015.
+[23] C. Parnin, C. Treude, L. Grammel, and M.-A. Storey.
+Crowd documentation: Exploring the coverage and
+the dynamics of API discussions on Stack Overow.
+Georgia Institute of Technology, Tech. Rep, 2012.
+[24] L. Ponzanelli, G. Bavota, M. Di Penta, R. Oliveto,
+and M. Lanza. Mining stackoverow to turn the IDE
+into a self-condent programming prompter. In Proc.
+of the Working conference on Mining Software
+Repositories (MSR), pages 102{111, 2014.
+[25] M. Robillard. What makes APIs hard to learn?
+Answers from developers. IEEE Software, 26(6):27{34,
+2009.
+[26] M. Robillard, E. Bodden, D. Kawrykow, M. Mezini,
+and T. Ratchford. Automated API property inference
+techniques. IEEE Transactions on Software
+Engineering (TSE), 39(5):613{637, 2013.
+[27] M. P. Robillard and Y. B. Chhetri. Recommending
+reference API documentation. Empirical Software
+Engineering, pages 1{29, 2014.
+[28] M. P. Robillard and R. DeLine. A eld study of API
+learning obstacles. Empirical Software Engineering,
+16(6):703{732, 2011.
+[29] M. Saied, H. Sahraoui, and B. Dufour. An
+observational study on API usage constraints and
+their documentation. In Proc. of the International
+Conference on Software Analysis, Evolution and
+Reengineering (SANER), pages 33{42, 2015.
+[30] S. Subramanian, L. Inozemtseva, and R. Holmes. Live
+API documentation. In Proc. of the International
+Conference Software Engineering (ICSE), pages
+643{652, 2014.
+[31] J. Sunshine, J. Herbsleb, and J. Aldrich. Searching the
+state space: A qualitative study of API protocol
+usability. In Proc. of the International Conference on
+Program Comprehension (ICPC), 2015.
+[32] F. Thung, D. Lo, and J. Lawall. Automated library
+recommendation. In Proc. of the Working conference
+on Reverse Engineering (WCRE), pages 182{191,
+2013.
+[33] C. Treude, M. Robillard, and B. Dagenais. Extracting
+development tasks to navigate software
+documentation. IEEE Transactions on Software
+Engineering (TSE), 41(6):565{581, 2015.
+[34] G. Uddin and M. Robillard. How API documentation
+fails. IEEE Software, 32(4):68{75, 2015.
+[35] A. J. Viera, J. M. Garrett, et al. Understanding
+interobserver agreement: The kappa statistic. Fam
+Med, 37(5):360{363, 2005.
+[36] W. Wang, H. Malik, and M. Godfrey. Recommending
+posts concerning API issues in developer Q&A sites.
+In Proc. of the Working conference on Mining
+Software Repositories (MSR), 2015.
+[37] M. Zibran, F. Eishita, and C. Roy. Useful, but usable?
+factors aecting the usability of APIs. In Proc. of the
+Working conference on Reverse Engineering (WCRE),
+pages 151{155, 2011.referencesrp

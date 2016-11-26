@@ -1,0 +1,400 @@
+{"bedrooms":"2 BHK House","area":"LocationRajiv Nagar","size":"660 sqft","price":"3.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"1 BHK House","area":"LocationKuvempunagar","size":"432 sqft","price":"14.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"1170 sqft","price":"20.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"368 sqft","price":"22.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"1 BHK House","area":"LocationVijayanagar Extn.","size":"520 sqft","price":"23.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"1 BHK Apartment","area":"LocationVijayanagar Extn.","size":"709 sqft","price":"24.1 Lac","status":"StatusUnder Construction (Possession in Jun '15) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"25.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"765 sqft","price":"26.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"1 BHK House","area":"LocationYadavgiri","size":"900 sqft","price":"27.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationHootagalli","size":"726 sqft","price":"27.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"28.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"1 BHK Builder Floor","area":"LocationJP Nagar","size":"675 sqft","price":"28.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationRajiv Nagar","size":"600 sqft","price":"28.5 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationSriramapura","size":"600 sqft","price":"28.5 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"29.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"30.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"30.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"676 sqft","price":"30.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationSatagalli","size":"600 sqft","price":"30.0 Lac","status":"StatusUnder Construction (Possession in May '15) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"31.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationNanjungud Road","size":"1200 sqft","price":"32.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationVijayanagar Extn.","size":"5 sqft","price":"32.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1200 sqft","price":"32.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationHebbal","size":"600 sqft","price":"33.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Villa","area":"LocationSriramapura","size":"750 sqft","price":"33.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationHunsur Road","size":"1170 sqft","price":"33.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationHunsur Road","size":"1154 sqft","price":"33.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationHunsur Road","size":"1170 sqft","price":"33.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVisveshwara Nagar","size":"1293 sqft","price":"33.0 Lac","status":"StatusUnder Construction (Possession in Sep '15)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVisveshwara Nagar","size":"1301 sqft","price":"33.0 Lac","status":"StatusUnder Construction (Possession in Sep '15)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationNanjungud Road","size":"1200 sqft","price":"33.6 Lac","status":"StatusUnder Construction (Possession in Dec '16)"}
+{"bedrooms":"2 BHK House","area":"LocationGokulam","size":"825 sqft","price":"34.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Builder Floor","area":"LocationYadavgiri","size":"1200 sqft","price":"35.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"1092 sqft","price":"35.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationSriramapura","size":"600 sqft","price":"35.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationVijay Nagar 2nd Stage","size":"625 sqft","price":"35.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationHootagalli","size":"1176 sqft","price":"35.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationSriramapura","size":"600 sqft","price":"35.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationVijayanagar Extn.","size":"450 sqft","price":"35.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationHootagalli","size":"1138 sqft","price":"35.0 Lac","status":"StatusUnder Construction (Possession in Jan '17)"}
+{"bedrooms":"4 BHK House","area":"LocationHebbal","size":"935 sqft","price":"36.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationNanjungud Road","size":"1308 sqft","price":"36.6 Lac","status":"StatusUnder Construction (Possession in Dec '16)"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationJP Nagar","size":"1130 sqft","price":"36.7 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1100 sqft","price":"37.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationJP Nagar","size":"1130 sqft","price":"37.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVijayanagar Extn.","size":"1182 sqft","price":"37.8 Lac","status":"StatusUnder Construction (Possession in Jun '15) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1100 sqft","price":"38.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationRajiv Nagar","size":"600 sqft","price":"38.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Villa","area":"LocationRajiv Nagar","size":"600 sqft","price":"38.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVijayanagar Extn.","size":"1193 sqft","price":"38.1 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVijayanagar Extn.","size":"1221 sqft","price":"38.9 Lac","status":"StatusUnder Construction (Possession in Jun '15) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"1880 sqft","price":"39.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationKuvempunagar","size":"480 sqft","price":"39.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationHootagalli","size":"1292 sqft","price":"39.1 Lac","status":"StatusUnder Construction (Possession in Jan '17)"}
+{"bedrooms":"2 BHK House","area":"LocationDattagalli","size":"600 sqft","price":"40.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationHootagalli","size":"1350 sqft","price":"40.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationDattagalli","size":"600 sqft","price":"40.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationHebbal","size":"1200 sqft","price":"40.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK House","area":"LocationHebbal","size":"1200 sqft","price":"40.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK House","area":"LocationHebbal","size":"1200 sqft","price":"40.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationVijay Nagar 2nd Stage","size":"660 sqft","price":"42.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"1 BHK House","area":"LocationMysore City","size":"600 sqft","price":"42.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationMysore City","size":"600 sqft","price":"42.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationVisveshwara Nagar","size":"1594 sqft","price":"42.0 Lac","status":"StatusUnder Construction (Possession in Sep '15)"}
+{"bedrooms":"3 BHK House","area":"LocationNazarbad","size":"1200 sqft","price":"42.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationVisveshwara Nagar","size":"1558 sqft","price":"43.0 Lac","status":"StatusUnder Construction (Possession in Sep '15)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"990 sqft","price":"43.1 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationHebbal","size":"1214 sqft","price":"43.6 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore City","size":"600 sqft","price":"44.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationVijaya nagar","size":"1100 sqft","price":"44.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationRajiv Nagar","size":"600 sqft","price":"40.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"40.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1100 sqft","price":"40.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationVijay Nagar 2nd Stage","size":"3040 sqft","price":"40.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationJP Nagar","size":"930 sqft","price":"40.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1260 sqft","price":"41.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationNanjungud Road","size":"1260 sqft","price":"41.0 Lac","status":"StatusUnder Construction (Possession in Dec '15) Freehold"}
+{"bedrooms":"2 BHK Villa","area":"LocationRoopa Nagar","size":"950 sqft","price":"41.6 Lac","status":"StatusUnder Construction (Possession in Oct '15) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationSrinagara Layout","size":"1000 sqft","price":"42.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationNanjungud Road","size":"1500 sqft","price":"42.0 Lac","status":"StatusUnder Construction (Possession in Dec '16)"}
+{"bedrooms":"3 BHK House","area":"LocationVijaya nagar","size":"10 sqm","price":"44.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"1080 sqft","price":"44.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"5 BHK House","area":"LocationHebbal","size":"1000 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1264 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"1 BHK House","area":"LocationMysore City","size":"600 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationVijayanagar Extn.","size":"1250 sqft","price":"45.0 Lac","status":"StatusUnder Construction (Possession in Dec '15) Freehold"}
+{"bedrooms":"1 BHK House","area":"LocationNazarbad","size":"500 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"1 BHK House","area":"LocationMysore City","size":"1200 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationSatagalli","size":"600 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVijaya nagar","size":"1264 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"6 BHK House","area":"LocationVijaya nagar","size":"10 sqft","price":"45.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1264 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVijaya nagar","size":"1200 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVisveshwara Nagar","size":"1489 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"4 cent","price":"45.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationJP Nagar","size":"910 sqft","price":"45.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationHootagalli","size":"1501 sqft","price":"45.0 Lac","status":"StatusUnder Construction (Possession in Jan '17)"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationJP Nagar","size":"910 sqft","price":"45.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1749 sqft","price":"45.3 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1749 sqft","price":"45.3 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Villa","area":"LocationBogadhi","size":"1250 sqft","price":"45.4 Lac","status":"StatusUnder Construction (Possession in Dec '15) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore City","size":"600 sqft","price":"46.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationMysore City","size":"600 sqft","price":"46.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"1200 sqft","price":"46.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"46.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationJP Nagar","size":"1100 sqft","price":"46.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK House","area":"LocationIttigegud","size":"450 sqft","price":"46.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationDattagalli","size":"600 sqft","price":"47.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"47.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"920 sqft","price":"47.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationDattagalli","size":"600 sqft","price":"47.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationHootagalli","size":"1552 sqft","price":"47.0 Lac","status":"StatusUnder Construction (Possession in Jan '17)"}
+{"bedrooms":"2 BHK House","area":"LocationRamkrishna Nagar","size":"600 sqft","price":"48.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationJP Nagar","size":"600 sqft","price":"48.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"1200 sqft","price":"48.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1093 sqft","price":"48.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationSrirampura","size":"1115 sqft","price":"48.4 Lac","status":"StatusUnder Construction (Possession in Oct '16) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationSrirampura","size":"1200 sqft","price":"48.5 Lac","status":"StatusUnder Construction (Possession in Oct '15) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationVijayanagar Extn.","size":"1552 sqft","price":"48.5 Lac","status":"StatusUnder Construction (Possession in Jun '15) Freehold"}
+{"bedrooms":"3 BHK Builder Floor","area":"LocationJP Nagar","size":"1575 sqft","price":"48.8 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationVijaya nagar","size":"1200 sqft","price":"49.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVijay Nagar 2nd Stage","size":"1000 sqft","price":"49.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationVijaya nagar","size":"1355 sqft","price":"49.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationJP Nagar","size":"1575 sqft","price":"49.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"2800 sqft","price":"50.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationSriramapura","size":"600 sqft","price":"50.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationV V Mohalla","size":"1220 sqft","price":"50.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"50.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"50.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"1200 sqft","price":"50.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationNanjungud Road","size":"1500 sqft","price":"50.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationSrinagara Layout","size":"950 sqft","price":"50.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"6 BHK House","area":"LocationVijaya nagar","size":"1600 sqft","price":"50.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Villa","area":"LocationBogadhi","size":"1900 sqft","price":"50.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"600 sqft","price":"50.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationHootagalli","size":"1651 sqft","price":"50.0 Lac","status":"StatusUnder Construction (Possession in Jan '17)"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationVijay Nagar 2nd Stage","size":"1313 sqft","price":"50.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Builder Floor","area":"LocationVijay Nagar 2nd Stage","size":"1650 sqft","price":"50.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationV V Mohalla","size":"1220 sqft","price":"50.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationJaya Laxmi Puram","size":"1305 sqft","price":"51.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Villa","area":"LocationBogadhi","size":"1560 sqft","price":"51.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Villa","area":"LocationBogadhi","size":"1560 sqft","price":"51.3 Lac","status":"StatusUnder Construction (Possession in Dec '15) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationV V Mohalla","size":"1134 sqft","price":"51.7 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVidyarayanapuram","size":"1500 sqft","price":"52.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore","size":"1200 sqft","price":"52.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationSriramapura","size":"600 sqft","price":"52.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationGayathripuram Layout","size":"700 sqft","price":"52.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationGayathripuram Layout","size":"700 sqft","price":"52.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationDattagalli","size":"600 sqft","price":"52.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationLakshmipuram","size":"1235 sqft","price":"52.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationVisveshwara Nagar","size":"1090 sqft","price":"52.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationV V Mohalla","size":"1225 sqft","price":"52.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationJP Nagar","size":"1308 sqft","price":"52.3 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"1405 sqft","price":"52.6 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationSrirampura","size":"1224 sqft","price":"52.8 Lac","status":"StatusUnder Construction (Possession in Oct '16) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMandi Mohalla","size":"1200 sqft","price":"53.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1400 sqft","price":"53.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationLakshmipuram","size":"1250 sqft","price":"53.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationJP Nagar","size":"1308 sqft","price":"54.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationLakshmipuram","size":"1206 sqft","price":"54.8 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationVidyarayanapuram","size":"1298 sqft","price":"55.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore Rural","size":"5 cent","price":"55.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationMysore City","size":"1600 sqft","price":"55.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1200 sqft","price":"55.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationVijay Nagar 2nd Stage","size":"1500 sqft","price":"55.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationSrinagara Layout","size":"1200 sqft","price":"55.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationDattagalli","size":"600 sqft","price":"55.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationBogadhi","size":"1200 sqft","price":"55.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1200 sqft","price":"55.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationV V Mohalla","size":"1100 sqft","price":"55.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationAlekesare","size":"1100 sqft","price":"55.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1244 sqft","price":"55.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1244 sqft","price":"55.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationVijay Nagar 2nd Stage","size":"1100 sqft","price":"56.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationRoopa Nagar","size":"1560 sqft","price":"56.7 Lac","status":"StatusUnder Construction (Possession in Dec '15)"}
+{"bedrooms":"3 BHK House","area":"LocationRoopa Nagar","size":"1560 sqft","price":"56.7 Lac","status":"StatusUnder Construction (Possession in Dec '15) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"1150 sqft","price":"56.8 Lac","status":"StatusUnder Construction (Possession in Dec '15) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"1183 sqft","price":"57.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationYadavgiri","size":"1050 sqft","price":"57.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationLakshmipuram","size":"1275 sqft","price":"57.7 Lac","status":"StatusUnder Construction (Possession in Jun '15) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationV V Mohalla","size":"1251 sqft","price":"57.9 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationV V Mohalla","size":"1310 sqft","price":"58.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationKavempunagar","size":"1350 sqft","price":"58.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationJaya Laxmi Puram","size":"1400 sqft","price":"58.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"1265 sqft","price":"58.2 Lac","status":"StatusUnder Construction (Possession in Jun '16)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationGokulam","size":"1165 sqft","price":"58.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationGokulam","size":"1165 sqft","price":"58.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationGokulam","size":"1170 sqft","price":"59.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationGokulam","size":"1170 sqft","price":"59.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationGokulam","size":"1170 sqft","price":"59.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Villa","area":"LocationVijayanagar Extn.","size":"1500 sqft","price":"59.0 Lac","status":"StatusUnder Construction (Possession in Nov '15) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1481 sqft","price":"59.5 Lac","status":"StatusUnder Construction (Possession in Aug '15) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1540 sqft","price":"60.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"1200 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"1400 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationSomanatha Nagar","size":"1200 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationBogadhi","size":"1080 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationHebbal","size":"600 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore","size":"1000 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"1288 sqft","price":"60.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationSrirampura","size":"1354 sqft","price":"60.5 Lac","status":"StatusUnder Construction (Possession in Oct '16) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationDattagalli","size":"1200 sqft","price":"62.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1862 sqft","price":"62.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationHebbal","size":"950 sqft","price":"62.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"1288 sqft","price":"62.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationHebbal","size":"1640 sqft","price":"62.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Villa","area":"LocationSrirampura","size":"1500 sqft","price":"62.0 Lac","status":"StatusUnder Construction (Possession in Jul '15) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationDevarajamohalla","size":"1350 sqft","price":"62.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationVisveshwara Nagar","size":"1840 sqft","price":"63.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"1288 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationDattagalli","size":"1200 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationDattagalli","size":"1200 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationDattagalli","size":"1200 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationJP Nagar","size":"1200 sqft","price":"60.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore City","size":"1200 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationDattagahalli","size":"1600 sqft","price":"60.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationJaya Laxmi Puram","size":"1350 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"1260 sqft","price":"60.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationVijaya nagar","size":"1564 sqft","price":"60.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1370 sqft","price":"63.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1370 sqft","price":"63.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1784 sqft","price":"64.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationOntikoppal","size":"1250 sqft","price":"64.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Builder Floor","area":"LocationVijaya nagar","size":"1575 sqft","price":"64.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationKC Layout","size":"1310 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationBogadhi","size":"972 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationGokulam","size":"1350 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationLakshmipuram","size":"1275 sqft","price":"65.0 Lac","status":"StatusUnder Construction (Possession in Jul '15) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationBogadhi","size":"950 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationSiddhartha Layout","size":"1310 sqft","price":"65.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"3 BHK Villa","area":"LocationVijaya nagar","size":"1900 sqft","price":"65.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationBogadhi","size":"950 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"1200 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationBEML Layout","size":"1000 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationVijaya nagar","size":"1200 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationLakshmipuram","size":"1275 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationJP Nagar","size":"900 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"1350 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationGokulam","size":"1350 sqft","price":"65.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1700 sqft","price":"66.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"1288 sqft","price":"66.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationJP Nagar","size":"1200 sqft","price":"66.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationGokulam","size":"1355 sqft","price":"66.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationMysore","size":"1338 sqft","price":"66.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationSiddhartha Layout","size":"1338 sqft","price":"66.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationLakshmipuram","size":"1485 sqft","price":"66.6 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationJP Nagar","size":"1000 sqft","price":"67.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1794 sqft","price":"67.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationVisveshwara Nagar","size":"1800 sqft","price":"67.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationSatagalli","size":"1200 sqft","price":"68.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Builder Floor","area":"LocationVijay Nagar 2nd Stage","size":"1480 sqft","price":"68.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"1200 sqft","price":"68.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationVijaya nagar","size":"1200 sqft","price":"68.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationSatagalli","size":"1200 sqft","price":"68.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationRoopa Nagar","size":"1710 sqft","price":"68.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationSiddhartha Layout","size":"1310 sqft","price":"68.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationGokulam","size":"1510 sqft","price":"68.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Builder Floor","area":"LocationGokulam","size":"1510 sqft","price":"68.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationGokulam","size":"1515 sqft","price":"69.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationGokulam","size":"1515 sqft","price":"69.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore Rural","size":"6 cent","price":"70.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"1200 sqft","price":"70.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"4 BHK House","area":"LocationVidyarayanapuram","size":"1400 sqft","price":"70.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationKuvempunagar","size":"1350 sqft","price":"70.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationGayathripuram Layout","size":"1400 sqft","price":"70.0 Lac","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK Apartment","area":"LocationYadavgiri","size":"1288 sqft","price":"70.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationKuvempunagar","size":"1350 sqft","price":"70.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationVijay Nagar 2nd Stage","size":"1800 sqft","price":"70.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationVijayanagar Extn.","size":"2300 sqft","price":"70.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationGokulam","size":"2400 sqft","price":"70.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1620 sqft","price":"70.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1620 sqft","price":"70.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationLakshmipuram","size":"1600 sqft","price":"71.5 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1773 sqft","price":"72.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1773 sqft","price":"72.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationVisveshwara Nagar","size":"2000 sqft","price":"72.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationJaya Laxmi Puram","size":"1773 sqft","price":"72.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationHebbal","size":"1200 sqft","price":"73.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Villa","area":"LocationVijayanagar Extn.","size":"1900 sqft","price":"73.0 Lac","status":"StatusUnder Construction (Possession in Dec '15) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationYadavgiri","size":"1470 sqft","price":"74.0 Lac","status":"StatusUnder Construction (Possession in Jun '15) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationVijaya nagar","size":"2200 sqft","price":"74.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationYadavgiri","size":"1582 sqft","price":"74.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"1200 sqft","price":"75.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"756 sqft","price":"75.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"4 BHK House","area":"LocationGokulam","size":"1530 sqft","price":"75.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationGokulam","size":"1530 sqft","price":"75.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore","size":"1200 sqft","price":"75.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationGokulam","size":"1300 sqft","price":"75.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationGokulam","size":"1530 sqft","price":"75.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationGokulam","size":"1260 sqft","price":"77.3 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Villa","area":"LocationVijayanagar Extn.","size":"2200 sqft","price":"78.0 Lac","status":"StatusUnder Construction (Possession in Dec '15) Freehold"}
+{"bedrooms":"3 BHK Villa","area":"LocationSrirampura","size":"1500 sqft","price":"78.0 Lac","status":"StatusUnder Construction (Possession in Jun '15) Freehold"}
+{"bedrooms":"2 BHK Apartment","area":"LocationKuvempunagar","size":"1325 sqft","price":"80.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Builder Floor","area":"LocationKuvempunagar","size":"1000 sqft","price":"80.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationLakshmipuram","size":"1680 sqft","price":"80.0 Lac","status":"StatusReady to Move (New Property) Leasehold"}
+{"bedrooms":"5 BHK House","area":"LocationVijaya nagar","size":"20 sqft","price":"80.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationSrirampura","size":"2400 sqft","price":"80.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationVidyarayanapuram","size":"1500 sqft","price":"80.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationHebbal","size":"600 sqft","price":"80.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationBrindavan Extn.","size":"1500 sqft","price":"80.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"5 BHK House","area":"LocationShakti Nagar","size":"1200 sqft","price":"80.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationLakshmipuram","size":"1650 sqft","price":"80.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationSriramapura","size":"1200 sqft","price":"80.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"1680 sqft","price":"80.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationJSS Layout","size":"2400 sqft","price":"80.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"4 BHK House","area":"LocationVijaya nagar","size":"20 sqft","price":"80.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore City","size":"2700 sqft","price":"80.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationVijay Nagar 2nd Stage","size":"1800 sqft","price":"80.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"5 BHK House","area":"LocationRajiv Nagar","size":"2000 sqft","price":"80.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationVijaya nagar","size":"1850 sqft","price":"80.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"5 BHK House","area":"LocationSomanatha Nagar","size":"2200 sqft","price":"82.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"1200 sqft","price":"85.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"2064 sqft","price":"85.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationLakshmipuram","size":"1780 sqft","price":"85.0 Lac","status":"StatusUnder Construction (Possession in Jul '15) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationRamkrishna Nagar","size":"1720 sqft","price":"85.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationVijay Nagar 2nd Stage","size":"1200 sqft","price":"85.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationGokulam","size":"1200 sqft","price":"85.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationVijayanagar Extn.","size":"2100 sqft","price":"85.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationHebbal","size":"1950 sqft","price":"85.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationVijayanagar Extn.","size":"1400 sqft","price":"85.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationBogadhi","size":"2400 sqft","price":"85.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Villa","area":"LocationRoopa Nagar","size":"2200 sqft","price":"85.0 Lac","status":"StatusUnder Construction (Possession in Feb '16) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationVijaya nagar","size":"2200 sqft","price":"87.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationSiddhartha Layout","size":"2087 sqft","price":"88.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMahadevapura Layout","size":"2400 sqft","price":"90.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore City","size":"1200 sqft","price":"90.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"4 BHK House","area":"LocationGokulam","size":"1320 sqft","price":"90.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore","size":"2400 sqft","price":"90.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationGokulam","size":"1000 sqft","price":"90.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationGokulam","size":"1850 sqft","price":"90.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationVijaya nagar","size":"1850 sqft","price":"92.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK Villa","area":"LocationHunsur Road","size":"4000 sqft","price":"92.0 Lac","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Villa","area":"LocationJP Nagar","size":"2400 sqft","price":"95.0 Lac","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationJP Nagar","size":"2200 sqft","price":"95.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationVijaya nagar","size":"2000 sqft","price":"95.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationVijaya nagar","size":"1900 sqft","price":"95.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationYadavgiri","size":"1962 sqft","price":"95.5 Lac","status":"StatusUnder Construction (Possession in Dec '15) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationYadavgiri","size":"2106 sqft","price":"96.9 Lac","status":"StatusUnder Construction (Possession in Jun '16)"}
+{"bedrooms":"3 BHK House","area":"LocationMysore","size":"2100 sqft","price":"97.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore","size":"2000 sqft","price":"97.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationYadavgiri","size":"1800 sqft","price":"98.0 Lac","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore","size":"2000 sqft","price":"1.0 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationDattagalli","size":"1200 sqft","price":"1.0 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"25 cent","price":"1.0 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationJP Nagar","size":"1480 sqft","price":"1.0 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationBogadhi","size":"2000 sqft","price":"1.0 Cr","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationV V Mohalla","size":"1900 sqft","price":"1.0 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationV V Mohalla","size":"1900 sqft","price":"1.0 Cr","status":"StatusReady to Move (Resale)"}
+{"bedrooms":"2 BHK House","area":"LocationKuvempunagar","size":"1500 sqft","price":"1.0 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationJP Nagar","size":"1850 sqft","price":"1.0 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"5 BHK House","area":"LocationBannimantap","size":"1200 sqft","price":"1.02 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationGokulam","size":"2700 sqft","price":"1.08 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationVijaya nagar","size":"1750 sqft","price":"1.10 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"1 BHK Villa","area":"LocationJP Nagar","size":"11,000 sqft","price":"1.10 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationMysore","size":"2000 sqft","price":"1.10 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationDattagahalli","size":"2500 sqft","price":"1.10 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationDattagalli","size":"2100 sqft","price":"1.10 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationRajiv Nagar","size":"1200 sqft","price":"1.10 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"2350 sqft","price":"1.12 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationSiddhartha Layout","size":"2000 sqft","price":"1.25 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"4 BHK House","area":"LocationMysore Rural","size":"2320 sqft","price":"1.30 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationHebbal","size":"3500 sqft","price":"1.30 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationGokulam","size":"2400 sqft","price":"1.35 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationVidyarayanapuram","size":"900 sqft","price":"1.35 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationVidyarayanapuram","size":"900 sqft","price":"1.35 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK House","area":"LocationGokula","size":"2500 sqft","price":"1.40 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"5 BHK House","area":"LocationKuvempunagar","size":"3000 sqft","price":"1.45 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationLakshmipuram","size":"2800 sqft","price":"1.50 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationVijay Nagar 2nd Stage","size":"2000 sqft","price":"1.50 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"6 BHK House","area":"LocationRajiv Nagar","size":"2400 sqft","price":"1.50 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Villa","area":"LocationMysore Sub-urban","size":"2400 sqft","price":"1.55 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationNanjungud Road","size":"4200 sqft","price":"1.59 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationSiddhartha Layout","size":"2700 sqft","price":"1.60 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"4 BHK House","area":"LocationVijaya nagar","size":"3500 sqft","price":"1.60 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"4 BHK House","area":"LocationSaraswathipuram","size":"3000 sqft","price":"1.60 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationKuvempunagar","size":"3500 sqft","price":"1.60 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationTilak Nagar","size":"3417 sqft","price":"1.75 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"6 BHK House","area":"LocationVijayanagar Extn.","size":"3500 sqft","price":"1.75 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationRamkrishna Nagar","size":"4000 sqft","price":"1.75 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK Villa","area":"LocationMysore","size":"3300 sqft","price":"2.44 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"6 BHK House","area":"LocationGokulam","size":"2700 sqft","price":"2.50 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationKuvempunagar","size":"4000 sqft","price":"2.50 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationGokulam","size":"2800 sqft","price":"2.59 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"5 BHK House","area":"LocationYadavgiri","size":"3600 sqft","price":"2.75 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"5 BHK House","area":"LocationYadavgiri","size":"3600 sqft","price":"2.75 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"5 BHK House","area":"LocationYadavgiri","size":"3600 sqft","price":"2.75 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"2 BHK House","area":"LocationMysore Rural","size":"75 cent","price":"3.0 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"4 BHK House","area":"LocationJaya Laxmi Puram","size":"4200 sqft","price":"3.80 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationVijaya nagar","size":"2500 sqft","price":"4.50 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationJaya Laxmi Puram","size":"2900 sqft","price":"1.80 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"6 BHK House","area":"LocationVijaya nagar","size":"33,000 sqft","price":"1.80 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationHebbal","size":"2400 sqft","price":"1.80 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"2 BHK House","area":"LocationChamundipuram","size":"3800 sqft","price":"1.90 Cr","status":"StatusReady to Move (Resale) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationRoopa Nagar","size":"3500 sqft","price":"2.0 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK Apartment","area":"LocationMysore","size":"2860 sqft","price":"2.0 Cr","status":"StatusReady to Move (New Property)"}
+{"bedrooms":"3 BHK Apartment","area":"LocationHebbal","size":"9600 sqft","price":"2.25 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"3 BHK House","area":"LocationVijaya nagar","size":"2300 sqft","price":"2.25 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"4 BHK House","area":"LocationMysore","size":"4300 sqft","price":"2.30 Cr","status":"StatusReady to Move (New Property) Freehold"}
+{"bedrooms":"5 BHK House","area":"LocationGokulam","size":"4280 sqft","price":"2.35 Cr","status":"StatusReady to Move (New Property)"}

@@ -1,0 +1,60 @@
+Using Fuzzy Neural Network in Real Estate Prices PredictiontitlerpTo forecast real estate prices more accurate, we combined fuzzy reasoning technique with neural network to construct
+a fuzzy neural network (FNN), which has ability in fuzzy reasoning and learning. In our research, we first use our relative
+real estate sample data to train the fuzzy neural network. Thereafter, we can use the exact test data to forecast real estate
+price. Compared with the traditional network, FNN obtained a much better result. Thus, we give a more accurate and effective
+method to forecast real estate prices.abstractrpFuzzy reasoning, Neural network, Prices predictionkeywordsrpNormally, there are two kinds of factors which will affect
+the real estate price. We call them general factor
+and particular factor.
+The general factor is basically caused by macro social; it
+will not directly affect the price of particular property.
+But this kind of factor will affect the whole price trend
+of real estate market. It is mainly consisted of the supply
+and requirement, macroeconomic, population, social,
+administration, psychology, international economy and
+other accidental factors.
+The particular factor is the factor which will directly
+affect the price of an actual property. It is mainly consisted
+of construction structure, style, level, facilities,
+construction quality, public area, direction, floors, environments,
+location and exchange status. The two most
+crucial factors are location and environments.
+In general, the affection on real estate price of mentioned
+above factors is very complicated and uncertain. It is very
+difficult to confirm which affection is the most crucial
+one. Nowadays we usually depend on pricing persons
+who have long term accumulated experience to decide.
+The prediction of real estate prices is just the estimation
+of the future price level. The quantitative estimation and
+analyze is a very important reference on real estate investment.introductionrpCombined fuzzy reasoning technique with neural network,
+we can establish FNN system which has fuzzy
+reasoning and learning capability to forecast real estate
+prices. In our experience, we train FNN with properties
+sample data at first, and then forecast the price with actual
+test data. Compared with traditional BPNN, FNN
+402
+has achieved better reasoning result. Thus we have a
+kind of more accurate and efficient method to predict
+real estate price.
+FNN can availably contain special “if-then” regulation,
+and this make neural network have better self-adapted
+and extension ability. Therefore, FNN can get more satisfactory
+result in real estate prices prediction, although
+it has varying factors, uncertain and extraordinary problems.conclusionrp[1] Zhang L Y, Yan P F. Fuzzy Network and Fuzzy Control.
+Beijing: Qinghua University, 2000.
+[2] Zhang G L, Zeng J, Ke X Z, Deng F L. Fuzzy Control and
+MATLAB Application. Xian: Xian communication University
+Press, 2000.
+[3] Wang W. Artificial Neural Network Principle – Introduction
+and Application. Beijing: Beijing Aviation and Space University,
+1995.
+[4] Yu H J, Cheng C Z, Zhang S, Zhou J N. Intelligent Diagnosis
+Based On Neural Network. Beijing: Metallurgy Industry
+Press, 2002.
+[5] Shi Q X, Hua J. Market Prediction Research Based On Neural
+Network BP Arithmetic. Chongqing Technology and
+Business University Transaction (Natural Science Edition),
+2004.
+[6] Xing M H, Chen X G, Wang Y. Applied FNN to Predict Oil
+Field Yield. Computer Imitation, Feb. 2005.
+[7] Tang L B, Liao F Y, Luo J. Application of FNN in Share
+Price Prediction, Feb. 2004.referencesrp

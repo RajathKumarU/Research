@@ -1,0 +1,98 @@
+Mining Big Data to Predicting FuturetitlerpDue to technological advances, vast data sets (e.g. big data) are increasing now days. Big Data a new term; is used
+to identify the collected datasets. But due to their large size and complexity, we cannot manage with our current
+methodologies or data mining software tools to extract those datasets. Such datasets provide us with unparalleled
+opportunities for modelling and predicting of future with new challenges. So as an awareness of this and
+weaknesses as well as the possibilities of these large data sets, are necessary to forecast the future. Today’s we
+have an overwhelming growth of data in terms of volume, velocity and variety on web. Moreover this, from a
+security and privacy views, both area have an unpredictable growth. So Big Data challenge is becoming one of the
+most exciting opportunities for researchers in upcoming years.
+Hence this paper discuss about this topic in a broad overview like; its current status; controversy; and challenges to
+forecast the future. This paper defines at some of these problems, using illustrations with applications from various
+areas. Finally this paper discuss secure management and privacy of big data as one of essential issues.abstractrpBig data, data mining, Large datasets; Internet of things.keywordsrpRecent years have witnessed a dramatic increase in our
+ability to collect data from various sensors, devices in
+multiple formats, from independent or connected
+applications [1, 2 and 3]. This data has outpaced our
+capability to process, analyze, store and understand
+these datasets [2]. For e.g. Internet data. Imagine that,
+the web pages indexed by Google were around 1
+million in 1998, but quickly it reached 1 billion in
+2000 and 1 trillion in 2008 and so on. So this rapid
+expansion is accelerated by the dramatic increase in
+acceptance of social networking applications, such as
+Facebook, Twitter etc., that allow users to create
+contents freely and amplify the already huge Web
+volume and give an overview to predict the future of
+users. Based on this, these companies read mind of
+their users like to providing ads. Furthermore, with
+mobile phones becoming the sensory gateway to get
+real-time data on people from different aspects, the
+vast amount of data that mobile carrier can potentially
+process to improve our daily life has significantly
+outpaced our past CDR (Call Data Record)-based
+processing for billing purposes only [1, 2 and 3].
+It can be foreseen that Internet of things (IoT)
+applications will raise the scale of data to an
+unprecedented level. People and devices (from home
+coffee machines to cars, to buses, railway stations and
+airports) are all loosely connected [1, 2, 3]. Trillions of
+such connected components generates a huge data
+ocean; by that valuable information can be discover to
+help people and to improve the quality of their life and
+to make this world a better place for them for e.g. after
+we get up in every morning, in order to optimize our
+commute time to work and complete the optimization
+before we arrive at once, the system needs to process
+information from traffic, weather, construction, police
+activities to our calendar schedules.
+After that we perform our deep optimization schedule
+under the tight time constraints.Figure 1 shows the relation among various types of
+data existed in this real world. With the rapid
+increment in sensor technologies, mobile, cloud and
+high speed computing, we have already witnessed the
+emergence of the Big Data era [4]. While the immense volume of data being produced at exponential rates by plethora of increasingly heterogeneous computing devices and sensors, that constitutes the Internet of Things (IoT), show huge potential for the better understanding of various phenomena and events through predictive data analytics[4]. The same data can be significantly misused and exploited for harvesting privacy sensitive information, or affecting the veracity or integrity of results of data analytics that will be used by people and enterprises for decision making purposes or predicting future. The diversity of data sources introduces immense variety in the media types such as text, images, videos and variations within these; further, establishing reliability and trustworthiness, as well as completeness of data from different sources become very difficult [4]. These exacerbate the problem of ensuring overall quality of data and information related to an individual or an enterprise throughout its lifecycle. The richness of multimedia data generates unique privacy risks as they can be correlated to reveal very sensitive information [4]. The velocity with which multimedia data flows through the networks and devices enabled by rapid advances in mobile and cloud computing, and networking technologies, which adds another level of challenge w.r.t to securely processing potentially inaccurate, unfiltered data in motion. The increasing volume, velocity, and variety of data and the increasing challenge with regards to establishing veracity of such data, present an unprecedented level of security and privacy challenges [4]. In particular, the threat landscape has been seen an immense growth resulting in a significant increase in number of threats witnessed in short periods of time [4]. This rapid growth in the threat spectrum have also resulted in many sophisticated hacker tools and cyber criminals that never existed before. Seen along with such increase in threats are also many sophisticated hacker tools, which if coupled with emerging big data analytics tools, will enable cyber criminals to acquire computing resources to create large scale security incidents that never existed before [4]. Today’s we have been witnessing an overwhelming growth of data in terms of volume, velocity and variety, interestingly So from a security and privacy standpoint view, the threat landscape; security and privacy risks have also seen an unprecedented growth. Privacy is a pillar of democracy, we must remain alert to the possibility that it might be compromised by the rise of new technologies, and put in place all necessary safeguards [5, 6]. It is discussed as a main issue in this paper.
+But in all these applications, we are facing various significant challenges in leveraging the vast amount of data, including challenges in (1) system capabilities (2) algorithmic design (3) business models (4) security (5) privacy. As an example, Big Data is having in the data mining community, which is being considered as one of the most exciting opportunities in the years to come [3]. Moreover this, Secure Management of Big Data with today’s threat spectrum is also a biggest challenging problem. This paper shows that significant research effort is needed to build a generic architectural framework towards addressing these security and privacy challenges in a holistic manner as future work. Finally this paper introduce Big Data mining and its applications in Section 2. We summarize the papers presented in this issue in Section 3, and discuss about Big Data problems in Section 4. Section 5 discuss about Big Data controversy. We point the importance of open-source software tools in Section 6 and give some challenges and forecast to the future in Section 7. Finally Section 8 conclude this paper.introductionrpDue to increasing the size of data day by day, Big Data is going to continue growing during the next years and becoming one of the exciting opportunities in future. This paper insights about the topic, and controversy, and the main challenges etc. for the future. Hence Big Data is becoming the new Final Frontier for scientific data research and for business applications. And on challenging side, Securely Management of Big Data with today’s threat spectrum is a big issue. Because today’s we have an overwhelming growth of data in terms of volume, velocity and variety. So from a security and privacy standpoint, the threat landscape and security and privacy risks have also seen an unprecedented growth. So as for future research is needed to build a generic architectural framework towards addressing these security and privacy challenges in a holistic manner. Now we are in a new era where Big Data mining will help us to discover knowledge that no one has discovered before. So everybody is warmly invited to participate in this intrepid journey to discover the future views.conclusionrp[1.] http://big-data-mining.org/
+[2.] Ms. Neha A. Kandalkar , Prof. Avinash Wadhe,” Extracting Large Data using Big Data Mining”, International Journal of Engineering Trends and Technology (IJETT) – Volume 9 Number 11 - Mar 2014.
+[3.] Wei Fan, Albert Bifet,” Mining Big Data: Current Status, and Forecast to the Future”
+[4.] James Joshi, Balaji Palanisamy,” Towards Risk-aware Policy based Framework for Big Data Security and Privacy”, 2014.
+[5.] http://www.phibetaiota.net/2012/06/patrick-meier-un-report-on-big-data-for-development-highlights/
+[6.] http://www.unglobalpulse.org/sites/default/files/BigDataforDevelopmentGlobalPulseMay2012.pdf
+[7.] Bharti Thakur, Manish Mann,” Data Mining for Big Data: A Review”, International Journal of Advanced Research in Computer Science and Software Engineering, Volume 4, Issue 5, May 2014, ISSN: 2277 128X.
+[8.] http://www.ijser.org/paper/Data-Mining-and-Data-Pre-processing-for-Big-Data.html
+[9.] Aarshi Jain, Ankit Chadha,” International Journal of Engineering & Science Research”, IJESR/November 2013/ Vol-3/Issue-11/5015-5019 ISSN 2277-2685.
+[10.] http://albertbifet.com/big-data-mining/
+[11.] https://medium.com/big-data science/big-data-science-ba016521d3a6
+[12.] Dattatray Raghunath et al. “A Survey on Big Data mining Applications and different Challenges”, IJARCET, Volume 3 Issue 11, November 2014.
+[13.] http://www.bls.gov/careeroutlook/2013/fall/art01.pdf
+[14.] D. Pratiba, G. Shobha, Ph. D,” Educational BigData Mining Approach in Cloud: Reviewing the Trend”, International Journal of Computer Applications (0975 – 8887) Volume 92 – No.13, April 2014.
+[15.] Mrs. Deepali Kishor Jadhav,” Big Data: The New Challenges in Data Mining”, IJIRCST, ISSN: 2347- 5552, Volume-1, Issue-2, September, 2013.
+[16.] Harshawardhan S. Bhosale , Prof. Devendra P. Gadekar,” A Review Paper on Big Data and Hadoop”, International Journal of Scientific and Research Publications, Volume 4, Issue 10, October 2014 1 ISSN 2250-3153
+[17.] Miss. Neha V. Deshmukh Miss. Surbhi G. Atal Prof. Pushpanjali Chauragade,” Big Data Mining: An Overview”, International Journal for Engineering Applications and Technology, January 2015 ISSN: 2321-8134.
+[18.] Melwin Devassy , Gera.Praveen Kumar,” Enhancing Data Privacy In Data Extraction With Big Data”, International Journal of Advanced Trends in Computer Science and Engineering, Vol. 3 , No.1, Pages : 122– 127 (2014)
+[19.] Miss. Punde Archana, et al.” A Review:Data Mining for Big Data” IJARCET, Volume 3 Issue 10, October 2014.
+[20.] A. V. N. S. Jyothirmayee , Dr. G. Sreenivasula Reddy , K. Akbar “Understanding Big Data & DV2”, International Journal of Emerging Technology and Advanced Engineering Website: www.ijetae.com (ISSN 2250-2459, ISO 9001:2008 Certified Journal, Volume 4, Issue 7, July 2014).
+[21.] http://albertbifet.com/global-pulse-big-data-for-development/
+[22.] T.Rathika, J.Senthil Murugan,”FP Tree Algorithm and Approaches in Big Data”, International Journal of Innovative Research in Computer and Communication Engineering (An ISO 3297: 2007 Certified Organization) Vol. 2, Issue 9, September 2014.
+[23.] http://www.ciard.net/sites/default/files/bb40_backgroundnote.pdf
+[24.] http://operationalrisk.blogspot.in/2014/07/global-pulse-resilience-in-development.html
+[25.] http://www.unglobalpulse.org/sites/default/files/BigDataforDevelopment GlobalPulseMay2012.pdf
+[26.] http://wpdi.org/sites/default/files/ipi_epub_new_technology_final.pdf
+[27.] http://www.unglobalpulse.org/sites/default/files/BigDataforDevelopmentUNGlobalPulseJune2012.pdf
+[28.] https://brusselsbriefings.files.wordpress.com/2015/01/note.pdf
+[29.] David J. Hand,” Mining the past to determine the future: Problems and possibilities”, International Journal of Forecasting 25 (2009) 441–451.
+[30.] Kaushika Pal, Dr. Jatinderkumar R. Saini,” A Study of Current State of Work and Challenges in Mining Big Data”, International Journal of Advanced Networking Applications (IJANA) ISSN No. : 0975-0290
+[31.] http://www.nscb.gov.ph/statfocus/2013/SF_102013_OSG_bigData.asp
+[32.] http://paris21.org/newsletter/fall2013/big-data-dr-jose-ramon-albert
+[33.] Xindong Wu, Xingquan Zhu , Gong-Qing Wu, Wei Ding,” Data Mining with Big Data”
+[34.] http://www.rcrwireless.com/20121212/big-data-analytics/huge-big-data-gap-only-0-5-data-analyzed
+[35.] http://albertbifet.com/author/abifet/
+[36.] http://spotfire.tibco.com/blog/?p=16824
+[37.] http://albertbifet.com/big-data-mining-tools/
+[38.] Bharti Thakur Manish Mann,” Data Mining With Big Data Using C4.5 and Bayesian Classifier”, International Journal of Advanced Research in Computer Science and Software Engineering, Volume 4, Issue 8, August 2014.
+[39.] Jainendra Singh,” Big Data Analytic and Mining with Machine Learning Algorithm”, International Journal of Information and Computation Technology. ISSN 0974-2239 Volume 4, Number 1 (2014).
+[40.] http://albertbifet.com/big-data-mining-future-challenges/
+[41.] http://www.emc.com/about/news/press/2012/20121211-01.htm
+[42.] http://india.emc.com/about/news/press/2012/20121211-01.htm
+[43.] http://www.forbes.com/sites/marketshare/2012/12/21/behold-the-untapped-big-data-gap/
+[44.] http://www.informationweek.in/informationweek/news-analysis/177856/percent-world analyzed-study
+[45.] http://datascienceseries.com/blog/digital-universe-will-grow-to-40zb-in-2020-with-a-62-share-for-emerging-markets
+[46.] http://precisionmatch.net/blog/big-data-in-2020/ referencesrp

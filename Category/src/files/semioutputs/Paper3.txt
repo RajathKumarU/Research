@@ -1,0 +1,69 @@
+LEXICAL ANALYSIS TO EFFECTIVELY DETECT
+USERS’ OPINIONtitlerpIn this paper we present a lexical approach that will identify opinion of web users popularly expressed
+using short words or sms words. These words are pretty popular with diverse web users and are used for
+expressing their opinion on the web. The study of opinion from web arises to know the diverse opinion of
+web users. The opinion expressed by web users may be on diverse topics such as politics, sports, products,
+movies etc. These opinions will be very useful to others such as, leaders of political parties, selection
+committees of various sports, business analysts and other stake holders of products, directors and
+producers of movies as well as to the other concerned web users. We use semantic based approach to find
+users opinion from short words or sms words apart of regular opinionated phrases. Our approach
+efficiently detects opinion from opinionated texts using lexical analysis and is found to be better than the
+other approaches on different data sets.abstractrpArtificial Intelligence, Sentiment Analysis, Opinion MiningkeywordsrpShort words also known as SMS language [8] [9] [10] are quite popular with web users. There are
+many arguments [8] [9] and counter arguments [10] about its use in communication and its
+impact on linguistic development of future generations. We believe these short words continue to
+exist and would conceal facts and opinions important to others. For example, word like excellent
+is written in short words as xllent, xlent etc., the use of short words are found to be very popular
+as it conveys message at less time. The limitation is that there are no standards for short words,
+making it very difficult for processing. A few web users use one or more short words in their
+communication and opinionated text are no exceptions. Following are the examples of
+opinionated text with regular and short opinionated words collected from opinionated site review
+centre and retained in same form.
+Example 1 Well it is one of the most exciting phones to ever come out. I do think it might be
+behind the times compared to older phones from Nokia like the N95 etc but it is still a nice phone.
+Example 2 A gr8 TV for the dollar. Samsung has designed and produced a 5n TV. The picture
+quality is xllent with analog and high definition signal. Sound quality is gud to xllent. It has a
+wide angle of picture side vision. It is a very compact design for a TV of this size. Instructions are
+very xllent with simple set-up.Example 1 conveys opinion of a web user with regular opinionated words. Similarly, example 2
+conveys opinion of a web user using regular and short opinionated words. The words in bold
+represent regular opinionated words, those that are bold and underlined represent short
+opinionated words. The afore used short words like gr8, 5n, gud, xllent are commonly used to
+represent regular words great, fine, good and excellent.
+In this paper, we focus on detecting opinions expressed by web users using short and regular
+opinion words only on products. The remainder of this paper is organized as follows: In Section 2
+we give a brief description of related work. Then, in Section 3, we discuss our methodology. In
+Section 4, the experimental results are discussed. Conclusion is discussed in Section 5.introductionrpWe have discussed the use of different extraction patterns to detect opinion from opinionated
+texts consisting of normal and short opinionated words. We have achieved a better accuracy with
+patterns listed in Table 1 and 2 on both Data set 1 and Data set 2. An increased accuracy of 2.1 %,
+0.66% and 2.11% is obtained with patterns listed in Table 2 as compared to patterns listed in
+Table 1, using only adjective and using pattern mentioned in [5] on Data set 1. We obtain a better
+accuracy for patterns listed in Table 1 as against other approaches on Data set 2. An increased
+accuracy of 0.47%, 10.37% and 13.62% is obtained with patterns listed in Table 1 as compared to
+patterns listed in Table 2, using only adjective and using pattern mentioned in [5] on Data set 2. A
+combined list of patterns from Table 1 and 2 obtained accuracy similar to patterns listed in Table
+1 on Data set 2. But, they can be used to capture effectively user opinion spanning different parts
+of speech as well as opinionated phrases consisting of normal and short phrases.conclusionrp1. Andrea, Esuli, Fabrizio, Sebastiani: Determining term subjectivity and term orientation for opinion
+mining. In: Proceedings of 11th Conference of the European Chapter of the Association for
+Computational Linguistics. Trento, Italy (2006)
+2. Alistair, Kennedy, Diana, Inkpen: Sentiment Classification of Movie and Product Reviews Using
+Contextual Valence Shifters. In: Proceedings of FINEXIN 2005, Workshop on the Analysis of
+Informal and Formal Information Exchange during Negotiations. Canada (2005)
+3. Anil, kumar, K.M., Suresha: Identifying Subjective Phrases From Opinionated Texts Using Sentiment
+Product Lexicon. International Journal of Advanced Engineering & Applications. 2, 63-271 (2010)
+4. Anil, Kumar, K.M., Suresha: Detection of Neutral Phrases and Polarity Shifting of Few Phrases for
+Effective Classification of Opinionated Texts. International Journal of Computational Intelligence
+Research. 6, 43-58 (2010)
+5. Anil, Kumar, K.M., Suresha: Detection of Web Users’ Opinion from Normal and Short Opinionated
+Words. In Proc: International Conference on Data Engineering and Management, Bishop Heber
+College(Autonomous), July 29-31 (2010)
+6. Bing, Liu, Minqing, Hu, Junsheng, Cheng: Opinion Observer: Analyzing and Comparing Opinions on
+the Web. Chiba, Japan (2005)
+7. Hugo:MontyLingua: An end-to-end natural language processor with common sense (2003)
+8. http://www.dailymail.co.uk/news/article-483511/ -h8-txt-msgs-How-texting-wrecking-language.html.
+9. http://news.bbc.co.uk/2/hi/uk news /education/2197173.stm
+10. http://entertainment.timesonline.co.uk/tol /arts and entertainment/books/nonfiction/
+article4356458.ece
+11. Jaap, Kamps, Maarten, Marx, Robert, J., Mokken, Maarten, De, Rijke: Using wordnet to measure
+semantic orientation of adjectives. In: Proceedings of 4th International Conference on Language
+Resources and Evaluation, pp. 1115-1118. Lisbon, Portugal (2004)
+12. Livia, Polanyi, Annie, Zaenen: Contextual Valence Shifters. Computing Attitude and Affect in Text:
+Theory and Applications, pp. 1-10. (2006)referencesrp

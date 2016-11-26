@@ -1,0 +1,101 @@
+Advance cryptography algorithm for improving data security 
+ titlerp
+Information security is the process of protecting information. It protects its availability, privacy and integrity. Access to stored
+information on computer databases has increased greatly. More companies store business and individual information on computer than
+ever before. Much of the information stored is highly confidential and not for public viewing. In this paper I have developed a new
+cryptography algorithm which is based on block cipher concept. In this algorithm I have used logical operation like XOR and shifting
+operation. Experimental results show that proposed algorithm is very efficient and secured.
+ To write this paper I have Study about information security using cryptography technique. After the detailed study of Network
+security using cryptography, I am presenting my proposed work. This paper is dividing in four sections. In section-I, I am presenting
+just basic introduction about Information Security using cryptography, in section-II, I am presenting detailed description of
+Information security using cryptography and various algorithms, in section-III, I am presenting my proposed algorithm, and in section
+IV I am Presenting summary and references where I have completed my research. The proposed algorithm has the batter speed
+compared with the comparing encryption algorithm. Nevertheless, the proposed algorithm improves encryption security by inserting the
+symmetric layer. The proposed algorithm will be useful to the applications which require the same procedure of encryption and
+decryption.
+abstractrp
+Information security, Encryption, Decryption, Cryptography
+keywordsrp
+The main feature of the encryption/decryption program
+implementation is the generation of the encryption key. Now a
+day, cryptography has many commercial applications. If we are
+protecting confidential information then cryptography is provide
+high level of privacy of individuals and groups. However, the
+main purpose of the cryptography is used not only to provide
+confidentiality, but also to provide solutions for other problems
+like: data integrity, authentication, non-repudiation.
+Cryptography is the methods that allow information to be sent
+in a secure from in such a way that the only receiver able to
+retrieve this information. Presently continuous researches on the
+new cryptographic algorithms are going on. However, it is a
+very difficult to find out the specific algorithm, because we have
+already known that they must consider many factors like:
+security, the features of algorithm, the time complexity and
+space complexity. Figure 1 is representing conventional
+encryption
+Figure 1: A Simplified Model of Conventional Encryption
+Security Services: If we are taking about security of information
+then following services come in mind.
+? Confidentiality (privacy)
+? Authentication (who created or sent the data)
+? Integrity (has not been altered)
+? Non-repudiation (the order is final)
+? Access control (prevent misuse of resources)
+? Availability (permanence, non-erasure)
+ introductionrp
+ From the result its is
+clear that our “proposed technique” is batter result producing as
+compared “DJSA symmetric key algorithm” and “Effect of
+Security Increment to Symmetric Data Encryption through AES
+Methodology”. If any user emphasis on security then he can use
+our proposed algorithm. Our method is essentially block cipher
+method and it will take less time if the file size is large. The
+important thing of our proposed method is that it is almost
+impossible to break the encryption algorithm without knowing
+the exact key value. We propose that this encryption method can
+be applied for data encryption and decryption in any type of
+public application for sending confidential data. 
+ conclusionrp
+[1] Dripto Chatterjee, Joyshree Nath, Suvadeep Dasgupta,
+Asoke Nath “A new Symmetric key Cryptography Algorithm
+using extended MSA method: DJSA symmetric key algorithm”
+published in 2011 International Conference on Communication
+Systems and Network Technologies, 978-0-7695-4437-3/11
+$26.00 © 2011 IEEE.
+[2] Yan Wang and Ming Hu “Timing evaluation of the known
+cryptographic algorithms “2009 International Conference on Computational Intelligence and Security 978-0-7695-3931-7/09
+$26.00 © 2009 IEEE DOI 10.1109/CIS.2009.81.
+[3] Symmetric key cryptography using random key generator,
+A.Nath, S.Ghosh, M.A.Mallik, Proceedings of International
+conference on SAM-2010 held at Las Vegas(USA) 12-15
+July,2010, Vol-2,P-239-244.
+[4] Data Hiding and Retrieval, A.Nath, S.Das, A.Chakrabarti,
+Proceedings of IEEE International conference on Computer
+Intelligence and Computer Network held at Bhopal from 26-28
+Nov, 2010.
+[5] Neal Koblitz “A Course in Number Theory and
+Cryptography” Second Edition Published by Springer-Verlag.
+[6] By Klaus Felten “An Algorithm for Symmetric
+Cryptography with a wide range of scalability” published by
+2nd International Workshop on Embedded Systems, Internet
+Programming and Industial IT.
+[7] Majdi Al-qdah & Lin Yi Hui “Simple
+Encryption/Decryption Application” published in International
+Journal of Computer Science and Security, Volume (1) : Issue
+(1).
+[8] T Morkel, JHP Eloff “ ENCRYPTION TECHNIQUES: A
+TIMELINE APPROACH” published in Information and
+Computer Security Architecture (ICSA) Research Group
+proceeding.
+[9] Text book William Stallings, Data and Computer
+Communications, 6eWilliam 6e 2005.
+[10] Md. Nazrul Islam, Md. Monir Hossain Mia, Muhammad F.
+I. Chowdhury, M.A. Matin “Effect of Security Increment to
+Symmetric Data Encryption through AES Methodology” Ninth
+ACIS International Conference on Software Engineering,
+Artificial Intelligence, Networking, and Parallel/Distributed
+Computing 978-0-7695-3263-9/08 DOI
+10.1109/SNPD.2008.101 IEEE 2008.
+[11] [Rijn99]Joan Daemen and Vincent Rijmen, AES
+submission document on Rijndael, Version 2, September 1999
+referencesrp

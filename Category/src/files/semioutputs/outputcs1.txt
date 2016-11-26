@@ -1,0 +1,173 @@
+Practical Approach
+Secure Internet Banking
+Internet banking
+biggest concerns
+Online Banking users
+banking applications
+text form
+security issues
+software-based solutions
+encryption algorithms
+password authentication methods
+Symmetric cryptography
+Security model
+approach bank
+customer transaction data
+secure SMS
+cryptographic algorithm
+customer application
+Customer application
+secure manner
+secret key
+legal parties
+security issues
+consequent frauds
+internet banking systems
+identification methods
+Mobile banking
+Internet Banking
+security standards
+short-time passwords
+security models
+banking systems
+Internet banking user
+authentication methods
+Internet banking systems
+SMS system
+built-in procedure
+offer security
+mobile devices
+primary concern
+Internet-based industries
+serious damages
+security issue
+next section
+insufficient protections
+potential hazards
+banking system
+tra nsferring funds
+electric currency
+integral part
+Internet banking
+crucial component
+financial institution
+multi-channel strategy
+authentic user
+successful authentication
+authorized user
+Short-Time Password
+malicious software
+phishing attacks
+Internet banking solution
+password authentication method
+Software Security Model
+password solution
+security systems
+security software
+Internet banking
+wide range
+financial transactions
+time restrictions
+electronic banking
+privacy aspects
+privacy issues
+electronic banking
+common standard
+security models
+banking systems
+Internet banking user
+authentication methods
+banking systems
+banking problems
+security testing
+online banking
+symmetric key
+IDEA algorithm
+power consumption algorithm
+secure Internet
+banking transactions
+SIM application toolkit
+applic ation
+encryption keys
+Sandeep Singh Ghotra
+Baldev Kumar Mandhan
+Sam Shang Chun
+Yi Song
+Chris Steketee
+Sixth International Conference
+Mobile Business
+Dilla Salama Abdul
+Hatem M. Abdul
+Mohily Mohamed Hadhoud
+Cryptographic algorithms
+data types
+International Journal
+Network Security
+Mobile Banking Technologies
+Bankable Frontier Associates
+Richard E. Smith
+Public Keys
+Addison Wesley
+Encryption Issues
+Internet Security
+in-depth perspective
+software vulnerabilities
+code threats
+unwanted software
+first half
+Security Intelligence Report
+M. JOHNSON
+new approach
+Internet banking
+University Cambridge
+R. T.
+Identifying Bank Frauds
+Decision Trees
+International Journal
+Computer Science
+Information Technology
+J2ME MIDP
+superior WAP
+Worldwide Java Developer
+Development Tools
+Micro Edition
+Official Site
+Common Criteria
+Information Technology Security
+version3 .1
+A. Hiltgen.
+T. Kramp
+T. Weigold
+Internet-banking Authentication
+IEEE Security
+F. Puente
+J.D. Sandoval
+P. Hernandez
+C.J. Molina
+banking security
+hardware devices
+Annual International
+Security Technology
+Validation Workshop
+ICSTW apos
+IEEE International Conference
+M. K. Chong
+A. Arnab
+A. Hutchison
+mobile banking
+Cape Town
+South Africa
+Mobile Banking paper.pdf
+A. Shamir
+Identity-based cryptosystems
+signature schemes
+N. Croft
+M. Olivier
+One-Time Pad
+Messaging Service
+Southern African
+Telecommunication Networks
+Applications Conference
+Sun Microsystems Wireless
+Bouncy Castle
+Computer security

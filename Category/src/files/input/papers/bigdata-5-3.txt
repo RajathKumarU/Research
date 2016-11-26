@@ -1,0 +1,123 @@
+Big Data Storage and Challenges titlerp Now days the big data has became the most
+difficult problem in the Industrial ,Science ,Education sector.
+Here we discussing the storage problems in these sectors. how
+the data is explode in the recent years. And how we are
+dealing with the massive amount of data in our sectors. We
+are also focusing on the four phases of the value chain of big
+data, i.e., data generation, data acquisition, data storage, and
+data analysis. For each phase, we introduce the general
+background, discuss the technical challenges, and
+Opportunities in the big data. we have seen the massive size of
+the data in industries and in the public and social sectors.
+These discussions aim to provide a comprehensive overview
+and big-picture to readers of this exciting area. This survey is
+concluded with a discussion of open problems and future
+directions .abstractrpBig data, Internet of things , Data center ,Hadoop
+, Big data analysis.keywordsrpA wide range of project businesses are involved in the lifecycle
+of engineer-to-order goods such as buildings. We are
+awash in a flood of data today. In a broad range of
+application areas, data is being collected at extraordinary
+scale. Decisions that previously were based on guesswork,
+or on painstakingly constructed models of reality, can now
+be made based on the data itself. Such Big Data analysis
+now drives nearly every aspect of our modern society,
+including mobile services, retail, manufacturing, financial
+services, life sciences, and physical sciences.
+Scientific research has been revolutionized by Big Data.
+The field of Astronomy is being transformed from one
+where taking pictures of the sky was a large part of an
+astronomer’s job to one where the pictures are all in a
+database already and the astronomer’s task is to find
+interesting objects and phenomena in the database. Imagine
+a world in which we have access to a huge database where
+we collect every detailed measure of every student's
+academic performance. This data could be used to design
+the most effective approaches to education, starting from
+reading, writing, and math, to advanced, college-level,
+courses. We are far from having access to such data, but
+there are powerful trends in this direction. In particular,
+there is a strong trend for massive Web deployment of
+educational activities, and this will generate an increasingly
+large amount of detailed data about students' performance.
+Over the past 20 years, data has increased in a large scale in
+various fields. According to a report from International
+Data Corporation (IDC), in 2011, the overall created and
+copied data volume in the world was 1.8ZB (˜
+1021B)[1].which increased by nearly nine times within five
+years. This figure will double at least every other two years
+in the near future. Recently, industries become interested in
+the high potential of big data, and many government
+agencies announced major plans to accelerate big data
+research and applications [2]. In addition, issues on big data
+are often covered in public media, such as The Economist
+[3, 4], New York Times [5], and National Public Radio [6,
+7]. Two premier scientific journals, Nature and Science,
+also opened special columns to discuss the challenges and
+impacts of big data [8, 9]. The era of big data has come
+beyond all doubt [10]. The capacities of the IT architectures
+and infrastructure of existing enterprises, and its realtime
+requirement will also greatly stress the available computing
+capacity.
+The increasingly growing data cause a problem of how to
+store and manage such huge heterogeneous datasets with
+moderate requirements on hardware and software
+infrastructure. Nowadays, big data related to the service of
+Internet companies grow rapidly. For example, Google
+processes data of hundreds of Petabyte (PB), Facebook
+generates log data of over 10 PB per month, Baidu, a
+Chinese company, processes data of tens of PB, and
+Taobao, a subsidiary of Alibaba generates data of tens of
+Terabyte (TB) for online trading per day.introductionrpHere we have entered an era of Big Data. Through better
+analysis of the large volumes of data that are becoming
+available, there is the potential for making faster advances
+in many scientific disciplines and improving the
+profitability and success of many enterprises. we review the
+background and state-of-the-art of big data. we introduce
+the general background of big data and review related
+technologies, such as could computing, IoT, data centers,
+and Hadoop. Then we focus on the four phases of the value
+chain of big data, i.e., data generation, data acquisition,
+data storage, and data analysis. For each phase, we
+introduce the general background, discuss the technical
+challenges, and review the latest advances.conclusionrp1. Gantz J, Reinsel D (2011) Extracting value from chaos. IDC iView,
+pp 1–12
+2. Fact sheet: Big data across the federal government (2012). http://
+www.whitehouse.gov/sites/default/files/microsites/ostp/big data fact
+sheet 3 29 2012.pdf
+3. Cukier K (2010) Data, data everywhere: a special report on
+managing information. Economist Newspaper
+4. Drowning in numbers - digital data will flood the planet- and help us
+understand it better (2011). http://www.economist.com/blogs/
+dailychart/2011/11/bigdata-0
+5. Lohr S (2012) The age of big data. New York Times, pp 11
+6. Yuki N (2011) Following digital breadcrumbs to big data
+gold.http://www.npr.org/2011/11/29/142521910/thedigitalbreadcrum
+bsthat-lead-to-big-data
+7. Yuki N The search for analysts to make sense of big data
+(2011).http://www.npr.org/2011/11/30/142893065/thesearchforanalyststo-
+make-sense-of-big-data8. Big data (2008).
+http://www.nature.com/news/specials/bigdata/index.html
+9. Special online collection: dealing with big data (2011).
+http://www.sciencemag.org/site/special/data/
+10. Manyika J, McKinsey Global Institute, Chui M, Brown B,Bughin J,
+Dobbs R, Roxburgh C, Byers AH (2011) Big data:the next frontier
+for innovation, competition, and productivity.McKinsey Global
+Institute
+11. DeWitt D, Gray J (1992) Parallel database systems: the future of
+high performance database systems. Commun ACM35(6):85–98
+12. Walter T (2009) Teradata past, present, and future. UCI ISG lecture
+series on scalable data management
+13. Ghemawat S, Gobioff H, Leung S-T (2003) The google file system.
+In: ACM SIGOPS Operating Systems Review, vol 37. ACM, pp 29–
+43
+14. Dean J, Ghemawat S (2008) Mapreduce: simplified data processing
+on large clusters. Commun ACM 51(1):107–113
+15. Labrinidis A, Jagadish HV (2012) Challenges and opportunities with
+big data. Proc VLDB Endowment 5(12):2032–2033
+16. Agrawal D, Bernstein P, Bertino E, Davidson S, Dayal U,
+FranklinM, Gehrke J, Haas L, Halevy A, Han J et al (2012)
+Challenges and opportunities with big data. A community white
+paper developed by leading researches across the United States
+17. Big Data: New Opportunities and New Challenges Katina Michael
+university of Wollongong, Keith W. Miller university of Missouri-
+St.Louis referencesrp

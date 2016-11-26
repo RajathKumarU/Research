@@ -1,0 +1,111 @@
+Keep a Few: Outsourcing Data
+while Maintaining Con¯dentialitytitlerpWe put forward a novel paradigm for preserving privacy in
+data outsourcing which departs from encryption. The basic idea behind
+our proposal is to involve the owner in storing a limited portion of the
+data, and maintaining all data (either at the owner or at external servers)
+in the clear. We assume a relational context, where the data to be out-
+sourced is contained in a relational table. We then analyze how the rela-
+tional table can be fragmented, minimizing the load for the data owner.
+We propose several metrics and present a general framework capturing
+all of them, with a corresponding algorithm ¯nding a heuristic solution
+to a family of NP-hard problems.abstractrp keywordsrpThe correct management of data with adequate support for reliability and avail-
+ability requirements presents extremely signi¯cant economies of scale. There is
+an important cost bene¯t for individuals and small/medium organizations in
+outsourcing their data to external servers and delegating to them the respon-
+sibility of data storage and management. Important initiatives already operate
+in this market (e.g., Amazon's S3 service) and a signi¯cant expansion in this
+direction is expected in the next few years. However, while on the one hand
+there is a desire to outsource data management, there is on the other hand an
+equally strong need to properly protect data con¯dentiality. Certain data, or -
+more often - associations among data, are sensitive and cannot be released to
+others or be stored outside the owner's control. The success and wide adoption of
+data outsourcing solutions strongly depends on their ability to properly support
+such con¯dentiality requirements.
+In the last few years, the problem of outsourcing data subject to con¯dential-
+ity constraints has raised considerable attention, and various research activities
+have been carried out, providing the foundation for a large future deployment
+of these solutions. All existing proposals share the assumption that sensitive
+information stored at external servers can be protected by proper encryption.
+More recent proposals combine encryption with fragmentation. While varying in
+the amount of encryption required, all existing approaches assume the use of en-
+cryption whenever needed for privacy, and operate under the implicit assumption
+that the owner aims at externally storing the complete database. Encryption is
+therefore considered a necessary price to be paid for protecting the con¯dential-
+ity of information. Although cryptographic tools enjoy today a limited cost and
+an a®ordable computational complexity, encryption carries however the burden
+of managing keys, which makes it not applicable for many scenarios. In addition,
+while the cost of encryption/decryption operations may be negligible, the exe-
+cution of queries on encrypted data greatly increases the computational e®ort
+required to the DBMS, considerably impacting its applicability for real-world
+applications.
+In this paper we propose a paradigm shift for solving the problem, which
+departs from encryption, thus freeing the owner from the burden of its man-
+agement. In exchange, we assume that the owner, while outsourcing the major
+portion of the data at one or more external servers, is willing to locally store a
+limited amount of data. The owner-side storage, being under the owner control,
+is assumed to be maintained in a trusted environment. The main observation
+behind our approach is that often is the association among data to be sensitive,
+in contrast to the individual data themselves. Like recent solutions, we there-
+fore exploit data fragmentation to break sensitive associations; but, in contrast
+to them, we assume the use of fragmentation only. Basically, the owner main-
+tains a small portion of the data, just enough to protect sensitive values or their
+associations. The contribution of this paper is threefold. First, we propose a
+novel approach to the problem of outsourcing data in the presence of privacy
+constraints, based on involving the owner as a trusted party for limited stor-
+age (Sect. 3). Second, aiming at minimizing the load required to the owner, we
+investigate possible metrics according to which the owner's load could be char-
+acterized (Sect. 4). The di®erent metrics can be applicable in di®erent scenarios,
+depending on the owner's preferences and/or on the information (on the data or
+on the system's workload) available at design time. Third, we introduce a new
+theoretical problem, which is a generalization of a hitting set problem, show
+how all the problems of minimizing the owner load with respect to the di®erent
+metrics can be characterized as speci¯c instances of this problem, and present a
+heuristic algorithm for its solution (Sect. 5).introductionrpThe paper presented an approach for the management of con¯dentiality con-
+straints in data outsourcing. Speci¯cally, we were interested in analyzing the
+e±cient management of data in the presence of a requirement forbidding the
+use of encryption on the data. The solution presented satis¯es this requirement
+by exploiting the availability at the owner of local trusted storage, which will
+have to be used e±ciently by limiting its use to the representation of the min-
+imal collection of data that are needed to protect the speci¯ed con¯dentiality
+constraints. Minimization can be de¯ned following several distinct criteria and
+we presented a general approach able to support, within the same algorithm,
+the evaluation of alternative metrics. It is to note that this approach in no way
+intends to make obsolete previous approaches using encryption. Rather, it pro-
+poses a novel way that extends the adoption of data outsourcing to scenarios
+where, in the evaluation of the tradeo® between the advantages and disadvan-
+tages of encryption, a strong preference is expressed toward the adoption of an
+encryption-less solution.conclusionrp1. Aggarwal, G., Bawa, M., Ganesan, P., Garcia-Molina, H., Kenthapadi, K., Mot-
+wani, R., Srivastava, U., Thomas, D., Xu, Y.: Two can keep a secret: a distributed
+architecture for secure database services. In: Proc. of CIDR 2005, Asilomar, CA,
+USA (January 2005)
+2. Biskup, J., Embley, D., Lochner, J.: Reducing inference control to access control
+for normalized database schemas. IPL 106(1) (2008) 8{12
+3. Ceselli, A., Damiani, E., De Capitani di Vimercati, S., Jajodia, S., Paraboschi, S.,
+Samarati, P.: Modeling and assessing inference exposure in encrypted databases.
+ACM TISSEC, 8(1) (February 2005) 119{152
+4. Ciriani, V., De Capitani di Vimercati, S., Foresti, S., Jajodia, S., Paraboschi, S.,
+Samarati, P.: Fragmentation and encryption to enforce privacy in data storage.
+In: Proc. of ESORICS'07, Dresden, Germany (September 2007)
+5. Ciriani, V., De Capitani di Vimercati, S., Foresti, S., Jajodia, S., Paraboschi, S.,
+Samarati, P.: Fragmentation design for e±cient query execution over sensitive
+distributed databases. In: Proc. of ICDCS'09, Montreal, Canada (June 2009)
+6. Ciriani, V., De Capitani di Vimercati, S., Foresti, S., Samarati, P.: k-Anonymity.
+In Yu, T., Jajodia, S., eds.: Secure Data Management in Decentralized Systems.
+Springer-Verlag (2007)
+7. Cormode, G., Srivastava, D., Yu, T., Zhang, Q.: Anonymizing bipartite graph data
+using safe groupings. In: Proc. of VLDB'08, Auckland, New Zeland (August 2008)
+8. Dawson, S., De Capitani di Vimercati, S., Lincoln, P., Samarati, P.: Maximizing
+sharing of protected information. JCSS 64(3) (May 2002) 496{541
+9. De Capitani di Vimercati, S., Foresti, S., Jajodia, S., Paraboschi, S., Samarati, P.:
+Over-encryption: Management of access control evolution on outsourced data. In:
+Proc. of VLDB'07, Vienna, Austria (September 2007)
+10. Garey, M., Johnson, D.: Computers and Intractability; a Guide to the Theory of
+NP-Completeness. W.H. Freeman and Company (1979)
+11. HacigÄumÄus, H., Iyer, B., Mehrotra, S.: Providing database as a service. In: Proc.
+of ICDE'02, San Jose, CA, USA (February 2002)
+12. Miklau, G., Suciu, D.: Controlling access to published data using cryptography.
+In: Proc. of VLDB'03, Berlin, Germany (September 2003)
+13. Navathe, S., Ceri, S., Wiederhold, G., Dou, J.: Vertical partitioning algorithms for
+database design. ACM TODS 9(4) (December 1984) 680{710
+14. Wang, H., Lakshmanan, L.V.S.: E±cient secure query evaluation over encrypted
+XML databases. In: Proc. of VLDB'06, Seoul, Korea (September 2006)referencesrp

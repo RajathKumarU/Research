@@ -1,0 +1,345 @@
+Scaling Big Data Mining Infrastructure:
+The Twitter Experience titlerp The analytics platform at Twitter has experienced tremendous
+growth over the past few years in terms of size, complexity,
+number of users, and variety of use cases. In this
+paper, we discuss the evolution of our infrastructure and the
+development of capabilities for data mining on \big data".
+One important lesson is that successful big data mining in
+practice is about much more than what most academics
+would consider data mining: life \in the trenches" is occupied
+by much preparatory work that precedes the application of
+data mining algorithms and followed by substantial eort to
+turn preliminary models into robust solutions. In this context,
+we discuss two topics: First, schemas play an important
+role in helping data scientists understand petabyte-scale
+data stores, but they're insucient to provide an overall \big
+picture" of the data available to generate insights. Second,
+we observe that a major challenge in building data analytics
+platforms stems from the heterogeneity of the various components
+that must be integrated together into production
+workows|we refer to this as \plumbing". This paper has
+two goals: For practitioners, we hope to share our experiences
+to atten bumps in the road for those who come after
+us. For academic researchers, we hope to provide a broader
+context for data mining in production environments, pointing
+out opportunities for future work.abstractrp keywordsrpThe analytics platform at Twitter has experienced tremendous
+growth over the past few years in terms of size, complexity,
+number of users, and variety of use cases. In 2010,
+there were approximately 100 employees in the entire company
+and the analytics team consisted of four people|the
+only people to use our 30-node Hadoop cluster on a daily basis.
+Today, the company has over one thousand employees.
+There are thousands of Hadoop nodes across multiple datacenters.
+Each day, around one hundred terabytes of raw
+data are ingested into our main Hadoop data warehouse;
+engineers and data scientists from dozens of teams run tens
+of thousands of Hadoop jobs collectively. These jobs accomplish
+everything from data cleaning to simple aggregations
+and report generation to building data-powered products
+to training machine-learned models for promoted products,
+spam detection, follower recommendation, and much,
+much more. We've come a long way, and in this paper, we
+share experiences in scaling Twitter's analytics infrastructure
+over the past few years. Our hope is to contribute to a
+set of emerging \best practices" for building big data analytics
+platforms for data mining from a case study perspective.
+A little about our backgrounds: The rst author is an Associate
+Professor at the University ofMaryland who spent an
+extended sabbatical from 2010 to 2012 at Twitter, primarily
+working on relevance algorithms and analytics infrastructure.
+The second author joined Twitter in early 2010 and
+was rst a tech lead, then the engineering manager of the
+analytics infrastructure team. Together, we hope to provide
+a blend of the academic and industrial perspectives|a bit
+of ivory tower musings mixed with \in the trenches" practical
+advice. Although this paper describes the path we have
+taken at Twitter and is only one case study, we believe our
+recommendations align with industry consensus on how to
+approach a particular set of big data challenges.
+The biggest lesson we wish to share with the community
+is that successful big data mining is about much more than
+what most academics would consider data mining. A signi
+cant amount of tooling and infrastructure is required to
+operationalize vague strategic directives into concrete, solvable
+problems with clearly-dened metrics of success. A data
+scientist spends a signicant amount of eort performing
+exploratory data analysis to even gure out \what's there";
+this includes data cleaning and data munging not directly
+related to the problem at hand. The data infrastructure engineers
+work to make sure that productionized workows operate
+smoothly, eciently, and robustly, reporting errors and
+alerting responsible parties as necessary. The \core" of what
+academic researchers think of as data mining|translating
+domain insight into features and training models for various
+tasks|is a comparatively small, albeit critical, part of the
+overall insight-generation lifecycle.
+In this context, we discuss two topics: First, with a certain
+amount of bemused ennui, we explain that schemas play an
+important role in helping data scientists understand petabyte-
+scale data stores, but that schemas alone are insu-
+cient to provide an overall \big picture" of the data available
+and how they can be mined for insights. We've frequently
+observed that data scientists get stuck before they
+even begin|it's surprisingly dicult in a large production
+environment to understand what data exist, how they are
+structured, and how they relate to each other. Our discussion
+is couched in the context of user behavior logs, which
+comprise the bulk of our data. We share a number of examples,
+based on our experience, of what doesn't work and
+how to x it.
+Second, we observe that a major challenge in building data
+analytics platforms comes from the heterogeneity of the various
+components that must be integrated together into production
+workows. Much complexity arises from impedance mismatches at the interface between dierent components.
+A production system must run like clockwork, splitting out
+aggregated reports every hour, updating data products every
+three hours, generating new classier models daily, etc. Getting
+a bunch of heterogeneous components to operate as a
+synchronized and coordinated workow is challenging. This
+is what we fondly call \plumbing"|the not-so-sexy pieces of
+software (and duct tape and chewing gum) that ensure everything
+runs together smoothly is part of the \black magic"
+of converting data to insights.
+This paper has two goals: For practitioners, we hope to
+share our experiences to atten bumps in the road for those
+who come after us. Scaling big data infrastructure is a complex
+endeavor, and we point out potential pitfalls along the
+way, with possible solutions. For academic researchers, we
+hope to provide a broader context for data mining in production
+environments|to help academics understand how their
+research is adapted and applied to solve real-world problems
+at scale. In addition, we identify opportunities for future
+work that could contribute to streamline big data mining
+infrastructure.introductionrpRather than re-enumerating all the best practices, recommendations,
+and unresolved questions in this paper, we conclude
+with a discussion of where we feel the eld is going from
+a dierent perspective. At the end of the day, an ecient
+and successful big data analytics platform is about achieving
+the right balance between several competing factors: speed of development, ease of analytics, exibility, scalability, robustness,
+etc. For example, a small team might be able to
+iterate on the front-end faster with JSON logging, eschewing
+the benets of having schemas, but experience tells us that
+the team is accruing technical debt in terms of scalability
+challenges down the road. Ideally, we would like an analytics
+framework that provides all the benets of schemas,
+data catalogs, integration hooks, robust data dependency
+management and workow scheduling, etc. while requiring
+zero additional overhead. This is perhaps a pipe dream, as
+we can point to plenty of frameworks that have grown unusable
+under their own weight, with pages of boilerplate code
+necessary to accomplish even a simple task. How to provide
+useful tools while staying out of the way of developers is a
+dicult challenge.
+As an organization grows, the analytics infrastructure will
+evolve to reect dierent balances between various competing
+factors. For example, Twitter today generally favors
+scale and robustness over sheer development speed, as we
+know that if things aren't done \right" to begin with, they'll
+become maintenance nightmares down the road. Previously,
+we were more focused on just making things possible, implementing
+whatever expedient was necessary. Thinking about
+the evolution of analytics infrastructure in this manner highlights
+two challenges that merit future exploration:
+First, are there prototypical evolutionary stages that datacentric
+organizations go through? This paper shares the
+Twitter experience as a case study, but can we move beyond
+anecdotes and war stories to a more formal classication of,
+for example, Stage-I, Stage-II, : : : Stage-N organizations?
+In this hypothetical taxonomy, each stage description would
+be accompanied by the most pressing challenges and speci
+c recommendations for addressing them. We would like
+to formalize the advice presented in this paper in terms of
+specic contexts in which they are applicable.
+Second, how do we smoothly provide technology support
+that will help organizations grow and transition from stage
+to stage? For example, can we provide a non-disruptive migration
+path from JSON logs to Thrift-based logs? How do
+we provide support for deep integration of predictive analytics
+down the road, even though the organization is still
+mostly focused on descriptive aggregation-style queries today?
+If a framework or set of best practices can provide a
+smooth evolutionary path, then it may be possible for an organization
+to optimize for development speed early on and
+shift towards scale and robustness as it matures, avoiding
+disruptive infrastructure changes in the process.
+In this paper, we have attempted to describe what it's
+like \in the trenches" of a production big data analytics environment.
+We hope that our experiences are useful for both
+practitioners and academic researchers. Practitioners should
+get a few chuckles out of our war stories and know how to
+avoid similar mistakes. For academic researchers, a better
+understanding of the broader context of big data mining can
+inform future work to streamline insight generation activities.
+We'd like to think that this paper has, however slightly,
+contributed to the community's shared knowledge in building
+and running big data analytics infrastructure.conclusionrp[1] A. Agarwal, O. Chapelle, M. Dudik, and J. Langford.
+A reliable eective terascale linear learning system. In
+arXiv:1110.4198v1, 2011.
+[2] M. Banko and E. Brill. Scaling to very very large
+corpora for natural language disambiguation. In ACL,
+2001.
+[3] J. Basilico, M. Munson, T. Kolda, K. Dixon, and
+W. Kegelmeyer. COMET: A recipe for learning and
+using large ensembles on massive data. In ICDM, 2011.
+[4] R. Bekkerman and M. Gavish. High-precision
+phrase-based document classication on a modern
+scale. In KDD, 2011.
+[5] M. Bostock, V. Ogievetsky, and J. Heer. D3:
+Data-Driven Documents. In InfoVis, 2011.
+[6] L. Bottou. Large-scale machine learning with
+stochastic gradient descent. In COMPSTAT, 2010.
+[7] T. Brants, A. Popat, P. Xu, F. Och, and J. Dean.
+Large language models in machine translation. In
+EMNLP, 2007.
+[8] E. Chang, H. Bai, K. Zhu, H. Wang, J. Li, and Z. Qiu.
+PSVM: Parallel Support Vector Machines with
+incomplete Cholesky factorization. In Scaling up
+Machine Learning: Parallel and Distributed
+Approaches. Cambridge University Press, 2012.
+[9] J. Cohen, B. Dolan, M. Dunlap, J. Hellerstein, and
+C. Welton. MAD skills: New analysis practices for big
+data. In VLDB, 2009.
+[10] G. Cormack, M. Smucker, and C. Clarke. Ecient and
+eective spam ltering and re-ranking for large web
+datasets. In arXiv:1004.5168v1, 2010.
+[11] J. Dean and S. Ghemawat. MapReduce: Simplied
+data processing on large clusters. In OSDI, 2004.
+[12] J. Dean and S. Ghemawat. MapReduce: A exible
+data processing tool. CACM, 53(1):72{77, 2010.
+[13] J. Dittrich, J.-A. Quiane-Ruiz, A. Jindal, Y. Kargin,
+V. Setty, and J. Schad. Hadoop++: Making a yellow
+elephant run like a cheetah (without it even noticing).
+In VLDB, 2010.
+[14] C. Dyer, A. Cordova, A. Mont, and J. Lin. Fast, easy,
+and cheap: Construction of statistical machine
+translation models with MapReduce. In StatMT
+Workshop, 2008.
+[15] A. Gates, O. Natkovich, S. Chopra, P. Kamath,
+S. Narayanamurthy, C. Olston, B. Reed, S. Srinivasan,
+and U. Srivastava. Building a high-level dataow
+system on top of MapReduce: The Pig experience. In
+VLDB, 2009.
+[16] A. Ghoting, R. Krishnamurthy, E. Pednault,
+B. Reinwald, V. Sindhwani, S. Tatikonda, Y. Tian,
+and S. Vaithyanathan. SystemML: Declarative
+machine learning on MapReduce. In ICDE, 2011.
+[17] K. Goodhope, J. Koshy, J. Kreps, N. Narkhede,
+R. Park, J. Rao, and V. Ye. Building LinkedIn's real-time activity data pipeline. Bulletin of the
+Technical Committee on Data Engineering,
+35(2):33{45, 2012.
+[18] A. Halevy, P. Norvig, and F. Pereira. The
+unreasonable eectiveness of data. IEEE Intelligent
+Systems, 24(2):8{12, 2009.
+[19] A. Hall, O. Bachmann, R. Bussow, S. Ganceanu, and
+M. Nunkesser. Processing a trillion cells per mouse
+click. In VLDB, 2012.
+[20] J. Hammerbacher. Information platforms and the rise
+of the data scientist. In Beautiful Data: The Stories
+Behind Elegant Data Solutions. O'Reilly, 2009.
+[21] Y. He, R. Lee, Y. Huai, Z. Shao, N. Jain, X. Zhang,
+and Z. Xu. RCFile: A fast and space-ecient data
+placement structure in MapReduce-based warehouse
+systems. In ICDE, 2011.
+[22] J. Hellerstein, C. Re, F. Schoppmann, D. Wang,
+E. Fratkin, A. Gorajek, K. Ng, C. Welton, X. Feng,
+K. Li, and A. Kumar. The MADlib Analytics Library
+or MAD skills, the SQL. In VLDB, 2012.
+[23] T. Hey, S. Tansley, and K. Tolle. The Fourth
+Paradigm: Data-Intensive Scientic Discovery.
+Microsoft Research, Redmond, Washington, 2009.
+[24] A. Jindal, J.-A. Quiane-Ruiz, and J. Dittrich. Trojan
+data layouts: Right shoes for a running elephant. In
+SoCC, 2011.
+[25] T. Joachims, L. Granka, B. Pan, H. Hembrooke,
+F. Radlinski, and G. Gay. Evaluating the accuracy of
+implicit feedback from clicks and query reformulations
+in Web search. ACM TOIS, 25(2):1{27, 2007.
+[26] I. Kanaris, K. Kanaris, I. Houvardas, and
+E. Stamatatos. Words versus character n-grams for
+anti-spam ltering. International Journal on Articial
+Intelligence Tools, 16(6):1047{1067, 2007.
+[27] S. Kandel, A. Paepcke, J. Hellerstein, and J. Heer.
+Enterprise data analysis and visualization: An
+interview study. In VAST, 2012.
+[28] R. Kohavi, A. Deng, B. Frasca, R. Longbotham,
+T. Walker, and Y. Xu. Trustworthy online controlled
+experiments: Five puzzling outcomes explained. In
+KDD, 2012.
+[29] R. Kohavi, R. Henne, and D. Sommereld. Practical
+guide to controlled experiments on the web: Listen to
+your customers not to the HiPPO. In KDD, 2007.
+[30] J. Kreps, N. Narkhede, and J. Rao. Kafka: A
+distributed messaging system for log processing. In
+NetDB, 2011.
+[31] G. Lee, J. Lin, C. Liu, A. Lorek, and D. Ryaboy. The
+unied logging infrastructure for data analytics at
+Twitter. In VLDB, 2012.
+[32] H. Li. Learning to Rank for Information Retrieval and
+Natural Language Processing. Morgan & Claypool,
+2011.
+[33] J. Lin and C. Dyer. Data-Intensive Text Processing
+with MapReduce. Morgan & Claypool Publishers, 2010.
+[34] J. Lin and A. Kolcz. Large-scale machine learning at
+Twitter. In SIGMOD, 2012.
+[35] J. Lin, D. Ryaboy, and K. Weil. Full-text indexing for
+optimizing selection operations in large-scale data
+analytics. In MAPREDUCE Workshop, 2011.
+[36] Y. Lin, D. Agrawal, C. Chen, B. Ooi, and S. Wu.
+Llama: Leveraging columnar storage for scalable join
+processing in the MapReduce framework. In
+SIGMOD, 2011.
+[37] G. Malewicz, M. Austern, A. Bik, J. Dehnert, I. Horn,
+N. Leiser, and G. Czajkowski. Pregel: A system for
+large-scale graph processing. In SIGMOD, 2010.
+[38] G. Mann, R. McDonald, M. Mohri, N. Silberman, and
+D. Walker. Ecient large-scale distributed training of
+conditional maximum entropy models. In NIPS, 2009.
+[39] R. McDonald, K. Hall, and G. Mann. Distributed
+training strategies for the structured perceptron. In
+HLT, 2010.
+[40] S. Melnik, A. Gubarev, J. Long, G. Romer,
+S. Shivakumar, M. Tolton, and T. Vassilakis. Dremel:
+Interactive analysis of web-scale datasets. In VLDB,
+2010.
+[41] A. Ng, G. Bradski, C.-T. Chu, K. Olukotun, S. Kim,
+Y.-A. Lin, and Y. Yu. Map-Reduce for machine
+learning on multicore. In NIPS, 2006.
+[42] C. Olston, B. Reed, U. Srivastava, R. Kumar, and
+A. Tomkins. Pig Latin: A not-so-foreign language for
+data processing. In SIGMOD, 2008.
+[43] B. Panda, J. Herbach, S. Basu, and R. Bayardo.
+MapReduce and its application to massively parallel
+learning of decision tree ensembles. In Scaling up
+Machine Learning: Parallel and Distributed
+Approaches. Cambridge University Press, 2012.
+[44] K. Patel, N. Bancroft, S. Drucker, J. Fogarty, A. Ko,
+and J. Landay. Gestalt: Integrated support for
+implementation and analysis in machine learning. In
+UIST, 2010.
+[45] D. Patil. Building Data Science Teams. O'Reilly, 2011.
+[46] D. Patil. Data Jujitsu: The Art of Turning Data Into
+Product. O'Reilly, 2012.
+[47] M. Rios and J. Lin. Distilling massive amounts of data
+into simple visualizations: Twitter case studies. In
+Workshop on Social Media Visualization at ICWSM,
+2012.
+[48] D. Sculley, M. Otey, M. Pohl, B. Spitznagel,
+J. Hainsworth, and Y. Zhou. Detecting adversarial
+advertisements in the wild. In KDD, 2011.
+[49] K. Svore and C. Burges. Large-scale learning to rank
+using boosted decision trees. In Scaling up Machine
+Learning: Parallel and Distributed Approaches.
+Cambridge University Press, 2012.
+[50] B. Taylor, D. Fingal, and D. Aberdeen. The war
+against spam: A report from the front line. In NIPS
+Workshop on Machine Learning in Adversarial
+Environments, 2007.
+[51] A. Thusoo, Z. Shao, S. Anthony, D. Borthakur,
+N. Jain, J. Sarma, R. Murthy, and H. Liu. Data
+warehousing and analytics infrastructure at Facebook.
+In SIGMOD, 2010.
+[52] M. Zaharia, M. Chowdhury, T. Das, A. Dave, J. Ma,
+M. McCauley, M. Franklin, S. Shenker, and I. Stoica.
+Resilient Distributed Datasets: A fault-tolerant
+abstraction for in-memory cluster computing. In
+NSDI, 2012.referencesrp

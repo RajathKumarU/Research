@@ -1,0 +1,197 @@
+Cryptography in the Web: The Case of Cryptographic Design Flaws in ASP.NET
+ titlerp
+This paper discusses how cryptography is misused
+in the security design of a large part of the Web. Our focus
+is on ASP.NET, the web application framework developed
+by Microsoft that powers 25% of all Internet web sites. We
+show that attackers can abuse multiple cryptographic design
+flaws to compromise ASP.NET web applications. We describe
+practical and highly efficient attacks that allow attackers to
+steal cryptographic secret keys and forge authentication tokens
+to access sensitive information. The attacks combine decryption
+oracles, unauthenticated encryptions, and the reuse of keys for
+different encryption purposes. Finally, we give some reasons
+why cryptography is often misused in web technologies, and
+recommend steps to avoid these mistakes
+abstractrp
+Cryptography, Application Security, Web security,
+Decryption oracle attack, Unauthenticated encryption.
+keywordsrp
+At EuroCrypt 2004 Nguyen asked, “How can one know if
+what is implemented [in software] is good cryptography?”
+[1]. This is an important question because history has shown
+that cryptography is often used incorrectly in both open
+source and proprietary software (see [1]–[7]). Nevertheless,
+despite the important role of the WWW, there is limited
+research available from both the cryptographic and web
+security communities to answer Nguyen’s question for the
+case of cryptographic implementations in web technologies.
+This paper shows that badly implemented cryptography is
+not limited to traditional software, but is highly pervasive in
+web applications as well. Since HTTP is a stateless protocol,
+web developers must either manage the user session state
+data on the server or push it to the client. For performance
+and scalability reasons, web developers tend to go with
+the latter method. They want to keep session information
+secret, so they correctly turn to cryptography. However,
+implementing crypto is error-prone. We observe that unauthenticated
+encryption is often used to encrypt session state
+data such as HTTP cookies and view states. Unauthenticated
+encryption is dangerous [7]–[11], particularly when used in
+an authentication system. The ability to forge a ciphertext
+that decrypts to a desired plaintext allows the attacker to
+impersonate other users easily [7]. Web developers also tend
+to use the same keys for different encryption purposes. These
+cryptographic errors together make the Web become a gold
+mine for chosen-ciphertext attacks.
+In this paper, we illustrate this point by examining the case
+of cryptographic implementations in web applications based
+on ASP.NET [12]. The framework was first released in
+January 2002 with version 1.0 of the .NET Framework. As
+of September 2010, it is believed that 25% of all the Internet
+web sites are developed using ASP.NET.1Here we review
+ASP.NET v4.0, which was the current stable version at the
+time of submission. Our comments also apply to several
+previous versions of ASP.NET.
+We observe several cryptographic flaws in ASP.NET v4.0.
+The most serious flaw (which turns out to have been present
+in ASP.NET for almost three years) is a consequence of
+unauthenticated encryption. We present two practical and
+highly efficient attacks that allow attackers to steal cryptographic
+secret keys, forge authentication tokens and destroy
+the security model of every ASP.NET v4.0 application.
+Both are chosen-ciphertext attacks that combine decryption
+oracles similar to the padding oracle introduced by Vaudenay
+at EuroCrypt ’02 [13] and the CBC-R technique that Rizzo
+and Duong demonstrated at USENIX WOOT ’10 [14]. The
+novelty of these attacks is that not only can the attacker
+decrypt secret data in ASP.NET, but he also can create
+ciphertexts that after being decrypted and processed by
+ASP.NET, allow him to retrieve sensitive information.
+The rest of the paper is organized as follows. In Section II,
+we give an overview of ASP.NET v4.0 and the cryptographic
+vulnerabilities in the framework. In Section III, we provide
+sufficient background on decryption oracle attacks and the
+CBC-R technique to make the paper self-contained. In
+Section IV, we describe our first attack exploiting padding
+oracles in the framework. In Section V, we describe our
+second attack, which is faster than the first attack and does
+not require a padding oracle. In Section VI, we consider the
+practical impact of our attacks as well as countermeasures
+that prevent them. Our reflections on why cryptography is
+often misused in web technologies and our recommendations
+can be found in Section VII.
+ introductionrp
+In this paper, we analyze and efficiently exploit several
+cryptographic flaws in ASP.NET, the widely-used web application
+framework developed by Microsoft. The most serious
+vulnerability we discovered is the use of unauthenticated
+encryption. This vulnerability is exacerbated by the reuse of
+keys to encrypt data with very different levels of importance.
+We present two practical and highly efficient attacks that
+allow an attacker to steal cryptographic secret keys, and
+impersonate any user account in ASP.NET applications.
+These attacks are performed by abusing components present
+in every application developed using the framework. The
+applications are even more exposed if they use the security
+features provided by ASP.NET, especially form based
+authentication.
+Cryptography is difficult to implement correctly, and cryptographers
+often advise non-cryptographers not to develop
+their own cryptography. But if one looks more closely at
+the current situation, it is evident that web developers and
+users do not have much choice. ASP.NET developers still
+have to figure out on their own how to use cryptographic
+primitives correctly any time they want to build a secure
+cryptographic protocol. This is not a problem specific to
+ASP.NET. Most other popular web development frameworksdo not provide their users and developers easy and secure
+ways to use cryptography [14]. Popular scripting languages,
+including Ruby, Python, PHP, provide cryptography libraries
+as bindings to OpenSSL [24]. While OpenSSL is powerful,
+it is a low-level library that again requires its users to know
+how to use cryptographic primitives securely.
+Unauthenticated encryption should be considered harmful.
+This is not just a theoretical problem; rather, unauthenticated
+encryption has repeatedly led to devastating attacks
+against real systems. Any cryptographic API should use
+authenticated encryption whenever its users want to encrypt
+data. The development and popularization of high-level
+cryptographic toolkits that include authenticated encryption
+such as Keyczar [25], Cryptlib [26], and NaCl [27] is
+the first step to providing secure cryptographic software
+libraries to the general public. The next step might be the
+integration of these cryptographic toolkits into mainstream
+web development frameworks.[1] P. Nguyen, “Can We Trust Cryptographic Software? Crypto- graphic Flaws in GNU Privacy Guard v1. 2.3,” in Advances
+in Cryptology-EUROCRYPT 2004. Springer, 2004, pp. 555– 570.
+[2] I. Goldberg and D. Wagner, “Randomness and the Netscape
+Browser,” Dr Dobb’s Journal-Software Tools for the Profes- sional Programmer, vol. 21, no. 1, pp. 66–71, 1996.
+[3] P. Gutmann, “Lessons Learned in Implementing and Deploy- ing Crypto Software,” in Proc. USENIX Security Symp, 2002,
+pp. 315–325.
+[4] K. Jallad, J. Katz, and B. Schneier, “Implementation of Chosen-Ciphertext Attacks against PGP and GnuPG,” Information
+Security, pp. 90–101, 2002.
+[5] J. Katz and B. Schneier, “A Chosen-Ciphertext Attack against Several E-mail Encryption Protocols,” in Proceedings of the
+9th conference on USENIX Security Symposium-Volume 9. USENIX Association, 2000, p. 18.
+[6] B. Schneier, “Security in the Real World: How To Evaluate Security Technology,” Computer Security Journal, vol. 15,
+no. 4, p. 1, 1999.
+[7] T. Yu, S. Hartman, and K. Raeburn, “The Perils of Unauthenticated
+Encryption: Kerberos Version 4,” in Proc. NDSS, vol. 4. Citeseer, 2004.
+[8] M. Bellare, T. Kohno, and C. Namprempre, “Breaking and Provably Repairing the SSH Authenticated Encryption
+Scheme: A Case Study of the Encode-then-Encrypt-and-MAC
+Paradigm,” ACM Transactions on Information and System
+Security (TISSEC), vol. 7, no. 2, p. 241, 2004.
+[9] M. Bellare and C. Namprempre, “Authenticated Encryption: Relations Among Notions and Analysis of the Generic Composition
+Paradigm,” Journal of Cryptology, vol. 21, no. 4, pp. 469–491, 2008.
+[10] J. Black and H. Urtubia, “Side-channel Attacks On Symmetric Encryption Schemes: The Case for Authenticated Encryption.”
+[11] K. Paterson and A. Yau, “Cryptography in Theory and Practice: The Case of Encryption in IPsec,” Advances in
+Cryptology-EUROCRYPT 2006, pp. 12–29, 2006.
+[12] ASP.NET, “The Official Microsoft Web Development Frame- work. http://www.asp.net.”
+[13] S. Vaudenay, “Security Flaws Induced by CBC Padding- Applications to SSL,” in Advances in CryptologyEUROCRYPT
+2002. Springer, 2002, pp. 534–545.
+[14] J. Rizzo and T. Duong, “Practical Padding Oracle Attacks,”
+USENIX WOOT, 2010.
+[15] J. An, Y. Dodis, and T. Rabin, “On the Security of Joint Signature and Encryption,” in Advances in CryptologyEUROCRYPT
+2002. Springer, 2002, pp. 83–107.
+[16] H. Krawczyk, “The Order of Encryption and Authentication for Protecting Communications (or: How Secure Is SSL?),”
+in Advances in Cryptology—CRYPTO 2001. Springer, 2001,
+pp. 310–331.
+[17] M. Dworkin, “NIST Recommendation for Block Cipher Modes of Operation, Methods and Techniques,” NIST Special
+Publication.
+[18] K. Paterson and A. Yau, “Padding Oracle Attacks On the ISO CBC Mode Encryption Standard,” Topics in Cryptology–CTRSA
+2004, pp. 1995–1995, 2004.
+[19] S. Josefsson, “RFC 3548-The Base16, Base32, and Base64
+Data Encodings. IETF,” 2003.
+[20] T. Duong and J. Rizzo, “Padding Oracles Everywhere,”
+EKOPARTY, 2010.
+[21] Microsoft. Microsoft Security Bulletin MS10- 070 - Vulnerability in ASP.NET Could Allow
+Information Disclosure. [Online]. Available:
+http://www.microsoft.com/technet/security/bulletin/ms10-
+070.mspx
+[22] B. Canvel, A. Hiltgen, S. Vaudenay, and M. Vuagnoux, “Password Interception in a SSL/TLS channel,” Advances in
+Cryptology-CRYPTO 2003, pp. 583–599, 2003.
+[23] V. Klima and T. Rosa, “Side Channel Attacks On CBC
+Encrypted Messages in the PKCS# 7 Format,” IACR ePrint
+Archive, vol. 98, p. 2003, 2003.
+[24] E. Young, T. Hudson, and R. Engelschall, “OpenSSL: The Open Source Toolkit for SSL/TLS,” World Wide Web,
+http://www.openssl.org/, Last visited, vol. 9, 2011.
+[25] A. Dey and S. Weis, “Keyczar: A Cryptographic Toolkit,”
+2008.
+[26] P. Gutmann, “Cryptlib Encryption Tool Kit,” 2008.
+[27] D. Bernstein, “Cryptography in NaCl.”
+[28] A. Yau, K. Paterson, and C. Mitchell, “Padding Oracle Attacks on CBC-mode Encryption with Secret and Random
+IVs,” in Fast Software Encryption. Springer, 2005, pp. 299–
+319.
+[29] S. Stubblebine and V. Gligor, “On Message Integrity in Cryp- tographic Protocols,” in Research in Security and Privacy,
+1992. Proceedings., 1992 IEEE Computer Society Symposium
+on. IEEE, 2002, pp. 85–104.
+[30] N. Borisov, I. Goldberg, and D. Wagner, “Intercepting Mobile Communications: The Insecurity of 802.11,” in Proceedings
+of the 7th annual international conference on Mobile computing
+and networking. ACM, 2001, pp. 180–189.
+[31] S. Bellovin, “Problem Areas for the IP Security Protocols,” in Proceedings of the Sixth Usenix Unix Security Symposium, 1996, pp. 205–214.
+ conclusionrp
+[1] J. Andrews. Fundamentals of Master Keying. Associated Locksmiths of America. 1990.
+[2] B. B. Edwards Jr. Master Keying by the Numbers (2/e). Security Resources. Pensacola, FL, USA. 1997.
+[3] B. W. Lampson. “Hints for computer system design.” ACM Operating Systems Rev. 15, 5 (Oct. 1983),
+pp 33-48.
+[4] M. W. Tobias. Locks, Safes and Security (2/e). Charles Thomas Publisher, Ltd. Springfield, IL, USA.
+2000.
+referencesrp

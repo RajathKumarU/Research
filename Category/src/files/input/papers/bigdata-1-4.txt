@@ -1,0 +1,320 @@
+Adaptive, Secure, and Scalable Distributed Data
+Outsourcing: A Vision PapertitlerpThe growing trend towards grid computing and cloud com-
+puting provides enormous potential for enabling dynamic,
+distributed and data-intensive applications such as sharing
+and processing of large-scale scientific data. It also creates
+an increasing challenge for automatically and dynamically
+placing the data in the globally distributed computers or
+data centers in order to optimally utilize resources while
+minimizing user-perceived latency. This challenge is further
+complicated by the security and privacy constraints on the
+data that are potential sensitive. In this paper, we present
+our vision of an adaptive, secure, and scalable data outsourc-
+ing framework for storing and processing massive, dynamic,
+and potentially sensitive data using distributed resources.
+We identify the main technical challenges and present some
+preliminary solutions. The key idea of the framework is that
+it combines data partitioning, encryption, and data reduc-
+tion to ensure data confidentiality and privacy while mini-
+mizing the cost for data shipping and computation. We be-
+lieve the framework will provide a holistic conceptual foun-
+dation for secure data outsourcing that enables dynamic,
+distributed, and data-intensive applications and will open
+up many exciting research challenges.abstractrpprivacy preserving data publishing, secure data outsourcing,
+differential privacy, cloud computing, data-as-a-servicekeywordsrpThe growing trend towards grid computing and cloud com-
+puting is offering both new opportunities and challenges for
+enabling dynamic, distributed and data-intensive (D3) ap-
+plications such as sharing and processing of large-scale sci-
+entific data. Researchers or data collectors can outsource
+their massive data as well as data processing tasks to grid re-
+sources or the enormous data centers offered by cloud provi-
+ders, exemplified by Google AppEngine, Amazon’s EC2 and
+Microsoft’s Azure. Such a computing paradigm also creates
+an increasing challenge for automatically and dynamically
+placing the data in the globally distributed computers or
+data centers in order to optimally utilize the resources while
+minimizing user-perceived latency. This challenge is further
+complicated by the security and privacy constraints on the
+data. Indeed, data security is widely recognized as a major
+barrier for widespread adoption of deploying data into open
+distributed systems, e.g. clouds [32, 5, 36]. Users are reluc-
+tant to place their sensitive data in the cloud with concerns
+about data disclosure to potentially untrusted cloud provi-
+ders and other malicious parties. Untrusted cloud providers
+may scan cloud users’ data and even sell them. New threats
+also arise from the multi-tenant cloud infrastructure based
+on virtual machines (VMs) as the resources are shared with
+other potentially malicious tenants. In fact, a recent study
+[39] showed a cross-VM attack that can effectively target
+and extract confidential information from specific cloud in-
+stances. Biocompute is an example grid-based system that
+leverages grid-computing resources composed of a large net-
+work of personal computers for solving large bioinformatics
+problems [11]. The amount of data delivered by the Biocom-
+pute triggers new challenges for its developers. In addition,
+the possibility of opening Biocompute for external users’ use
+will raise many privacy concerns.
+Not surprisingly, part of the data confidentiality issues
+in the distributed outsourcing reflects the well-established
+security challenges in the traditional data outsourcing or
+Database-as-a-Service (DAS) setting in which a client out-
+sources its data to a remote untrusted database server which
+is then responsible for their storage and management [42].
+A common approach is to encrypt the data before sending
+them to a remote server. Many techniques (such as [44, 28,
+27, 12, 30, 4, 8, 31]) focus on supporting specific queries on
+encrypted database. The recent break-through of the fully
+homomorphic encryption scheme[24, 25, 46] bears the poten-
+tial to allow a user to store fully encrypted data while en-
+abling arbitrary computations on the encrypted data, how-
+ever, its computation cost is prohibitive in practice. It re-
+mains an open challenge to support versatile and efficient
+computation on the outsourced data with assurances of data
+confidentiality and data privacy.
+For secure data outsourcing to distributed resources, a
+potential solution is the secret sharing scheme [43] that dis-
+tributes the original data into shares and each can be placed
+on a resource. However, the limitation that each share of
+the secret must be at least as large as the secret itself makes
+it not feasible for large scale data. Several works studied
+data partitioning that allow partial or no encryption [3, 15,
+16, 10, 14]. While they mitigate the performance impact
+of cryptographic operations, the security guarantees on the
+unencrypted data warrants further research.
+In addition, data outsourcing to distributed resources such
+as cloud brings about new opportunities and challenges. Ac-
+cording to the NIST definition [35], key characteristics of
+cloud computing include on-demand service, broad network
+access, resource pooling, rapid elasticity, and metered ser-
+vice similar to a utility. In other words, what differentiates
+cloud-hosting providers from traditional hosting providers is
+their ability to offer elastic resources [36] which can respond
+to dynamic data volumes. This also challenges us to reexam-
+ine the existing solutions and design next generation secure
+data outsourcing techniques that allow users to rapidly and
+dynamically provision their resource needs for outsourcing
+and realize the full potential of the elasticity and pay-per-use
+of the cloud.
+Figure 1: Distributed Data Outsourcing in the
+Cloud
+Contributions. We present our vision of an adaptive, se-
+cure, and scalable data outsourcing framework for sharing
+and processing of massive, dynamic, and potentially sen-
+sitive data using distributed resources. Figure 1 depicts an
+example cloud outsourcing setting in which a user outsources
+its data to distributed data centers or resource providers for
+data storage and management. We identify the main tech-
+nical challenges and present some preliminary solutions.
+1. Secure and scalable outsourcing design that combine
+data partitioning, encryption, and data reduction such
+as compressed or statistical data outsourcing to en-
+sure data confidentiality and privacy while minimizing
+the cost for data shipping and computation. Each re-
+source provider may store parts of the data in original,
+encrypted, or reduced form. Algorithms can be devel-
+oped to allow users to preprocess their data for secure
+outsourcing on distributed resource providers that sys-
+tematically balance the requirements on confidential-
+ity and privacy, scalability, and analytical utility of the
+data for a given workload.
+2. Adaptive outsourcing design that allow users to dy-
+namically provision their outsourcing needs with data
+updates and changing query workload. Control-theory
+based mechanisms can be developed to effectively mo-
+del and estimate the changing query workload and
+changing data for dynamically adjusting the outsourc-
+ing design.
+We believe the framework will provide a holistic concep-
+tual foundation for secure data outsourcing that enables
+large scale sharing and processing of massive and poten-
+tially sensitive data on distributed data centers. We expect
+that this paper will open up exciting perspectives for future
+systems and database research on D3 applications.introductionrpWe presented an adaptive, secure, and scalable data out-
+sourcing framework for sharing and processing of massive,
+dynamic, and potentially sensitive data using distributed
+resources. It creates exciting research opportunities for de-
+signing new outsourcing design techniques as well as sys-
+tems techniques that make different types of cloud and lo-
+cal platforms compatible, host practical manifestations of
+remote databases, and perform at optimal levels in order
+to make the technology eminently usable. We believe the
+research direction is exciting in its potential to be transfor-
+mative in terms of dramatically increasing usability of dis-
+tributed computational platforms and making “information
+processing as a utility” a reality. For the foreseeable future,
+user confidence in data security and confidentiality will be
+a critical factor in determining adoption; at the same time,
+acquiring storage and compute resources from professional
+providers is technologically and economically optimal. Rec-
+onciling these two aspects has significant implications.conclusionrp[1] M. Abdalla, M. Bellare, D. Catalano, E. Kiltz, T. Kohno,
+T. Lange, J. Malone-Lee, G. Neven, P. Paillier, and H. Shi.
+Searchable encryption revisited: Consistency properties,
+relation to anonymous ibe, and extensions. Journal of
+Cryptology, 21:350–391, 2008.
+[2] S. Agarwal, J. Dunagan, N. Jain, S. Saroiu, A. Wolman, and
+H. Bhogan. Volley: automated data placement for
+geo-distributed cloud services. In Proc. of the 7th USENIX
+conference on Networked systems design and implementation,
+NSDI, page 2, 2010.
+[3] G. Aggarwal, M. Bawa, P. Ganesan, H. Garcia-Molina,
+K. Kenthapadi, R. Motwani, U. Srivastava, D. Thomas, and
+Y. Xu. Two can keep a secret: A distributed architecture for
+secure database services. In CIDR, pages 186–199, 2005.
+[4] G. Amanatidis, A. Boldyreva, and A. O’Neill. Provably-secure
+schemes for basic query support in outsourced databases. In
+DBSec, 2007.
+[5] M. Armbrust, A. Fox, R. Griffith, A. D. Joseph, R. Katz,
+A. Konwinski, G. Lee, D. Patterson, A. Rabkin, I. Stoica, and
+M. Zaharia. A view of cloud computing. Commun. ACM,
+53:50–58, April 2010.
+[6] G. Ateniese, R. Burns, R. Curtmola, J. Herring, L. Kissner,
+Z. Peterson, and D. Song. Provable data possession at untrusted
+stores. In Proc. of the 14th ACM Conference on Computer
+and Communications Security, CCS, pages 598–609, 2007.
+[7] D. Boneh, G. Di Crescenzo, R. Ostrovsky, and G. Persiano.
+Public key encryption with keyword search. In Advances in
+Cryptology – EUROCRYPT 2004, volume 3027 of Lecture
+Notes in Computer Science, pages 506–522. Springer Berlin /
+Heidelberg, 2004.
+[8] D. Boneh and B. Waters. Conjunctive, subset, and range
+queries on encrypted data. In Proc. of the 4th Conference on
+Theory of Cryptography, 2007.
+[9] K. D. Bowers, A. Juels, and A. Oprea. Hail: a high-availability
+and integrity layer for cloud storage. In Proc. of the 16th ACM
+Conference on Computer and Communications Security,
+CCS, pages 187–198, 2009.
+[10] M. Canim, M. Kantarcio?glu, and A. Inan. Query optimization
+in encrypted relational databases by vertical schema
+partitioning. In Proc. of the 6th VLDB Workshop on Secure
+Data Management, SDM ’09, pages 1–16, 2009.
+[11] R. Carmichael, P. Braga-Henebry, D. Thain, and S. Emrich.
+Biocompute: towards a collaborative workspace for data
+intensive bio-science. In Proc. of the 19th ACM International
+Symposium on High Performance Distributed Computing,
+HPDC ’10, pages 489–498, 2010.
+[12] A. Ceselli, E. Damiani, S. D. C. D. Vimercati, S. Jajodia,
+S. Paraboschi, and P. Samarati. Modeling and assessing
+inference exposure in encrypted databases. ACM Trans. Inf.
+Syst. Secur., 8, February 2005.
+[13] Y.-C. Chang and M. Mitzenmacher. Privacy preserving
+keyword searches on remote encrypted data. In Applied
+Cryptography and Network Security, volume 3531 of Lecture
+Notes in Computer Science, pages 442–455. Springer Berlin /
+Heidelberg, 2005.
+[14] V. Ciriani, S. De Capitani di Vimercati, S. Foresti, S. Jajodia,
+S. Paraboschi, and P. Samarati. Keep a few: Outsourcing data
+while maintaining confidentiality. In Computer Security –
+ESORICS 2009, volume 5789 of Lecture Notes in Computer
+Science, pages 440–455. Springer Berlin / Heidelberg, 2009.
+[15] V. Ciriani, S. D. C. di Vimercati, S. Foresti, S. Jajodia,
+S. Paraboschi, and P. Samarati. Fragmentation and encryption
+to enforce privacy in data storage. In Computer Security –
+ESORICS 2007, volume 4734 of Lecture Notes in Computer
+Science, pages 171–186. Springer Berlin / Heidelberg, 2007.
+[16] V. Ciriani, S. D. C. d. Vimercati, S. Foresti, S. Jajodia,
+S. Paraboschi, and P. Samarati. Fragmentation design for
+efficient query execution over sensitive distributed databases. In
+ICDCS, 2009.
+[17] C. Dwork. Differential privacy. In Automata, Languages and
+Programming, volume 4052 of Lecture Notes in Computer
+Science, pages 1–12, 2006.
+[18] C. Dwork. Differential privacy: a survey of results. Lecture
+Notes in Computer Science, 4978:1–19, 2008.
+[19] C. Dwork. A firm foundation for private data analysis.
+Commun. ACM, 54:86–95, January 2011.
+[20] C. Dwork, F. D. McSherry, K. Nissim, and A. Smith.
+Calibrating noise to sensitivity in private data analysis. In
+Proc. of the 3rd Theory of Cryptography Conference, pages
+265–284, 2006.
+[21] C. C. Erway, A. K¨up¸c¨u, C. Papamanthou, and R. Tamassia.
+Dynamic provable data possession. In CCS, 2009.
+[22] B. C. M. Fung, K. Wang, R. Chen, and P. S. Yu.
+Privacy-preserving data publishing: A survey of recent
+developments. ACM Computing Surveys, 42(4), June 2010.
+[23] J. Gardner and L. Xiong. Hide: An integrated system for
+health information de-identification. In EDBT, 2009.
+[24] C. Gentry. Fully homomorphic encryption using ideal lattices.
+In Proc. of the 41st annual ACM Symposium on Theory of
+Computing, STOC ’09, pages 169–178, 2009.
+[25] C. Gentry. Computing arbitrary functions of encrypted data.
+Commun. ACM, 53:97–105, 3 2010.
+[26] L. Glimcher, V. T. Ravi, and G. Agrawal. Supporting load
+balancing for distributed data-intensive applications. In HiPC,
+pages 235–244, 2009.
+[27] P. Golle, J. Staddon, and B. Waters. Secure conjunctive
+keyword search over encrypted data. In Applied Cryptography
+and Network Security, volume 3089 of Lecture Notes in
+Computer Science, pages 31–45. Springer Berlin / Heidelberg,
+2004.
+[28] H. Hacig¨um¨us, B. R. Iyer, C. Li, and S. Mehrotra. Executing
+sql over encrypted data in the database-service-provider model.
+In Proc. of the 2002 ACM SIGMOD International Conference
+on Management of Data, SIGMOD, pages 216–227, 2002.
+[29] M. Hay, V. Rastogi, G. Miklau, and D. Suciu. Boosting the
+accuracy of differentially private histograms through
+consistency. Proc. VLDB Endow., 3:1021–1032, September
+2010.
+[30] M. Kantarcio?glu and C. Clifton. Security issues in querying
+encrypted data. In Data and Applications Security XIX,
+volume 3654 of Lecture Notes in Computer Science, pages
+924–924. Springer Berlin / Heidelberg, 2005.
+[31] J. Katz, A. Sahai, and B. Waters. Predicate encryption
+supporting disjunctions, polynomial equations, and inner
+products. In Proc. of the Theory and Applications of
+Cryptographic Techniques 27th annual international
+conference on Advances in Cryptology, EUROCRYPT, pages
+146–162, 2008.
+[32] L. M. Kaufman. Data security in the world of cloud computing.
+IEEE Security and Privacy, 7:61–64, July 2009.
+[33] A. Machanavajjhala, J. Gehrke, D. Kifer, and
+M. Venkitasubramaniam. L-diversity: Privacy beyond
+k-anonymity. In ICDE, 2006.
+[34] F. D. McSherry. Privacy integrated queries: an extensible
+platform for privacy-preserving data analysis. In SIGMOD,
+2009.
+[35] P. Mell and T. Grance. Nist definition of cloud computing v15,
+2009. http://csrc.nist.gov/groups/SNS/cloud-computing/clouddef-
+v15.doc.
+[36] D. Molnar and S. Schechter. Self hosting vs. cloud hosting:
+Accounting for the security impact of hosting in the cloud. In
+The Ninth Workshop on the Economics of Information
+Security (WEIS 2010), 2010.
+[37] H. Ozbay. Introduction to Feedback Control Theory. CRC
+Press, Inc., Boca Raton, FL, USA, 1st edition, 1999.
+[38] K. P. N. Puttaswamy, C. Kruegel, and B. Y. Zhao. Silverline:
+Toward data confidentiality in third-party clouds. Technical
+Report 2010-08, Dept. of Computer Science, University of
+California Santa Barbara, 8 2010.
+[39] T. Ristenpart, E. Tromer, H. Shacham, and S. Savage. Hey,
+you, get off of my cloud: exploring information leakage in
+third-party compute clouds. In Proc. of the 16th ACM
+Conference on Computer and Communications Security,
+CCS, pages 199–212, 2009.
+[40] I. Roy, S. T. V. Setty, A. Kilzer, V. Shmatikov, and E. Witchel.
+Airavat: security and privacy for mapreduce. In NSDI, 2010.
+[41] P. Samarati. Protecting respondents’ identities in microdata
+release. IEEE Trans. on Knowl. and Data Eng., 13, November
+2001.
+[42] P. Samarati and S. D. C. di Vimercati. Data protection in
+outsourcing scenarios: issues and directions. In ASIACCS,
+2010.
+[43] A. Shamir. How to share a secret. Commun. ACM, 22:612–613,
+November 1979.
+[44] D. X. Song, D. Wagner, and A. Perrig. Practical techniques for
+searches on encrypted data. In Proc. of the 2000 IEEE
+Symposium on Security and Privacy, pages 44–55, 2000.
+[45] L. Sweeney. k-anonymity: a model for protecting privacy. Int.
+J. Uncertain. Fuzziness Knowl.-Based Syst., 10, October 2002.
+[46] M. van Dijk, C. Gentry, S. Halevi, and V. Vaikuntanathan.
+Fully homomorphic encryption over the integers. In Advances
+in Cryptology – EUROCRYPT 2010, volume 6110 of Lecture
+Notes in Computer Science, pages 24–43. Springer Berlin /
+Heidelberg, 2010.
+[47] Y. Xiao, L. Xiong, and C. Yuan. Differentially private data
+release through multidimensional partitioning. In Proc. of the
+7th VLDB conference on Secure data management, SDM,
+pages 150–168, 2010.
+[48] Y. Yu, P. K. Gunda, and M. Isard. Distributed aggregation for
+data-parallel computing: interfaces and implementations. In
+Proc. of the ACM SIGOPS 22nd symposium on Operating
+systems principles, SOSP ’09, pages 247–260, 2009.referencesrp

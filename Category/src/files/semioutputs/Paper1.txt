@@ -1,0 +1,85 @@
+Hybrid Approach to Assess User ReviewstitlerpIn this paper we discuss semantic and machine learning approaches to classify user reviews of
+trending products into spam and non-spam, it is then followed by rating all the reviews. A trending
+product is defined as frequently mentioned product on the web. In this paper we use two cases.
+First case is classifying the reviews as spam and non-spam. Second case is rating the user reviews
+on a scale from 1-5. We have used semantic and machine learning algorithms for both the cases on
+five different products' dataset. We have collected datasets comprising of both spam and non-spam
+reviews for training and testing purposes. We have obtained an average accuracy of 82.2% for the
+first case and 84.4% for the second case considering all the five products using Semantic approach.
+Similarly, we have obtained an accuracy of 82.2% using MLP (Neural network) for the first case
+. For the second case, we have obtained accuracy of 89.4% using SMO. Our method of assessing
+user reviews differs from other works in literature such that, we have devised hybrid approach
+for classifying as well as rating the reviews. Our approach obtains an average accuracy of 83.3%
+and 85.8% for semantic and machine learning approach respectively that works for reviews across
+domains.abstractrpReviews, Spam, Semantic, Machine Learning, Product ratingkeywordsrpE-commerce websites have become very popular across different sections of society. People have
+started buying different kinds of products like electronic items, clothing, furniture etc., through
+E-commerce websites, because of its ease and simplicity. Product reviews have an important role
+in any E-commerce organization. The Web has greatly enhanced the way people perform certain
+activities (e.g. shopping),find information, and interact with others. Today many people read/write
+reviews on merchant sites, blogs, forums, and social media before/after they purchase products or
+services. These reviews are responsible for the development of an organization. User-generated
+online reviews can play a significant role in the success of retail products, hotels, restaurants, etc.
+However, review systems are often targeted by opinion spammers who seek to distort the perceived
+quality of a product by creating fraudulent reviews [2]. Users will look into the reviews of the
+product before buying it. Since anybody can write reviews, it is very important to identify reliable
+reviews.
+Review has two main parts, Review Content and Product Rating. Product Rating is the product
+score given by the customers in the form of stars ranging from 1 to 5. Rating and Content of the reviews can be analyzed together for identifying genuine user reviews. Review spam is designed
+to give unfair view of some products so as to in
+uence the consumers perception of the products
+by directly or indirectly in
+ating or damaging the products reputation[14]. Two rating behavior
+which indicates spam is: 1. opinion is highly positive and rating is quite low 2.opinion is negative
+and rating is high [1]. Spam reviews contain invalid content which may misguide the customers
+resulting in a negative impact on an organization.
+There are generally two types of spam reviews. The first type consists of those that deliberately
+mislead readers or automated opinion mining systems by giving undeserving positive opinions to
+some target products in order to promote them and/or by giving unjust or malicious negative
+reviews to some other products in order to damage their reputation. The second type consists of
+nonreviews (e.g., ads) which contain no opinions on the product [3]. In this paper, we identify spam
+reviews as the preliminary step. In the subsequent steps, we rate the reviews on a scale from 1 to
+5, 5 for the most reliable review and 1 for the unreliable review. People are used to 5-star rating
+system since it's the most conventional of all the rating systems we see on the web, used on Net
+ix,
+Yelp, Amazon, etc. This review rating method helps the customers to provide better reviews about
+the product and enable them to shop wisely.
+Reviews can be collected in two different formats i. e., structured and unstructured. The structured
+review is questionnaires about the products or items with specified options against each feature.
+Thus structured review is bounded and static. The analysis of structured review is simple, easy to
+process and analyze. But unstructured review is collected in the form of free text [4]. In this paper
+we consider only unstructured reviews.
+The main focus of this paper is on classifying the product reviews from various web sources into
+spam or non-spam as well as rating the reviews based on its content. However this concept can be
+extended to other aspects like movie reviews, company reviews available in glassdoor.com, reviews
+on tourist places etc.introductionrpWe have used an empirical approach to classify the reviews as spam or non-spam and to rate the reviews based
+on the content of the review. For evaluating the validity of the reviews of a product, MLP is the better machine
+learning algorithm to use since it has high average accuracy. MLP works better when compared to other algorithms
+since it uses back propagation. MLP can approximate any complex decision boundary to divide the input space with
+arbitrary accuracy. For rating the reviews of a product, SMO is the better machine learning algorithm to use and
+has high average accuracy. SMO algorithm is highly scalable and works well on sparse data.
+The proposed method can be applied to assess reviews across various domains unlike other works in literature which
+confine to a particular domain. Based on the availability of product rating and review content, either semantic or
+machine learning approach can be used to analyze the review. This study helps to identify reliable reviews for any
+given product for the benefit of common people and organizations.conclusionrpJagruti Prajapati, Malay Bhatt Dinesh, J. Prajapati, Detection and Summarization of Genuine Review using
+Visual Data Mining, 2012
+[2] Leman Akoglu, Rishi Chandy, Christos Faloutsos, Opinion Fraud Detection in Online Reviews by Network Effects,
+2013
+[3] Nitin Jindal and Bing Liu ,Review Spam Detection, 2008
+[4] Khairullah Khan, Baharum Baharudin, and Aurangzeb Khan, Identifying Product Features from Customer
+Reviews Using Hybrid Patterns, 2013
+[5] M. Daiyan, Dr. S. K.Tiwari, M. A. Alam, Mining Product Reviews for Spam Detection Using Supervised Tech-
+nique, 2014
+[6] Geli Fei, Arjun Mukherjee, Bing Liu, Meichun Hsu, Malu Castellanos, Riddhiman Ghosh, Exploiting Burstiness
+in Reviews for Review Spammer Detection, 2013
+[7] Ramez Elmasri and Shamkanth B. Navathe, Fundamentals of Database Systems, Third Edition.
+[8] Zhang Xiao li, Using Fuzzy Neural Network in Real Estate Prices Prediction, 2007.
+[9] Jsoup, [Online] Available: http://jsoup.org
+[10] Stanford NLP, [Online] Available: http://nlp.stanford.edu/
+[11] Anil Kumar K.M, Anil B, Anand C U, Aniruddha S, Rajath Kumar U, Machine Learning Approach to Predict
+Real Estate Prices, 2015
+[12] Aylien, [Online] Available: www.aylien.com
+[13] Mark Hall, Eibe Frank, Georey Holmes, Bernhard Pfahringer, Peter Reutemann, Ian H. Witten, The WEKA
+Data Mining Software: An Update, 2009
+[14] Ee-Peng Lim, Viet-An Nguyen, Nitin Jindal, Bing Liu and Hady W. Lauw, Detecting Product Review Spammers
+using Rating Behaviors, 2010.
+[15] Anil Kumar K.M, Suresha, Analyzing Web user Opinion from Phrases and Emoticons, 2011 referencesrp

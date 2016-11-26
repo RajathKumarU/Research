@@ -1,0 +1,123 @@
+Big Data: The New Challenges in Data MiningtitlerpBig Data is a new term used to identify the datasets but
+due to their large size and complexity, we cannot manage them
+with our current methodologies or data mining software tools.
+With the fast development of networking, data storage, and the
+data collection capacity, Big Data is now rapidly expanding in all
+science and engineering domains, including physical, biological
+and biomedical sciences. Big Data mining is the capability of
+extracting useful information from these large datasets or
+streams of data, that due to its volume, variability, and velocity,
+it was not possible before to do it. The Big Data challenge is
+becoming one of the most exciting opportunities for the next
+years. This paper represents a broad overview of the topic, Big
+Data challenges, Data Mining Challenges with Big Data, Big Data
+processing framework and forecast to the future.abstractrpBig Data, New Challenges, Data Mining, Future
+Challenges, Big Data Problems.keywordsrpBig Data is too big, too fast, or too hard for existing tools to
+process [1]. Here, “too big” means that organizations
+increasingly must deal with petabyte-scale collections of data
+that come from click streams, transaction histories, sensors,
+and elsewhere. “Too fast” means that not only is data big, but
+it must be processed. “Too hard” is a catchall for data that
+doesn’t fit neatly into an existing processing tool or that needs
+some kind of analysis that existing tools can’t readily provide.
+Big Data is currently defined using three data
+characteristics: volume, variety and velocity [2]. At some
+point when the volume, variety and velocity of the data are
+increased, the current techniques and technologies may not be
+able to handle storage and processing of the data. At that point
+the data is defined as Big Data. The term Big Data Analytics
+is nothing but the process of analyzing and understanding the
+characteristics of massive size datasets by extracting useful
+geometric and statistical patterns. These three characteristics
+of a dataset increase the complexity of the data.
+Many applications involve the Big Data problem,
+including network traffic risk analysis, geospatial
+classification and business forecasting. Network intrusion
+detection and prediction are time sensitive applications and
+they require highly efficient Big Data techniques and
+technologies to tackle the problem. In this paper some of the
+problems and challenges associated with the Big Data
+technologies and techniques are discussed.
+The current definition of Big Data defined on a 3D space,
+V3, formed by three parameters, volume, variety and velocity
+cannot provide a suitable platform for the early detection of
+Big Data characteristics for Big Data classification. Figure 1
+shows the 3D space defined for Big V3, formed by three parameters, volume, variety and velocity cannot provide a
+suitable platform for the early detection of Big Data
+characteristics for Big Data classification.
+Figure 1 shows the 3D space defined for Big Data, where the
+axis of volume represents the growth of data size, the axis of
+velocity represents the increase in speed in which the data
+must be processed, and the axis of variety represents the
+increase in various types of data.A new definition for Big Data as a 3D space, C3, as shown in
+Figure 2, which is defined based on three new parameters:
+cardinality, continuity, and complexity. In C3 space the
+cardinality defines the number of records in the dynamically
+growing dataset at a particular instance. The continuity defines
+two characteristics and they are: (i) representation of data by
+continuous functions, and (ii) continuously growth of data size
+with respect to time. The complexity defines three
+characteristics and they are: (i) large varieties of data types,
+(ii) high dimensional dataset; and (iii) the speed of data
+processing are very high[3].introductionrpBig Data is going to continue growing during the next years,
+and each data scientist will have to manage much more
+amount of data every year. This data is going to be more
+diverse, larger, and faster. We discussed in this paper a change
+to the basic definition V3 of Big Data to C3 so that the Big
+Data analytics maybe better explained and understood with
+mathematical and statistical techniques. Research on Big Data
+techniques and technologies evolving and at the same time
+new problems and challenges are emerging, hence the hope is
+to develop better and better techniques and technologies
+towards finding solutions for Big Data classification problem.
+We are at the beginning of a new era where Big Data mining
+will help us to discover knowledge that no one has discovered
+before.conclusionrp[1] Sam Madden • Massachusetts Institute of Technology From Database
+to Big Data,IEEE,2012
+[2] P. C. Zikopoulos, C. Eaton, D. deRoos, T. Deutsch, and G. Lapis,
+Understanding big data – Analytics for enterprise class Hadoop and
+streaming data, McGraw-Hill, 2012.
+[3] Shan Suthaharan , Big Data Classification: Problems and Challenges in
+Network Intrusion Prediction with Machine Learning.
+[4] Neal Leavitt,”Storage Challenges: Where Will Att That Big Data Go?”,
+0018-9162/13/$31.00 © , 2013 IEEE.
+[5] I. Muttik and C. Barton. "Cloud security technologies," information
+security technical report 14.1: 1-6, 2009.
+[6] S. Carlin and K. Curran. "Cloud Computing Technologies."
+International Journal of Cloud Computing and Services Science (IJCLOSER)
+1.2: 59-65, 2012.
+[7] P. C. Wong, H. W. Shen, C. R. Johnson, C. Chen, and R. B. Ross, “The
+Top 10 Challenges in Extreme-Scale Visual Analytics,” Computer
+Graphics and Applications, IEEE, 32(4), 63-67, 2012.
+[8] Xindong Wu,, Xingquan Zhu, Gong-Qing Wu, Wei Ding, “Data
+Mining with Big Data”, 1041-4347/13, 2013 IEEE
+[9] Wei Fan, Albert Bifet, “ Mining Big Data: Current Status, and Forecast
+to the Future”, SIGKDD Explorations, Volume 14, Issue 2
+[10] V. Gopalkrishnan, D. Steier, H. Lewis, and J. Guszcza.Big data, big
+business: bridging the gap. In Proceed-ings of the 1st International
+Workshop on Big Data,Streams and Heterogeneous Source Mining:
+Algorithms,Systems, Programming Models and Applications, Big-Mine
+'12, pages 7{11, New York, NY, USA, 2012. ACM.
+[11] C. Parker. Unexpected challenges in large scale machine learning. In
+Proceedings of the 1st International Work- shop on Big Data, Streams
+and Heterogeneous Source Mining: Algorithms, Systems, Programming
+Models and Applications, BigMine '12, pages 1{6, New York,NY,
+USA, 2012. ACM.
+[12] N. Marz and J. Warren. Big Data: Principles and best practices of
+scalable realtime data systems. Manning Publications, 2013.
+[13] B. Efron. Large-Scale Inference: Empirical Bayes Meth- ods for
+Estimation, Testing, and Prediction. Institute of Mathematical Statistics
+Monographs. Cambridge University Press, 2010.
+[14] D. Feldman, M. Schmidt, and C. Sohler. Turning big data into tiny data:
+Constant-size coresets for k-means, pca and projective clustering. In
+SODA, 2013.
+[15] J. Gama. Knowledge Discovery from Data Streams. Chapman & all/Crc
+data Mining and Knowledge Discovery. Taylor & Francis Group, 2010.
+[16] J. Gantz and D. Reinsel. IDC: The Digital Universe in 2020: Big Data,
+Bigger Digital Shadows, and Biggest Growth in the Far East. December
+2012.
+[17] R. Smolan and J. Erwitt. The Human Face of Big Data. Sterling
+Publishing Company Incorporated, 2012.
+[18] Katina Michael, Keith W. Miller, “ Big Data: New Opportunities and
+New Challenges”, IEEE Computer Society 0018-9162/13/$31.00 ©
+2013 IEEEreferencesrp

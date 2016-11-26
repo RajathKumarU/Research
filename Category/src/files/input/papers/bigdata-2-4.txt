@@ -1,0 +1,245 @@
+Piggyback CrowdSensing (PCS): Energy Efficient
+Crowdsourcing of Mobile Sensor Data by
+Exploiting Smartphone App Opportunities titlerpFueled by the widespread adoption of sensor-enabled smart-
+phones, mobile crowdsourcing is an area of rapid innova-
+tion. Many crowd-powered sensor systems are now part of
+our daily life { for example, providing highway congestion
+information. However, participation in these systems can
+easily expose users to a signicant drain on already limited
+mobile battery resources. For instance, the energy burden of
+sampling certain sensors (such as WiFi or GPS) can quickly
+accumulate to levels users are unwilling to bear. Crowd
+system designers must minimize the negative energy side-
+eects of participation if they are to acquire and maintain
+large-scale user populations.
+To address this challenge, we propose Piggyback Crowd-
+Sensing (PCS), a system for collecting mobile sensor data
+from smartphones that lowers the energy overhead of user
+participation. Our approach is to collect sensor data by
+exploiting Smartphone App Opportunities { that is, those
+times when smartphone users place phone calls or use ap-
+plications. In these situations, the energy needed to sense
+is lowered because the phone need no longer be woken from
+an idle sleep state just to collect data. Similar savings are
+also possible when the phone either performs local sensor
+computation or uploads the data to the cloud. To e-
+ciently use these sporadic opportunities, PCS builds a light-
+weight, user-specic prediction model of smartphone app
+usage. PCS uses this model to drive a decision engine that
+lets the smartphone locally decide which app opportunities
+to exploit based on expected energy/quality trade-os.
+We evaluate PCS by analyzing a large-scale dataset (con-
+taining 1,320 smartphone users) and building an end-to-end
+crowdsourcing application that constructs an indoor WiFi
+localization database. Our ndings show that PCS can ef-
+fectively collect large-scale mobile sensor datasets (e.g., ac-
+celerometer, GPS, audio, image) from users while using less
+energy (up to 90% depending on the scenario) compared to
+a representative collection of existing approaches.abstractrpCrowdsourcing, Smartphone SensingkeywordsrpMobile crowdsourcing systems are becoming increasingly
+prevalent in society. Commuters monitor highway conges-
+tion using GPS readings from other drivers stuck in trac [9,
+38]. Commercial location services rely on WiFi maps built
+from data collected from millions of smartphone users [6, 3].
+City planners similarly leverage smartphone microphones to
+track noise pollution levels [34]. Now, even shoppers are re-
+ceiving incentives to provide images of store interiors, allow-
+ing for the assessment of product displays [7]. This growing
+class of crowdsourcing systems depends on collecting mobile
+sensor data from large numbers of smartphone users. Keep-
+ing the burden placed on participating users as low as pos-
+sible is critical to these systems' success. Yet, surprisingly,
+many existing systems employ relatively simplistic and inef-
+cient data collection strategies.
+Common data collection strategies include relying on (1)
+highly engaged users to manually capture high-quality data
+that tightly matches application requirements; (2) periodic
+or random data sampling; or (3) context-driven sampling,
+typically based on location. Accompanying each strategy are
+signicant negative side-eects, including, poor data quality,
+excessive energy consumption, and high user engagement.
+For mobile crowdsourcing to reach its considerable poten-
+tial, new approaches are required for mobile sensor data col-
+lection that would both enable energy eciency and reduce
+the level of engagement required from users.
+Toward meeting these challenges, in this paper, we pro-
+pose Piggyback CrowdSensing (PCS) { a smartphone- and
+cloud-based system for energy ecient crowdsourcing of mo-
+bile sensor data. PCS is designed to intelligently leverage
+the opportunities for collecting sensor data that frequently
+occur during everyday smartphone user operations, such as
+placing calls or using applications. We refer to these situ-
+ations as Smartphone App Opportunities. At these times,
+the energy cost of sensing can be signicantly reduced be-
+cause required smartphone components (for example, CPU
+or even the sensor itself) are already activated from an idle
+state. Under PCS sensor data collection, computation and
+uploading is performed as a background process, without
+user involvement, and at times when the these actions' en-
+ergy consumption can be minimized.
+Eciently using sporadic user-driven sensing opportuni-
+ties to satisfy crowdsourcing sensing requirements is chal-
+lenging. For example, simply applying a greedy strategy
+and exploiting every smartphone app opportunity to sense
+would quickly consume too much energy and neglect po-
+tentially better, later opportunities in favor of earlier ones.
+Instead, PCS's operation is guided by predictive models that
+capture the smartphone app usage patterns that are specic
+to each user. By predicting upcoming sensing opportunities,
+PCS can compare current opportunities to sample against
+to future ones, which might occur, for instance, at a highly
+valued location. The PCS app prediction model drives a
+decision engine that can balance current and future oppor-
+tunities against pending tasks to either sense, upload, or
+apply computation to the data.
+This paper makes the following contributions:
+ We propose to systematically exploit Smartphone App
+Opportunities for mobile crowdsourcing. Under this
+approach, predictable smartphone usage patterns { such
+as making calls or browsing the web { are leveraged to
+decrease mobile crowdsourcing's energy consumption.
+ We develop an architecture and algorithms designed
+to maximize the benet possible from unpredictable
+Smartphone App Opportunities. Specically, our al-
+gorithms (1) accurately predict smartphone app usage,
+which in turn enables (2) local intelligent decisions by
+smartphones as to when to sample, compute, and up-
+load sensor data.
+ We evaluate our PCS prototype using (1) a large-scale
+trace of 1,320 smartphone users, (2) a separate eld
+trial (21 days, 11 users), and (3) one end-to-end appli-
+cation case study using the PCS system. Our results
+show that PCS can collect more sensor data (between
+0.7x and 3x) with the same energy budget when com-
+pared to a representative set of crowdsourcing bench-
+marks, while still performing the necessary computa-
+tion and uploading tasks.
+The remainder of the paper is organized as follows. x2
+highlights the benets of piggyback crowdsensing. In x3,
+we begin to describe PCS and present an overview of the
+PCS architecture. x4 continues by providing the specics
+of the key algorithms in our design. Finally, in x5, we
+detail the implementation specics of the PCS prototype.
+x6 presents experiments that evaluate both individual PCS
+components and compare overall PCS performance with al-
+ternative crowdsourcing approaches. x7 discusses the end-
+to-end performance of representative prototype crowdsourc-
+ing applications built with PCS. In x8, we acknowledge our
+study's limitations and outline our plans for future work.
+Related work is discussed in x9, and x10 concludes this pa-
+per.introductionrpIn this paper we have presented PCS, a system for crowd-
+sourcing mobile sensor data that is designed to intelligently
+exploit opportunities to sense, compute and upload { at a
+low energy cost { presented by everyday phone app usage
+(i.e., smartphone app opportunities).
+To evaluate PCS we have performed a comprehensive set
+of mobile crowdsourcing experiments. We used controlled
+benchmarks to better understand energy and data quality
+trade-os of the piggyback approach. Based on a large-scale
+trace of smartphone app usage, we compared the perfor-
+mance of PCS with a number of representative baselines
+under a range of crowd system scenarios. To test the end-
+to-end performance of PCS, we built and evaluated a crowd-
+sourcing application that constructs indoor WiFi ngerprint
+databases. Collectively, our ndings validate the design of
+PCS and show it is able to outperform existing approaches
+to collecting mobile sensor data at scale in an energy-ecient
+manner.conclusionrp[1] Amazon mechanical turk. http://mturk.com.
+[2] AnTuTu. http://www.antutulabs.com/AnTuTu-Benchmark.
+[3] Apple iOS Location SERVICE. support.apple.com/kb/HT4995.
+[4] NenaMark. http://nena.se/nenamark.
+[5] NeoCore. http://play.google.com/store/
+/apps/details?id=com.qualcomm.qx.neocore
+[6] Skyhook wireless. http://www.skyhookwireless.com/.
+[7] Stringy. www.stringfly.com/.
+[8] CMU Sphinx Speech Recognition Engine.
+http://cmusphinx.sourceforge.net/.
+[9] Waze. http://www.waze.com/.
+[10] Windows azure. http://www.windowsazure.com/en-us/.
+[11] T. Abdelzaher, Y. Anokwa, P. Boda, J. Burke, D. Estrin,
+L. Guibas, A. Kansal, S. Madden, J. Reich. Mobiscopes for
+human spaces. IEEE Pervasive Computing, 6(2):20{29, 2007.
+[12] P. Bahl, V. N. Padmanabhan. Radar: An in-building rf-based
+user location and tracking system. In INFOCOM '00.
+[13] R. K. Balan, K. X. Nguyen, L. Jiang. Real-time trip
+information service for a large taxi eet. In MobiSys '11.
+[14] C. M. Bishop. Pattern Recognition and Machine Learning
+(Information Science and Statistics). Springer, August 2006.
+[15] J. Burke, D. Estrin, M. Hansen, A. Parker, N. Ramanathan,
+S. Reddy, M. B. Srivastava. Participatory sensing. In WSW '06.
+[16] A. T. Campbell, S. B. Eisenman, N. D. Lane, E. Miluzzo, R. A.
+Peterson. People-centric urban sensing. In WICON '06.
+[17] Q. Cao, T. Abdelzaher, T. He, J. Stankovic. Towards optimal
+sleep scheduling in sensor networks for rare-event detection. In
+IPSN '05.
+[18] Y. Chon, N. D. Lane, F. Li, H. Cha, F. Zhao. Automatically
+characterizing places with opportunistic crowdsensing using
+smartphones. In UbiComp '12.
+[19] T.-M.-T. Do, D. Gatica-Perez. By their apps you shall
+understand them: mining large-scale patterns of mobile phone
+usage. In MUM '10.
+[20] S. B. Eisenman, N. D. Lane, A. T. Campbell. Techniques for
+improving opportunistic sensor networking performance. In
+DCOSS '08.
+[21] J. Eriksson, L. Girod, B. Hull, R. Newton, S. Madden,
+H. Balakrishnan. The pothole patrol: using a mobile sensor
+network for road surface monitoring. In MobiSys '08.
+[22] Z. Fang, Z. Guoliang, S. Zhanjiang. Comparison of dierent
+implementations of mfcc. J. Comput. Sci. Technol.,
+16(6):582{589, 2001.
+[23] Y. Freund, R. E. Schapire. A decision-theoretic generalization
+of on-line learning and an application to boosting. In
+EuroCOLT '95.
+[24] P. Jacko. Dynamic Priority Allocation in Restless Bandit Models.
+Lambert Academic Publishing, 2010.
+[25] P. Jacko, J. Nino-Mora. Time-constrained restless bandits and
+the knapsack problem for perishable items. Electronic Notes in
+Discrete Mathematics, 28:145{152, 2007.
+[26] E. Koukoumidis, L.-S. Peh, M. R. Martonosi. Signalguru:
+leveraging mobile phones for collaborative trac signal
+schedule advisory. In MobiSys '11.
+[27] A. Krause, E. Horvitz, A. Kansal, F. Zhao. Toward community
+sensing. In IPSN '08.
+[28] N. D. Lane, M. Mohammod, M. Lin, X. Yang, H. Lu, S. Ali,
+A. Doryab, E. Berke, T. Choudhury, A. Campbell. BeWell: A
+Smartphone Application to Monitor, Model and Promote
+Wellbeing. In PervasiveHealth '11.
+[29] F. Li, C. Zhao, G. Ding, J. Gong, C. Liu, F. Zhao. A reliable
+and accurate indoor localization method using phone inertial
+sensors. In UbiComp '12.
+[30] F. Lin, P. Chiu. A near-optimal sensor placement algorithm to
+achieve complete coverage-discrimination in sensor networks.
+Communications Letters, IEEE, 9(1):43{45, 2005.
+[31] H. Lu, J. Yang, Z. Liu, N. D. Lane, T. Choudhury, A. T.
+Campbell. The Jigsaw Continuous Sensing Engine for Mobile
+Phone Applications. In SenSys '10.
+[32] N. C. Oza, S. Russell. Online bagging and boosting. In In
+Articial Intelligence and Statistics 2001, pages 105{112. Morgan
+Kaufmann, 2001.
+[33] J. Papastavrou, S. Rajagopalan, A. J. Kleywegt. The dynamic
+and stochastic knapsack problem with deadlines. Operations
+Research, 42:1706{1718, 1996.
+[34] R. K. Rana, C. T. Chou, S. S. Kanhere, N. Bulusu, W. Hu.
+Ear-phone: an end-to-end participatory urban noise mapping
+system. In IPSN '10.
+[35] S. Reddy, J. Burke, D. Estrin, M. Hansen, and M. Srivastava.
+Determining transportation mode on mobile phones. In ISWC
+'08.
+[36] K. Ross, D. Tsang. The stochastic knapsack problem.
+Communications, IEEE Transactions on, 37(7):740{747, 1989.
+[37] C. Shin, J.-H. Hong, A. K. Dey. Understanding and prediction
+of mobile application usage for smart phones. In UbiComp '12.
+[38] A. Thiagarajan, L. R. Sivalingam, K. LaCurts, S. Toledo,
+J. Eriksson, S. Madden, H. Balakrishnan. VTrack: Accurate,
+Energy-Aware Trac Delay Estimation Using Mobile Phones.
+In Sensys '09.
+[39] L. von Ahn, B. Maurer, C. Mcmillen, D. Abraham, M. Blum.
+reCAPTCHA: Human-Based Character Recognition via Web
+Security Measures. Science, pages 1160379+, August 2008.
+[40] B. Yan, G. Chen. Appjoy: personalized mobile application
+discovery. In MobiSys '11.
+[41] T. Yan, V. Kumar, D. Ganesan. Crowdsearch: exploiting
+crowds for accurate real-time image search on mobile phones.
+In MobiSys '10.
+[42] C. Yoon, D. Kim, W. Jung, C. Kang, H. Cha. Appscope:
+application energy metering framework for android
+smartphones using kernel activity monitoring. In ATC'12.referencesrp

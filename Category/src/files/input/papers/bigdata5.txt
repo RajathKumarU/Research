@@ -1,0 +1,167 @@
+Big Data: Issues and Challenges Moving Forward 
+ titlerp
+Big data refers to data volumes in the range of
+exabytes (1018) and beyond. Such volumes exceed the
+capacity of current on-line storage systems and
+processing systems. Data, information, and knowledge
+are being created and collected at a rate that is
+rapidly approaching the exabyte/year range. But, its
+creation and aggregation are accelerating and will
+approach the zettabyte/year range within a few years.
+Volume is only one aspect of big data; other attributes
+are variety, velocity, value, and complexity. Storage
+and data transport are technology issues, which seem
+to be solvable in the near-term, but represent longterm
+challenges that require research and new
+paradigms. We analyze the issues and challenges as
+we begin a collaborative research program into
+methodologies for big data analysis and design.abstractrp
+keywordsrp
+The concept of big data has been endemic within
+computer science since the earliest days of computing.
+“Big Data” originally meant the volume of data that
+could not be processed (efficiently) by traditional
+database methods and tools. Each time a new storage
+medium was invented, the amount of data accessible
+exploded because it could be easily accessed. The
+original definition focused on structured data, but most
+researchers and practitioners have come to realize that
+most of the world’s information resides in massive,
+unstructured information, largely in the form of text
+and imagery. The explosion of data has not been
+accompanied by a corresponding new storage medium.
+ We define “Big Data” as the amount of data just
+beyond technology’s capability to store, manage and
+process efficiently. These imitations are only
+discovered by a robust analysis of the data itself,
+explicit processing needs, and the capabilities of the
+tools (hardware, software, and methods) used to
+analyze it. As with any new problem, the conclusion
+of how to proceed may lead to a recommendation that
+new tools need to be forged to perform the new tasks.
+As little as 5 years ago, we were only thinking of tens
+to hundreds of gigabytes of storage for our personal
+computers. Today, we are thinking in tens to hundreds
+of terabytes. Thus, big data is a moving target. Put
+another way, it is that amount of data that is just
+beyond our immediate grasp, e.g., we have to work
+hard to store it, access it, manage it, and process it.
+ The current growth rate in the amount of data
+collected is staggering. A major challenge for IT
+researchers and practitioners is that this growth rate is
+fast exceeding our ability to both: (1) design
+appropriate systems to handle the data effectively and
+(2) and analyze it to extract relevant meaning for
+decision making. In this paper we identify critical
+issues associated with data storage, management, and
+processing. To the best of our knowledge, the research
+literature has not effectively addressed these issues, introductionrp
+
+Big data is the “new” business and social science
+frontier. The amount of information and knowledge
+that can be extracted from the digital universe is
+continuing to expand as users come up with new ways
+to massage and process data. Moreover, it has become
+clear that “more data is not just more data”, but that
+“more data is different”.
+ “Big data” is just the beginning of the problem.
+Technology evolution and placement guarantee that in
+a few years more data will be available in a year than
+has been collected since the dawn of man. If Facebook
+and Twitter are producing, collectively, around 50
+gigabytes of data per day, and tripling every year,
+within a few years (perhaps 3-5) we are indeed facing
+the challenge of “big data becoming really big data”.
+ We – as a global society – are evolving from a
+data-centric to a knowledge-centric community. Our
+knowledge is widely distributed and equally widely
+accessible. One program that is addressing this
+problem is The Federal Semantic Interoperability
+Community of Practice (SICoP) which supports an
+evolving model: Citizen-Centric Government –
+Systems That Know; Advanced Analytics – Systems
+That Learn; and Smart Operations – Systems That
+Reason. These systems will require big data. The data
+will not be stored in one or even a few locations; it
+will not be just one or even a few types and formats; it
+will not be amenable to analysis by just one or a few
+analytics; and there will not be just one or a few crosslinkages
+among different data elements. Thus, it is an
+exemplar of some of the issues we have addressed in
+this paper. Solving the issues and challenges addressed
+in this paper will require a concerted research effort –
+one which we expect to evolve over the next several
+years
+ This paper initiates a collaborative research effort
+to begin examining big data issues and challenges. We
+identified some of the major issues in big data storage,
+management, and processing. We also identified some
+of the major challenges – going forward – that we
+believe must be addressed within the next decade and
+1002 1003
+which will establish a framework for our Big Data
+minitrack in future HICSS sessions. Our future
+research will concentrate on developing a more
+complete understanding of the issues associated with
+big data, and those factors that may contribute to a
+need for a big data analysis and design methodology.
+We will begin to explore solutions to some of the
+issues that we have raised in this paper through our
+collaborative research effort. conclusionrp
+[1] American Institute of Physics (AIP). 2010. College
+Park, MD, (http://www.aip.org/fyi/2010/)
+[2] Ayres, I. 2007. Supercrunchers, Bantam Books,
+New York, NY
+[3] Boyd, D. and K. Craford. 2011. “Six Provocations
+for Big Data”, Oxford Internet Institute’s “A Decade
+in Internet Time: Symposium on the Dynamics of the
+Internet and Society”
+[4] The Economist. 2010. “Data, Data Everywhere”,
+(online edition, February 28)
+http://www.economist.com/node/15557443
+[5] Felten, E. 2010. “Needle in a Haystack Problems”,
+https://freedom-to-tinker.com/blog/felten/needle-haystackproblems/
+[6] Fox, B. 2011. “Leveraging Big Data for Big
+Impact”, Health Management Technology,
+http://www.healthmgttech.com/
+[7] Freeman, K. 2011.
+http://en.wikipedia.org/wiki/File:Kencf0618Facebook
+Network.jpg
+[8] Gantz, J. and E. Reinsel. 2011. “Extracting Value from
+Chaos”, IDC’s Digital Universe Study, sponsored by EMC
+[9] Jacobs, A. 2009. “Pathologies of Big Data”,
+Communications of the ACM, 52(8):36-44
+[10] JASON. 2008. “Data Analysis Challenges”, The
+Mitre Corporation, McLean, VA, JSR-08-142
+[11] Kaisler, S. 2012. “Advanced Analytics”,
+CATALYST Technical Report, i_SW Corporation,
+Arlington, VA
+[12] Kaisler, S., W. Money, and S. J. Cohen. 2012. “A
+Decision Framework for Cloud Computing”, 45th
+Hawaii International Conference on System Sciences,
+Grand Wailea, Maui, HI, Jan 4-7, 2012
+[13] Kang, U. 2012. “Mining Tera-scale Graphs with
+MapReduce: Theory, Engineering, and Discoveries”,
+PhD. Thesis, Computer Science, Carnegie-Mellon
+University, Pittsburgh, PA
+ [14] Mervis, J. 2012. “Agencies Rally to Tackle Big
+Data”, Science, 336(4):22, June 6, 2012
+[15] Popp, R., S. Kaisler, et al. 2006. “Assessing
+Nation-State Fragility and Instability”, IEEE
+Aerospace Conference, 2006, Big Sky, MT
+[16] Ritchey, T. 2005. "Wicked Problems: Structuring
+Social Messes with Morphological Analysis", Swedish
+Morphological Society,
+http://www.swemorph.com/wp.html
+[17] Rittel, H. and M. Webber. 1973. “Dilemmas in a
+General theory of Planning”, in Policy Sciences, Vol.
+4, Elsevier Scientific, Amsterdam, the Netherlands,
+pp. 155-169
+[18] Stonebraker, M. and J. Hong. 2012. “Researchers'
+Big Data Crisis; Understanding Design and
+Functionality”, Communications of the ACM,
+55(2):10-11
+[19] Taleb, N. 2010. The Black Swan: The Impact of
+the Highly Improbable, Random House, New York,
+NY
+referencesrp

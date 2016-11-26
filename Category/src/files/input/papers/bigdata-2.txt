@@ -1,0 +1,194 @@
+The Mobile Data Challenge:
+Big Data for Mobile Computing Research titlerp This paper presents an overview of the Mobile Data Chal-
+lenge (MDC), a large-scale research initiative aimed at gen-
+erating innovations around smartphone-based research, as
+well as community-based evaluation of related mobile data
+analysis methodologies. First we review the Lausanne Data
+Collection Campaign (LDCC) { an initiative to collect unique,
+longitudinal smartphone data set for the basis of the MDC.
+Then, we introduce the Open and Dedicated Tracks of the
+MDC; describe the specic data sets used in each of them;
+and discuss some of the key aspects in order to generate
+privacy-respecting, challenging, and scientically relevant
+mobile data resources for wider use of the research commu-
+nity. The concluding remarks will summarize the paper.abstractrp keywordsrp Mobile phone technology has transformed the way we live, as
+phone adoption has increased rapidly across the globe [17].
+This has widespread social implications. The phones them-
+selves have become instruments for fast communication and
+collective participation. Further, dierent user groups, like
+teenagers, have started to use them in creative ways. At the
+same time, the number of sensors embedded in phones and
+the applications built around them have exploded. In the
+past few years smartphones remarkably started to carry sen-
+sors like GPS, accelerometer, gyroscope, microphone, cam-
+era and Bluetooth. Related application and service oering
+covers e.g. information search, entertainment or healthcare.
+The ubiquity of mobile phones and the increasing wealth of
+the data generated from sensors and applications are giving
+rise to a new research domain across computing and social
+science. Researchers are beginning to examine issues in be-
+havioral and social science from the Big Data perspective {
+by using large-scale mobile data as input to characterize and
+understand real-life phenomena, including individual traits,
+as well as human mobility, communication, and interaction
+patterns [11, 12, 9].
+This new research, whose ndings are clearly important to
+society at large, has been often conducted within corpora-
+tions that historically have had access to these data types,
+including telecom operators [13] or Internet companies [6],
+or through granted data access to academics in highly re-
+stricted forms [12]. Some initiatives, like [1], have collected
+publicly available but in some extent limited data sets to-
+gether. Clearly, government and corporate regulations for
+privacy and data protection play a fundamental and neces-
+sary role in protecting all sensitive aspects of mobile data.
+From the research perspective, this also implies that mobile
+data resources are scarce and often not ecologically valid to
+test scientic hypotheses related to real-life behavior.
+The Mobile Data Challenge (MDC) by Nokia is motivated
+by our belief in the value of mobile computing research for
+the common good - i.e., of research that can result in a
+deeper scientic understanding of human and social phe-
+nomena, advanced mobile experiences and technological in-
+novations. Guided by this principle, in January 2009 Nokia
+Research Center Lausanne and its Swiss academic partners
+Idiap and EPFL started an initiative to create large-scale
+mobile data research resources. This included the design
+and implementation of the Lausanne Data Collection Cam-
+paign (LDCC), an eort to collect a longitudinal smartphone
+data set from nearly 200 volunteers in the Lake Geneva re-
+gion over one year of time. It also involved the denition
+of a number of research tasks with clearly specied exper-
+imental protocols. From the very beginning the intention
+was to share these research resources with the research com-
+munity which required integration of holistic and proactive approach on privacy according to the of privacy-by-design
+principles [2].
+The MDC is the visible outcome of nearly three years of
+work in this direction. The Challenge provided researchers
+with an opportunity to analyze a relatively unexplored data
+set including rich mobility, communication, and interaction
+information. The MDC comprised of two research alter-
+natives through an Open Research Track and a Dedicated
+Research Track. In the Open Track, researchers were given
+opportunity to approach the data set from an exploratory
+perspective, by proposing their own tasks according to their
+interests and background. The Dedicated Track gave re-
+searchers the possibility to take on up to three tasks to solve,
+related with prediction of mobility patterns, recognition of
+place categories, and estimation of demographic attributes.
+Each of these tasks had properly dened experimental pro-
+tocols and standard evaluation measures to assess and rank
+all contributions.
+This paper presents an overview of the Mobile Data Chal-
+lenge intended both for participants of the MDC and a wider
+audience. Section 2 summarizes the LDCC data, the basis
+for the MDC. Section 3 describes the MDC tracks and tasks
+in detail. Section 4 provides details on the specic data sets
+used for the MDC. Section 5 summarizes the schedule we
+have followed to organize the Challenge. Finally, Section 6
+oers some nal remarks.introductionrpThis paper described a systematic ow of research over 3.5
+years at the time of writing, targeting to create and provide
+unique longitudinal smartphone data set for wider use by the
+research community. In this paper we gave motivation for
+this initiative and summarized the key aspects of the Lau-
+sanne Data Collection Campaign (LDCC) in which the rich
+smartphone data was collected from around 200 individuals
+over more than a year. We also described in further details
+the Mobile Data Challenge (MDC) by Nokia which was a
+data analytics contest making this data widely available to
+the research community. The data collection campaign was
+running in 2009-2011 whereas the challenge was organized
+in 2011-2012.
+Collecting such data requires extensive eort and underlying
+investments, which often means that collected data sets are
+available for researchers only in the limited manner. This
+has recently generated some discussion about the basic prin-
+ciples of science in connection with the Big Data driven re-
+search. Verication of some claimed scientic ndings can
+namely be challenging if access to the underlying data is very
+limited. Protecting privacy of individuals behind the data
+is obviously the key reason for access and usage limitations
+of Big Data.
+With the examples described in this paper we demonstrated
+that open data sharing with the research community and
+therefore wider open innovation momentum around the same
+commonly available data set is possible. Achieving that re-
+quires proactive and holistic approach on privacy through-
+out the whole research ow. Privacy protection requires ex-
+tremely careful considerations due to multimodality of the
+rich smartphone data. In this paper we described the needed
+countermeasures both when the smartphone data was origi-
+nally collected and when it was later released to the research
+community as a part of the MDC. In practice this required
+both technical countermeasures and agreement based pri-
+vacy protection. In that manner it was possible to achieve
+appropriate balance between the necessary privacy protec-
+tion but simultaneously still maintaining the richness of the
+data for research purposes.
+Already so far the Mobile Data Challenge has produced in-
+teresting ndings and multidisciplinary scientic advances.
+The contributions to the MDC addressed various interesting
+angles from the perspective of mobile computing research,
+like investigations on predictability of human behavior pat-
+terns or opportunities to share/capture data based on hu-
+man mobility, visualization techniques for complex data as
+well as correlation between human behavior and external
+environmental variables (like weather). The materials pre-
+sented in the MDC workshop are available in [4]. Momen-
+tum around the interesting research resources described in
+this paper is expected to continue and expand also after the
+Mobile Data Challenge itself. Our intention is to maintain
+summary at least of the most important LDCC and MDC
+originated research outcomes in [4] also in the future.conclusionrp[1] http://crawdad.cs.dartmouth.edu/.
+[2] http://privacybydesign.ca/.
+[3] http://en.wikipedia.org/wiki/MAC_address.
+[4] http://research.nokia.com/mdc.
+[5] I. Aad and V. Niemi. NRC Data Collection and the
+Privacy by Design Principles. In PhoneSense, 2011.
+[6] L. Backstrom, E. Sun, and C. Marlow. Find me if you
+can: improving geographical prediction with social
+and spatial proximity. In Proc. World Wide Web
+Conf. (WWW), Apr. 2010.
+[7] R. Bell, J. Bennett, Y. Koren, and C. Volinsky. The
+million dollar programming prize. Spectrum, IEEE,
+46(5):28{33, 2009.
+[8] J. Bennett and S. Lanning. The netix prize. In
+Proceedings of KDD Cup and Workshop, volume 2007,
+page 35, 2007.
+[9] G. Chittaranjan, J. Blom, and D. Gatica-Perez.
+Mining large-scale smartphone data for personality
+studies. Personal and Ubiquitous Computing,
+published online Dec. 2011.
+[10] T. Do and D. Gatica-Perez. Contextual conditional
+models for smartphone-based human mobility
+prediction. In Proc. ACM Int. Conf. on Ubiquitous
+Computing, Pittsburgh, Sep. 2012.
+[11] N. Eagle, A. Pentland, and D. Lazer. Inferring
+friendship network structure by using mobile phone
+data. Proceedings of the National Academy of
+Sciences, 106(36):15274{15278, 2009.
+[12] M. C. Gonzalez, C. A. Hidalgo, and A.-L. Barabasi.
+Understanding individual human mobility patterns.
+Nature, 453(7196):779{782, June 2008.
+[13] S. Isaacman, R. Becker, R. Caceres, S. Kobourov,
+M. Martonosi, J. Rowland, and A. Varshavsky.
+Identifying important places in people's lives from
+cellular network data. In Proc. Int. Conf. on Pervasive
+Computing, San Francisco, Jun. 2011.
+[14] N. Kiukkonen, J. Blom, O. Dousse, D. Gatica-Perez,
+and J. Laurila. Towards rich mobile phone datasets:
+Lausanne data collection campaign. In Proc. Int.
+Conf. on Pervasive Services, Berlin, Jul. 2010.
+[15] R. Montoliu and D. Gatica-Perez. Discovering human
+places of interest from multimodal mobile phone data.
+In Proc. Int. Conf. on Mobile and Ubiquitous
+Multimedia, Limassol, Dec. 2010.
+[16] M. Przybocki and A. Martin. Nist speaker recognition
+evaluation-1997. In Proceedings of RLA2C, pages
+120{123, 1998.
+[17] P. Ross. Top 11 technologies of the decade. Spectrum,
+IEEE, 48(1):27{63, 2011.
+[18] A. Smeaton, P. Over, and W. Kraaij. Evaluation
+campaigns and trecvid. In Proceedings of the 8th ACM
+international workshop on Multimedia information
+retrieval, pages 321{330. ACM, 2006.referencesrp

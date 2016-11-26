@@ -1,0 +1,111 @@
+ISSUES, CHALLENGES, AND SOLUTIONS:
+BIG DATA MINING titlerpData has become an indispensable part of every economy, industry, organization, business
+function and individual. Big Data is a term used to identify the datasets that whose size is
+beyond the ability of typical database software tools to store, manage and analyze. The Big
+Data introduce unique computational and statistical challenges, including scalability and
+storage bottleneck, noise accumulation, spurious correlation and measurement errors. These
+challenges are distinguished and require new computational and statistical paradigm. This
+paper presents the literature review about the Big data Mining and the issues and challenges
+with emphasis on the distinguished features of Big Data. It also discusses some methods to deal
+with big data.abstractrpBig data mining, Security, Hadoop, MapReducekeywordsrpData is the collection of values and variables related in some sense and differing in some other
+sense. In recent years the sizes of databases have increased rapidly. This has lead to a growing
+interest in the development of tools capable in the automatic extraction of knowledge from data
+[1]. Data are collected and analyzed to create information suitable for making decisions. Hence
+data provide a rich resource for knowledge discovery and decision support. A database is an
+organized collection of data so that it can easily be accessed, managed, and updated. Data mining
+is the process discovering interesting knowledge such as associations, patterns, changes,
+anomalies and significant structures from large amounts of data stored in databases, data
+warehouses or other information repositories. A widely accepted formal definition of data mining
+is given subsequently. According to this definition, data mining is the non-trivial extraction of
+implicit previously unknown and potentially useful information about data [2]. Data mining
+uncovers interesting patterns and relationships hidden in a large volume of raw data. Big Data is a
+new term used to identify the datasets that are of large size and have grater complexity [3]. So we
+cannot store, manage and analyze them with our current methodologies or data mining software
+tools. Big data is a heterogeneous collection of both structured and unstructured data. Businesses
+are mainly concerned with managing unstructured data. Big Data mining is the capability of extracting useful information from these large datasets or streams of data which were not possible
+before due to its volume, variety, and velocity.
+The extracted knowledge is very useful and the mined knowledge is the representation of
+different types of patterns and each pattern corresponds to knowledge. Data Mining is analysing
+the data from different perspectives and summarizing it into useful information that can be used
+for business solutions and predicting the future trends. Mining the information helps
+organizations to make knowledge driven decisions. Data mining (DM), also called Knowledge
+Discovery in Databases (KDD) or Knowledge Discovery and Data Mining, is the process of
+searching large volumes of data automatically for patterns such as association rules [4]. It applies
+many computational techniques from statistics, information retrieval, machine learning and
+pattern recognition. Data mining extract only required patterns from the database in a short time
+span. Based on the type of patterns to be mined, data mining tasks can be classified into
+summarization, classification, clustering, association and trends analysis [4].
+Enormous amount of data are generated every minute. A recent study estimated that every
+minute, Google receives over 4 million queries, e-mail users send over 200 million messages,
+YouTube users upload 72 hours of video, Facebook users share over 2 million pieces of content,
+and Twitter users generate 277,000 tweets [5]. With the amount of data growing exponentially,
+improved analysis is required to extract information that best matches user interests. Big data
+refers to rapidly growing datasets with sizes beyond the capability of traditional data base tools to
+store, manage and analyse them. Big data is a heterogeneous collection of both structured and
+unstructured data. Increase of storage capacities, Increase of processing power and availability of
+data are the main reason for the appearance and growth of big data. Big data refers to the use of
+large data sets to handle the collection or reporting of data that serves businesses or other
+recipients in decision making. The data may be enterprise specific or general and private or
+public. Big data are characterized by 3 V’s: Volume, Velocity, and Variety [6].
+Volume -the size of data now is larger than terabytes and peta bytes. The large scale and rise of
+size makes it difficult to store and analyse using traditional tools.
+Velocity – big data should be used to mine large amount of data within a pre defined period of
+time. The traditional methods of mining may take huge time to mine such a volume of data.
+Variety – Big data comes from a variety of sources which includes both structured and
+unstructured data. Traditional database systems were designed to address smaller volumes of
+structured and consistent data whereas Big Data is geospatial data, 3D data, audio and video, and
+unstructured text, including log files and social media. This heterogeneity of unstructured data
+creates problems for storage, mining and analyzing the data.
+Big Data mining refers to the activity of going through big data sets to look for relevant
+information. Big data samples are available in astronomy, atmospheric science, social
+networking sites, life sciences, medical science, government data, natural disaster and resource
+management, web logs, mobile phones, sensor networks, scientific research, telecommunications
+[7]. Two main goals of high dimensional data analysis are to develop effective methods that can
+accurately predict the future observations and at the same time to gain insight into the relationship
+between the features and response for scientific purposes. Big data have applications in many
+fields such as Business, Technology, Health, Smart cities etc. These applications will allow people to have better services, better customer experiences, and also to prevent and detect illness
+much easier than before [8].
+The rapid development of Internet and mobile technologies has an important role in the growth of
+data creation and storage. Since the amount of data is growing exponentially, improved analysis
+of large data sets is required to extract information that best matches user interests. New
+technologies are required to store unstructured large data sets and processing methods such as
+Hadoop and Map Reduce have greater importance in big data analysis. To process large volumes
+of data from different sources quickly, Hadoop is used. Hadoop is a free, Java-based
+programming framework that supports the processing of large data sets in a distributed computing
+environment. It allows running applications on systems with thousands of nodes with thousands
+of terabytes of data. Its distributed file system supports fast data transfer rates among nodes and
+allows the system to continue operating uninterrupted at times of node failure. It runs Map
+Reduce for distributed data processing and is works with structured and unstructured data [6].
+This paper is organized as follows. Section 1 gives introduction and Section 2 presents literature
+review. Section 3 presents the issues and challenges of big data mining. Section 4 provides an
+overview of security and privacy challenges of big data and Section 5 describes some
+technologies to deal with big data analysis. Section 6 concludes this paper with summaries.introductionrpThe amounts of data is growing exponentially worldwide due to the explosion of social
+networking sites, search and retrieval engines, media sharing sites, stock trading sites, news
+sources and so on. Big Data is becoming the new area for scientific data research and for
+business applications. Big data analysis is becoming indispensable for automatic discovering of
+intelligence that is involved in the frequently occurring patterns and hidden rules. Big data
+analysis helps companies to take better decisions, to predict and identify changes and to identify
+new opportunities. In this paper we discussed about the issues and challenges related to big data
+mining and also Big Data analysis tools like Map Reduce over Hadoop and HDFS which helps
+organizations to better understand their customers and the marketplace and to take better
+decisions and also helps researchers and scientists to extract useful knowledge out of Big data. In
+addition to that we introduce some big data mining tools and how to extract a significant
+knowledge from the Big Data. That will help the research scholars to choose the best mining tool
+for their work.conclusionrp[1] Julie M. David, Kannan Balakrishnan, (2011), Prediction of Key Symptoms of Learning Disabilities
+in School-Age Children using Rough Sets, Int. J. of Computer and Electrical Engineering, Hong
+Kong, 3(1), pp163-169
+[2] Julie M. David, Kannan Balakrishnan, (2011), Prediction of Learning Disabilities in School-Age
+Children using SVM and Decision Tree, Int. J. of Computer Science and Information Technology,
+ISSN 0975-9646, 2(2), pp829-835.
+[3] Albert Bifet, (2013), “Mining Big data in Real time”, Informatica 37, pp15-20
+[4] Richa Gupta, (2014), “Journey from data mining to Web Mining to Big Data”, IJCTT, 10(1),pp18-20[5] http://www.domo.com/blog/2014/04/data-never-sleeps-2-0/
+[6] Priya P. Sharma, Chandrakant P. Navdeti, (2014), “ Securing Big Data Hadoop: A Review of Security
+Issues, Threats and Solution”, IJCSIT, 5(2), pp2126-2131
+[7] Richa Gupta, Sunny Gupta, Anuradha Singhal, (2014), “Big Data:Overview”, IJCTT, 9 (5)
+[8] Wei Fan, Albert Bifet, “Mining Big Data: Current Status and Forecast to the Future”, SIGKDD
+Explorations, 14 (2), pp1-5
+[9] Chanchal Yadav, Shullang Wang, Manoj Kumar, (2013) “Algorithm and Approaches to handle large
+Data- A Survey”, IJCSN, 2(3), ISSN:2277-5420(online), pp2277-5420
+[10] Xindong Wu, Xingquan Zhu, Gong-Qing Wu, Wei Ding, “Data Mining with Big Data”
+[11] Puneet Singh Duggal, Sanchita Paul, (2013), “Big Data Analysis:Challenges and Solutions”, Int.
+Conf. on Cloud, Big Data and Trust, RGPV referencesrp

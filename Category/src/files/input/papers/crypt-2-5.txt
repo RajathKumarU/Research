@@ -1,0 +1,343 @@
+Building web applications on top of encrypted data using MylartitlerpWeb applications rely on servers to store and process confidential
+information. However, anyone who gains access
+to the server (e.g., an attacker, a curious administrator, or
+a government) can obtain all of the data stored there. This
+paper presents Mylar, a platform for building web applications,
+which protects data confidentiality against attackers
+with full access to servers. Mylar stores sensitive data
+encrypted on the server, and decrypts that data only in
+users’ browsers. Mylar addresses three challenges in making
+this approach work. First, Mylar allows the server
+to perform keyword search over encrypted documents,
+even if the documents are encrypted with different keys.
+Second, Mylar allows users to share keys and encrypted
+data securely in the presence of an active adversary. Finally,
+Mylar ensures that client-side application code is
+authentic, even if the server is malicious. Results with a
+prototype of Mylar built on top of the Meteor framework
+are promising: porting 6 applications required changing
+just 36 lines of code on average, and the performance
+overheads are modest, amounting to a 17% throughput
+loss and a 50 ms latency increase for sending a message
+in a chat application.abstractrp keywordsrpUsing a web application for confidential data requires the
+user to trust the server to protect the data from unauthorized
+disclosures. This trust is often misplaced, however,
+because there are many ways in which confidential data
+could leak from a server. For example, attackers could
+exploit a vulnerability in the server software to break
+in [42], a curious administrator could peek at the data
+on the server [9, 10], or the server operator may be compelled
+to disclose data by law [20]. Is it possible to build
+web applications that protect data confidentiality against
+attackers with full access to servers?
+A promising approach is to give each user their own
+encryption key, encrypt a user’s data with that user’s key
+in the web browser, and store only encrypted data on the
+server. This model ensures that an adversary would not
+be able to read any confidential information on the server,
+because they would lack the necessary decryption keys.
+In fact, this model has been already adopted by some
+privacy-conscious web applications [28, 40].
+Unfortunately, this approach suffers from three significant
+security, functionality, and efficiency shortcomings.
+First, a compromised server could provide malicious
+client-side code to the browser and extract the user’s key
+and data. Ensuring that the server did not tamper with
+the application code is difficult because a web application
+consists of many files, such as HTML pages, Javascript
+code, and CSS style sheets, and the HTML pages are
+often dynamically generated.
+Second, this approach does not provide data sharing
+between users, a crucial function of web applications.
+To address this problem, one might consider encrypting
+shared documents with separate keys, and distributing
+each key to all users sharing a document via the server.
+However, distributing keys via the server is challenging
+because a compromised server can supply arbitrary keys
+to users, and thus trick a user into using incorrect keys.
+Third, this approach requires that all of the application
+logic runs in a user’s web browser because it can decrypt
+the user’s encrypted data. But this is often impractical:
+for instance, doing a keyword search would require downloading
+all the documents to the browser.
+This paper presents Mylar, a new platform for building
+web applications that stores only encrypted data on the
+server. Mylar makes it practical for many classes of applications
+to protect confidential data from compromised
+servers. It leverages the recent shift in web application
+frameworks towards implementing logic in client-side
+Javascript code, and sending data, rather than HTML,
+over the network [29]; such a framework provides a clean
+foundation for security. Mylar addresses the challenges
+mentioned above with a combination of systems techniques
+and novel cryptographic primitives, as follows.
+Data sharing. To enable sharing, each sensitive data
+item is encrypted with a key available to users who share
+the item. To prevent the server from cheating during key
+distribution, Mylar provides a mechanism for establishing
+the correctness of keys obtained from the server: Mylar
+forms certificate paths to attest to public keys, and
+allows the application to specify what certificate paths
+can be trusted in each use context. In combination with
+a user interface that displays the appropriate certificate
+components to the user, this technique ensures that even
+1
+a compromised server cannot trick the application into
+using the wrong key.
+Computing over encrypted data. Keyword search is
+a common operation in web applications, but it is often
+impractical to run on the client because it would require
+downloading large amounts of data to the user’s machine.
+While there exist practical cryptographic schemes for
+keyword search, they require that data be encrypted with
+a single key. This restriction makes it difficult to apply
+these schemes to web applications that have many users
+and hence have data encrypted with many different keys.
+Mylar provides the first cryptographic scheme that can
+perform keyword search efficiently over data encrypted
+with different keys. The client provides an encrypted
+word to the server and the server can return all documents
+that contain this word, without learning the word or the
+contents of the documents.
+Verifying application code. With Mylar, code running
+in a web browser has access to the user’s decrypted data
+and keys, but the code itself comes from the untrusted
+server. To ensure that this code has not been tampered
+with, Mylar checks that the code is properly signed by
+the web site owner. This checking is possible because
+application code and data are separate in Mylar, so the
+code is static. Mylar uses two origins to simplify code
+verification for a web application. The primary origin
+hosts only the top-level HTML page of the application,
+whose signature is verified using a public key found in
+the server’s X.509 certificate. All other files come from a
+secondary origin, so that if they are loaded as a top-level
+page, they do not have access to the primary origin. Mylar
+verifies the hash of these files against an expected hash
+contained in the top-level page.
+To evaluate Mylar’s design, we built a prototype on
+top of the Meteor web application framework [29]. We
+ported 6 applications to protect confidential data using
+Mylar: a medical application for endometriosis patients,
+a web site for managing homework and grades, a chat
+application called kChat, a forum, a calendar, and a photo
+sharing application. The endometriosis application is
+used to collect data from patients with that medical condition,
+and was designed under the aegis of the MIT Center
+for Gynepathology Research by surgeons at the Newton-
+Wellesley hospital (affiliated with the Harvard Medical
+School) in collaboration with biological engineers at MIT;
+the Mylar-secured version is currently being tested by patients
+and is undergoing IRB approval before deployment.
+Our results show that Mylar requires little developer
+effort: we had to modify an average of just 36 lines of
+code per application. We also evaluated the performance
+of Mylar on three of the applications above. For example,
+for kChat, our results show that Mylar incurs modest
+overheads: a 17% throughput reduction and a 50 msec
+latency increase for the most common operation (sending
+a message). These results suggest that Mylar is a good fit
+for multi-user web applications with data sharing.introductionrpMylar is a novel web application framework that enables
+developers to protect confidential data in the face of arbitrary
+server compromises. Mylar leverages the recent
+shift to exchanging data, rather than HTML, between the
+browser and server, to encrypt all data stored on the server,
+and decrypt it only in users’ browsers. Mylar provides a
+principal abstraction to securely share data between users,
+and uses a browser extension to verify code downloaded
+from the server that runs in the browser. For keyword
+search, which is not practical to run in the browser, Mylar
+introduces a cryptographic scheme to perform keyword
+search at the server over data encrypted with different
+keys. Experimental results show that using Mylar requires
+few changes to an application, and that the performance
+overheads of Mylar are modest.conclusionrp[1] D. Akhawe, P. Saxena, and D. Song. Privilege separation
+in HTML5 applications. In Proceedings of
+the 21st Usenix Security Symposium, Bellevue, WA,
+Aug. 2012.
+[2] A. Arasu, S. Blanas, K. Eguro, R. Kaushik, D. Kossmann,
+R. Ramamurthy, and R. Venkatesan. Orthogonal
+security with Cipherbase. In Proceedings of the
+6th Biennial Conference on Innovative Data Systems
+Research (CIDR), Asilomar, CA, Jan. 2013.
+[3] G. Ateniese, K. Fu, M. Green, and S. Hohenberger.
+Improved proxy re-encryption schemes with applications
+to secure distributed storage. In Proceedings
+of the 13th Annual Network and Distributed System
+Security Symposium, San Diego, CA, Feb. 2006.
+[4] S. Bajaj and R. Sion. TrustedDB: a trusted hardware
+based database with privacy and data confidentiality.
+In Proceedings of the 2011 ACM SIGMOD International
+Conference on Management of Data, pages
+205–216, Athens, Greece, June 2011.
+[5] A. Barth, C. Jackson, and J. C. Mitchell. Securing
+frame communication in browsers. In Proceedings
+of the 17th Usenix Security Symposium, San Jose,
+CA, July–Aug. 2008.
+[6] A. Barth, J. Caballero, and D. Song. Secure content
+sniffing for web browsers, or how to stop papers
+from reviewing themselves. In Proceedings of the
+30th IEEE Symposium on Security and Privacy, Oakland,
+CA, May 2009.
+[7] F. Beato, M. Kohlweiss, and K. Wouters. Scramble!
+your social network data. In Proceedings of the
+11th Privacy Enhancing Technologies Symposium,
+Waterloo, Canada, July 2011.
+[8] D. Benjamin. Adapting Kerberos for a browserbased
+environment. Master’s thesis, Massachusetts
+Institute of Technology, Department of Electrical
+Engineering and Computer Science, Sept. 2013.
+[9] D. Borelli. The name Edward Snowden should
+be sending shivers up CEO spines. Forbes,
+Sept. 2013. http://www.forbes.com/sites/
+realspin/2013/09/03/the-name-edwardsnowden-
+should-be-sending-shivers-upceo-
+spines/.
+[10] A. Chen. GCreep: Google engineer stalked teens,
+spied on chats. Gawker, Sept. 2010. http://
+gawker.com/5637234/.
+[11] A. Chlipala. Static checking of dynamically-varying
+security policies in database-backed applications. In
+Proceedings of the 9th Symposium on Operating
+Systems Design and Implementation (OSDI), Vancouver,
+Canada, Oct. 2010.
+[12] M. Christodorescu. Private use of untrusted web
+servers via opportunistic encryption. In Proceedings
+of the Web 2.0 Security and Privacy Workshop,
+Oakland, CA, May 2008.
+[13] CipherCloud. Cloud data protection solution. http:
+//www.ciphercloud.com.
+[14] Defuse Security. Encrypted pastebin. https://
+defuse.ca/pastebin.htm, Sept. 2013.
+[15] A. J. Feldman, W. P. Zeller, M. J. Freedman, and
+E. W. Felten. SPORC: Group collaboration using
+untrusted cloud resources. In Proceedings of the
+9th Symposium on Operating Systems Design and
+Implementation (OSDI), Vancouver, Canada, Oct.
+2010.
+[16] R. Fischer, M. Seltzer, and M. Fischer. Privacy
+from untrusted web servers. Technical Report
+YALEU/DCS/TR-1290, Yale University, Department
+of Computer Science, May 2004.
+[17] C. Gentry. Fully homomorphic encryption using
+ideal lattices. In Proceedings of the 41st Annual
+ACM Symposium on Theory of Computing (STOC),
+pages 169–178, Bethesda, MD, May–June 2009.
+[18] D. B. Giffin, A. Levy, D. Stefan, D. Terei, D. Mazières,
+J. C. Mitchell, and A. Russo. Hails: Protecting
+data privacy in untrusted web applications. In
+Proceedings of the 10th Symposium on Operating
+Systems Design and Implementation (OSDI), Hollywood,
+CA, Oct. 2012.
+[19] S. Goldwasser, Y. Kalai, R. A. Popa, V. Vaikuntanathan,
+and N. Zeldovich. Reusable garbled circuits
+and succinct functional encryption. In Proceedings
+of the 45th Annual ACM Symposium on Theory
+of Computing (STOC), pages 555–564, Palo Alto,
+CA, June 2013.
+[20] Google, Inc. User data requests – Google
+transparency report, Sept. 2013. http:
+//www.google.com/transparencyreport/
+userdatarequests/.
+[21] S. Kamara, C. Papamanthou, and T. Roeder. Dynamic
+searchable symmetric encryption. In Proceedings
+of the 19th ACM Conference on Computer and
+Communications Security, Raleigh, NC, Oct. 2012.
+[22] J. Kannan, P. Maniatis, and B.-G. Chun. Secure
+data preservers for web services. In Proceedings
+of the 2nd USENIX Conference on Web Application
+15
+Development, Portland, OR, June 2011.
+[23] KiqueDev. kChat. https://github.com/
+KiqueDev/kChat/.
+[24] M. Krohn. Building secure high-performance web
+services with OKWS. In Proceedings of the 2004
+USENIX Annual Technical Conference, Boston, MA,
+June–July 2004.
+[25] J. Li, M. Krohn, D. Mazières, and D. Shasha. Secure
+untrusted data repository (SUNDR). In Proceedings
+of the 6th Symposium on Operating Systems
+Design and Implementation (OSDI), pages 91–106,
+San Francisco, CA, Dec. 2004.
+[26] A. López-Alt, E. Tromer, and V. Vaikuntanathan.
+On-the-fly multiparty computation on the cloud via
+multikey fully homomorphic encryption. In Proceedings
+of the 44th Annual ACM Symposium on
+Theory of Computing (STOC), New York, NY, May
+2012.
+[27] P. Mahajan, S. Setty, S. Lee, A. Clement, L. Alvisi,
+M. Dahlin, and M. Walfish. Depot: Cloud storage
+with minimal trust. In Proceedings of the 9th
+Symposium on Operating Systems Design and Implementation
+(OSDI), Vancouver, Canada, Oct. 2010.
+[28] Mega. The privacy company. https://mega.co.
+nz/#privacycompany, Sept. 2013.
+[29] Meteor, Inc. Meteor: A better way to build apps.
+http://www.meteor.com, Sept. 2013.
+[30] OpenID Foundation. OpenID. http://openid.
+net, Sept. 2013.
+[31] R. A. Popa and N. Zeldovich. Multi-key searchable
+encryption. Cryptology ePrint Archive, Report
+2013/508, Aug. 2013. http://eprint.iacr.
+org/.
+[32] R. A. Popa, C. M. S. Redfield, N. Zeldovich, and
+H. Balakrishnan. CryptDB: Protecting confidentiality
+with encrypted query processing. In Proceedings
+of the 23rd ACM Symposium on Operating Systems
+Principles (SOSP), pages 85–100, Cascais, Portugal,
+Oct. 2011.
+[33] K. Puttaswamy, C. Kruegel, and B. Zhao. Silverline:
+Toward data confidentiality in storageintensive
+cloud applications. In Proceedings of the
+2nd ACM Symposium on Cloud Computing, Cascais,
+Portugal, Oct. 2011.
+[34] F. Y. Rashid. Salesforce.com acquires SaaS encryption
+provider Navajo Systems. eWeek.com, August
+2011.
+[35] S. Sauvage. ZeroBin - because ignorance is
+bliss. http://sebsauvage.net/wiki/doku.
+php?id=php:zerobin, Feb. 2013.
+[36] D. X. Song, D. Wagner, and A. Perrig. Practical
+techniques for searches on encrypted data. In Proceedings
+of the 21st IEEE Symposium on Security
+and Privacy, pages 44–55, Oakland, CA, May 2000.
+[37] E. Stark. From client-side encryption to secure web
+applications. Master’s thesis, Massachusetts Institute
+of Technology, Department of Electrical Engineering
+and Computer Science, June 2013.
+[38] E. Stark, M. Hamburg, and D. Boneh. Symmetric
+cryptography in Javascript. In Proceedings of the
+Annual Computer Security Applications Conference,
+Honolulu, HI, Dec. 2009.
+[39] The Cryptocat Project. Moving to a browser
+app model. https://blog.crypto.cat/2012/
+08/moving-to-a-browser-app-model/, Aug.
+2012.
+[40] The Cryptocat Project. Cryptocat. http://www.
+cryptocat.com, Sept. 2013.
+[41] Thoughtcrime Labs. Convergence. http://
+convergence.io/, 2011.
+[42] J. Tudor. Web application vulnerability statistics,
+June 2013. http://www.contextis.com/
+files/Web_Application_Vulnerability_
+Statistics_-_June_2013.pdf.
+[43] D. Wendlandt, D. G. Andersen, and A. Perrig. Perspectives:
+Improving SSH-style host authentication
+with multi-path probing. In Proceedings of the 2008
+USENIX Annual Technical Conference, Boston, MA,
+June 2008.
+[44] Y. Xie and A. Aiken. Static detection of security vulnerabilities
+in scripting languages. In Proceedings
+of the 15th Usenix Security Symposium, Vancouver,
+Canada, July 2006.
+[45] A. Yip, N. Narula, M. Krohn, and R. Morris.
+Privacy-preserving browser-side scripting with
+BFlow. In Proceedings of the ACM EuroSys Conference,
+Nuremberg, Germany, Mar. 2009.
+[46] A. Yip, X.Wang, N. Zeldovich, and M. F. Kaashoek.
+Improving application security with data flow assertions.
+In Proceedings of the 22nd ACM Symposium
+on Operating Systems Principles (SOSP), pages 291–
+304, Big Sky, MT, Oct. 2009.
+[47] M. Zalewski. The Tangled Web. No Starch Press,
+2012.referencesrp

@@ -1,0 +1,177 @@
+A CRYPTOGRAPHIC MUTUAL AUTHENTICATION
+SCHEME FOR WEB APPLICATIONStitlerpThe majority of current web authentication is built on username/password. Unfortunately, password
+replacement offers more security, but it is difficult to use and expensive to deploy. In this paper, we propose
+a new mutual authentication scheme called StrongAuth which preserves most password authentication
+advantages and simultaneously improves security using cryptographic primitives. Our scheme not only
+offers webmasters a clear framework which to build secure user authentication, but it also provides almost
+the same conventional user experience. Security analysis shows that the proposed scheme fulfills the
+required user authentication security benefits, and can resist various possible attacks.abstractrpUser authentication, web security, password replacement, cryptography primitives, authentication schemekeywordsrpOn the web, user authentication is the mechanism used to validate user’s login information.
+Although authentication lies in the heart of a web application’s security, the majority of
+authentication on the web is built on username/password [1]–[3]. In fact several factors are
+behind this domination, user experience, simplicity and performance [4].
+At first, personal websites employed the built-in basic HTTP authentication specification for
+password submission. a HTTP server then challenges the user to supply credentials (username
+and password) in the browser built-in dialog box. If the server validates the login information, the
+user will be allowed to access the protected resources. The RFC 2617 defines the digest scheme
+as an extension for HTTP/1.1. It is a security enhancement alternative that avoids the most serious
+flaws of basic HTTP authentication. However, digest does not provide any security of the content
+and represents multiple security risks.
+Currently with the wide adoption of dynamic web programming, HTTP authentication is rarely
+used in real-world scenarios [5]. In fact instead of relying on server mechanisms, web
+applications have become capable of directly validating user’s authentication information. For
+instance, relying on integrated browser dialog boxes do not integrate well with web 2.0
+applications that desire to attract the maximum number of users. Therefore, using a HTML form
+with input fields that allows users to enter their username and password has become the dominant
+authentication option due to its rich user experience and flexibility [6]. After the user submits the
+form it is passed through a HTTP method (Get or POST) to the web application. If the credentials
+are correct, then the user is authenticated.The lack of a standard form-based authentication and the limited security background of
+webmasters, has created a set of unique design and implementation choices, which contain
+various authentication flaws [5], [6], [4]. It is known that passwords often offer poor security and
+there are numerous publications that have studied these in-depth passwords issues [5], [7], [8].
+These problems have led to us to view password-based systems as weak authentication systems,
+hated by users and have reached their limits [9]–[11]. Security experts recognize that we need a
+replacement scheme. The National Strategy for Trusted Identities in Cyberspace (NSTIC)
+declared that “passwords are inconvenient and insecure [12]”. In the same direction, the European
+Central Bank (ECB) issued recommendations for internet payments that require the
+implementation of strong user authentication [13].
+While the security community has proposed a wide range of secure propositions, starting with the
+TLS client certificate [14] to hardware-based or phone-based multi-factor authentication [10],
+[15]–[18], Bonneau et al [19] demonstrated in a large study of 35 password replacement options
+that the majority offer more security than passwords, but they are difficult to use and expensive
+to deploy. In other words, it is easy to provide security if you do not care about other factors.
+Furthermore, Grosse and Upadhay [20] mentioned that not all account types need more secure
+authentication mechanisms. We believe that trying to provide a single solution for authenticating
+all account types is the ultimate recipient of failure. Therefore, we suggest separating user
+accounts into three categories:
+1) Low-value: Security in this kind of account is not a concern. Webmasters and users are
+willing to adopt this easy and lightweight authentication.
+2) Medium-value: Security is important, but user experience and cost are the determining
+factors. Because of the market competition, players in this field are willing to use a costeffective
+and usable but less secure scheme, compared to a more secure but cost-per-user
+protocol that alters the user authentication behavior.
+3) High-value: Security is the priority, and user experience and performance are not
+determining factors.
+Passwords excel in the first category, but we believe that not all schemes can offer the same set of
+advantages [21]. For the high-value accounts, webmasters can mandate using hardware-based
+schemes which score very well in security benefits [19]. Webmasters and users of medium-value
+category suffer from the absence of a convenient and secure replacement of passwords.
+In this paper we propose a new mutual authentication scheme that preserves most
+username/password authentication advantages and simultaneously improves security using
+cryptography primitives. Even the most inexperienced user can authenticate without even noticing
+the background tasks handle by the browser. Compared with the previous propositions, our
+scheme not only offers webmasters with a clear framework within which to build secure a web
+user authentication scheme, but it also provides almost the same password user experience which
+does not require any additional hardware except a modern web browser. Our scheme offers
+another advantage which is that the user's identity and the associated public key are never stored
+nor transmitted as plain text. This enhances the security of the proposed protocol and protects the
+user's anonymity. Our proposed scheme is designed with browser vendors in mind. Native
+support in browsers will afford improvements in user experience, security and performance. Our
+security analysis shows that the proposed protocol fulfills the security benefits that a secure user
+authentication scheme should provide, and can resist various possible attacks. The remainder of
+this paper is organized as follows. In Section 2, we summarize and discuss related authentication
+schemes to enhance web user authentication security and present their limits. In Section 3, we
+give background information on our proposition and identify properties required to provide
+webmasters and users with a secure and practical authentication. In Section 4, we propose a new
+user authentication scheme that we call StrongAuth and present its mutual authentication protocol. In Section 5, we discuss the security analysis of the proposed protocol. We conclude the
+paper in Section 6.introductionrpIn this paper, we proposed a new mutual authentication scheme that preserves most
+username/password actual authentication advantages and simultaneously improves security using
+cryptographic primitives. Indeed, even the most inexperienced user can authenticate without even
+noticing the background tasks handle by the browser. Compared with the previous propositions,
+our scheme not only offers webmasters a clear framework within which to build secure web user
+authentication scheme, but also provides almost the same traditional user experience which does
+not require any additional hardware. Our scheme has another advantage that the user's identity
+and the associated public key are never stored nor transmitted as a plain text which enhances the
+security of the proposed protocol and protects the user's anonymity. Our proposed protocol is
+designed with adoption by browser vendors in mind. Native support in browsers will afford
+improvements in user experience, security and performance. Security analysis showed that the
+proposed protocol fulfils the security benefits that a secure user authentication scheme should
+provide and can resist to various possible attacks such as SSL/TLS man-in-the-middle attack, offline
+dictionary and brute force attack, and message modification or insertion attack. Future scope
+in this work is to investigate the possibility of using cloud computing technology to improve the
+portability and recovery of our scheme. We also plan to provide a secure design for user’s session
+management. While the proposed scheme needs public key cryptography, then we will further
+focus on elliptic curve cryptography which offers faster computations and less power use.conclusionrp[1] Y. Sadqi, A. Asimi, and Y. Asimi, “A Lightweight and Secure Session Management Protocol,”
+Lecture Notes in Computer Science (LNCS), pp. 319–323, 2014.
+[2] D. Stuttard and M. Pinto, The web application hacker’s handbook finding and exploiting security
+flaws. Indianapolis: Wiley, 2011.
+[3] J. Bonneau, C. Herley, P. C. van Oorschot, and F. Stajano, “The quest to replace passwords: A
+framework for comparative evaluation of web authentication schemes,” 2012, pp. 553–567.
+[4] K. Fu, E. Sit, K. Smith, and N. Feamster, “Dos and Don’ts of Client Authentication on the Web,” in
+Proceedings of the 10th USENIX Security Symposium, 2001, vol. 222, pp. 251–268.
+[5] J. Bonneau and S. Preibusch, “The Password Thicket: Technical and Market Failures in Human
+Authentication on the Web.,” in Proceedings of the Ninth Workshop on the Economics of Information
+Security, 2010.
+[6] D. Stuttard and M. Pinto, The web application hacker’s handbook finding and exploiting security
+flaws. Indianapolis: Wiley, 2011.
+[7] J. Yan, A. Blackwell, R. Anderson, and A. Grant, “The memorability and security of passwords:
+some empirical results,” Technical Report-University Of Cambridge Computer Laboratory, p. 1,
+2000.
+[8] D. Florencio and C. Herley, “A large-scale study of web password habits,” in Proceedings of the 16th
+international conference on World Wide Web, 2007, pp. 657–666.
+[9] A. Allan, “Passwords are near the breaking point,” Gartner Research Note, vol. 12, 2004.
+[10] F. Stajano, “Pico: No more passwords,” in Proceedings of Security Protocols XIX Workshop, 2011.
+[11] R. McMillan, “Google Declares War on the Password.”:
+http://www.wired.com/wiredenterprise/2013/01/google-password/all/.[12] NIST, “The National Strategy for Trusted Identities in Cyberspace: Why We Need
+It.”http://www.nist.gov/nstic/NSTIC-Why-We-Need-It.pdf. 2011
+[13] “Final recommendations for the security of internet payments and starts public consultation on
+payment account access services,” ECB:
+http://www.ecb.europa.eu/press/pr/date/2013/html/pr130131_1.en.html.
+[14] IETF, “RFC 5246 - The Transport Layer Security (TLS) Protocol Version 1.2.”.:
+http://tools.ietf.org/html/rfc5246.
+[15] “RSA SecurID - Two-Factor Authentication, Security Token - EMC.”:
+http://www.emc.com/security/rsa-securid.htm.
+[16] A. Czeskis, M. Dietz, T. Kohno, D. Wallach, and D. Balfanz, “Strengthening user authentication
+through opportunistic cryptographic identity assertions,” in Proceedings of the ACM conference on
+Computer and communications security, 2012, pp. 404–414.
+[17] B. Parno, C. Kuo, and A. Perrig, “Phoolproof phishing prevention,” in Proceedings of the 10th
+International Conference, Anguilla, British West Indies, 2006.
+[18] M. Mannan and P. C. van Oorschot, “Leveraging personal devices for stronger password
+authentication from untrusted computers,” Journal of Computer Security, vol. 19, no. 4, pp. 703–750,
+2011.
+[19] J. Bonneau, C. Herley, P. C. van Oorschot, and F. Stajano, “The quest to replace passwords: A
+framework for comparative evaluation of web authentication schemes,” in Security and Privacy (SP),
+2012 IEEE Symposium on, 2012, pp. 553–567.
+[20] E. Grosse and M. Upadhyay, “Authentication at Scale,” Security & Privacy, IEEE, vol. 11, no. 1, pp.
+15 – 22, 2013.
+[21] C. Herley and P. Van Oorschot, “A research agenda acknowledging the persistence of passwords,”
+IEEE Security & Privacy, vol. 10, no. 1, pp. 28–36, 2012.
+[22] D. Florêncio, C. Herley, and B. Coskun, “Do strong web passwords accomplish anything,” in
+Proceedings of the Usenix Hot Topics in Security, 2007.
+[23] C. Herley, “So long, and no thanks for the externalities: the rational rejection of security advice by
+users,” in Proceedings of the 2009 workshop on New security paradigms workshop, 2009, pp. 133–
+144.
+[24] W. E. Burr, D. F. Dodson, E. M. Newton, R. A. Perlner, W. T. Polk, S. Gupta, and E. A. Nabbus,
+“Electronic Authentication Guideline,” NIST, US Department of Commerce, NIST Special
+Publication 800-63-1, Dec. 2011.
+[25] Q. Jiang, J. Ma2, G. Li, and L. Yang, “Robust Two-factor Authentication and Key Agreement
+Preserving User Privacy,” International Journal of Network Security, vol. 16, no. 4, pp. 321–332, Jul.
+2014.
+[26] D. DeFigueiredo, “The case for mobile two-factor authentication,” Security & Privacy, IEEE, vol. 9,
+no. 5, pp. 81–85, 2011.
+[27] J. Scambray, V. Liu, and C. Sima, Hacking exposed web applications: web application security
+secrets and solutions. New York: McGraw-Hill, 2011.
+[28] M. Dietz, A. Czeskis, D. Balfanz, and D. S. Wallach, “Origin-bound certificates: a fresh approach to
+strong client authentication for the web,” in Proceedings of 21st USENIX Security Symposium, 2012,
+2012.
+[29] Mozilla, “Overview of NSS | MDN: https://developer.mozilla.org/en-US/docs/Overview_of_NSS.
+[30] Matasano, “Javascript Cryptography Considered Harmful,” 2011:
+http://www.matasano.com/articles/javascript-cryptography/.
+[31] “How to improve JavaScript cryptography.”: http://hellais.wordpress.com/2011/12/27/how-toimprove-
+javascript-cryptography/.
+[32] N. Kobeissi, “Thoughts on Critiques of JavaScript Cryptography.”: http://log.nadim.cc/?p=33.
+[33] W3C, “W3C Web Cryptography Working Group,” 2012. : http://www.w3.org/2012/webcrypto/.
+[34] Mozilla, “Privacy/Features/DOMCryptAPISpec/Latest - MozillaWiki.”:
+https://wiki.mozilla.org/Privacy/Features/DOMCryptAPISpec/Latest.
+[35] BBN Technologies, “PolyCrypt: A WebCrypto Polyfill.”. Available: http://polycrypt.net/.
+[36] N. Ferguson, B. Schneier, and T. Kohno, Cryptography engineering: design principles and practical
+applications. John Wiley & Sons, 2012.
+[37] M. Mannan and P. C. van Oorschot, “Digital Objects as Passwords,” in Proceedings of the Usenix
+Hot Topics in Security, 2008.[38] L. Yang, J.-F. Ma, and Q. Jiang, “Mutual Authentication Scheme with Smart Cards and Password
+under Trusted Computing.,” International Journal of Network Security, vol. 14, no. 3, pp. 156–163,
+2012.
+[39] I. Dacosta, M. Ahamad, and P. Traynor, “Trust No One Else: Detecting MITM Attacks Against
+SSL/TLS Without Third-Parties,” in Proceedings of the European Symposium on Research in
+Computer Security (ESORICS), 2012, pp. 199–216.
+[40] RSA Laboratories, “PKCS #5 v2.1: Password-Based Cryptography Standard.”:
+http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-5-password-based-cryptographystandard.
+htm.referencesrp

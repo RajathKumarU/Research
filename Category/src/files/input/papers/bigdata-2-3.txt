@@ -1,0 +1,300 @@
+Understanding the Challenges of Mobile Phone Usage DatatitlerpDriven by curiosity and our own three diverse smartphone application
+usage datasets, we sought to unpack the nuances of
+mobile device use by revisiting two recent Mobile HCI studies
+[1, 17]. Our goal was to add to our broader understanding
+of smartphone usage by investigating if differences in mobile
+device usage occurred not only across our three datasets,
+but also in relation to prior work. We found differences in
+the top-10 apps in each dataset, in the durations and types of
+interactions as well as in micro-usage patterns. However, it
+proved very challenging to attribute such differences to a specific
+factor or set of factors: was it the time frame in which the
+studies were executed? The recruitment procedure? The experimental
+method? Using our somewhat troubled analysis,
+we discuss the challenges and issues of conducting mobile
+research of this nature and reflect on caveats related to the
+replicability and generalizability of such work.abstractrpMobile usage; Smartphone usage; Device usage; Evaluation;
+Methodology; User Studies; Mobile HCI; Micro-usage;
+Replication; GeneralizabilitykeywordsrpOver the past decade, we have seen a steady increase in the
+number of real-world user studies of mobile device use. Recent
+research focuses on the nuances of smartphone usage and
+sheds light on the apps that people engage with, the duration
+of their usage and more recently what happens during very
+short, bursty device interactions [28]. To understand such behaviors
+a range of methodologies have been adopted (e.g., mobile diaries, Experience Sampling Method (ESM), Day
+Reconstruction Method (DRM), just to name a few) and in
+some cases, novel methods have emerged. One such method
+is the use of mobile loggers, deployed as applications in both
+smaller scale user studies as well as in large-scale app market
+deployments.
+Despite the flurry of research in this space, most researchers
+will agree that studying mobile device usage is still very challenging.
+We have the traditional issues associated with conducting
+HCI studies (e.g., recruiting, incentives), confounded
+with studying the highly mobile (and therefore contextually
+varied) technology that also evolves rapidly. In smaller scale
+mobile studies, researchers often combine logging mobile usage
+with qualitative insights and follow a set of key steps to
+accommodate this mixed-method approach. This includes recruiting
+participants - in most cases locally - building custom
+app logging tools, handing out or configuring mobile devices,
+as well as offering incentives and rewards. The effort
+involved in such studies is often substantial due to the recruitment
+process that needs to take place as well as the compensation
+of the participants, especially if we aim at a longitudinal
+deployment.
+Alternatively, the increasing popularity of application stores
+has allowed researchers to use such distribution mechanisms
+to recruit thousands of participants and conduct large-scale
+studies in naturalistic settings. However, there are potential
+side-effects and biases that such an approach may introduce
+and thus researchers following such paths need to consider a
+number of factors to ensure the success of their study. For
+example, how polished should an application (i.e., logger)
+be in order to attract participants; how does device hardware
+diversity affect data sampling; how biased is the participant
+pool given their interest in the application’s functionality in
+the first place; and what prevents participants from removing
+the application for longitudinal analysis? [19].
+Regardless of the challenges, these studies contribute to a
+broader understanding of mobile phone usage behaviors as
+well as providing insights about future areas of exploration
+in Mobile HCI. In this paper, we were interested in uncovering
+additional user practices in the mobile space using
+three different, but similar app logging datasets: two gathered
+through small-scale studies; and one larger-scale app
+market deployment. Our studies cover different time frames (between 2013-2014), locations (in the US as well as round
+the world) and user populations (teenagers, adults, iOS users,
+Android users). Our goal was to revisit prior work on short
+mobile device interactions [1] and short, bursty app usage, so
+called micro-usage [17], and to determine what (if any) differences
+emerge both between the datasets and also in relation to
+prior related work. While we did find several interesting differences,
+in retrospect it proved very challenging to attribute
+these differences to a specific factor or set of factors: Is it the
+differences in setting, technology, applications, timing or are
+the differences rooted more in the user populations sampled?
+Thus what has started as a replication study, quickly turned to
+a deeper reflection on the methods and challenges surrounding
+how we conduct mobile research ourselves and as a community.
+Our core contribution then lies in discussing what
+it really means to do research in this entropic and volatile
+setting. To start, we review several pieces of research that
+use similar methodological approaches to ours and summarize
+some of the practices the community is adopting. We
+then present our study by analyzing three app usage datasets
+that measured similar data across three different user populations
+and highlight how a range of issues emerge in this
+type of analysis. Lastly, we discuss what our findings mean
+more broadly for the research in our community in terms of
+generalizability and replicability. Our major insight is that
+while data of this nature provides great value in understanding
+how people use their mobile devices and informing the
+design of novel interactions that improve mobile device interactions,
+these insights comes with boundaries and caveats
+which all of us must be aware of.introductionrpIn this paper we used data collected from three diverse smartphone
+usage studies to replicate prior work on mobile application
+usage to see if we could add to our understanding of
+mobile device behaviors. Our studies were: a 2-week mixedmethod
+study with 14 teens in the Bay Area; a 2-week mixed
+method study of 20 Adult users of mobile search in the Bay
+Area; and a larger-scale app market deployment with 87 security
+minded Google Play users. Our analysis pointed to a
+number of differences in the usage patterns across our three
+datasets but also in relation to prior related work. Specifically
+we found differences in the top-10 apps in each dataset, in the
+durations and types of interactions as well as in micro-usage
+patterns. Given that we could not attribute those differences
+to a specific factor or set of factors, we presented a deeper discussion
+and reflection on the challenges and caveats of conducting
+research of this nature. The key message for our community
+is that data of this nature provides great value in understanding
+how sub-populations of people use their mobile
+devices and can indeed be used to inform the design of novel
+interactions that improve mobile device interactions. However
+these insights come with boundaries that we much acknowledge
+when conducting and more importantly presenting
+work of this nature, in particular related to generalizability
+and replicability. We hope that our somewhat troubled
+analysis sparks discussion and debate within our community
+about how we conduct research of this nature and how we can
+continue to improve and evolve our methods and approach.conclusionrp1. Banovic, N., Brant, C., Mankoff, J., and Dey, A.
+Proactivetasks: The short of mobile device use sessions.
+In Proceedings of MobileHCI ’14, ACM (2014),
+243–252.
+2. Bentley, F. R., and Metcalf, C. J. Location and activity
+sharing in everyday mobile communication. In CHI ’08
+Extended Abstracts, ACM (2008), 2453–2462.
+3. B¨ohmer, M., Hecht, B., Sch¨oning, J., Kr¨uger, A., and
+Bauer, G. Falling asleep with angry birds, facebook and
+kindle: a large scale study on mobile application usage.
+In Proceedings of Mobile HCI’11, ACM (2011), 47–56.
+4. Brandt, J., Weiss, N., and Klemmer, S. R. Txt 4 l8r:
+Lowering the burden for diary studies under mobile
+conditions. In CHI ’07 Extended Abstracts, ACM
+(2007), 2303–2308.
+5. Brown, B., McGregor, M., and McMillan, D. 100 days
+of iphone use: Understanding the details of mobile
+device use. In Proceedings of the MobileHCI ’14, ACM
+(2014), 223–232.
+6. Carrascal, J. P., and Church, K. An in-situ study of
+mobile app & mobile search interactions. In
+Proceedings of CHI ’15, ACM (2015), 2739–2748.
+7. Carter, S., Mankoff, J., and Heer, J. Momento: support
+for situated ubicomp experimentation. In Proceedings of
+CHI ’07, ACM (2007), 125–134.
+8. Cherubini, M., and Oliver, N. A refined experience
+sampling method to capture mobile user experience. In
+International Workshop on Mobile User Experience
+Research held at CHI ’09 (2009).
+9. Church, K., Cherubini, M., and Oliver, N. A large-scale
+study of daily information needs captured in situ. In
+Transactions on Human-Computer Interaction (TOCHI)
+21, 2 (2014), 10.
+10. Consolvo, S., and Walker, M. Using the experience
+sampling method to evaluate ubicomp applications.
+IEEE Pervasive Computing 2, 2 (4 2003), 24–31.
+11. Dearman, D., and Truong, K. Evaluating the implicit
+acquisition of second language vocabulary using a live
+wallpaper. In Proceedings of CHI ’12, ACM (2012),
+1391–1400.
+12. Do, T. M. T., Blom, J., and Gatica-Perez, D. Smartphone
+usage in the wild: A large-scale analysis of applications
+and context. In Proceedings of the ICMI’11, ACM
+(2011), 353–360.
+13. Drummond, C. Replicability is not reproducibility: nor
+is it good science. In Proceedings of the Evaluation
+Methods for Machine Learning Workshop at ICML
+(2009).
+14. Falaki, H., Mahajan, R., Kandula, S., Lymberopoulos,
+D., Govindan, R., and Estrin, D. Diversity in smartphone
+usage. In Proceedings of MobiSys ’10, ACM (2010),
+179–194.
+15. Ferreira, D., Dey, A. K., and Kostakos, V. Understanding
+human-smartphone concerns: a study of battery life. In
+Pervasive Computing, Springer-Verlag (Berlin,
+Heidelberg, 2011), 19–33.
+16. Ferreira, D., Ferreira, E., Goncalves, J., Kostakos, V.,
+and Dey, A. K. Revisiting human-battery interaction
+with an interactive battery interface. In Proceedings of
+Ubicomp ’13, ACM (2013), 563–572.
+17. Ferreira, D., Goncalves, J., Kostakos, V., Barkhuus, L.,
+and Dey, A. K. Contextual experience sampling of
+mobile application micro-usage. In Proceedings of
+MobileHCI ’14, ACM (2014), 91–100.
+18. Ferreira, D., Kostakos, V., Beresford, A. R., Janne, L.,
+and Dey, A. K. Securacy: An empirical investigation of
+android applications? network usage, privacy and
+security. In Proceedings of the 8th ACM Conference on
+Security and Privacy in Wireless and Mobile Networks
+(WiSec) (2015).
+19. Ferreira, D., Kostakos, V., and Dey, A. K. Lessons
+learned from large-scale user studies: Using android
+market as a source of data. International Journal of
+Mobile Human Computer Interaction 4, 3 (1 2012),
+28–43.
+20. Ferreira, D., Kostakos, V., and Dey, A. K. Aware:
+mobile context instrumentation framework. Frontiers in
+ICT 2, 6 (2015).
+21. Fischer, J. E. Experience-sampling tools: a critical
+review. Mobile Living Labs 9 (2009), 1–3.
+22. Froehlich, J., Chen, M. Y., Consolvo, S., Harrison, B.,
+and Landay, J. A. MyExperience: a system for in situ
+tracing and capturing of user feedback on mobile
+phones. In Proceedings of the 5th international
+conference on Mobile systems, applications and
+services, ACM (2007), 57–70.
+23. Henze, N., Pielot, M., Poppinga, B., Schinke, T., and
+Boll, S. My app is an experiment: Experience from user
+studies. Developments in Technologies for
+Human-Centric Mobile Computing and Applications
+(2012), 294.
+24. Intille, S. S., Rondoni, J., Kukla, C., Ancona, I., and
+Bao, L. A context-aware experience sampling tool. In
+CHI ’03 Extended Abstracts, ACM (2003), 972–973.
+25. Kamisaka, D., Muramatsu, S., Yokoyama, H., and
+Iwamoto, T. Operation prediction for context-aware user
+interfaces of mobile phones. SAINT’09. Ninth Annual
+International Symposium on Applications and the
+Internet (2009), 16–22.
+26. Lee, U., Lee, J., Ko, M., Lee, C., Kim, Y., Yang, S.,
+Yatani, K., Gweon, G., Chung, K.-M. . M., and Song, J.
+Hooked on smartphones: An exploratory study on
+smartphone overuse among college students. In
+Proceedings of CHI ’14, ACM (2014), 2327–2336.
+27. McMillan, D., Morrison, A., Brown, O., Hall, M., and
+Chalmers, M. Further into the Wild: Running
+Worldwide Trials of Mobile Systems. Springer Berlin
+Heidelberg, 2010, 210–227.
+28. Oulasvirta, A., Rattenbury, T., Ma, L., and Raita, E.
+Habits make smartphone use more pervasive. Personal
+and Ubiquitous Computing 16, 1 (1 2012), 105–114.
+29. Palen, L., and Salzman, M. Voice-mail diary studies for
+naturalistic data capture under mobile conditions. In
+Proceedings of CSCW ’02, ACM (2002), 87–95.
+30. Pejovic, V., and Musolesi, M. Interruptme: Designing
+intelligent prompting mechanisms for pervasive
+applications. In Proceedings of the UbiComp ’14, ACM
+(2014), 897–908.
+31. Pielot, M. Large-scale evaluation of call-availability
+prediction. In Proceedings of UbiComp ’14, ACM
+(2014), 933–937.
+32. Pielot, M., Church, K., and de Oliveira, R. An in-situ
+study of mobile phone notifications. In Proceedings of
+MobileHCI ’14, ACM (2014), 233–242.
+33. Rachuri, K. K., Musolesi, M., Mascolo, C., Rentfrow,
+P. J., Longworth, C., and Aucinas, A. Emotionsense: a
+mobile phones based adaptive platform for experimental
+social psychology research. In Proceedings of UbiComp
+’10, ACM (2010), 281–290.
+34. Raento, M., Oulasvirta, A., Petit, R., and Toivonen, H.
+Contextphone: A prototyping platform for
+context-aware mobile applications. IEEE Pervasive
+Computing 4, 2 (4 2005), 51–59.
+35. Rahmati, A., and Zhong, L. Studying smartphone usage:
+Lessons from a four-month field study.
+36. Ramanathan, N., Alquaddoomi, F., Falaki, H., George,
+D., Hsieh, C., Jenkins, J., Ketcham, C., Longstaff, B.,
+Ooms, J., Selsky, J., Tangmunarunkit, H., and Estrin, D.
+ohmage: An open mobile system for activity and
+experience sampling. In PervasiveHealth, IEEE (2012),
+203–204.
+37. Shepard, C., Rahmati, A., Tossell, C., Zhong, L., and
+Kortum, P. Livelab: Measuring wireless networks and
+smartphone users in the field. ACM SIGMETRICS
+Performance Evaluation Review 38, 3 (2011).
+38. Shin, C., Hong, J.-H. . H., and Dey, A. K. Understanding
+and prediction of mobile application usage for smart
+phones. In Proceedings of UbiComp ’12, ACM (2012),
+173–182.
+39. Srinivasan, V., Moghaddam, S., Mukherji, A., Rachuri,
+K. K., Xu, C., and Tapia, E. M. Mobileminer: Mining
+your frequent patterns on your phone. In Proceedings of
+UbiComp ’14, ACM (2014), 389–400.
+40. Truong, K. N., Shihipar, T., and Wigdor, D. J. Slide to x:
+unlocking the potential of smartphone unlocking. In
+Proceedings of CHI ’14, ACM (2014), 3635–3644.
+41. Vaish, R., Wyngarden, K., Chen, J., Cheung, B., and
+Bernstein, M. S. Twitch crowdsourcing: crowd
+contributions in short bursts of time. In Proceedings of
+CHI ’14, ACM (2014), 3645–3654.
+42. Vastenburg, M. H., and Herrera, N. R. Adaptive
+experience sampling: addressing the dynamic nature of
+in-situ user studies. In Ambient Intelligence and Future
+Trends-International Symposium on Ambient
+Intelligence (ISAmI 2010), Springer (2010), 197–200.
+43. Vetek, A., Flanagan, J. A., Colley, A., and Ker¨anen, T.
+Smartactions: Context-aware mobile phone shortcuts. In
+Proceedings of INTERACT ’09, Springer-Verlag (2009),
+796–799.
+44. Wagner, D. T., Rice, A., and Beresford, A. R. Device
+analyzer: Large-scale mobile data collection.
+SIGMETRICS Performance Evaluation Review 41, 4 (4
+2014), 53–56.
+45. Yan, T., Chu, D., Ganesan, D., Kansal, A., and Liu, J.
+Fast app launching for mobile devices using predictive
+user context. In Proceedings of MobiSys ’12 (6 2012),
+113–126.
+46. Zhang, C., Ding, X., Chen, G., Huang, K., Ma, X., and
+Yan, B. Nihao: A Predictive Smartphone Application
+Launcher. Springer Berlin Heidelberg, 2013, 294–313.referencesrp

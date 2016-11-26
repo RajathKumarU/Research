@@ -1,0 +1,136 @@
+Internet Banking Authentication Methods in Nigeria Commercial BankstitlerpThe Electronic banking and payments services of commercial banks are recognised by the Central Bank of Nigeria
+(CBN). Despite the early stage of electronic banking in Nigeria, banks are already offering various financial services
+through the internet. In order to protect customers’ vital information and identities over the internet, necessary and
+standard multifactor authentication measures should be in place to avoid financial losses. The purpose of this study is to
+find out the multifactor authentication (MFA) methods used by the banks, evaluate the type of security mechanism
+adopted and develop security measures to reliably authenticate customers remotely accessing their Internet-based
+financial services. The study addressed conducting risk-based assessments and customer awareness program. The study
+was conducted on all the twenty (20) currently operating commercial banks in Nigeria.abstractrpTwo-factor authentication, internet banking, authentication factor, strong authentication, web securitykeywordsrpAn authentication factor is a piece of information and
+process used to authenticate or verify the identity of a
+person or other entity requesting access under security
+constraints[1].
+Multifactor authentication (MFA) is a system where in
+two or more different factors are used in conjunction to
+authenticate[1]. Using more than one factor is
+sometimes called “strong authentication”. The process
+that solicits multiple answers to challenge questions as
+well as retrieves ‘something you have’ or ‘something
+you are’ is considered multifactor[2].
+True multifactor authentication requires the use of
+solution from two or more of the three categories of
+factors. Using multiple solutions from the same
+category would not constitute multifactor authentication
+[2].
+Financial institutions engaging in any form of Internet
+banking should have effective and reliable methods to
+authenticate customers. An effective authentication system
+is necessary for compliance with requirements to protect
+customer information, to prevent money laundering and
+terrorist financing, to reduce fraud, to inhibit identity theft,
+and to promote the legal enforceability of their electronic
+agreements and transactions. The risks of doing business
+with unauthorized or incorrectly identified persons in an
+Internet banking environment can result in financial loss
+and reputation damage through fraud, disclosure of
+customer information, corruption of data, or unenforceable
+agreements.Wikipedia, the online free encyclopaedia defines internet
+banking as “Online banking (or Internet banking or Ebanking)
+allows customers of a financial institution to
+conduct financial transactions on a secure website operated
+by the institution, which can be a retail or virtual bank,
+credit union or building society”. Also, Hazell and
+Raphael[8] described it as “a number of ways in which
+customers can access their banks without having to be
+physically present at a bank branch.
+Authentication schemes according to Sumathi and
+Esakkirajan[6] are the mechanisms that determine whether
+a user is who he or she claims to be. Authentication can be
+carried out at the operating system level or by the RDBMS.
+The database administrator creates for every user an
+individual account or user name[7]. In addition to these
+accounts, users are also assigned passwords.introductionrpFinancial institutions offering Internet-based products
+and services should have reliable and secure methods to
+authenticate their customers. The level of authentication
+used by the financial institution should be appropriate
+to the risks associated with those products and services.
+Financial institutions should conduct a risk assessment
+to identify the types and levels of risk associated with
+their Internet banking applications. Where risk
+assessments indicate that the use of single-factor
+authentication is inadequate, financial institutions
+should implement multifactor authentication, layered
+security, or other controls reasonably calculated to
+mitigate those risks. The Central Bank of Nigeria
+(CBN) consider single-factor authentication, as the only
+security control mechanism, to be inadequate in the
+case of high-risk transactions involving access to
+customer information or the movement of funds to
+other parties. It was discovered from the study that all
+Nigerian banks have adopted and implemented the 2FA
+methods as mandated by the CBN and to meet
+international standards.
+The success of a particular authentication method
+depends on more than the technology. It also depends
+on appropriate policies, procedures, and controls. An
+effective authentication method should have customer
+acceptance, reliable performance, scalability to
+accommodate growth, and interoperability with existing
+systems and future plans.Three methods were used to gather information for the
+survey; (1) information from the banks’ websites, (2)
+telephones calls to the e-banking units of some of the
+banks, and (3) enquiring from the customer service
+officers in some bank’s branches where information
+could not be gotten from any of the previous two
+methods.conclusionrp[1] Central Bank of Nigeria: Guidelines on Electronic
+Banking in Nigeria, August, 2003
+[2]Federal Financial Institutions Examination Council
+(FFIEC) agencies, Authentication in an Electronic
+Banking Environment, 2001.
+[3] FFIEC Information Technology Examination
+Handbook, Information Security Booklet, December
+2002
+[4] FFIEC Information Technology Examination
+Handbook, E-Banking Booklet, August 2003
+[5] Basel Committee on Banking Supervision, “Risk
+Management Principles for Electronic Banking”. July
+2003. Bank for International Settlements.
+[6] Sumathi S. and Esakkirajan S. Fundamentals of
+Relational Database Management Systems, Springer, 2007.
+[7]Database Systems. A practical Approach to Design,
+Implementation and Management. Addison Wesley. Fourth
+Edition, 2005.
+[8] Paul Hazell and Ziad Raphael, Internet Banking:
+Disruptive Or Sustaining Technology? Field Project Report
+submitted to Harvard Business School Boston, MA. 2001.
+[9] Adeoye O. S. (2012) Evaluating The Performance Of
+Two-Factor Authentication Solution In The Banking
+Sector. Ijcsi International Journal Of Computer Science
+Issues, Vol. 9, Issue 4, No 2, July 2012. Issn (Online):
+1694-0814.
+[10] http://httpd.apache.org/docs/2.2/howto/auth.html
+[11] http://www.naijatechguide.com/2010/02/internetbanking-
+security-tips.html
+[12] http://www.cenbank.org/Supervision/Inst-
+DM.asp
+[13] https://ibank.oceanicbank.com/corp/web/L001/
+corporate/jsp/user/onlinesecurity.htm
+[14] http://www.zenithbank.com/ibanksecurity.cfm
+[15] https://ebanking.sterlingbankng.com/IBS/index.js
+p
+[16] https://ibank.fidelitybankplc.com
+[17] http://www.gtbank.com/personalbanking/waysto-
+bank/internetbanking
+[18] http://web.entbanking.com
+[19] https://ibank.oceanicbank.com/corp/web/L001/
+corporate/jsp/user/onlinesecurity.htm
+[20] http://hackaday.com/2009/10/20/two-factorauthentication-
+using-a-hardware-token/
+[21] Adesina and Charles. An Emperical Investigation
+of the levels of User’ Acceptance of E-Banking in
+Nigeria. Journal of Internet banking and
+Commerce. Vol. 15, No. 1. April 2010.
+[22] Ayo, C. K. Adebiyi A. A., Fatudimu I.T., Ekong
+O.U. (2008). Framework for e-Commerce
+Implementation: Nigeria a Case Study, Journal of
+Internet Banking and Commerce, August 2008,
+vol. 13, no.2.referencesrp

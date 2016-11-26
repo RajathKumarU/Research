@@ -1,0 +1,178 @@
+Secure Data Storage for Mobile Data Collection Systems titlerp Wireless network infrastructures, notably cellular networks,
+are becoming a vital element for exchanging electronic data
+in low income countries. Several key sectors are already
+leveraging on cellular networks: mobile nancial transac-
+tions have already gained an enormous success, and the
+health care sector is also aiming to tackle outstanding chal-
+lenges like providing basic health care services to remote
+communities, by using cheap mobile devices. So far, more
+than ten mobile based health care services are deployed in
+low-income countries. Among those, mobile data collection
+is the one used to replace traditional paper form based data
+collection with electronic digital forms by the use of Mo-
+bile Data Collection Systems (MDCS). However, although
+such systems are often used to collect sensitive health-related
+data, critical issues like security and privacy of personal data
+have not been systematically addressed. Particularly, very
+little has been done to protect data while stored on the
+phone. This paper focuses on low budget mobile phones
+with low hardware and software specication, and proposes
+adequate secure solutions for data storage protection. Our
+secure storage scheme is exible enough to be integrated in
+existing mobile client applications. The solution has been
+extensively tested and integrated into a production MDCS.
+For this work, we collaborated with the open-source mobile
+data collection project, openXdata.abstractrp mHealth, Mobile Data Collection Systems, Mobile Security,
+OWASP, J2ME, RMS, Secure Mobile Data StoragekeywordsrpThe usage of mobile phones, PDAs and other mobile com-
+munication devices in the context of health is an emerging
+part of eHealth. A report by the United Nations Foundation and Vodafone Foundation [23] suggests that close to half the
+population in low-income countries own or have access to
+mobile phones. Health care in these nations can be scarce
+or dicult to access due to restraints such as limited re-
+sources, nances and health care workforce, or parts of the
+population living in remote locations. High mobile phone
+penetration makes mHealth a viable option for providing
+better health care through Mobile Health (a.k.a mHealth)
+systems.
+Leveraging mHealth systems makes it possible to cost-
+eectively provide services like:
+General education and awareness through, for instance,
+SMS.
+Communicating with and training of health care work-
+ers, even in remote locations.
+Tracking of disease outbreaks or epidemics.
+Diagnosing and assisting in treating patients remotely
+when traveling to a hospital is not an option.
+In this paper 1 we are mainly focused on a specic aspect
+of mHealth, namely remote data collection. However, the
+work presented is applicable in any context where secure
+data storage is required.introductionrpIn general, all modern smart phones equipped with op-
+erative systems like Blackberry, Android and iOS provide
+a crypto API to develop secure applications. However, we
+are developing a secure solution for the Java ME platform,
+which lacks support for any kind of data security [3, 24], and
+we target low-end phones, so that solutions that might be
+adequate for high-end phone like smart phones, are not an
+option in our context. The solution we implemented is based
+on a custom protocol developed by considering the specic
+constraints of MDCS [11], but it makes almost no assump-
+tions about how or where data is stored, or how the com-
+munication layer of an existing application is implemented.
+This guarantees wide compatibility. Besides, the dierent
+secure solutions that it oers are very modular, and can be
+used independently to t the needs of MDCS with dierent
+security requirements. Most of the secure API objects that
+are exposed to the programmer are very similar to the Java
+ME counterparts in terms of methods and behavior. This
+means that any programmer who knows how to use the nor-
+mal Java ME classes will also know how to use the secure
+ones.
+We have developed our own prototype MDCS using the
+API, and tested it on various phones with dierent settings
+in order to collect experimental data on the performance of
+the API. The results are encouraging, since the performance
+with the default security settings was acceptable also on very
+low-end phones, and the openXdata integration is proceed-
+ing smoothly. The secure solution has been integrated into
+a production openXdata code base and ready to be tested
+in the eld.
+We have focused our research on feature phones instead of
+smart phones because the market share of feature phones is
+about 80countries [22], so it will take some time to migrate
+to smart-phones, although prices are falling. Besides, there
+are still many MDCS in use which leverage on a J2ME client,
+and using our API is a simple way for them to quickly add
+security to their existing system while they migrate to other
+platforms.
+Move to smart phones is inevitable, and openXdata com-
+munity has started work to implement an Android client,
+and we are collaborating to port our secure API to Android.conclusionrp[1] 3rd generation mobile telecommunications(3G).
+http://en.wikipedia.org/wiki/3G. Online, Accessed
+December 2011.
+[2] CommCareHQ. http://www.commcarehq.org. Online,
+Accessed November 2011.
+[3] T. Egeberg. Storage of sensitive data in a Java enabled
+cell phone. Master's thesis, Hgskolen i Gjvik, 2006.
+[4] Enhanced Data Rates for GSM Evolution(EDGE).
+http://en.wikipedia.org/wiki/Enhanced_Data_
+Rates_for_GSM_Evolution. Online, Accessed
+December 2011.
+[5] Episurveyor. http://www.episurveyor.org/. Online,
+Accessed March 2011.
+[6] S. Gejibo, K. A. Mughal, F. Mancini, J. Klungsyrg,
+and R. B. Valvik. Challenges in implementing
+end-to-end secure protocol for java ME-based mobile
+data collection in low-budget settings. In ESSoS,
+Lecture Notes in Computer Science, pages 38{45.
+Springer, 2012.
+[7] W. Itani and A. Kayssi. J2ME application-layer
+end-to-end security for m-commerce. Journal of
+Network and Computer Applications, 27(1):13{32,
+January 2004.
+[8] B. Kaliski. RFC 2898 - PKCS #5: Password-based
+cryptography specication.
+http://www.ietf.org/rfc/rfc2898.txt, 2000.
+Online, Accessed April 2011.
+[9] J. Klungsyr, T. Tylleskar, B. MacLeod, P. Bagyenda,
+W. Chen, and P. Wakholi. OMEVAC - open mobile
+electronic vaccine trials, an interdisciplinary project to
+improve quality of vaccine trials in low resource
+settings. In Proceedings of M4D '08 - The 1st
+International Conference on Mobile Communication
+Technology for Development, pages 36{44. Karlstad
+University Studies, 2008.
+[10] T. Legion Of the Bouncy Castle.
+http://www.bouncycastle.org/. Online, Accessed
+March 2011.
+[11] F. Mancini, K. Mughal, S. Gejibo, and J. Klungsoyr.
+Adding security to mobile data collection. In
+Healthcom 2011 - 13th IEEE International Conference
+on e-Health Networking Applications and Services,
+pages 86 {89, june 2011.
+[12] Nokia 2330c classic. http://www.developer.nokia.
+com/Devices/Device_specifications/2330_classic.
+Online, Accessed September 2011.
+[13] Nokia Data Gathering.
+http://projects.developer.nokia.com/ndg. Online,
+Accessed November 2011.
+[14] Nokia, Nokia Data Gatherings(NDG).
+https://github.com/nokiadatagathering/
+ndg-mobile-client. Online, Accessed September
+2011.
+[15] openXdata. http://www.openxdata.org. Online,
+Accessed March 2011.
+[16] Oracle. Java ME reference. http://www.oracle.com/
+technetwork/java/javame/index.html. Online,
+Accessed March 2011.
+[17] Oracle Inc. Security and Trust Services API for
+J2ME(SATSA).[18] OWASP. Mobile Security Project.
+https://www.owasp.org/index.php/OWASP_Mobile_
+Security_Project. Online, Accessed March 2012.
+[19] S. M. A. Shah, N. Gul, H. F. Ahmad, and
+R. Bahsoon. Secure storage and communication in
+J2ME based lightweight multi-agent systems.
+Proceedings of KES-AMSTA'08 - the 2nd KES
+International conference on Agent and multi-agent
+systems: technologies and applications, Incheon,
+Korea, pages 887{896.
+[20] T. Egeberg. Storage of sensitive data in a Java
+enabled cell phone. http://egebergweb.com/tommy/
+masterfiler/masteroppgave2.pdf. Master Thesis,
+Accessed on March 2012.
+[21] C. Z. G. N. W. unit based multilingual comparative
+analysis of text corpora.
+http://speechlab.tmit.bme.hu/publikaciok/.
+Online, Accessed January 2012.
+[22] Vision Mobile. Global Smartphone Penetration .
+http://techcrunch.com/2011/11/28/
+its-still-a-feature-phone-world-global-smartphone-penetration-at-27/.
+Online, Accessed August 2012.
+[23] Vital Wave Consulting. mHealth for Development:
+The Opportunity of Mobile Technology for Healthcare
+in the Developing World. Washington, D.C. and
+Berkshire, UK: UN Foundation-Vodafone Foundation
+Partnership, February 2009.
+[24] B. Whitaker. Problems with mobile security #1.
+http://www.masabi.com/2007/07/13/
+problems-with-mobile-security-1/, July 2007.
+Online, Accessed March 2011.referencesrp

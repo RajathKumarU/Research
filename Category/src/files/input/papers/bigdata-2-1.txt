@@ -1,0 +1,317 @@
+Cellular Data Network Infrastructure Characterization and
+Implication on Mobile Content Placement titlerpDespite the tremendous growth in the cellular data network usage
+due to the popularity of smartphones, so far there is rather limited
+understanding of the network infrastructure of various cellular
+carriers. Understanding the infrastructure characteristics such as
+the network topology, routing design, address allocation, and DNS
+service configuration is essential for predicting, diagnosing, and
+improving cellular network services, as well as for delivering content
+to the growing population of mobile wireless users. In this
+work, we propose a novel approach for discovering cellular infrastructure
+by intelligently combining several data sources, i.e., server
+logs from a popular location search application, active measurements
+results collected from smartphone users, DNS request logs
+from a DNS authoritative server, and publicly available routing updates.
+We perform the first comprehensive analysis to characterize
+the cellular data network infrastructure of four major cellular carriers
+within the U.S. in our study.
+We conclude among other previously little known results that
+the current routing of cellular data traffic is quite restricted, as it
+must traverse a rather limited number (i.e., 4–6) of infrastructure
+locations (i.e., GGSNs), which is in sharp contrast to wireline Internet
+traffic. We demonstrate how such findings have direct implications
+on important decisions such as mobile content placement
+and content server selection. We observe that although the local
+DNS server is a coarse-grained approximation on the user’s network
+location, for some carriers, choosing content servers based on
+the local DNS server is accurate enough due to the restricted routing
+in cellular networks. Placing content servers close to GGSNs
+can potentially reduce the end-to-end latency by more than 50%
+excluding the variability from air interface.abstractrpCellular network architecture, GGSN placement, Mobile content
+deliverykeywordsrpOn the Internet, IP addresses indicate to some degree the identity
+and location of end-hosts. IP-based geolocation is widely used in
+different types of network applications such as content customization
+and server selection. Using IP addresses to geolocate wireline
+end-hosts is known to work reasonably well despite the prevalence
+of NAT, since most NAT boxes consist of only a few hosts [7].
+However, one recent study [5] exposed very different characteristics
+of IP addresses in cellular networks, i.e., cellular IP addresses
+can be shared across geographically very disjoint regions within
+a short time duration. This observation suggests that cellular IP
+addresses do not contain enough geographic information at a sufficiently
+high fidelity. Moreover, it implies only a few IP gateways
+may exist for cellular data networks, and that IP address management
+is much more centralized than that for wireline networks, for
+which tens to hundreds of Points of Presence (PoPs) are spread out
+at geographically distinct locations.
+There is a growing need to improve mobile content delivery,
+e.g., via a content distribution network (CDN) service, given the
+rapidly increasing mobile traffic volume and the fact that the performance
+perceived by mobile users is still much worse than that
+for DSL/Cable wireline services [17]. For mobile content, the radio
+access network, cellular backbone, and the Internet wireline all
+have impact and leave space for further improvement [2, 1, 30]. A
+first necessary step is to understand the cellular network structure.
+The lack of geographic information of cellular IP addresses brings
+new challenges for mobile service providers, who attempt to deliver
+content from servers close to users. First, it is unclear where
+to place the content servers. As shown later, cellular data networks
+have very few IP gateways. Therefore, it is critical to first identify
+those IP gateways to help decide where to place content servers.
+Second, unlike wireline networks, cellular IP addresses themselves
+often cannot accurately convey a user’s location, which is critical
+information needed by the CDN service to determine the closest
+server. In this work, we show how these challenges can be addressed
+by leveraging the knowledge of the cellular network infrastructure.
+Cellular data networks have not been explored much by the research
+community to explain the dynamics of cellular IP addresses
+despite the growing popularity of their use. The impact of the cellular
+architecture on the performance of a diverse set of smartphone
+network applications and on cellular users has been largely overlooked.
+In this study, we perform the first comprehensive characterization
+study of the cellular data network infrastructure to explain
+the diverse geographic distribution of cellular IP addresses,
+and to highlight the key importance of the design decisions of the
+network infrastructure that affect the performance, manageability,
+and evolvability of the network architecture. Understanding the
+current architecture of cellular data networks is critical for future
+improvement.
+Since the observation of the diversity in the geographic distribution
+of cellular IP address in the previous study [5] indicates
+that there may exist very few cellular IP data network gateways,
+identifying the location of these gateways becomes the key for cellular
+infrastructure characterization in our study. The major challenge
+is exacerbated by the lack of openness of such networks. We
+are unable to infer topological information using existing probing
+tools. For example, merely sending traceroute probes from cellular
+devices to the Internet IP addresses exposes mostly private IP addresses
+along the path within the UMTS architecture. In the reverse
+direction, only some of the IP hops outside the cellular networks respond
+to traceroute probes.
+To tackle these challenges, instead of relying on those cellular
+IP hops, we use the geographic coverage of cellular IP addresses
+to infer the placement of IP gateways following the intuition that
+those cellular IP addresses with the same geographic coverage are
+likely to have the same IP allocation policy, i.e., they are managed
+by the same set of gateways. To obtain the geographic coverage,
+we use two distinct data sources and devise a systematic approach
+for processing the data reconciling potential conflicts, combined
+with other data obtained via simple probing and passive data analysis.
+Our approach of deploying a lightweight measurement tool on
+smartphones provides the network information from the perspective
+of cellular users. Combining this data source with a location
+search service of a cellular content provider further enhances our
+visibility into the cellular network infrastructure.
+One key contribution of our work is the measurement methodology
+for characterizing the cellular network infrastructure, which
+requires finding the relevant address blocks, locating them, and
+clustering them based on their geographic coverage. This enables
+the identification of the IP gateways within cellular data networks,
+corresponding to the first several outbound IP hops used to reach
+the rest of the Internet. We draw parallels with many past studies
+in the Internet topology characterization, such as the Rocketfuel
+project [31] characterizing ISP topologies, while our problem highlights
+additional challenges due to the lack of publicly available information
+and the difficulties in collecting relevant measurement
+data. We enumerate our key findings and major contributions below.
+We designed and evaluated a general technique for distinguishing
+cellular users from WiFi users using smartphones
+and further differentiating network carriers based on cellular
+IP addresses. Compared with other heuristics such as
+querying IP addresses from whois database and distinguishing
+cellular carriers based on key words such as “mobility”
+and “wireless” from the organization name, our technique
+collects the ground truth observed by smartphone devices
+by deploying a lightweight measurement tool for popular
+smartphone OSes. Distributed as a free application on major
+smartphone application markets, it can tell the carrier name
+for 99.97% records of a popular location search application
+which has 20,000 times more records than the application.
+We comprehensively characterized the cellular network infrastructure
+for fourmajor U.S. carriers including both UMTS
+and EVDO networks by clustering their IP addresses based
+on their geographic coverage. Our technique relies on the
+device-side IP behavior easily collected through our lightweight
+measurement tool instead of requiring any proprietary information
+fromnetwork providers. Our characterization methodology
+is applicable to all cellular access technologies (2G,
+3G, or 4G).
+We observed that the traffic for all four carriers traverses
+through only 4–6 IP gateways, each encompassing a large
+geographic coverage, implying the sharing of address blocks
+within the same geographic area. This is fundamentally different
+from wireline networks with more distributed infrastructure.
+The restricted routing topology for cellular networks
+creates new challenges for applications such as CDN
+service.
+We performed the first study to examine the geographic coverage
+of local DNS servers and discussed in depth its implication
+on content server selection. We observe that although
+local DNS servers provide coarse-grained approximation for
+users’ network location, for some carriers, choosing content
+servers based on local DNS servers is reasonably accurate for
+the current cellular infrastructure due to restricted routing in
+cellular networks.
+We investigated the performance in terms of end-to-end delay
+for current content delivery networks and evaluated the
+benefit of placing content servers at different network locations,
+i.e., on the Internet or inside cellular networks. We observed
+that pushing content close to GGSNs can potentially
+reduce the end-to-end latency by 50% excluding the variability
+from air interface. Our observation strongly encourages
+CDN service providers to place content servers inside cellular
+networks for better performance.introductionrpIn this paper, we comprehensively characterized the infrastructure
+of cellular data network of four major wireless carriers within
+the U.S. including both UMTS and EVDO technology. We unveiled
+several fundamental differences between cellular data networks
+and the wireline networks in terms of placement of GGSNs,local DNS server behavior, and routing properties. One of the most
+surprising findings is that cellular data networks have severe restriction
+on routing by traversing only a few limited GGSNs to interface
+with external Internet networks. We observed that all 4 carriers we
+studied divide the U.S. among only 4–6 GGSNs, each serving a
+large geographic area. Since the GGSN is the first IP hop, it implies
+that CDN servers cannot consistently serve content close to
+end users.
+Our study also showed that in the best case local DNS servers
+for some carriers can be close to GGSNs. Since traffic from and
+to local DNS servers and cellular users must traverse one of those
+few GGSNs, using local DNS servers and the knowledge of the
+mapping to the GGSN to identify the best server to deliver mobile
+content currently can be sufficient despite the routing restrictions.
+Regarding content placement, we investigated and compared two
+choices: (i) placing content at the boundary between the cellular
+backbone and the Internet; and (ii) placing content at the GGSN
+in the cellular backbone. We observed that pushing content close
+to GGSNs could potentially reduce the end-to-end latency by more
+than 20%. If pushing content into the proprietary cellular backbone
+is not permitted, placing content at the boundary still gives
+considerable benefit.
+We believe our findings in characterizing the infrastructure for
+cellular data networks directly motivate future work in this area.
+Our observations on the cellular infrastructure guide CDNs to provide
+better service to mobile users, and our methodology for discovering
+cellular data network properties will continue to reveal
+new behavior as cellular networks evolve.conclusionrp[1] Introduction Mobile Data Track Presentation. http://www.
+nanog.org/meetings/nanog47/presentations/Monday/
+Intro_nanog47_mobiletrack.pdf.
+[2] The future of mobile networking. http://www.nanog.org/
+meetings/nanog47/presentations/Monday/Future_
+Mobile_Data_N47_Mon.pdf.
+[3] University of Oregon Route Views Archive Project. http://
+www.routeviews.org.
+[4] M. Anand, E. B. Nightingale, and J. Flinn. Self-Tuning
+Wireless Network Power Management. Wireless Networks,
+11(4), 2005.
+[5] M. Balakrishnan, I. Mohomed, and V. Ramasubramanian.
+Where’s That Phone?: Geolocating IP Addresses on 3G
+Networks. In Proceedings of IMC, 2009.
+[6] N. Balasubramanian, A. Balasubramanian, and
+A. Venkataramani. Energy Consumption in Mobile Phones:
+A Measurement Study and Implications for Network
+Applications. In Proc. ACM SIGCOMM IMC, 2009.
+[7] M. Casado and M. J. Freedman. Peering through the shroud:
+The effect of edge opacity on IP-based client identification.
+In Proc. Symposium on Networked Systems Design and
+Implementation, 2007.
+[8] R. Chakravorty, S. Banerjee, S. Agarwal, and I. Pratt. MoB:
+A Mobile Bazaar for Wide-area Wireless Services. In Proc.
+ACM MOBICOM, 2005.
+[9] M. C. Chan and R. Ramjee. TCP/IP Performance over 3G
+Wireless Links with Rate and Delay Variation. In Proc. of
+MOBICOM, 2002.
+[10] S. J. Cheng, C. Jin, A. R. Kurc, D. Raz, and Y. Shavitt.
+Constrained Mirror Placement on the Internet. In Proc. IEEE
+INFOCOM, 2001.
+[11] J. Chesterfield, R. Chakravorty, J. Crowcroft, P. Rodriguez,
+and S. Banerjee. Experiences with Multimedia Streaming
+over 2.5G and 3G Networks. Journal ACM/MONET, 2004.
+[12] CISCO. Configuring Dynamic Addressing on the GGSN.
+http://www.cisco.com/en/US/docs/ios/12_4/12_4y/
+12_4_24ye/cfg/ggsndhcp.html.
+[13] M. Ghaderi, A. Sridharan, H. Zang, D. Towsley, and R. Cruz.
+TCP-Aware Resource Allocation in CDMA Networks. In
+Proceedings of ACM MOBICOM, Los Angeles, CA, USA,
+September 2006.
+[14] Google. Gears. http://gears.google.com.
+[15] B. Gueye, A. Ziviani, M. Crovella, and S. Fdida.
+Constraint-based Geolocation of Internet Hosts. IEEE/ACM
+Trans. Netw., 14(6):1219–1232, 2006.
+[16] C. Huang, A. Wang, J. Li, and K. W. Ross. Measuring and
+Evaluating Large-Scale CDNs. In Microsoft Research
+Technical Report MSR-TR-2008-106, 2008.
+[17] J. Huang, Q. Xu, B. Tiwana, Z. M. Mao, M. Zhang, and
+P. Bahl. Anatomizing Application Performance Differences
+on Smartphones. In Proc. ACM MOBISYS, 2010.
+[18] E. Inc. LTE-SAE architecture and performance. http://
+www.ericsson.com/ericsson/corpinfo/publications/
+review/2007_03/files/5_LTE_SAE.pdf.
+[19] E. Katz-Bassett, J. P. John, A. Krishnamurthy, D. Wetherall,
+T. Anderson, and Y. Chawathe. Towards IP geolocation using
+delay and topology measurements. In IMC 2006:
+Proceedings of the 6th ACM SIGCOMM conference on
+Internet measurement, pages 71–84, New York, NY, USA,
+2006. ACM.
+[20] R. Keralapura, A. Nucci, Z.-L. Zhang, and L. Gao. Profiling
+Users in a 3G Network Using Hourglass Co-Clustering. In
+Proc. ACM MOBICOM, 2010.
+[21] X. Liu, A. Sridharan, S. Machiraju, M. Seshadri, and
+H. Zang. Experiences in a 3G Network: Interplay between
+the Wireless Channel and Applications. In Proceedings of
+ACM MOBICOM, 2008.
+[22] H. V. Madhyastha, T. Isdal, M. Piatek, C. Dixon,
+T. Anderson, A. Krishnamurthy, and A. Venkataramani.
+iPlane: An Information Plane for Distributed Services. In
+Proc. Operating Systems Design and Implementation, 2006.
+[23] Z. M. Mao, C. Cranor, F. Douglis, M. Rabinovich,
+O. Spatscheck, and J. Wang. A Precise and Efficient
+Evaluation of the Proximity between Web Clients and their
+Local DNS Servers. In Proc of USENIX Annual Technical
+Conference, 2002.
+[24] J. Oberheide, K. Veraraghavan, E. Cooke, J. Flinn, and
+F. Jahanian. In-Cloud Security Services for Mobile Devices.
+In Proc of the First Workshop on Virtualization and Mobile
+Computing, 2008.
+[25] V. N. Padmanabhan and L. Subramanian. An Investigation of
+Geographic Mapping Techniques for Internet Hosts. In ACM
+Sigcomm, 2001.
+[26] L. Qiu, V. N. Padmanabhan, and G. M. Voelker. On the
+Placement of Web Server Replicas. In Proc. IEEE
+INFOCOM, 2001.
+[27] M. Rahnema. UMTS Network Planning, Optimization, and
+Inter-Operation with GSM. Wiley, 2007.
+[28] P. Rodriguez, R. Chakravorty, J. Chesterfield, I. Pratt, and
+S. Banerjee. MAR: A Commuter Router Infrastructure for
+the Mobile Internet. In Proc. ACM MOBISYS, 2004.
+[29] A. Shaikh, R. Tewari, and M. Agrawal. On the Effectiveness
+of DNS-based Server Selection. In Proc. IEEE INFOCOM,
+Anchorage, AK, April 2001.
+[30] S. Solutions. Solutions: Mobile Data Offload. http://www.
+stoke.com/Solutions/smdo.asp.
+[31] N. Spring, R. Mahajan, and D. Wetherall. Measuring ISP
+Topologies with Rocketfuel. In ACM Sigcomm, 2002.
+[32] N. Spring, D. Wetherall, and T. Anderson.
+Reverse-Engineering the Internet. In Proc. First ACM
+SIGCOMM HotNets Workshop, 2002.
+[33] A. Sridharan, R. Subbaraman, and R. Guerin. Distributed
+Uplink Scheduling in CDMA Networks. In Proceedings of
+IFIP-Networking 2007, May 2007.
+[34] L. Subramanian, S. Agarwal, J. Rexford, and R. H. Katz.
+Characterizing the Internet Hierarchy from Multiple Vantage
+Points. In Proc. IEEE INFOCOM, 2002.
+[35] P.-N. Tan, M. Steinbach, and V. Kumar. Introduction to Data
+Mining. Addison-Wesley, 2006.
+[36] I. Trestian, S. Ranjan, A. Kuzmanovic, and A. Nucci.
+Measuring Serendipity: Connecting People, Locations and
+Interests in a Mobile 3G Network. In Proceedings of IMC,
+2009.
+[37] B. Wong, I. Stoyanov, and E. G. Sirer. Octant: A
+Comprehensive Framework for the Geolocalization of
+Internet Hosts. In Proc. Symposium on Networked Systems
+Design and Implementation, 2007.
+[38] M. Zhang, C. Zhang, V. Pai, L. Peterson, and R. Wang.
+PlanetSeer: Internet Path Failure Monitoring and
+Characterization in Wide-Area Services. In Proc. Operating
+Systems Design and Implementation, 2004.
+[39] Z. Zhuang, T.-Y. Chang, R. Sivakumar, and A. Velayutham.
+A3: Application-Aware Acceleration for Wireless Data
+Networks. In Proc. of ACM MOBICOM, 2006.referencesrp

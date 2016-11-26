@@ -1,0 +1,332 @@
+Technical report: Security of Online Banking SystemstitlerpTechnology keeps evolving to better support our everyday life. This also
+includes technology to manage nances. Online banking allows customers to
+access banking services not only from computers at home or work, but also
+almost anywhere using mobile devices. In the last few years, mobile devices
+have seen a great increase in adoption by banks and their customers for online
+banking due to their capabilities, aordability and usability. This report
+discusses the security of today's online banking systems. Our focus is on both
+online banking using home and oce computers, and mobile banking using
+devices such as smartphones and tablets. We compare our ndings with a
+similar examination of a decade ago and present an overview of security issues
+in online and mobile banking that exist today. The most important trends
+that we notice is that banks do improve security only after improvements
+in functionality are made, and that eorts so far did not solve the larger
+underlying issues.abstractrponline banking, mobile banking, WWW security, mobile
+security, multi-factor authenticationkeywordsrpOnline banking systems have become quite popular in the last ten years.
+Customers from an online bank can manage their accounts with their own
+electronic devices as long as an Internet connection is available. Activities
+such as checking the balance of an account and the initiation of money trans-
+actions do not require human assistance from a clerk at the bank. Managing
+a bank account is not limited anymore to oce hours.
+Neither time nor location is an issue. Online banking systems are not
+limited to personal computers for customer interaction. Mobile devices such
+as smartphones and tablets allow customers to conduct banking activities
+'on-the-go'. Mobile browsers and dedicated standalone applications allow
+people to use the Internet to connect to the bank's systems in a similar way
+to online banking with a PC.
+1.1. About this document
+This technical report is a result of our worldwide survey of security aspects
+in online banking. Its main focus is on our detailed ndings and background
+descriptions. A more condensed version of this report is the basis for our
+journal article.
+The target group for this report includes researchers with specic interests
+in security aspects that are practiced today. Examples include the use of
+SSL/TLS and (combinations of) authentication methods. Those who are
+only interested in developments of online banking security can also read the
+journal article.
+1.2. Problem statement
+We dene two problems in online banking to which the contents of this
+report apply. The problem that is tangible and measurable is the nancial
+fraud problem in online banking. Customers and banks lose money through
+illegitimate transactions. A less tangible and more dicult to quantify prob-
+lem is the loss of privacy. Attackers that gain access to bank accounts have
+access to sensitive and incriminating information, such as account balances,
+transaction histories and information about debt. More information on how
+the identied issues in online banking contribute to the stated problems is
+given in Section 4.4 on page 47.1.3. Scope of the report
+This report discusses security technology and security usability in today's
+online banking systems. As a continuation of the work of Claessens et al. [1],
+the main focus will be on online and mobile banking.
+An extensive worldwide survey of today's online banking systems provides
+the base of our work. We applied a scope similar to the work of Claessens
+et al. with a larger sample size by surveying available online banking systems
+all over the globe and the possible methods of interaction that are available
+to customers. The perspective of this report is from the side of the customer
+when dealing with online banking. Only publicly available information was
+used in our survey.81 banks that provide online payment services were examined. See Fig-
+ure 1 for an overview of the global distribution between North and South
+America, Europe, the Middle East, Africa, Russia, East-Asia and Oceania.
+Samples were collected by searching for banks on the Internet. Search cri-
+teria were based on global representation and type of bank. Our focus was
+on banks that provide account and payment services to consumers and small
+businesses. Data was collected between March and September in 2013. If a
+specic geographical area was targeted, individual banks were selected from
+the pool of banks that provide payment services. Several banks were included based on economical size if this information was available. If this informa-
+tion was used, other random banks from the same region were also added.
+We explicitly added the larger banks where possible in the assumption that
+they have the most assets to protect (such as the number of customers or the
+amount of money) and are therefore a desired target. By including them in
+addition to random (smaller) banks, we think that our sample set is represen-
+tative for online banking systems aimed at consumers and small businesses
+for the time period in which we conducted our research. In regions where the
+size of banks was not obtainable, we used a random selection. Language bar-
+riers were overcome by colleagues who translated critical information from
+documentation that we provided and by automated translation tools.
+Due to technical, security and usability dierences between the dierent
+types of customer devices, a distinction is made throughout this report be-
+tween the use of personal computers (PCs) and mobile devices (MDs) by
+online banking customers. Of the banks in our set, 80 are examined on how
+they facilitate the use of the customer's PC.1 The same was done for MDs
+with 67 banks in our set.2 Figure 1 makes a distinction between banks that
+were examined for the services they provide for both PCs and MDs, and for
+banks that were only examined for one of these types of devices.
+1.4. Outline of the report
+The rest of the report after the introduction is organized as follows. In
+Section 2, we will give an overview of dierent aspects concerning online
+banking today and oset it to the developments ten years ago as described
+by Claessens et al. in [1]. This section rst summarizes how popular online
+banking is and gives an indication about the increase of fraud. The archi-
+tecture of today's online banking is explained, including applied authentica-
+tion methods for online banking on both PCs and MDs. A focus is given
+on the applied authentication factors. These can be knowledge ('something
+you know'), possession ('something you have') and existence ('something you
+are').Section 3 continues with an overview of attack vectors applied against
+online banking. These vectors either misuse or work around the described
+authentication methods mentioned in the previous section. After this, an
+analysis is given in Section 4 of the underlying security issues that provide
+the largest impact on the nancial fraud and privacy problems in online
+banking.
+Section 5 contains our concluding remarks.
+1.5. Our contribution
+Our work gives an indication of the state of online banking worldwide and
+its current vulnerable aspects. Conclusions about the evolution of function-
+ality versus security in online nancial services are made by comparing the
+work of Claessens et al. in [1] with our work. Further research can use the
+dened security issues and problems in online banking as a rst step towards
+improvement.introductionrpThe security issues that we discussed relate to the issues as discussed
+by Claessens et al. in [1]: the establishment of a secure channel for data
+condentiality and integrity, and the authentication of the customer (entity
+authentication) and each transaction (transaction authentication).
+Claessens et al. concluded for the rst issue that SSL/TLS was used by
+most banks and proven to be a practically secure protocol from a crypto-
+graphic point of view. While we have noted several issues in SSL/TLS as
+it is used in today's online banking, this conclusion still stands due to that
+exploiting weaknesses in SSL/TLS communication requires a vast amount of
+resources to attack a limited number of targets compared to other discussed
+approaches (see Section 3.3 on page 40 for more information).
+The other attack vectors are the reason why the technical infrastructure
+for communication security must not be scoped as only the connection be-
+tween customer and bank devices. The devices have to be included, for they
+48
+are also (and more, compared to SSL/TLS) vulnerable to attacks that chal-
+lenge condentiality and integrity of the communication between customer
+and bank. In 2002, Claessens et al. noted that the best security solution for
+online banking relies on the assumption that the end-points of the system
+are trusted. In our article, we noted the persistent man-in-the-middle, rep-
+resented by the client computer used by the customer. A bank cannot trust
+the client computer as an end-point since it cannot provide a trusted and
+guaranteed untampered environment for online banking.
+Banks take advantage of web standards to reach a large number of online
+banking customers that use PCs and MDs. Many banks also provide online
+banking applications for MDs. This use of customer-owned PCs and MDs
+must be considered insecure by banks. All client-side code (including web
+browsers and banking applications) is executed in an environment that can-
+not guarantee condentiality or integrity, because third-parties can inuence
+what customers and banks see through PCs and MDs (see Section 3.2 on
+page 37 for more information). The client computer cannot be removed from
+online banking since it is an important aspect that allows banks to electroni-
+cally reach large audiences. Therefore, the current best practice is that banks
+do not rely on client computers for entity and transaction authentication to
+prevent fraud attacks.
+As their second issue, Claessens et al. concluded that xed passwords
+were the most widely used method for authentication. It was noted that the
+best practice at the time was probably the use of hardware tokens or the use
+of a smart card for challenge-response authentication and creating digital
+signatures. One third of the banks in our survey apply the best practices
+from 2002 in 2013. The majority that does not apply the best practices
+still implement some form of multi-factor authentication (see Section 2.5 on
+page 25 for more information). While the use of only xed passwords for
+authentication with PCs is still seen at almost a quarter of all examined
+banks, the majority of banks oer some form of multi-factor authentication.
+However, multi-factor authentication is not enough. Current implemen-
+tations of it do conrm customer identity, but not intention. Actions them-
+selves and the results of actions of the customer do not have to conform
+with the intention of the customer. Customer can be tricked through social
+engineering to do something that they do not want. Also, if a customer initi-
+ates an action with genuine intent, it is possible for an attacker through the
+persistent man-in-the-middle (the customer's device) to modify the result-
+ing information from that action before a bank receives it. It is not always
+49
+possible to dierentiate between both types of attack due to the lack of non-
+repudiation of the customer's actions. To get more insight in nancial fraud,
+it is required to non-repudiate bank transactions. This will not prevent fraud
+completely since it is still possible through social engineering. However, it
+does prevent that a party other than the customer changes the outcome of
+the customer's actions (such as by changing a destination account number
+or the sum of a transaction).
+Similar to Claessens et al. we close our work by noting that perfect se-
+curity cannot be achieved. Online bank fraud will most likely always exist
+in some form as long as online banking exists. However, there is room for
+improvement on how security threats and opportunities are handled.
+Banks have shown eort in attempts to improve security, but overall
+security has not increased. This is because security is often an afterthought
+after something is implemented. Eorts therefore often go towards xing
+existing problems in newly oered functionality. Putting the right amount of
+eort at the right time in securing the vulnerable parts of the attack surface
+that need it can reduce the impact of both existing and new attack methods.
+Determining underlying (potential) issues based on the symptoms should be
+given proper attention before steps towards improvements are taken.
+Improving security is not something that only has to be done once. A
+continuing process is required that monitors and categorizes threats and op-
+portunities. Security must be given the same priority as functionality and
+not tag along as a nuisance that is based on only the problems that were
+relevant a decade ago.conclusionrp[1] Joris Claessens, Valentin Dem, Danny De Cock, Bart Preneel, and Joos
+Vandewalle. On the security of today's online electronic banking sys-
+tems. Computers & Security, 21(3):253{265, 2002.
+50
+[2] Google. Google Play (last retrieved: 2014-01-16), 2014. URL https:
+//play.google.com/.
+[3] Apple. Apple's App Store (last retrieved: 2014-01-
+16), 2014. URL https://itunes.apple.com/en/genre/
+mobile-software-applications/id36.
+[4] Google. Android Developers - Security Tips (last retrieved: 2013-11-21),
+2013. URL http://developer.android.com/training/articles/
+security-tips.html.
+[5] Apple. ioS App Programming Guide: The iOS Envi-
+ronment (last retrieved: 2013-11-21), 2013. URL https:
+//developer.apple.com/library/ios/documentation/iphone/
+conceptual/iphoneosprogrammingguide/TheiOSEnvironment/
+TheiOSEnvironment.html.
+[6] Steve Manseld-Devine. Android architecture: attacking the weak
+points. Network Security, 2012(10):5{12, 2012.
+[7] Arron Hirst. Apple: 93% Of Customers Are Using iOS 6 (last retrieved:
+2013-11-21), June 2013. URL http://www.razorianfly.com/2013/06/
+21/apple-93-of-customers-are-using-ios-6-chart/.
+[8] Roland Van Rijswijk-Deij and Erik Poll. Using trusted execution en-
+vironments in two-factor authentication: comparing approaches, 2013.
+Unpublished results by researchers of Radboud University Nijmegen (the
+Netherlands), Faculty of Science, Digital Security.
+[9] Alan Freier, Philip Karlton, and Paul Kocher. RFC 6101, describing
+SSL 3.0 (last retrieved: 2014-01-16), August 2011. URL http://tools.
+ietf.org/html/rfc6101.
+[10] Tim Dierks and Christopher Allen. RFC 2246, describing TLS 1.0 (last
+retrieved: 2014-01-16), January 1999. URL http://tools.ietf.org/
+html/rfc2246.
+[11] Tim Dierks and Eric Rescorla. RFC 4346, describing TLS 1.1 (last re-
+trieved: 2014-01-16), April 2006. URL http://tools.ietf.org/html/
+rfc4346.
+51
+[12] Tim Dierks and Eric Rescorla. RFC 5246, describing TLS 1.2 (last
+retrieved: 2014-01-16), August 2008. URL http://tools.ietf.org/
+html/rfc5246.
+[13] Sean Turner and Tim Polk. RFC 6176, describing how TLS must not be
+backwards compatible with SSL 2.0 (last retrieved: 2014-01-16), March
+2011. URL http://tools.ietf.org/html/rfc6176.
+[14] WAP Forum. WAP WTLS Specication Version 06-Apr-
+2001 (last retrieved: 2013-11-20), April 2001. URL http:
+//technical.openmobilealliance.org/tech/affiliates/wap/
+wap-261-wtls-20010406-a.pdf.
+[15] Qualys. Qualys SSL Labs SSL Server Test (last retrieved: 2014-01-16),
+2013. URL https://www.ssllabs.com/ssltest/.
+[16] COMODO. COMODO SSL Analyzer (last retrieved: 2014-01-16), 2013.
+URL https://sslanalyzer.comodoca.com/.
+[17] Ron Rivest. RFC 1321 - The MD5 Message-Digest Algorithm (last re-
+trieved: 2014-01-16), April 1992. URL http://tools.ietf.org/html/
+rfc1321.
+[18] CERT. CERT Vulnerability Notes Database - MD5 vulnerable to
+collision attacks (last retrieved: 2013-10-14), December 2008. URL
+http://www.kb.cert.org/vuls/id/836068.
+[19] Xiaoyun Wang and Hongbo Yu. How to break MD5 and other hash
+functions. In Advances in Cryptology{EUROCRYPT 2005, pages 19{
+35. Springer, 2005.
+[20] Tao Xie and Dengguo Feng. How to nd weak input dierences for MD5
+collision attacks. IACR Cryptology ePrint Archive, 2009:223, 2009.
+[21] Hans Dobbertin. The status of MD5 after a recent attack. CryptoBytes,
+2(2), 1996.
+[22] Vincent Rijmen, Florian Mendel, Norbert Pramstaller, and Christian
+Rechberger. Current status of SHA-1 (last retrieved: 2013-11-21),
+February 2007. URL https://www.signatur.rtr.at/repository/
+rtr-sha1-20070221-en.pdf.
+52
+[23] Elaine Barker and Allen Roginsky. Transitions: Recommendation for
+transitioning the use of cryptographic algorithms and key lengths. NIST
+Special Publication, 800:131A, 2011.
+[24] Elaine Barker, William Barker, William Burr, William Polk, and Miles
+Smid. Recommendation for key management{part 1: General (revision
+3). NIST Special Publication, 800:57, 2012.
+[25] Qualys. SSL/TLS Deployment Best Practices (last retrieved: 2013-11-
+21), February 2012. URL https://www.ssllabs.com/downloads/SSL_
+TLS_Deployment_Best_Practices_1.0.pdf.
+[26] Thai Duong and Juliano Rizzo. Here come the
+L
+ninjas (last
+retrieved: 2013-11-21), May 2011. URL http://nerdoholic.org/
+uploads/dergln/beast_part2/ssl_jun21.pdf.
+[27] NIST. National Vulnerability Database (CVE-2011-3389) (last re-
+trieved: 2014-01-16), October 2013. URL http://web.nvd.nist.gov/
+view/vuln/detail?vulnId=CVE-2011-3389.
+[28] Qualys. CRIME: Information Leakage Attack against SSL/TLS
+(last retrieved: 2013-10-14), September 2012. URL https:
+//community.qualys.com/blogs/securitylabs/2012/09/14/
+crime-information-leakage-attack-against-ssltls.
+[29] Nadhem AlFardan and Kenny Paterson. Lucky Thirteen attack (last
+retrieved: 2013-11-21), February 2013. URL http://www.isg.rhul.
+ac.uk/tls/Lucky13.html.
+[30] CA/Browser Forum. Guidelines For The Issuance And Management Of
+Extended Validation Certicates (last retrieved: 2013-11-21), May 2012.
+URL https://www.cabforum.org/Guidelines_v1_4.pdf.
+[31] Collin Jackson, Daniel R Simon, Desney Tan, and Adam Barth. An eval-
+uation of extended validation and picture-in-picture phishing attacks.
+In Financial Cryptography and Data Security, pages 281{293. Springer,
+2007.
+[32] Jennifer Sobey, Robert Biddle, Paul Van Oorschot, and Andrew Patrick.
+Exploring user reactions to new browser cues for extended validation
+certicates. In Proceedings of the 13th European Symposium on Research
+53
+in Computer Security: Computer Security, ESORICS '08, pages 411{
+427, Berlin, Heidelberg, 2008. Springer-Verlag. ISBN 978-3-540-88312-
+8. doi: 10.1007/978-3-540-88313-5 27. URL http://dx.doi.org/10.
+1007/978-3-540-88313-5_27.
+[33] Robert Biddle, Paul Van Oorschot, Andrew Patrick, Jennifer Sobey, and
+Tara Whalen. Browser interfaces and extended validation SSL certi-
+cates: an empirical study. In Proceedings of the 2009 ACM workshop
+on cloud computing security, pages 19{30. ACM, 2009.
+[34] Christina Braz and Jean-Marc Robert. Security and usability: the case
+of the user authentication methods. In Proceedings of the 18th Interna-
+tional Conference of the Association Francophone d'Interaction Homme-
+Machine, pages 199{203. ACM, 2006.
+[35] SCAMwatch. Requests for your account information (last retrieved:
+2013-10-14), 2006. URL http://www.scamwatch.gov.au/content/
+index.phtml/tag/requestsforyouraccountinformation.
+[36] Aditya Sood and Richard Enbody. Malvertising{exploiting web adver-
+tising. Computer Fraud & Security, 2011(4):11{16, 2011.
+[37] Neal Leavitt. Internet security under attack: The undermining of digital
+certicates. Computer, 44(12):17{20, 2011.
+[38] Thijs Houtenbos, Jurgen Kloosterman, Bas Vlaszaty, and Bas de Kon-
+ing. Security in mobile banking, 2012. Unpublished results by students
+of the University of Amsterdam (the Netherlands), System & Network
+Engineering.
+[39] Brett Wareld. Employee Fraud in Australian Financial In-
+stitutions (last retrieved: 2014-01-16), November 2013. URL
+http://www.warfield.com.au/Warfield_Employee_Fraud_in_
+Australian_Financial_Institutions.pdf.
+[40] Cumbria Constabulary. Kendal pensioner sentenced for black-
+mailing Milnthorpe bank (last retrieved: 2014-01-16), February
+2013. URL http://www.cumbria.police.uk/news/latest-news/
+kendal-pensioner-sentenced-for-blackmailing-milnthorpe-bank.
+54
+[41] SC Magazine. Fraudsters target "wire payment switch" at banks to
+steal millions (last retrieved: 2013-10-14), August 2013. URL http:
+//www.scmagazine.com/article/307755/.
+[42] The Guardian. 'How US and UK spy agencies defeat inter-
+net privacy and security' (last retrieved: 2013-10-14), Septem-
+ber 2013. URL http://www.theguardian.com/world/2013/sep/05/
+nsa-gchq-encryption-codes-security.
+[43] Bruce Schneier. Two-factor authentication: too little, too late. Com-
+munications of the ACM, 48(4):136, 2005.
+[44] Cormac Herley, Paul Van Oorschot, and Andrew Patrick. Passwords: If
+we're so smart, why are we still using them? In Financial Cryptography
+and Data Security, pages 230{237. Springer, 2009.
+[45] Dinei Florencio and Cormac Herley. Is everything we know about
+password-stealing wrong? Security & Privacy, 10(6):63{69, 2012.
+[46] Bruce Schneier. Schneier on Security, pages 205{208. Wiley, 2005.referencesrp

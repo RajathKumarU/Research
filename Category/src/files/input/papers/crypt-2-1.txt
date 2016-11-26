@@ -1,0 +1,75 @@
+Multi-hashing for Protecting Web Applications from SQL
+Injection Attacks titlerpSQL injection is a type of frequently reported security attacks on database-driven web
+applications in which attackers execute unauthorized query operations to access information. In this paper,
+we describe the design and implementation of an efficient protection scheme against the SQL injection
+attacks based on a multiple-hashing mechanism. The proposed protection system model consists of three
+phases, which are registration, login and validation phases, and database is divided into product and query
+databases. By using multiple hashing operations the proposed scheme achieves higher efficiency than
+conventional schemes, which do not use sophisticated hashing operations. The scheme is implemented with
+HTML, PHP and MySQL, and cryptographic hashing function SHA-512 is used in the coding. Our
+experimental results show that the proposed scheme achieves very high level of security gain with
+negligible amount of time overheads compared to the conventional methodsabstractrpAuthentication, hashing, SQL injection attack, web application.keywordsrpWeb applications are ever demanding software used in modern days computing devices, which are
+connected to the Internet, and they provide a wide variety of services to various organizations and
+individual users. A typical web application receives users’ requests from the browser, interacts with the
+back-end database and returns relevant information to the users. The back-end database often contains
+sensitive user data and thus, it attracts malicious users, i.e., attackers. SQL injection is one of the techniques
+used by attackers to extract or destroy important users’ data. There might exist a certain level of
+vulnerabilities in web applications and that allows attackers to inject harmful SQL query segments during
+user input session and obtain unauthorized accesses to database. An unauthorized user can read or modify
+existing data, make the data unavailable to other users, or even corrupt the database server. Some
+well-known types of SQL injection attacks (SQLIAs) are: 1) tautology attacks in which a conditional
+statement is inserted in the query to make the condition always true; 2) union attacks in which keyword
+UNION is used in the query to perform illegal operations on the database; 3) logically incorrect query
+attacks, which might identify types of data or gather overall information about database or tables; and 4)
+piggy back attacks in which an injected query is added to the original query.
+According to the OWASP report [1], SQL injection attacks are the top most threat to web applications.
+Since last decade there have appeared various detection and/or prevention methodologies addressing the
+SQL injection attacks in the literature [2]-[12]. However, each approach has it’s own limitations on the scope and efficiency of addressing SQLIAs, and no single approach provides a comprehensive solution to various
+SQLIAs.
+In this paper, we present the design and implementation of an efficient protection scheme against SQL
+injection attacks. The proposed scheme is based on a two-level hashing mechanism, which provides high
+protection rate with affordable time overheads. To support the scheme a separate database, query database,
+is used in addition to the product database to store and access the second-level hash code and
+authentication information during registration and login phases, respectively.
+The reset of this paper is organized as follows. In Section 2, some dominant recent techniques of handling
+SQL injection attacks are briefly reviewed. In Section 3, the concept, system model and rationale of the
+proposed protection scheme are described. In Section 4, implementation details and experimental results
+are provided and finally, Section 5 concludes the paper.introductionrpIn this paper, an efficient 2-level hashing approach of protecting web applications from SQLIAs is
+described. The proposed protection system model consists of registration, login and validation phases and
+is implemented in the Mac OSX environment with HML, PHP and SQL. In our scheme, user name/password
+and login query are encrypted by SHA-512 hashing function to form the first and the second level hash
+codes, respectively. By using the 2-level hashing mechanism with separate product and query databases, we
+gained very high-level protection rate. In fact, in our practice the system never failed though the practice is
+limited with 20 people and 10 trials each. Based on our experimental results, we conclude that the
+proposed protection scheme is highly effective for preventing SQL injection attacks with negligible amount
+of time overheads.
+The proposed protection scheme is portable and we plan to test the scheme further with diversified web
+applications and diversified group of people in the future work.conclusionrp[1] OWASP Top Ten Project (2013). Retrieved March 10, 2014, from https://www.owasp.org/index.php/
+category:owasp top ten project
+[2] Yin, Z., Niu, Z., & Tong, F. (2013). The design of SQL injection analysis system based on Honeynet.
+Proceedings of the Int’l Multi Conference of Engineers and Computer Scientists (pp. 403-406). Hong Kong.
+[3] Salama, S. E., Marie, M. I., El-Fangary, L. M., & Helmy, Y. K. (2012). Web anomaly misuse intrusion
+detection framework for SQL injection detection. International Journal of Advanced Computer Science
+and Applications, 3(3), 123-129.
+[4] Lee, I., Jeong, S., Yeo S., & Moon, J. (2012). A novel method for SQL injection attack detection based on
+removing SQL query attribute values. Mathematical and Computer Modelling, 55, 58-68.
+[5] Shar, L. K., & Kuan, H. B. (2012). Mining input sanitization patterns for predicting SQL injection and
+cross site scripting vulnerabilities. Proceedings of the 34th Int’l Conference on Software Engineering (pp.
+1293-1296). Zurich, Switzerland.
+[6] Bisht, P., Madhusudan, P., & Venkatakrishnan, V. N. (2010). CANDID: Dynamic candidate evaluations for
+automatic prevention of SQL injection attacks. ACM Trans. on Information and System Security, 13(2).
+[7] Pomeroy, A., & Tan, Q. (2011). Effective SQL injection attack reconstruction using network recording.Proceedings of the 11th IEEE Int’l Conference on Computer and Information Technology (pp. 552-556).
+Paphos, Cyprus.
+[8] Avireddy, S., Perumal, V., & Gowraj, N., et al. (2012). Random4: An application specific randomized
+encryption algorithm to prevent SQL injection. Proceedings of the 2012 IEEE 11th Int’l Conference on
+Trust, Security and Privacy in Computing and Communications (pp. 1327-1333). Liverpool, UK.
+[9] Balasundaram, I., & Ramaraj, E. (2011). An authentication mechanism to prevent SQL injection attacks.
+International Journal of Computer Applications, 19(1), 30-33.
+[10] Ali, S., Rauf, A., & Javed, H. (2009). SQLIPA: An authentication mechanism againest SQL injection.
+European Journal of Scientific Research, 38(4), 604-611.
+[11] Kindy, D. A., & Pathan, A. K. (2011). A survey on SQL injection: vulnerabilities, attacks, and prevetion
+techniques. Proceedings of the 15th IEEE Symposium on Consumer Electronics. Singapore.
+[12] Srivastava, S. (2012). A survey on: Attacks due to SQL injection and their prevention method for web
+application. International Journal of Computer Science and Information Technologies, 3(1), 3225-3228.
+[13] PHP. Retrieved March 10, 2014, from http://www.php.net/manual/en/function.hash.php
+[14] SHA-2. Retrieved March 10, 2014, from http://en.wikipedia.org/wiki/SHA-2.referencesrp

@@ -1,0 +1,24 @@
+Big Data: Moving Forward with Emerging Technology and Challenges titlerp The amount of available data has exploded in the past few years because of new social behaviour, social transformation as well as vast spread of social system. Big data become very important driver for innovation and growth. This paper provides a brief review of several papers, articles to know about the background of big data; explains the emerging technologies and what existing data and technologies should be augmented with big data technology enablers. We also address the challenges and opportunities rising from the use of big data.abstractrpBig Data, 3Vs, Traditional Data, Technologies, Enterprise Initatives.keywordsrpThe amount of data that is generated and stored is increasing rapidly, even exponentially. It may be doubling every two years, according to one estimate (IDC 2011). New advanced analytics techniques and technologies allow practitioners to connect and interrogate datasets. Big data describes innovative techniques and technologies to capture, store, distribute, manage and analyze petabyte- or larger- sized datasets with high-velocity and diverse structures that conventional data management methods are incapable of handling.
+Traditional data management and analysis systems are based on the relational database management system (RDBMS). It is apparent that the traditional RDBMSs could not handle the huge volume and heterogeneity of big data. For solutions of permanent storage and management of large-scale disordered datasets, distributed file systems and NoSQL (Not Only SQL) databases are good choices. Traditional Data analysis approaches are: Cluster Analysis, Factor Analysis, Correlation Analysis, Regression Analysis, A/B Testing, Statistical Analysis and Data Mining Algorithms. Big data analytic methods Big Data analysis approaches are: Bloom Filter, Hashing, Index, Triel & Parallel Computing.
+With the amount of data expanding, technology challenges, organization limitations, and privacy/trust concerns - among other obstacles – organization must approach analyzing the data with an array of new and emerging technologies .While the amount of large datasets is drastically rising, it also brings about many challenging problems demanding prompt solutions. Big is characterized by the 3 Vs. The three Vs of Big Data are: Variety, Volume and Velocity.introductionrpWe have entered an era of Big Data. The amount of information and knowledge that can be extracted from the digital universe is continuing to expand as users come up with new ways to massage and process data. Big data is not formally and structurally defined. The big data technology is still in its infancy. The analysis of big data is confronted with many challenges, but the current research is early stage. This paper is a collaborative research effort to begin examining the traditional view of data analytics and big data analytics, introduces new techniques and technologies to handle big data. We have identified some major challenges regarding big data which big data users specifically face. We must support and encourage fundamental research towards addressing these technical challenges if we are to achieve the promised benefits of Big Data. Our future research will concentrate on developing a more complete understanding of challenges associated with big data.conclusionrp1.
+Gantz, J. and E. Reinsel. 2011. “Extracting Value from Chaos”, IDC’s Digital Universe Study, sponsored by EMC.
+2.
+Hopkins, B. “Big opportunities in big data”. Forrest Research, Inc. , May 18, 2011 .
+3.
+McKinsey Global Institute (2011), “Big Data: The Next Frontier for Innovation, Competition and Productivity”.
+4.
+Gartner (2012a), “The Importance of ‘Big Data’: A Definition” ,October,2013.
+5.
+Gantz, J. and E. Reinsel. 2011. “Extracting Value from Chaos”, IDC’s Digital Universe Study, sponsored by EMC.
+6.
+Mango DB, “Top 5 considerations when evaluating NoSQL Databases”, White Paper.
+7.
+Danah boyd & Kate Crawford , “CRITICAL QUESTIONS FOR BIG DATA”,Routledge, Information, Communication & Society Vol. 15, No. 5, June 2012, pp. 662–679 ISSN 1369-118 (2012).
+8.
+Hsinchun Chen , Roger H. L , Veda C., “BUSINESS INTELLIGENCE AND ANALYTICS: FROM BIG DATA TO BIG IMPACT”, MIS Quarterly Vol. 36 No. 4/December 2012,Eller College of Management, University of Arizona, Tucson, AZ 85721 U.S.A.(2012).
+9.
+Mukherjee, A.; Datta, J.; Jorapur, R.; Singhvi, R.; Haloi, S.; Akram, W. , “Shared disk big data analytics with Apache Hadoop” , Dec.,2012.
+10.
+Stephen Kaisler,Frank Armour Big Data: Issues and Challenges Moving Forward, 46th Hawaii International Conference on System Sciences, 2013.
+11.
+The Economist. 2010. “Data, Data Everywhere”,(online edition, February 28) http://www.economist.com/node/15557443referencesrp

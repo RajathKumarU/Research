@@ -1,0 +1,236 @@
+Enforcing Encrypted Security Policies in
+Outsourced EnvironmentstitlerpThe enforcement of security policies in outsourced
+environments is still an open challenge for policy-based systems.
+On the one hand, taking the appropriate security decision
+requires access to the policies. However, if such access is allowed
+in an untrusted environment then confidential information might
+be leaked by the policies. Current solutions are based on
+cryptographic operations that embed security policies with the
+security mechanism. Therefore, the enforcement of such policies
+is performed by allowing the authorised parties to access the
+appropriate keys. We believe that such solutions are far too rigid
+because they strictly intertwine authorisation policies with the
+enforcing mechanism.
+In this paper, we want to address the issue of enforcing security
+policies in an untrusted environment while protecting the policy
+confidentiality. Our solution ESPOON is aiming at providing a
+clear separation between security policies and the enforcement
+mechanism. However, the enforcement mechanism should learn
+as less as possible about both the policies and the requester
+attributes.abstractrpEncrypted Policies; Policy Protection; Sensitive
+Policy Evaluation; Data Outsourcing; Cloud Computing; Privacy;
+Security keywordsrpThe cost saving associated with a general improvement
+in the quality of services and operations provided makes
+outsourcing of the IT infrastructure a business model adopted
+by many companies. Even sectors such as healthcare initially
+reluctant to this model are now slowly adopting it [2].
+Outsourcing typically relies on third parties to provide and
+maintain a very reliable IT infrastructure. However, the data
+stored on the outsourced servers are within easy reach of the
+infrastructure provider that could reuse the data for unintended
+and/or malicious purposes.
+Several technical approaches have been proposed to guarantee
+the confidentiality of the data in an outsourced environment.
+For instance, solutions as those described in [3], [4] allow
+a protected storage of data while maintaining basic search
+capabilities to be performed on the server side. However, such
+solutions do not support access policies to regulate the access
+of a user (or a group of users) to a particular subset of the
+stored data.Solutions for providing access control mechanisms in outsourced
+environments have mainly focused on encryption
+techniques that couple access policies with set of keys, such as
+the one described in [5]. Only users possessing a key (or a set
+of hierarchy-derivable keys) are authorised to access the data.
+The main drawback of these solutions is that security policies
+are tightly coupled with the security mechanism incurring in
+high processing cost for performing any administrative change
+for both the users and the policies representing the access
+rights.
+A policy-based solution such the one described for the
+Ponder language in [6] results more flexible and easy to
+manage because it clearly separates the security policies from
+the enforcement mechanism. However, policy-based access
+control mechanisms were not designed to operate in outsourced
+environments. Such solution can work only when
+they are deployed and operated within a trusted domain (i.e.,
+the computational environment managed by the organisation
+owning the data). If these mechanisms are outsourced in
+an untrusted environment, the access policies that are to be
+enforced on the server may leak information on the data they
+are protecting. As an example, let us consider a scenario where
+a hospital has outsourced its healthcare data management
+services to a third party service provider. We assume that the
+service provider is honest-but-curious, similarly to the existing
+literature on data outsourcing. That is, it is honest to perform
+the required operations as described in the protocol but curious
+to know the data contents. In other words, the service provider
+does not preserve the data confidentiality. A patient’s medical
+record should be associated with an access policy to prevent
+that any hospital employees is allowed to see the patient’s data.
+The data is stored with an access policy on the outsourced
+environment. As an example of such an access policy, let
+us consider the following access policy: only a Cardiologist
+may access the data. From this policy, it is possible to infer
+important information about the user’s medical data (even if
+the actual medical record is encrypted). This policy reveals
+that a patient could have heart problems. A curious service
+provider may sell this information to banks that could deny
+the patient a loan given her health condition. In this paper, we present a policy-based access control
+mechanism for outsourced environments where we support
+full confidentiality of the access policies. We named our solution
+ESPOON (Encrypted Security Policies for OutsOursed
+eNvironments). One of the main advantages of ESPOON is
+that we maintain the clear separation between the security
+policies and the actual enforcing mechanism without loss of
+confidentiality. This can be guaranteed under the assumption
+that the service provider is honest-but-curious. Our approach
+allows to implement the access control mechanism as an
+outsourced service with all the benefits associated with this
+business model without compromising the confidentiality of
+the policies. Summarising, the research contributions of our
+approach are threefold. First of all, the service provider does
+not learn anything about policies and the requester’s attributes
+during the policy evaluation process. Second, ESPOON is
+capable of handling complex policies involving non-monotonic
+boolean expressions and range queries. Third, the system
+entities do not share any encryption keys and even if a user
+is deleted or revoked, the system is still able to perform
+its operations without requiring re-encryption of the policies.
+As a proof-of-concept, we have implemented a prototype
+architecture of our access control mechanism and analysed
+its performance to quantify the incurred overhead.introductionrpIn this paper, we have presented the ESPOON architecture
+to support policy-based access control mechanism for outsourced
+and untrusted environments. Our approach separates
+the security policies from the actual enforcing mechanism
+while guaranteeing the confidentiality of the policies when
+given assumptions hold (i.e., the SP is honest-but-curious).
+The main advantage of our approach is that policies are
+encrypted but it still allows the PDP to perform the policy
+evaluation while not learning anything on the policies. Second,
+ESPOON is capable of handling complex policies involving
+non-monotonic boolean expressions and range queries. Finally,
+the authorised users do not share any encryption keys making
+the process of key management very scalable. Even if a user
+key is deleted or revoked, the other entities are still able to
+perform their operations without requiring re-encryption of the
+policies.
+As future directions of our research, we are working on
+integrating a secure audit mechanism in ESPOON. The mechanism
+should allow the SP to generate genuine audit logs
+without allowing the SP to get information about both the
+data and the policies. However, an auditing authority must
+be able to retrieve information about who accessed the data
+and what policy was enforced for any access request made.
+Another direction of our work is towards the extension of
+the encrypted search and match capabilities to handle the
+case of negative authorisation policies and policies for longlived
+sessions where the conditions need to be continuously
+monitored and the attributes of the request can be dynamically
+updated.conclusionrp[1] M. R. Asghar, M. Ion, G. Russello, and B. Crispo, “ESPOON: Enforcing
+Encrypted Security Policies in Outsourced Environments,” in The Sixth
+International Conference on Availability, Reliability and Security, ser.
+ARES’11. IEEE Computer Society, August 2011, pp. 99–108.
+[2] K. Ondo and M. Smith, “Outside it: the case for full it outsourcing,”
+Healthcare financial management : journal of the Healthcare Financial
+Management Association, vol. 60, no. 2, pp. 92–98, 2006.
+[3] C. Dong, G. Russello, and N. Dulay, “Shared and searchable encrypted
+data for untrusted servers,” in DBSec, ser. Lecture Notes in Computer
+Science, V. Atluri, Ed., vol. 5094. Springer, 2008, pp. 127–143.
+[4] S. Kamara and K. Lauter, “Cryptographic cloud storage,” in Financial
+Cryptography Workshops, ser. Lecture Notes in Computer Science,
+R. Sion, R. Curtmola, S. Dietrich, A. Kiayias, J. M. Miret, K. Sako,
+and F. Seb´e, Eds., vol. 6054. Springer, 2010, pp. 136–149.
+[5] S. D. C. di Vimercati, S. Foresti, S. Jajodia, S. Paraboschi, G. Pelosi,
+and P. Samarati, “Preserving confidentiality of security policies in data
+outsourcing,” in WPES, V. Atluri and M. Winslett, Eds. ACM, 2008,
+pp. 75–84.
+[6] G. Russello, C. Dong, and N. Dulay, “Authorisation and conflict
+resolution for hierarchical domains,” in Proceedings of the Eighth
+IEEE International Workshop on Policies for Distributed Systems and
+Networks. Washington, DC, USA: IEEE Computer Society, 2007,
+pp. 201–210. [Online]. Available: http://portal.acm.org/citation.cfm?id=
+1263544.1263884
+[7] D. X. Song, D. Wagner, and A. Perrig, “Practical techniques for searches
+on encrypted data,” in IEEE Symposium on Security and Privacy, 2000,
+pp. 44–55.
+[8] D. Boneh, G. D. Crescenzo, R. Ostrovsky, and G. Persiano, “Public key
+encryption with keyword search,” in EUROCRYPT, ser. Lecture Notes
+in Computer Science, C. Cachin and J. Camenisch, Eds., vol. 3027.
+Springer, 2004, pp. 506–522.
+[9] P. Golle, J. Staddon, and B. R. Waters, “Secure conjunctive keyword
+search over encrypted data,” in ACNS, ser. Lecture Notes in Computer
+Science, M. Jakobsson, M. Yung, and J. Zhou, Eds., vol. 3089. Springer,
+2004, pp. 31–45.
+[10] R. Curtmola, J. Garay, S. Kamara, and R. Ostrovsky, “Searchable
+symmetric encryption: improved definitions and efficient constructions,”
+in Proceedings of the 13th ACM conference on Computer and
+communications security, ser. CCS ’06. New York, NY, USA:
+ACM, 2006, pp. 79–88. [Online]. Available: http://doi.acm.org/10.1145/
+1180405.1180417
+[11] Y. H. Hwang and P. J. Lee, “Public key encryption with conjunctive
+keyword search and its extension to a multi-user system,” in Pairing, ser.
+Lecture Notes in Computer Science, T. Takagi, T. Okamoto, E. Okamoto,
+and T. Okamoto, Eds., vol. 4575. Springer, 2007, pp. 2–22.
+[12] D. Boneh and B. Waters, “Conjunctive, subset, and range queries on
+encrypted data,” in TCC, ser. Lecture Notes in Computer Science, S. P.
+Vadhan, Ed., vol. 4392. Springer, 2007, pp. 535–554.
+[13] P. Wang, H. Wang, and J. Pieprzyk, “Threshold privacy preserving
+keyword searches,” in SOFSEM, ser. Lecture Notes in Computer Science,
+V. Geffert, J. Karhum¨aki, A. Bertoni, B. Preneel, P. N´avrat, and
+M. Bielikov´a, Eds., vol. 4910. Springer, 2008, pp. 646–658.
+[14] J. Baek, R. Safavi-Naini, and W. Susilo, “Public key encryption with
+keyword search revisited,” in ICCSA (1), ser. Lecture Notes in Computer
+Science, O. Gervasi, B. Murgante, A. Lagan`a, D. Taniar, Y. Mun, and
+M. L. Gavrilova, Eds., vol. 5072. Springer, 2008, pp. 1249–1259.
+[15] H. S. Rhee, J. H. Park, W. Susilo, and D. H. Lee, “Trapdoor security
+in a searchable public-key encryption scheme with a designated tester,”
+Journal of Systems and Software, vol. 83, no. 5, pp. 763–771, 2010.
+[16] J. Shao, Z. Cao, X. Liang, and H. Lin, “Proxy re-encryption with
+keyword search,” Inf. Sci., vol. 180, no. 13, pp. 2576–2587, 2010.
+[17] S. D. C. di Vimercati, S. Foresti, S. Jajodia, S. Paraboschi, and
+P. Samarati, “A data outsourcing architecture combining cryptography
+and access control,” in Proceedings of the 2007 ACM workshop
+on Computer security architecture, ser. CSAW ’07. New York,
+NY, USA: ACM, 2007, pp. 63–69. [Online]. Available: http:
+//doi.acm.org/10.1145/1314466.1314477
+[18] ——, “Over-encryption: management of access control evolution on
+outsourced data,” in Proceedings of the 33rd international conference
+on Very large data bases, ser. VLDB ’07. VLDB Endowment, 2007,
+pp. 123–134. [Online]. Available: http://portal.acm.org/citation.cfm?id=
+1325851.1325869
+[19] M. J. Atallah, M. Blanton, N. Fazio, and K. B. Frikken, “Dynamic
+and efficient key management for access hierarchies,” ACM Trans. Inf.
+Syst. Secur., vol. 12, pp. 18:1–18:43, January 2009. [Online]. Available:
+http://doi.acm.org/10.1145/1455526.1455531
+[20] S. Narayan, M. Gagn´e, and R. Safavi-Naini, “Privacy preserving ehr
+system using attribute-based infrastructure,” in CCSW ’10: Proceedings
+of the 2010 ACM workshop on Cloud computing security workshop.
+New York, NY, USA: ACM, 2010, pp. 47–52.
+[21] J. Bethencourt, A. Sahai, and B. Waters, “Ciphertext-policy attributebased
+encryption,” in IEEE Symposium on Security and Privacy. IEEE
+Computer Society, 2007, pp. 321–334.
+[22] A. Sahai and B. Waters, “Fuzzy identity-based encryption,” in EUROCRYPT,
+ser. Lecture Notes in Computer Science, R. Cramer, Ed., vol.
+3494. Springer, 2005, pp. 457–473.
+[23] V. Goyal, O. Pandey, A. Sahai, and B. Waters, “Attribute-based encryption
+for fine-grained access control of encrypted data,” in ACM
+Conference on Computer and Communications Security, A. Juels, R. N.
+Wright, and S. D. C. di Vimercati, Eds. ACM, 2006, pp. 89–98.
+[24] R. Ostrovsky, A. Sahai, and B. Waters, “Attribute-based encryption with
+non-monotonic access structures,” in ACM Conference on Computer and
+Communications Security, P. Ning, S. D. C. di Vimercati, and P. F.
+Syverson, Eds. ACM, 2007, pp. 195–203.
+[25] J. E. Holt, R. W. Bradshaw, K. E. Seamons, and H. K. Orman, “Hidden
+credentials,” in WPES, S. Jajodia, P. Samarati, and P. F. Syverson, Eds.
+ACM, 2003, pp. 1–8.[26] R. W. Bradshaw, J. E. Holt, and K. E. Seamons, “Concealing complex
+policies with hidden credentials,” in ACM Conference on Computer and
+Communications Security, V. Atluri, B. Pfitzmann, and P. D. McDaniel,
+Eds. ACM, 2004, pp. 146–157.
+[27] Yavatkar, Pendarakis, and Guerin, “Ietf rfc 2753: A framework for policy
+based admission control,” 2000, http://docstore.mik.ua/rfc/rfc2753.html.
+[28] M. Van Dijk and A. Juels, “On the impossibility of cryptography
+alone for privacy-preserving cloud computing,” in Proceedings of the
+5th USENIX conference on Hot topics in security, ser. HotSec’10.
+Berkeley, CA, USA: USENIX Association, 2010, pp. 1–8. [Online].
+Available: http://portal.acm.org/citation.cfm?id=1924931.1924934
+11referencesrp
