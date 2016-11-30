@@ -27,11 +27,11 @@ and_CC minting_VBG electric_JJ currency_NN ,_, etc._FW ._.
 1_CD -LRB-_-LRB- b_NN -RRB-_-RRB- Authentication_NN 
 Encryption_NN may_MD help_VB make_VB the_DT transactions_NNS more_RBR secure_JJ ._. The_DT Internet_NN of_IN today_NN has_VBZ become_VBN an_DT integral_JJ part_NN of_IN our_PRP$ 
 Everyday_JJ life_NN and_CC the_DT proportion_NN of_IN users_NNS expecting_VBG to_TO be_VB able_JJ to_TO manage_VB their_PRP$ bank_NN accounts_VBZ anywhere_RB anytime_RB is_VBZ constantly_RB growing_VBG 
--LSB-_-LRB- 4_LS -RSB-_-RRB- ._. As_IN such_JJ ,_, Internet_NNP banking_NN has_VBZ come_VBN to_TO age_NN as_IN a_DT crucial_JJ component_NN of_IN any_DT financial_JJ institution_NN 's_POS multi-channel_JJ strategy_NN ._. Based_VBN on_IN 
+-LSB-_-LRB- 4_LS -RSB-_-RRB- ._. As_IN such_JJ ,_, Internet_NNP banking_NN has_VBZ come_VBN to_TO age_NN as_IN a_DT crucial_JJ component_NN of_IN any_DT financial_JJ institution_NN s_NNS multi-channel_JJ strategy_NN ._. Based_VBN on_IN 
 the_DT assumption_NN that_IN only_RB an_DT authentic_JJ user_NN is_VBZ able_JJ to_TO do_VB so_RB ,_, successful_JJ authentication_NN eventually_RB enables_VBZ an_DT authorized_JJ user_NN to_TO access_NN 
 his_PRP$ private_JJ information_NN ._. -LSB-_-LRB- 5_CD -RSB-_-RRB- 
 1_CD -LRB-_-LRB- c_NN -RRB-_-RRB- Short-Time_NNP Password_NNP Solution_NN 
-Considering_VBG today_NN 's_POS pervasiveness_NN of_IN malicious_JJ software_NN and_CC phishing_NN attacks_NNS ,_, any_DT Internet_NN banking_NN solution_NN must_MD be_VB resistant_JJ 
+Considering_VBG today_NN s_NNS pervasiveness_NN of_IN malicious_JJ software_NN and_CC phishing_NN attacks_NNS ,_, any_DT Internet_NN banking_NN solution_NN must_MD be_VB resistant_JJ 
 against_IN stealing_VBG attacks_NNS ._. For_IN this_DT we_PRP propose_VBP a_DT challenge/response-based_JJ short-time_JJ password_NN authentication_NN method_NN using_VBG symmetric_JJ 
 cryptography_NN in_IN combination_NN with_IN a_DT Software_NNP Security_NNP Model_NNP -LSB-_-LRB- 6_CD ,_, 7_CD -RSB-_-RRB- ._. The_DT short-time_JJ password_NN solution_NN is_VBZ in_IN use_NN at_IN in_IN software-based_JJ 
 security_NN systems_NNS ,_, the_DT coding_NN and_CC decoding_NN of_IN information_NN is_VBZ done_VBN using_VBG specialized_JJ security_NN software_NN ._. 
@@ -52,7 +52,7 @@ and_CC encryption_NN keys_NNS on_IN SIM_NNP ._.
 conclusionrp_NN 
 -LSB-_-LRB- 1_CD -RSB-_-RRB- Sandeep_NNP Singh_NNP Ghotra_NNP ,_, Baldev_NNP Kumar_NNP Mandhan_NNP ,_, Sam_NNP Shang_NNP Chun_NNP Wei_NNP ,_, Yi_NNP Song_NN ,_, Chris_NNP Steketee_NNP ,_, ?_. Secure_VB Display_VB and_CC Secure_VB Transactions_NNS Using_VBG a_DT Handset_NNP ?_. 
 Sixth_NNP International_NNP Conference_NNP on_IN the_DT Management_NN of_IN Mobile_NNP Business_NNP ._. 
--LSB-_-LRB- 2_CD -RSB-_-RRB- Dilla_NNP Salama_NNP Abdul_NNP Minaam_NNP ._. Hatem_NNP M._NNP Abdul_NNP Kadir_NNP ,_, Mohily_NNP Mohamed_NNP Hadhoud_NNP ,_, ''_'' Evaluating_VBG the_DT effects_NNS of_IN Symmetric_JJ Cryptographic_JJ algorithms_NNS on_IN Power_NN 
+-LSB-_-LRB- 2_CD -RSB-_-RRB- Dilla_NNP Salama_NNP Abdul_NNP Minaam_NNP ._. Hatem_NNP M._NNP Abdul_NNP Kadir_NNP ,_, Mohily_NNP Mohamed_NNP Hadhoud_NNP ,_, Evaluating_VBG the_DT effects_NNS of_IN Symmetric_JJ Cryptographic_JJ algorithms_NNS on_IN Power_NN 
 Consumption_NN for_IN different_JJ data_NNS types_NNS ?_. ,_, International_NNP Journal_NNP of_IN Network_NNP Security_NNP ,_, Volume_NN 11_CD ,_, September_NNP 2010_CD ._. 
 -LSB-_-LRB- 3_CD -RSB-_-RRB- Managing_VBG the_DT Risk_NN of_IN Mobile_NNP Banking_NNP Technologies_NNPS ,_, Bankable_NNP Frontier_NNP Associates_NNPS ._. 
 -LSB-_-LRB- 4_LS -RSB-_-RRB- Richard_NNP E._NNP Smith_NNP ._. Authentication_NN :_: From_IN Passwords_NNPS to_TO Public_NNP Keys_NNP ._. Addison_NNP Wesley_NNP ,_, 2001_CD ._. 
@@ -64,21 +64,21 @@ of_IN 2008_CD -LSB-_-LRB- Report_NNP -RSB-_-RRB- ._. Security_NNP Intelligence_N
 -LSB-_-LRB- 9_CD -RSB-_-RRB- Carneiro_NNP ,_, B._NNP and_CC Sousa_NNP ,_, R._NNP T._NNP ,_, Identifying_NNP Bank_NNP Frauds_NNP Using_VBG Crisp-DM_NN and_CC Decision_NN Trees_NNP ,_, 
 International_NNP Journal_NNP of_IN Computer_NNP Science_NNP &_CC Information_NNP Technology_NNP ._. October_NNP ,_, vol_NN ._. 2_CD ,_, 2010_CD ,_, pp._NN 162_CD -_: 169_CD ._. 
 -LSB-_-LRB- 10_CD -RSB-_-RRB- Development_NNP ,_, Why_WRB is_VBZ J2ME_NN MIDP_NN superior_JJ to_TO WAP_NNP ,_, http://www.developnet.co.uk/wap.htm_NN ._. 
--LSB-_-LRB- 11_CD -RSB-_-RRB- Laitinen_NNP ,_, H._NNP ,_, 2001_CD ,_, Sun_NNP 's_POS 2001_CD Worldwide_NNP Java_NNP Developer_NNP Conference_NNP ,_, Development_NNP Tools_NNP for_IN the_DT J2ME_NN ,_, 
+-LSB-_-LRB- 11_CD -RSB-_-RRB- Laitinen_NNP ,_, H._NNP ,_, 2001_CD ,_, Sun_NNP s_VBZ 2001_CD Worldwide_NNP Java_NNP Developer_NNP Conference_NNP ,_, Development_NNP Tools_NNP for_IN the_DT J2ME_NN ,_, 
 http://www.forum.nokia.com/main/1,35452,1_0_75,00.html_NN ._. 
--LSB-_-LRB- 12_CD -RSB-_-RRB- Java_NNP 2_CD Platform_NNP ,_, Micro_NNP Edition_NNP --_: J2ME_NN ,_, Official_NNP Site_NN ,_, http://java.sun.com/javame/index.jsp_NN ._. 
+-LSB-_-LRB- 12_CD -RSB-_-RRB- Java_NNP 2_CD Platform_NNP ,_, Micro_NNP Edition_NNP J2ME_NN ,_, Official_NNP Site_NN ,_, http://java.sun.com/javame/index.jsp_NN ._. 
 -LSB-_-LRB- 13_CD -RSB-_-RRB- CEM_NN ,_, ?_. Common_JJ Criteria_NNS for_IN Information_NNP Technology_NNP Security_NNP Evaluation_NN ?_. ,_, version3_NN .1_NN ,_, 2006_CD ._. -LSB-_-LRB- Online_NN -RSB-_-RRB- ._. 
 Available_JJ :_: http://www.commoncriteriaportal.org/files/ccfiles/CEMV3.1R2.pdf_NN 
 -LSB-_-LRB- 14_CD -RSB-_-RRB- A._NN Hiltgen._NNP ;_: T._NNP Kramp_NNP ;_: T._NNP Weigold_NNP ;_: ``_`` Secure_VB Internet-banking_JJ Authentication_NN ,_, ''_'' IEEE_NNP Security_NNP and_CC Privacy_NNP ,_, vol_NN ._. 4_CD ,_, no._NN 2_CD ,_, 2006_CD ,_, p.21-29_NN ._. 
 -LSB-_-LRB- 15_CD -RSB-_-RRB- F._NNP Puente_NNP ;_: J.D._NNP Sandoval_NNP ;_: P._NNP Hernandez_NNP ;_: C.J._NNP Molina_NNP ;_: ?_. Improving_NN online_JJ banking_NN security_NN with_IN hardware_NN devices_NNS ?_. ,_, 39th_JJ Annual_JJ 2005_CD International_NNP Carnahan_NNP 
-Conference_NN on_IN Security_NNP Technology_NNP -LRB-_-LRB- CCST_NNP `_`` 05_CD -RRB-_-RRB- ,_, 2005_CD ._. 11-14_CD Oct._NNP 2005_CD pp._NN 174_CD --_: 177_CD ._. 
--LSB-_-LRB- 16_CD -RSB-_-RRB- Testing_VBG Verification_NNP and_CC Validation_NNP Workshop_NNP ,_, 2008_CD ._. ICSTW_NN apos_NNS ;_: 08_CD ._. IEEE_NNP International_NNP Conference_NNP ,_, 9-11_CD April_NNP 2008_CD pp._NN 294_CD --_: 302_CD ._. 
+Conference_NN on_IN Security_NNP Technology_NNP -LRB-_-LRB- CCST_NNP 05_CD -RRB-_-RRB- ,_, 2005_CD ._. 11-14_CD Oct._NNP 2005_CD pp._NN 174_CD 177_CD ._. 
+-LSB-_-LRB- 16_CD -RSB-_-RRB- Testing_VBG Verification_NNP and_CC Validation_NNP Workshop_NNP ,_, 2008_CD ._. ICSTW_NN apos_NNS ;_: 08_CD ._. IEEE_NNP International_NNP Conference_NNP ,_, 9-11_CD April_NNP 2008_CD pp._NN 294_CD 302_CD ._. 
 -LSB-_-LRB- 17_CD -RSB-_-RRB- K.Chikomo_NNP ,_, M._NNP K._NNP Chong_NNP ,_, A._NNP Arnab_NNP ,_, A._NNP Hutchison_NNP -LRB-_-LRB- 2006_CD -RRB-_-RRB- ,_, ?_. Security_NN of_IN mobile_JJ banking_NN ?_. ,_, University_NNP of_IN Cape_NNP Town_NNP ,_, South_NNP Africa_NNP ,_, Tech_NNP ._. Rep._NNP -LSB-_-LRB- Online_NNP -RSB-_-RRB- ._. Available_JJ :_: 
 http://pubs_NNS ._. cs.uct.ac.za_NN /_: archive_NN /_: 00000341/01/Security_NN of_IN Mobile_NNP Banking_NNP paper.pdf_NN ._. 
 -LSB-_-LRB- 18_CD -RSB-_-RRB- A._NN Shamir_NNP ,_, ?_. Identity-based_JJ cryptosystems_NNS and_CC signature_NN schemes_NNS ?_. ,_, in_IN CRYPTO_NNP :_: Proceedings_NNP of_IN Crypto_NNP ,_, 1994_CD ._. 
 -LSB-_-LRB- 19_CD -RSB-_-RRB- N._NNP Croft_NNP ,_, M._NNP Olivier_NNP ,_, ?_. Using_VBG an_DT approximated_VBN One-Time_JJ Pad_NN to_TO Secure_VB Short_JJ Messaging_NNP Service_NNP -LRB-_-LRB- SMS_NNP -RRB-_-RRB- ?_. ,_, in_IN Proceedings_NNP of_IN the_DT Southern_JJ African_NNP 
 Telecommunication_NN Networks_NNP and_CC 
-Applications_NNS Conference_NN -LRB-_-LRB- SATNAC_NN -RRB-_-RRB- ,_, 2005_CD ,_, pp._VBP 71_CD --_: 76_CD ._. 
+Applications_NNS Conference_NN -LRB-_-LRB- SATNAC_NN -RRB-_-RRB- ,_, 2005_CD ,_, pp._VBP 71_CD 76_CD ._. 
 -LSB-_-LRB- 20_CD -RSB-_-RRB- Sun_NNP Microsystems_NNPS Wireless_NNP Toolkit_NNP http://java.sun.com/products/j2mewtoolkit_NN 
 -LSB-_-LRB- 21_CD -RSB-_-RRB- Bouncy_NNP Castle_NNP http://www.bouncycastle.org/_NN 
 -LSB-_-LRB- 22_CD -RSB-_-RRB- ProGuard_NNP http://proguard.sourceforge.net/_NN 

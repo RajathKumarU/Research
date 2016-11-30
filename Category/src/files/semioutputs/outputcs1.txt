@@ -50,12 +50,13 @@ electric currency
 integral part
 Internet banking
 crucial component
-financial institution
+institution s
 multi-channel strategy
 authentic user
 successful authentication
 authorized user
 Short-Time Password
+today s pervasiveness
 malicious software
 phishing attacks
 Internet banking solution
@@ -130,7 +131,7 @@ J2ME MIDP
 superior WAP
 Worldwide Java Developer
 Development Tools
-Micro Edition
+Micro Edition J2ME
 Official Site
 Common Criteria
 Information Technology Security

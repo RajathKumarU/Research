@@ -1,3 +1,5 @@
+package main;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -21,13 +23,10 @@ import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 public class Test {
 	public static void main(String[] args) {
 		try {
-			MaxentTagger tagger = new MaxentTagger(
-					"src/files/english-left3words-distsim.tagger");
+			MaxentTagger tagger = new MaxentTagger("src/files/english-left3words-distsim.tagger");
 
-			BufferedReader br = new BufferedReader(new FileReader(
-					"src/files/semioutputs/outputcs.txt"));
-			PrintWriter p = new PrintWriter(new FileWriter(
-					"src/files/semioutputs/outputcs1.txt"));
+			BufferedReader br = new BufferedReader(new FileReader("src/files/semioutputs/outputcs.txt"));
+			PrintWriter p = new PrintWriter(new FileWriter("src/files/semioutputs/outputcs1.txt"));
 
 			String line = "";
 			while ((line = br.readLine()) != null) {
@@ -35,26 +34,20 @@ public class Test {
 				int i = 0;
 				while (i < linesplit.length) {
 					if (linesplit[i].contains("_NN")) {
-						if (i < (linesplit.length - 1)
-								&& linesplit[i + 1].contains("_NN")) {
-							if (i < (linesplit.length - 3)
-									&& linesplit[i + 2].contains("_NN")) {
-								p.println(linesplit[i].split("_")[0] + " "
-										+ linesplit[i + 1].split("_")[0] + " "
+						if (i < (linesplit.length - 1) && linesplit[i + 1].contains("_NN")) {
+							if (i < (linesplit.length - 3) && linesplit[i + 2].contains("_NN")) {
+								p.println(linesplit[i].split("_")[0] + " " + linesplit[i + 1].split("_")[0] + " "
 										+ linesplit[i + 2].split("_")[0]);
 								i += 3;
 							} else if (i < (linesplit.length - 2)) {
-								p.println(linesplit[i].split("_")[0] + " "
-										+ linesplit[i + 1].split("_")[0]);
+								p.println(linesplit[i].split("_")[0] + " " + linesplit[i + 1].split("_")[0]);
 								i += 2;
 							}
 						}
 						if (i > 2 && linesplit[i - 1].contains("_JJ")) {
-							p.println(linesplit[i - 1].split("_")[0] + " "
-									+ linesplit[i].split("_")[0]);
+							p.println(linesplit[i - 1].split("_")[0] + " " + linesplit[i].split("_")[0]);
 						} else if (i > 2 && linesplit[i - 2].contains("_JJ")) {
-							p.println(linesplit[i - 2].split("_")[0] + " "
-									+ linesplit[i].split("_")[0]);
+							p.println(linesplit[i - 2].split("_")[0] + " " + linesplit[i].split("_")[0]);
 						}
 					}
 					i++;
@@ -77,11 +70,9 @@ public class Test {
 
 	public static void reduce(String inputFileName) {
 		try {
-			BufferedReader brd = new BufferedReader(new FileReader(
-					"src/files/semioutputs/output1.txt"));
+			BufferedReader brd = new BufferedReader(new FileReader("src/files/semioutputs/output1.txt"));
 			HashMap<String, String> freq = new HashMap<String, String>();
-			BufferedReader br1 = new BufferedReader(new FileReader(
-					"src/files/semioutputs/outputcs1.txt"));
+			BufferedReader br1 = new BufferedReader(new FileReader("src/files/semioutputs/outputcs1.txt"));
 			File f1 = new File("src/files/semioutputs/output1.txt");
 			String line1 = "";
 			String[] keywrds = new String[5000];
@@ -124,14 +115,10 @@ public class Test {
 			whole = whole.toLowerCase();
 			title = whole.split("titlerp")[0].trim();// fr=1
 			abs = whole.split("abstractrp")[0].split("titlerp")[1].trim();// fr=5
-			intro = whole.split("abstractrp")[1].split("introductionrp")[0]
-					.trim();
-			keywords = whole.split("keywordsrp")[0].split("abstractrp")[1]
-					.trim();// fr=2
-			conc = whole.split("conclusionrp")[0].split("introductionrp")[1]
-					.trim();// fr=4
-			ref = whole.split("referencesrp")[0].split("conclusionrp")[1]
-					.trim();// fr=3
+			intro = whole.split("abstractrp")[1].split("introductionrp")[0].trim();
+			keywords = whole.split("keywordsrp")[0].split("abstractrp")[1].trim();// fr=2
+			conc = whole.split("conclusionrp")[0].split("introductionrp")[1].trim();// fr=4
+			ref = whole.split("referencesrp")[0].split("conclusionrp")[1].trim();// fr=3
 			for (int j = 0; j < dup.length; j++) {
 				int fr = 0;
 				if (title.contains(dup[j]) && dup[j] != "") {
@@ -245,8 +232,7 @@ public class Test {
 
 			}
 
-			System.out
-					.println("------------------------------------------------");
+			System.out.println("------------------------------------------------");
 
 			int total_freq = 0;
 
@@ -269,16 +255,14 @@ public class Test {
 				String word2 = key.split(",")[1].trim();
 				if (word_freq.containsKey(word1)) {
 					int val = Integer.parseInt(word_freq.get(word1));
-					word_freq
-							.replace(word1, String.format("%04d", (val + tab)));
+					word_freq.replace(word1, String.format("%04d", (val + tab)));
 				} else {
 					word_freq.put(word1, String.format("%04d", tab));
 				}
 
 				if (word_freq.containsKey(word2)) {
 					int val = Integer.parseInt(word_freq.get(word2));
-					word_freq
-							.replace(word2, String.format("%04d", (val + tab)));
+					word_freq.replace(word2, String.format("%04d", (val + tab)));
 				} else {
 					word_freq.put(word2, String.format("%04d", tab));
 				}
@@ -287,17 +271,13 @@ public class Test {
 			for (Map.Entry<String, String> entry : ass.entrySet()) {
 				String key = entry.getKey();
 				int tab = Integer.parseInt(entry.getValue());
-				int val1 = Integer.parseInt(word_freq.get(key.split(",")[0]
-						.trim()));
-				int val2 = Integer.parseInt(word_freq.get(key.split(",")[1]
-						.trim()));
+				int val1 = Integer.parseInt(word_freq.get(key.split(",")[0].trim()));
+				int val2 = Integer.parseInt(word_freq.get(key.split(",")[1].trim()));
 
 				if (key != "") {
 					System.out.println(key + " - " + tab);
-					support.put(key,
-							String.format("%.6f", ((double) tab / total_freq)));
-					confidence.put(key, String.format("%.6f",
-							((double) tab / (val1 + val2))));
+					support.put(key, String.format("%.6f", ((double) tab / total_freq)));
+					confidence.put(key, String.format("%.6f", ((double) tab / (val1 + val2))));
 				}
 			}
 
@@ -311,8 +291,7 @@ public class Test {
 			// System.out.println(key + " - " + tab);
 			// }
 
-			System.out
-					.println("\n------------------------------------------------------\n\nCONFIDENCE\n\n");
+			System.out.println("\n------------------------------------------------------\n\nCONFIDENCE\n\n");
 			confidence = sortByValues(confidence);
 			for (Map.Entry<String, String> entry : confidence.entrySet()) {
 				String key = entry.getKey();
@@ -324,20 +303,19 @@ public class Test {
 			br1.close();
 
 			// calling reduceAgain() to reduce words to 4-5 words
-			reduceAgain(inputFileName,title, ass);
+			reduceAgain(inputFileName, title, ass);
 
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
 	}
 
-	private static void reduceAgain(String inputFileName,String title,
-			HashMap<String, String> associatedWords) throws IOException {
+	private static void reduceAgain(String inputFileName, String title, HashMap<String, String> associatedWords)
+			throws IOException {
 		associatedWords = sortByValues(associatedWords);
 		ArrayList<String> bow = new ArrayList<String>();
 
-		PrintWriter p = new PrintWriter(new FileWriter(
-				"src/files/semioutputs/allBOW.txt", true));
+		PrintWriter p = new PrintWriter(new FileWriter("src/files/semioutputs/allBOW.txt", true));
 
 		for (Map.Entry<String, String> entry : associatedWords.entrySet()) {
 			String key = entry.getKey();
@@ -353,8 +331,9 @@ public class Test {
 				break;
 		}
 
-		//p.print(inputFileName + "->");
-		p.print(title.replaceAll("\n", " ").replaceAll("\r", " ").replaceAll("\t", " ").trim() + "->");
+		// p.print(inputFileName + "->");
+		p.print(inputFileName + "," + title.replaceAll("\n", " ").replaceAll("\r", " ").replaceAll("\t", " ").trim()
+				+ "-->");
 		for (int i = 0; i < bow.size(); i++) {
 			p.print(bow.get(i) + ",");
 		}
@@ -363,8 +342,7 @@ public class Test {
 
 	}
 
-	public static HashMap<String, String> getTopNvalues(
-			HashMap<String, String> map, int n) {
+	public static HashMap<String, String> getTopNvalues(HashMap<String, String> map, int n) {
 		map = sortByValues(map);
 		String removeKeys = "";
 
@@ -377,8 +355,7 @@ public class Test {
 		}
 
 		if (removeKeys.length() > 0) {
-			String keys[] = removeKeys.substring(0, removeKeys.length() - 1)
-					.split(",");
+			String keys[] = removeKeys.substring(0, removeKeys.length() - 1).split(",");
 			for (int i = 0; i < keys.length; i++) {
 				map.remove(keys[i]);
 			}
@@ -428,15 +405,13 @@ public class Test {
 		return map;
 	}
 
-	public static HashMap<String, String> sortByValues(
-			HashMap<String, String> map) {
+	public static HashMap<String, String> sortByValues(HashMap<String, String> map) {
 
 		List list = new LinkedList(map.entrySet());
 		// Defined Custom Comparator here
 		Collections.sort(list, new Comparator() {
 			public int compare(Object o2, Object o1) {
-				return ((Comparable) ((Map.Entry) (o1)).getValue())
-						.compareTo(((Map.Entry) (o2)).getValue());
+				return ((Comparable) ((Map.Entry) (o1)).getValue()).compareTo(((Map.Entry) (o2)).getValue());
 			}
 		});
 
